@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Music — It's Mateo!</title>
+    <title>
+        Music — It's Mateo!
+    </title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <!-- Required meta tags -->
@@ -19,17 +21,17 @@
 
     <!-- Custom CSS -->
     <style>
-        #intro {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--bs-primary));
+        #body {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(0, 117, 163));
             position: relative;
         }
 
-        #intro::before {
+        #body::before {
             content: '';
             position: absolute;
             inset: 0;
             background: rgba(15, 44, 64, 0.7);
-            background-image: linear-gradient(to left, rgba(0,0,0,0), var(--bs-primary));
+            background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(29, 164, 218, 0.95));
             z-index: -1;
         }
 
@@ -62,10 +64,10 @@
     
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
                         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <!-- Websites page link 
+                            <!-- Websites page link -->
                             <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Websites</a>
-                            </li>-->
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
+                            </li>
     
                             <!-- Video Games page link -->
                             <li class="nav-item">
@@ -95,9 +97,9 @@
             <div id="navpad" class="bg-danger"></div>
     </header>
     
-    <main>
+    <section>
         <!-- Main page body container-->
-        <div id="intro" class="py-5">
+        <div id="body" class="pt-5">
             <img id="bg-art" src="img/music/88bpm.png"/>
 
             <!-- Page info -->
@@ -278,20 +280,18 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
 
-    <footer>
-        <!-- place footer here -->
-        <nav class="navbar bg-light pt-3">
-            <div class="container-xxl p-4">
-                © Matthew DeCalzadilla 2024
-            </div>
-        </nav>
-    </footer>
+            <footer class="text-white">
+                <!-- place footer here -->
+                <div class="container-xxl mt-3 p-4 text-center">
+                    © Matthew DeCalzadilla 2024
+                </div>
+            </footer>
+        </div>
+    </section>
 
     <!-- Add some padding underneath the navbar
-            equal to the height of the navbar in pixels -->
+    equal to the height of the navbar in pixels -->
     <script type="text/javascript">
         function addPad() {
             document.getElementById("navpad").style.height = document.getElementById("navi").offsetHeight + "px";
