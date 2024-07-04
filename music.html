@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Music — It's Mateo!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.3.3 -->
+    <link
+        href="build/main.css"
+        rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+        #intro {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--bs-primary));
+            position: relative;
+        }
+
+        #intro::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 44, 64, 0.7);
+            background-image: linear-gradient(to left, rgba(0,0,0,0), var(--bs-primary));
+            z-index: -1;
+        }
+
+        #bg-art {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        #info-card {
+            max-width: 42rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+            <!-- place navbar here -->
+            <!-- Nav tabs -->
+            <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
+                <div class="container-xxl">
+                    <!-- Site brand -->
+                    <a class="navbar-brand fw-bold px-5" href="index.html">
+                        <img src="img/landing/mateo.png" style="width:20rem;"/>
+                    </a>
+    
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <!-- Websites page link 
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Websites</a>
+                            </li>-->
+    
+                            <!-- Video Games page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="wads.html">Video Games</a>
+                            </li>
+    
+                            <!-- Art page link 
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Art</a>
+                            </li>-->
+    
+                            <!-- Music page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
+                            </li>
+
+                            <!-- Video Games page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="citygame.html">City Builder '24</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- Padding for navbar -->
+            <div id="navpad" class="bg-danger"></div>
+    </header>
+    
+    <main>
+        <!-- Main page body container-->
+        <div id="intro" class="py-5">
+            <img id="bg-art" src="img/music/88bpm.png"/>
+
+            <!-- Page info -->
+            <div id="info-card" class="card rounded bg-light shadow px-5 py-3 mx-auto mt-3 mb-5">
+                <h4 class="text-center fw-semibold pt-3 pb-1">Music</h4>
+                <p class="fw-light pb-1">
+                    I've made a ton of music over the years. Here you can find a catalogue of all my released music, including three albums, two EPs, and two singles.
+                </p>
+            </div>
+
+            <div class="container-xxl">
+                <!-- Discog section -->
+                <div class="row pb-5">
+                    <!-- Discog: image carousel -->
+                    <div id="music-carousel" class="carousel slide mb-1" data-bs-ride="carousel">
+                        <ol class="carousel-indicators p-3">
+                            <button type="button" data-bs-target="#music-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#music-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#music-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#music-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#music-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#music-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#music-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active pt-4 pb-5">
+                                <img
+                                    src="img/music/2.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Burning My Time Building My Mind"
+                                />
+                                <div id="info-card" class="card mx-auto my-3 px-5 py-3">
+                                    <h2 class="text-center fw-semibold fst-italic">Burning My Time Building My Mind</h2>
+                                    <p class="text-center fw-light">EP<br/>Released: April 23, 2019</p>
+                                </div>
+                                <div class="container text-center mb-4">
+                                    <a
+                                    class="btn btn-warning bg-gradient"
+                                    href="https://sontomorio.bandcamp.com/album/burning-my-time-building-my-mind"
+                                    role="button"
+                                        >Listen on Bandcamp</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/music/single.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Lucid Dreaming"
+                                />
+                                <div id="info-card" class="card mx-auto my-3 px-5 py-3">
+                                    <h2 class="text-center fw-semibold fst-italic">Lucid Dreaming</h2>
+                                    <p class="text-center fw-light">Single<br/>Released: September 29, 2019</p>
+                                </div>
+                                <div class="container text-center mb-4">
+                                    <a
+                                    class="btn btn-warning bg-gradient"
+                                    href="https://sontomorio.bandcamp.com/track/lucid-dreaming"
+                                    role="button"
+                                        >Listen on Bandcamp</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/music/3.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Midnight Movies"
+                                />
+                                <div id="info-card" class="card mx-auto my-3 px-5 py-3">
+                                    <h2 class="text-center fw-semibold fst-italic">Midnight Movies</h2>
+                                    <p class="text-center fw-light">Album<br/>Released: December 20, 2019</p>
+                                </div>
+                                <div class="container text-center mb-4">
+                                    <a
+                                    class="btn btn-warning bg-gradient"
+                                    href="https://sontomorio.bandcamp.com/album/midnight-movies"
+                                    role="button"
+                                        >Listen on Bandcamp</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/music/4.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Sonto IV"
+                                />
+                                <div id="info-card" class="card mx-auto my-3 px-5 py-3">
+                                    <h2 class="text-center fw-semibold fst-italic">Sonto IV</h2>
+                                    <p class="text-center fw-light">EP<br/>Released: April 22, 2020</p>
+                                </div>
+                                <div class="container text-center mb-4">
+                                    <a
+                                    class="btn btn-warning bg-gradient"
+                                    href="https://sontomorio.bandcamp.com/album/sonto-iv"
+                                    role="button"
+                                        >Listen on Bandcamp</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/music/5.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="The Freeway"
+                                />
+                                <div id="info-card" class="card mx-auto my-3 px-5 py-3">
+                                    <h2 class="text-center fw-semibold fst-italic">The Freeway</h2>
+                                    <p class="text-center fw-light">Album<br/>Released: February 27, 2021</p>
+                                </div>
+                                <div class="container text-center mb-4">
+                                    <a
+                                    class="btn btn-warning bg-gradient"
+                                    href="https://sontomorio.bandcamp.com/album/the-freeway"
+                                    role="button"
+                                        >Listen on Bandcamp</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/music/6.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Sonto'olegio"
+                                />
+                                <div id="info-card" class="card mx-auto my-3 px-5 py-3">
+                                    <h2 class="text-center fw-semibold fst-italic">Sonto'olegio</h2>
+                                    <p class="text-center fw-light">Album<br/>Released: December 31, 2022</p>
+                                </div>
+                                <div class="container text-center mb-4">
+                                    <a
+                                    class="btn btn-warning bg-gradient"
+                                    href="https://sontomorio.bandcamp.com/album/sontoolegio"
+                                    role="button"
+                                        >Listen on Bandcamp</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/music/whopper.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Sonto'olegio"
+                                />
+                                <div id="info-card" class="card mx-auto my-3 px-5 py-3">
+                                    <h2 class="text-center fw-semibold fst-italic">Sunset Whopper</h2>
+                                    <p class="text-center fw-light">Single<br/>Released: November 27, 2023</p>
+                                </div>
+                                <div class="container text-center mb-4">
+                                    <a
+                                    class="btn btn-warning bg-gradient"
+                                    href="https://sontomorio.bandcamp.com/track/sunset-whopper"
+                                    role="button"
+                                        >Listen on Bandcamp</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#music-carousel"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#music-carousel"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- place footer here -->
+        <nav class="navbar bg-light pt-3">
+            <div class="container-xxl p-4">
+                © Matthew DeCalzadilla 2024
+            </div>
+        </nav>
+    </footer>
+
+    <!-- Add some padding underneath the navbar
+            equal to the height of the navbar in pixels -->
+    <script type="text/javascript">
+        function addPad() {
+            document.getElementById("navpad").style.height = document.getElementById("navi").offsetHeight + "px";
+        }
+
+        addPad();
+        window.onresize = function() {
+            addPad();
+        }
+    </script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>

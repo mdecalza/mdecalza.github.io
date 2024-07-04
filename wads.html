@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Doom WADs — It's Mateo!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.3.3 -->
+    <link
+        href="build/main.css"
+        rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: var(--bs-danger);
+        }
+
+        #intro::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(64, 15, 30, 0.7);
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--bs-danger));
+            z-index: -1;
+        }
+
+        video {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        #info-card {
+            max-width: 42rem;
+        }
+
+        #date-card {
+            max-width: 18rem;
+        }
+
+        #mainbody {
+            background-image: linear-gradient(to left, rgba(0,0,0,0), var(--bs-danger) 125%);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <header>
+            <!-- place navbar here -->
+            <!-- Nav tabs -->
+            <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
+                <div class="container-xxl">
+                    <!-- Site brand -->
+                    <a class="navbar-brand fw-bold px-5" href="index.html">
+                        <img src="img/landing/mateo.png" style="width:20rem;"/>
+                    </a>
+    
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <!-- Websites page link 
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Websites</a>
+                            </li>-->
+    
+                            <!-- Video Games page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="wads.html">Video Games</a>
+                            </li>
+    
+                            <!-- Art page link 
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Art</a>
+                            </li>-->
+    
+                            <!-- Music page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
+                            </li>
+
+                            <!-- Video Games page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="citygame.html">City Builder '24</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- Padding for navbar -->
+            <div id="navpad" class="bg-danger"></div>
+        </header>
+    <body>
+        <!-- Main page body container-->
+        <div id="mainbody">
+            <!-- Intro section -->
+            <div id="intro" class="py-5">
+                <video src="img/intercep3/1.mp4" autoplay loop muted></video>
+
+                <!-- Page info -->
+                <div id="info-card" class="card rounded bg-light shadow px-5 py-3 mx-auto mt-3 mb-5">
+                    <h4 class="text-center fw-semibold pt-3 pb-1">Doom WADs</h4>
+                    <p class="fw-light pb-1">
+                        Over the years, I've designed many custom levels for the classic video game, <i>Doom.</i> Here is a list of my most notable <i>Doom</i> creations—or those that I had a large part in creating.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Works section -->
+            <div class="container-xxl">
+                <!-- Interception III section -->
+                <div class="row pb-5">
+                    <!-- Interception III: logo -->
+                    <div class="container mt-3">
+                        <img
+                            src="img/intercep3/intercep3-title.png"
+                            class="d-block mx-auto py-1 img-fluid"
+                            alt="Interception III"
+                        />
+                        <div id="date-card" class="card mx-auto mt-2 bg-light text-center shadow-sm fw-light">
+                            Team Lead, Level Designer, Sound Designer, Graphic Designer (present)
+                        </div>
+                    </div>
+
+                    <!-- Interception III: image carousel -->
+                    <div id="atone-carousel" class="carousel slide mb-1" data-bs-ride="carousel">
+                        <ol class="carousel-indicators p-2">
+                            <button type="button" data-bs-target="#atone-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#atone-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#atone-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#atone-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#atone-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active pt-4 pb-5">
+                                <img
+                                    src="img/intercep3/intercep3-p1.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Station to Station"
+                                />
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/atone/atone-p2.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 10: Filtration Station"
+                                />
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/atone/atone-p3.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 16: Redeployment"
+                                />
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/atone/atone-p4.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 16: Redeployment"
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#atone-carousel"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#atone-carousel"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <!-- Interception III: download links -->
+                    <div class="row mx-auto my-2">
+                        <!-- Doomworld thread link -->
+                        <!-- /idgames page link -->
+                        <div class="col text-center">
+                            <a
+                                class="btn bg-primary bg-gradient shadow-sm mx-2"
+                                href="https://drive.google.com/file/d/1yak2WHMDYnFUaPxlgyNLOzWZkmhdT40P"
+                                role="button"
+                                >Download a Demo (Google Drive)</a
+                            >
+                            <a
+                                class="btn btn-light bg-gradient shadow-sm mx-2"
+                                href="https://www.doomworld.com/forum/topic/145230"
+                                role="button"
+                                >Development Thread (Doomworld.com)</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atonement section -->
+                <div class="row pb-5">
+                    <!-- Atonement: logo -->
+                    <div class="container mt-3">
+                        <img
+                            src="img/atone/atone-title.png"
+                            class="d-block mx-auto py-1 img-fluid"
+                            alt="Atonement"
+                        />
+                        <div id="date-card" class="card mx-auto mt-2 bg-light text-center shadow-sm fw-light">
+                            Author, Level Designer, Graphic Designer (2022)
+                        </div>
+                    </div>
+
+                    <!-- Atonement: image carousel -->
+                    <div id="atone-carousel" class="carousel slide mb-1" data-bs-ride="carousel">
+                        <ol class="carousel-indicators p-2">
+                            <button type="button" data-bs-target="#atone-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#atone-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#atone-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#atone-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#atone-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active pt-4 pb-5">
+                                <img
+                                    src="img/atone/atone-p1.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 1: Teleporter Accident"
+                                />
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/atone/atone-p2.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 10: Filtration Station"
+                                />
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/atone/atone-p3.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 16: Redeployment"
+                                />
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/atone/atone-p4.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 16: Redeployment"
+                                />
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/atone/atone-p5.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 32: Doom Inc."
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#atone-carousel"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#atone-carousel"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <!-- Atonement: quote -->
+                    <div class="card mb-4 bg-light shadow">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0 p-2">
+                                <p>"Variety is the order of the day here, in contrast to the tiring uniformity that so often afflicts one-man megawads: from tiny minimaps to grand non-linear adventures, martian bases to gothic castles, casual basecrawlers to slaughterlite bloodbaths, this set has it all."</p>
+                                <footer class="blockquote-footer">
+                                    <a href="https://www.doomworld.com/cacowards/2022/22for22/"
+                                        >Omniarch</a
+                                    > ‒
+                                    <cite title="Source title">2022 Cacowards: "22 More For 2022," doomworld.com</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Atonement: download links -->
+                    <div class="row mx-auto my-2">
+                        <!-- Direct download link -->
+                        <!-- /idgames page link -->
+                        <div class="col text-center">
+                            <a
+                                class="btn bg-primary bg-gradient shadow-sm mx-2"
+                                href="https://www.gamers.org/pub/idgames/levels/doom2/megawads/atone.zip"
+                                role="button"
+                                >Download (5.4 MB)</a
+                            >
+                            <a
+                                class="btn btn-light bg-gradient shadow-sm mx-2"
+                                href="https://www.doomworld.com/idgames/levels/doom2/megawads/atone"
+                                role="button"
+                                >/idgames Archive</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interception II section -->
+                <div class="row pb-5">
+                    <!-- Interception II: logo -->
+                    <div class="container-fluid mt-3">
+                        <img
+                            src="img/intercep2/intercep2-title.png"
+                            class="d-block mx-auto py-1 img-fluid"
+                            alt="Interception II"
+                        />
+                        <div id="date-card" class="card mx-auto mt-2 bg-light text-center shadow-sm fw-light">
+                            Team Lead, Level Designer, Graphic Designer (2020)
+                        </div>
+                    </div>
+
+                    <!-- Interception II: image carousel -->
+                    <div id="intercep2-carousel" class="carousel slide mb-1" data-bs-ride="carousel">
+                        <ol class="carousel-indicators p-2">
+                            <button type="button" data-bs-target="#intercep2-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#intercep2-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#intercep2-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active pt-4 pb-5">
+                                <img
+                                    src="img/intercep2/intercep2-p1.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 10: Eldritch Apparitions"
+                                />
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/intercep2/intercep2-p2.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 12: Deep Space Mine"
+                                />
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/intercep2/intercep2-p3.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 22: System Corruption"
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#intercep2-carousel"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#intercep2-carousel"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+
+                    <!-- Interception II: quote -->
+                    <div class="card mb-4 bg-light shadow">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0 p-2">
+                                <p>"Enjoying myself so much on Interception 2 was quite a revelation, as I usually struggle with large maps and prefer shorter adventures. The quality of the gameplay and the theme kept me engaged beyond expectation [...] the megaWAD offers many creations to be astonished at, and solid Doom gameplay with contemporary graphics and effects."</p>
+                                <footer class="blockquote-footer">
+                                    <a href="https://www.doomworld.com/forum/post/2421738"
+                                        >Book Lord</a
+                                    > ‒
+                                    <cite title="Source title">"The DWmegawad Club plays: Interception II", p. 14, doomworld.com</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Interception II: download links -->
+                    <div class="row mx-auto my-2">
+                        <!-- Direct download link -->
+                        <div class="col">
+                            <a
+                                class="btn bg-primary bg-gradient float-end shadow-sm"
+                                href="https://www.gamers.org/pub/idgames/levels/doom2/Ports/megawads/intercep2.zip"
+                                role="button"
+                                >Download (14.7 MB)</a
+                            >
+                        </div>
+                        
+                        <!-- /idgames page link -->
+                        <div class="col">
+                            <a
+                                class="btn btn-light bg-gradient float-start shadow-sm"
+                                href="https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/intercep2"
+                                role="button"
+                                >/idgames Archive</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interception section -->
+                <div class="row pb-5">
+                    <!-- Interception: logo -->
+                    <div class="container-fluid mt-3">
+                        <img
+                            src="img/intercep/intercep-title.png"
+                            class="d-block mx-auto py-1 img-fluid"
+                            alt="Interception"
+                        />
+                        <div id="date-card" class="card mx-auto mt-2 bg-light text-center shadow-sm fw-light">
+                            Team Lead, Level Designer (2013)
+                        </div>
+                    </div>
+
+                    <!-- Interception: image carousel -->
+                    <div id="intercep-carousel" class="carousel slide mb-1" data-bs-ride="carousel">
+                        <ol class="carousel-indicators p-2">
+                            <button type="button" data-bs-target="#intercep-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#intercep-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#intercep-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active pt-4 pb-5">
+                                <img
+                                    src="img/intercep/intercep-p1.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 2: Research Facility"
+                                />
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/intercep/intercep-p2.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 7: Floodgates"
+                                />
+                            </div>
+                            <div class="carousel-item pt-4 pb-5">
+                                <img
+                                    src="img/intercep/intercep-p3.png"
+                                    class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                    alt="Level 20: Beta Tower"
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#intercep-carousel"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#intercep-carousel"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Interception: quote -->
+                    <div class="card mb-4 bg-light shadow">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0 p-2">
+                                <p>"The thing that sticks with me about Interception? It's mapping which lends itself between nature settings, brown brick fortresses, techbases and bloody steel hell maps, all of them feel like they were crafted to flow from one to the next, the maps neither too small nor too big and well placed ammo and health.
+
+                                    [...] Interception is among my most played wads, It keeps speaking to me, honestly, as a one of kind megawad that has everything I expect in a megawad."
+                                </p>
+                                <footer class="blockquote-footer">
+                                    <a href="https://www.youtube.com/watch?v=KBlnPDBgQcs"
+                                        >Andrew Mullens</a
+                                    > ‒
+                                    <cite title="Source title">"Doom Wads/Mods #490:Interception," youtube.com</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Interception: download links -->
+                    <div class="row mx-auto my-2">
+                        <!-- Direct download link -->
+                        <div class="col">
+                            <a
+                                class="btn bg-primary bg-gradient float-end shadow-sm"
+                                href="https://www.gamers.org/pub/idgames/levels/doom2/megawads/intercep.zip"
+                                role="button"
+                                >Download (3.7 MB)</a
+                            >
+                        </div>
+                        
+                        <!-- /idgames page link -->
+                        <div class="col">
+                            <a
+                                class="btn btn-light bg-gradient float-start shadow-sm"
+                                href="https://www.doomworld.com/idgames/levels/doom2/megawads/intercep"
+                                role="button"
+                                >/idgames Archive</a
+                            >
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- place footer here -->
+        <nav class="navbar bg-light pt-3">
+            <div class="container-xxl p-4">
+                © Matthew DeCalzadilla 2024
+            </div>
+        </nav>
+    </footer>
+
+    <!-- Add some padding underneath the navbar
+            equal to the height of the navbar in pixels -->
+    <script type="text/javascript">
+        function addPad() {
+            document.getElementById("navpad").style.height = document.getElementById("navi").offsetHeight + "px";
+        }
+
+        addPad();
+        window.onresize = function() {
+            addPad();
+        }
+    </script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        City Builder '24
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Modified Bootstrap CSS v5.3.3 -->
+    <link href="build/main.css" rel="stylesheet"/>
+
+    <!-- Extra Custom CSS Stylings -->
+    <style>
+        #main-content {
+            background-image: linear-gradient(rgba(56, 56, 56, 0.975), rgb(19, 20, 27));
+            position: relative;
+        }
+
+        #bg-art {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        #title-card {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 36pt;
+            max-width: 24rem;
+            background-image: linear-gradient(rgba(0, 0, 0, 0), steelblue);
+        }
+
+        #canvas-container {
+            width: fit-content;
+        }
+
+        #game-window {
+            background-image: linear-gradient(rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 1));
+        }
+
+        #budget-container {
+            background-color: steelblue;
+        }
+
+        #tools-container {
+            background-image: linear-gradient(steelblue, rgba(0, 0, 0, 0));
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <header>
+        <!-- place navbar here -->
+        <!-- Nav tabs -->
+        <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
+            <div class="container-xxl">
+                <!-- Site brand -->
+                <a class="navbar-brand fw-bold px-5" href="index.html">
+                    <img src="img/landing/mateo.png" style="width:20rem;"/>
+                </a>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <!-- Websites page link
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Websites</a>
+                        </li> -->
+
+                        <!-- Video Games page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="wads.html">Video Games</a>
+                        </li>
+
+                        <!-- Art page link
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Art</a>
+                        </li> -->
+
+                        <!-- Music page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
+                        </li>
+
+                        <!-- Video Games page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="citygame.html">City Builder '24</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Padding for navbar -->
+        <div id="navpad" class="bg-danger"></div>
+    </header>
+
+    <main id="main-content" class="py-4 rounded-bottom">
+        <img id="bg-art" src="img/citygame/nyc.jpg" class="rounded-bottom border border-dark"/>
+
+        <div id="title-card" class="mx-auto pt-1 pb-2 text-center rounded fw-semibold fs-3 text-primary">
+            City Builder '24
+        </div>
+        <div id="canvas-container" class="mx-auto">
+            <canvas id="game-window" class="rounded border border-dark border-5 mt-3 mb-4 mx-auto"></canvas>
+        </div>
+        <div id="budget-container" class="container-xxl p-2 rounded-top text-center text-white">
+        </div>
+        <div id="tools-container" class="container-xxl px-4 pt-2 pb-5">
+            <a class="btn btn-danger bg-gradient text-light" role="button" onclick="maintool.switchTool('bulldozer');">
+                Bulldozer
+            </a>
+            <a class="btn btn-dark bg-gradient" role="button" onclick="maintool.switchTool('road');">
+                Road
+            </a>
+            <a class="btn btn-primary bg-gradient" role="button" onclick="maintool.switchTool('water');">
+                Water
+            </a>
+            <a class="btn btn-success bg-gradient" role="button" onclick="maintool.switchTool('rzone');">
+                Residential Zone
+            </a>
+            <a class="btn btn-primary bg-gradient" role="button" onclick="maintool.switchTool('czone');">
+                Commercial Zone
+            </a>
+            <a class="btn btn-secondary bg-gradient" role="button" onclick="maintool.switchTool('smiley');">
+                Smiley Statue
+            </a>
+            <a class="btn btn-light bg-gradient float-end" role="button" onclick="resetCamera();">
+                Reset Camera
+            </a>
+        </div>
+    </main>
+
+    <footer class="container-xxl fixed-bottom text-white text-opacity-25 text-center">
+        © Matthew DeCalzadilla 2024
+    </footer>
+
+    <!-- Add some padding underneath the navbar
+    equal to the height of the navbar in pixels -->
+    <script type="text/javascript">
+        function addPad() {
+            document.getElementById("navpad").style.height = document.getElementById("navi").offsetHeight + "px";
+        }
+
+        addPad();
+        window.onresize = function() {
+            addPad();
+        }
+    </script>
+
+    <!-- Game Script -->
+    <script src="js/citygame.js">
+    </script>
+</body>
+</html>
