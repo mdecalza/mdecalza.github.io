@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>
-        City Builder '24
+        City Builder '24 — It's Mateo!
     </title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
@@ -19,11 +19,11 @@
     <!-- Extra Custom CSS Stylings -->
     <style>
         #main-content {
-            background-image: linear-gradient(rgba(56, 56, 56, 0.975), rgb(19, 20, 27));
+            background-image: linear-gradient(rgba(56, 56, 56, 0.95), rgb(19, 20, 27));
             position: relative;
         }
 
-        #bg-art {
+        video {
             position: absolute;
             top: 0;
             left: 0;
@@ -37,7 +37,7 @@
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 36pt;
             max-width: 24rem;
-            background-image: linear-gradient(rgba(0, 0, 0, 0), steelblue);
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(50, 50, 50, 1));
         }
 
         #canvas-container {
@@ -49,11 +49,11 @@
         }
 
         #budget-container {
-            background-color: steelblue;
+            background-color: rgba(50, 50, 50, 1);
         }
 
         #tools-container {
-            background-image: linear-gradient(steelblue, rgba(0, 0, 0, 0));
+            background-image: linear-gradient(rgba(50, 50, 50, 1), rgba(0, 0, 0, 0));
         }
     </style>
 </head>
@@ -70,10 +70,10 @@
 
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                        <!-- Websites page link
+                        <!-- Websites page link -->
                         <li class="nav-item">
-                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Websites</a>
-                        </li> -->
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
+                        </li>
 
                         <!-- Video Games page link -->
                         <li class="nav-item">
@@ -82,7 +82,7 @@
 
                         <!-- Art page link
                         <li class="nav-item">
-                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Art</a>
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="art.html">Art</a>
                         </li> -->
 
                         <!-- Music page link -->
@@ -104,9 +104,9 @@
     </header>
 
     <main id="main-content" class="py-4 rounded-bottom">
-        <img id="bg-art" src="img/citygame/nyc.jpg" class="rounded-bottom border border-dark"/>
+        <video src="img/citygame/City.mp4" playsinline autoplay loop muted preload="auto"></video>
 
-        <div id="title-card" class="mx-auto pt-1 pb-2 text-center rounded fw-semibold fs-3 text-primary">
+        <div id="title-card" class="mx-auto pt-1 pb-2 text-center rounded fw-semibold fs-3 text-light">
             City Builder '24
         </div>
         <div id="canvas-container" class="mx-auto">
@@ -139,7 +139,7 @@
         </div>
     </main>
 
-    <footer class="container-xxl fixed-bottom text-white text-opacity-25 text-center">
+    <footer class="container-xxl fixed-bottom text-white text-opacity-25 text-center pb-3">
         © Matthew DeCalzadilla 2024
     </footer>
 
