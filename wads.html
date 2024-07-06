@@ -52,7 +52,7 @@
             max-width: 18rem;
         }
 
-        #mainbody {
+        #body {
             background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(116, 8, 8, 0.808));
         }
     </style>
@@ -60,52 +60,52 @@
 
 <body>
     <header>
-        <header>
-            <!-- place navbar here -->
-            <!-- Nav tabs -->
-            <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
-                <div class="container-xxl">
-                    <!-- Site brand -->
-                    <a class="navbar-brand fw-bold px-5" href="index.html">
-                        <img src="img/landing/mateo.png" style="width:20rem;"/>
-                    </a>
-    
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <!-- Websites page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
-                            </li>
-    
-                            <!-- Video Games page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="wads.html">Video Games</a>
-                            </li>
-    
-                            <!-- Art page link 
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Art</a>
-                            </li>-->
-    
-                            <!-- Music page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
-                            </li>
+        <!-- place navbar here -->
+        <!-- Nav tabs -->
+        <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
+            <div class="container-xxl">
+                <!-- Site brand -->
+                <a class="navbar-brand fw-bold px-5" href="index.html">
+                    <img src="img/landing/mateo.png" style="width:20rem;"/>
+                </a>
 
-                            <!-- Video Games page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="citygame.html">City Builder '24</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <!-- Websites page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
+                        </li>
+
+                        <!-- Video Games page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="wads.html">Video Games</a>
+                        </li>
+
+                        <!-- Art page link 
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Art</a>
+                        </li>-->
+
+                        <!-- Music page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
+                        </li>
+
+                        <!-- Video Games page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="citygame.html">City Builder '24</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-    
-            <!-- Padding for navbar -->
-            <div id="navpad" class="bg-danger"></div>
-        </header>
+            </div>
+        </nav>
+
+        <!-- Padding for navbar -->
+        <div id="navpad" class="bg-danger"></div>
+    </header>
+
     <!-- Main page body container-->
-    <section id="mainbody">
+    <section id="body">
         <!-- Intro section -->
         <div id="intro" class="py-5">
             <video src="img/intercep3/1.mp4" playsinline autoplay loop muted preload="auto"></video>
@@ -500,15 +500,7 @@
 
     <!-- Add some padding underneath the navbar
             equal to the height of the navbar in pixels -->
-    <script type="text/javascript">
-        function addPad() {
-            document.getElementById("navpad").style.height = document.getElementById("navi").offsetHeight + "px";
-        }
-
-        addPad();
-        window.onresize = function() {
-            addPad();
-        }
+    <script src="js/tidyElements.js">
     </script>
 
     <!-- Bootstrap JavaScript Libraries -->
