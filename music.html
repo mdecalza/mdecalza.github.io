@@ -71,7 +71,7 @@
     
                             <!-- Video Games page link -->
                             <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="wads.html">Video Games</a>
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="games.html">Video Games</a>
                             </li>
     
                             <!-- Art page link 
@@ -82,11 +82,6 @@
                             <!-- Music page link -->
                             <li class="nav-item">
                                 <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
-                            </li>
-
-                            <!-- Video Games page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="citygame.html">City Builder '24</a>
                             </li>
                         </ul>
                     </div>
@@ -99,15 +94,17 @@
     
     <section>
         <!-- Main page body container-->
-        <div id="body" class="pt-5">
+        <div id="body" class="pt-1">
             <img id="bg-art" src="img/music/88bpm.png"/>
 
             <!-- Page info -->
-            <div id="info-card" class="card rounded bg-light shadow px-5 py-3 mx-auto mt-3 mb-5">
-                <h4 class="text-center fw-semibold pt-3 pb-1">Music</h4>
-                <p class="fw-light pb-1">
-                    I've made a ton of music over the years. Here you can find a catalogue of all my released music, including three albums, two EPs, and two singles.
-                </p>
+            <div id="intro" class="py-5">
+                <div id="info-card" class="card rounded bg-light shadow px-5 py-3 mx-auto mt-3 mb-5">
+                    <h4 class="text-center fw-semibold pt-3 pb-1">Music</h4>
+                    <p class="fw-light pb-1">
+                        I've made a ton of music over the years. Here you can find a catalogue of all my released music, including three albums, two EPs, and two singles.
+                    </p>
+                </div>
             </div>
 
             <div class="container-xxl">
@@ -292,15 +289,7 @@
 
     <!-- Add some padding underneath the navbar
     equal to the height of the navbar in pixels -->
-    <script type="text/javascript">
-        function addPad() {
-            document.getElementById("navpad").style.height = document.getElementById("navi").offsetHeight + "px";
-        }
-
-        addPad();
-        window.onresize = function() {
-            addPad();
-        }
+    <script src="js/tidyElements.js">
     </script>
 
     <!-- Bootstrap JavaScript Libraries -->
