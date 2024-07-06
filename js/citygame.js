@@ -561,19 +561,19 @@ class Tile {
 
 class Water extends Tile {
     constructor(position) {
-        super(position, 50, 0, 0.25, 0, "img/citygame/t_water.png");
+        super(position, 50, 0, 0.25, 0, "img/games/citygame/t_water.png");
     }
 }
 
 class Grass extends Tile {
     constructor(position) {
-        super(position, 0, 0, 0, 0, "img/citygame/t_grass.png");
+        super(position, 0, 0, 0, 0, "img/games/citygame/t_grass.png");
     }
 }
 
 class Dirt extends Tile {
     constructor(position) {
-        super(position, 10, 0, 0, 0, "img/citygame/t_dirt.png");
+        super(position, 10, 0, 0, 0, "img/games/citygame/t_dirt.png");
     }
 
     update(budget) {
@@ -585,7 +585,7 @@ class Dirt extends Tile {
 
 class SmallOffice extends Tile {
     constructor(position) {
-        super(position, 0, 25, 0.015, 0.0025, "img/citygame/t_mediumoffice.png");
+        super(position, 0, 25, 0.015, 0.0025, "img/games/citygame/t_mediumoffice.png");
     }
 
     checkEvolution() {
@@ -601,7 +601,7 @@ class SmallOffice extends Tile {
 
 class MediumOffice extends Tile {
     constructor(position) {
-        super(position, 0, 50, 0.03, 0.005, "img/citygame/t_mediumoffice.png");
+        super(position, 0, 50, 0.03, 0.005, "img/games/citygame/t_mediumoffice.png");
     }
 
     checkEvolution() {
@@ -617,7 +617,7 @@ class MediumOffice extends Tile {
 
 class LargeOffice extends Tile {
     constructor(position) {
-        super(position, 0, 75, 0.06, 0.015, "img/citygame/t_mediumoffice.png");
+        super(position, 0, 75, 0.06, 0.015, "img/games/citygame/t_mediumoffice.png");
     }
 
     checkEvolution() {
@@ -633,25 +633,25 @@ class LargeOffice extends Tile {
 
 class SuperOffice extends Tile {
     constructor(position) {
-        super(position, 0, 100, 0.085, 0.0225, "img/citygame/t_mediumoffice.png");
+        super(position, 0, 100, 0.085, 0.0225, "img/games/citygame/t_mediumoffice.png");
     }
 }
 
 class House extends Tile {
     constructor(position) {
-        super(position, 0, 35, 0.0225, 0.001, "img/citygame/t_house.png");
+        super(position, 0, 35, 0.0225, 0.001, "img/games/citygame/t_house.png");
     }
 }
 
 class Smiley extends Tile {
     constructor(position) {
-        super(position, 100000, 400, 0.01, -0.05, "img/citygame/t_smiley.png");
+        super(position, 100000, 400, 0.01, -0.05, "img/games/citygame/t_smiley.png");
     }
 }
 
 class Road extends Tile {
     constructor(position) {
-        super(position, 20, 0, 0, 0.005, "img/citygame/t_road.png");
+        super(position, 20, 0, 0, 0.005, "img/games/citygame/t_road.png");
     }
 }
 
@@ -671,7 +671,7 @@ class Zone extends Tile {
 
 class ResidentialZone extends Zone {
     constructor(position) {
-        super(position, 250, 0, 0, 0.02, "img/citygame/t_rzone.png");
+        super(position, 250, 0, 0, 0.02, "img/games/citygame/t_rzone.png");
     }
 
     update(budget) {
@@ -683,7 +683,7 @@ class ResidentialZone extends Zone {
 
 class CommercialZone extends Zone {
     constructor(position) {
-        super(position, 300, 0, 0, 0.05, "img/citygame/t_czone.png");
+        super(position, 300, 0, 0, 0.05, "img/games/citygame/t_czone.png");
     }
 
     update(budget) {
