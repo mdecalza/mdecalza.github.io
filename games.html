@@ -1,15 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-bs-theme="auto">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="build/main.css">
     <title>
-        Video Games
+        Video Games — It's Mateo!
     </title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <style>
+        #body {
+            background-color: rgb(4, 6, 20);
+        }
+
+        #topside {
+            background-image: linear-gradient(to left, rgba(0,0,0,0), rgb(6, 9, 26));
+            color: rgb(255, 255, 255);
+            position: relative;
+        }
+
+        #topside::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(2, 2, 26, 0.829);
+            z-index: -1;
+        }
+
+        #button-col {
+            width: 64rem;
+        }
+
+        #footer {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(4, 6, 20));
+            width: 100%;
+            height: 100%;
+        }
+
+        #bg-art {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        #info-card {
+            max-width: 23rem;
+        }
+    </style>
 </head>
-<body>
-    <h1>Browser Games</h1>
-        <a class="nav-link active" href="citygame.html">City Builder '24</a>
-    <h1>Mods</h1>
-        <a class="nav-link active" href="wads.html">Doom WADs</a>
+
+<body id="body">
+    <section id="topside">
+        <img id="bg-art" src="img/games/games-bg.png"/>
+        <header>
+            <!-- place navbar here -->
+            <!-- Nav tabs -->
+            <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
+                <div class="container-xxl">
+                    <!-- Site brand -->
+                    <a class="navbar-brand fw-bold px-5" href="index.html">
+                        <img src="img/landing/mateo.png" style="width:20rem;"/>
+                    </a>
+    
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <!-- Websites page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
+                            </li>
+    
+                            <!-- Video Games page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="games.html">Video Games</a>
+                            </li>
+    
+                            <!-- Art page link 
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Art</a>
+                            </li>-->
+    
+                            <!-- Music page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- Padding for navbar -->
+            <div id="navpad"></div>
+        </header>
+
+        <div class="container-xxl text-center text-light py-5">
+            <h1 class="pt-2 pb-4">
+                Video Games
+            </h1>
+            <hr>
+            <div class="row pt-3">
+                <div class="col">
+                    <h1>
+                        Browser Games
+                    </h1>
+                    <div id="info-card" class="container-sm card mt-5 shadow-sm">
+                        <a class="nav-link" href="citygame.html">
+                            <h4 class="pt-3">
+                                City Builder '24
+                            </h4>
+                            <img src="img/games/citygame-thumb.png" class="pt-1 pb-3 mx-auto rounded"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h1>
+                        Mods
+                    </h1>
+                    <div id="info-card" class="container-sm card mt-5 shadow-sm">
+                        <a class="nav-link" href="wads.html">
+                            <h4 class="pt-3">
+                                Doom WADs
+                            </h4>
+                            <img src="img/games/wads-thumb.png" class="pt-1 pb-3 mx-auto rounded"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <!-- place footer here -->
+            <div class="container-xxl mt-3 p-4 text-center">
+                © Matthew DeCalzadilla 2024
+            </div>
+        </footer>
+    </section>
+
+    <!-- Add some padding underneath the navbar
+    equal to the height of the navbar in pixels -->
+    <script type="text/javascript">
+        function addPad() {
+            document.getElementById("navpad").style.height = document.getElementById("navi").offsetHeight + "px";
+        }
+
+        addPad();
+        window.onresize = function() {
+            addPad();
+        }
+    </script>
 </body>
 </html>
