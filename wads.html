@@ -52,7 +52,7 @@
             max-width: 18rem;
         }
 
-        #mainbody {
+        #body {
             background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(116, 8, 8, 0.808));
         }
     </style>
@@ -60,58 +60,53 @@
 
 <body>
     <header>
-        <header>
-            <!-- place navbar here -->
-            <!-- Nav tabs -->
-            <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
-                <div class="container-xxl">
-                    <!-- Site brand -->
-                    <a class="navbar-brand fw-bold px-5" href="index.html">
-                        <img src="img/landing/mateo.png" style="width:20rem;"/>
-                    </a>
-    
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <!-- Websites page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
-                            </li>
-    
-                            <!-- Video Games page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="wads.html">Video Games</a>
-                            </li>
-    
-                            <!-- Art page link 
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Art</a>
-                            </li>-->
-    
-                            <!-- Music page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
-                            </li>
+        <!-- place navbar here -->
+        <!-- Nav tabs -->
+        <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
+            <div class="container-xxl">
+                <!-- Site brand -->
+                <a class="navbar-brand fw-bold px-5" href="index.html">
+                    <img src="img/landing/mateo.png" style="max-width:20rem;"/>
+                </a>
 
-                            <!-- Video Games page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="citygame.html">City Builder '24</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <!-- Websites page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
+                        </li>
+
+                        <!-- Video Games page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="games.html">Video Games</a>
+                        </li>
+
+                        <!-- Art page link 
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Art</a>
+                        </li>-->
+
+                        <!-- Music page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-    
-            <!-- Padding for navbar -->
-            <div id="navpad" class="bg-danger"></div>
-        </header>
+            </div>
+        </nav>
+
+        <!-- Padding for navbar -->
+        <div id="navpad" class="bg-danger"></div>
+    </header>
+
     <!-- Main page body container-->
-    <section id="mainbody">
+    <section id="body">
         <!-- Intro section -->
         <div id="intro" class="py-5">
-            <video src="img/intercep3/1.mp4" playsinline autoplay loop muted preload="auto"></video>
+            <video src="img/wads/intercep3/1.mp4" playsinline autoplay loop muted preload="auto"></video>
 
             <!-- Page info -->
-            <div id="info-card" class="card rounded bg-light shadow px-5 py-3 mx-auto mt-3 mb-5">
+            <div id="info-card" class="card rounded bg-light shadow px-5 py-3 mx-auto mt-3 mb-2">
                 <h4 class="text-center fw-semibold pt-3 pb-1">Doom WADs</h4>
                 <p class="fw-light pb-1">
                     Over the years, I've designed many custom levels for the classic video game, <i>Doom.</i> Here is a list of my most notable <i>Doom</i> creations—or those that I had a large part in creating.
@@ -126,12 +121,12 @@
                 <!-- Interception III: logo -->
                 <div class="container mt-3">
                     <img
-                        src="img/intercep3/intercep3-title.png"
+                        src="img/wads/intercep3/intercep3-title.png"
                         class="d-block mx-auto py-1 img-fluid"
                         alt="Interception III"
                     />
                     <div id="date-card" class="card mx-auto mt-2 bg-light text-center shadow-sm fw-light">
-                        Project Leader, Level Designer, Programmer (present)
+                        Project Leader, Level Designer, Programmer (in-development)
                     </div>
                 </div>
 
@@ -140,7 +135,7 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active pt-4 pb-5">
                             <img
-                                src="img/intercep3/intercep3-p1.png"
+                                src="img/wads/intercep3/intercep3-p1.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Station to Station"
                             />
@@ -154,6 +149,12 @@
                     <!-- /idgames page link -->
                     <div class="col text-center">
                         <a
+                            class="btn btn-primary bg-gradient shadow-sm mx-2"
+                            href="https://drive.google.com/file/d/1Ju4pV2AwSs3ibNQ26zlre6hC5nLgevTT"
+                            role="button"
+                            >Download the latest beta! (4.3 MB)</a
+                        >
+                        <a
                             class="btn btn-light bg-gradient shadow-sm mx-2"
                             href="https://www.doomworld.com/forum/topic/145230"
                             role="button"
@@ -163,17 +164,65 @@
                 </div>
             </div>
 
+            <!-- Embryo section -->
+            <div class="row pb-5">
+                <!-- Embryo: logo -->
+                <div class="container mt-3">
+                    <img
+                        src="img/wads/embryo/embryo-title.png"
+                        class="d-block mx-auto py-1 img-fluid"
+                        alt="Embryo"
+                    />
+                    <div id="date-card" class="card mx-auto mt-2 bg-light text-center shadow-sm fw-light">
+                        Project Leader, Graphic Designer, Level Designer (in-development)
+                    </div>
+                </div>
+
+                <!-- Embryo: image carousel -->
+                <div id="embryo-carousel" class="carousel slide mb-1" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active pt-4 pb-5">
+                            <img
+                                src="img/wads/embryo/embryo-p1.png"
+                                class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
+                                alt="Level 1: Moment of Conception"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Embryo: download links -->
+                <div class="row mx-auto my-2">
+                    <!-- Direct download link -->
+                    <!-- /idgames page link -->
+                    <div class="col text-center">
+                        <a
+                            class="btn btn-primary bg-gradient shadow-sm mx-2"
+                            href="https://drive.google.com/file/d/14UflRaCn1tI1i3X9X7VEPWiL9u69PLzA"
+                            role="button"
+                            >Download the latest beta! (4.8 MB)</a
+                        >
+                        <a
+                            class="btn btn-light bg-gradient shadow-sm mx-2"
+                            href="https://www.doomworld.com/forum/topic/139593"
+                            role="button"
+                            >Development Thread (Doomworld.com)</a
+                        >
+                    </div>
+                </div>
+            </div>
+            
             <!-- Atonement section -->
             <div class="row pb-5">
                 <!-- Atonement: logo -->
                 <div class="container mt-3">
                     <img
-                        src="img/atone/atone-title.png"
+                        src="img/wads/atone/atone-title.png"
                         class="d-block mx-auto py-1 img-fluid"
                         alt="Atonement"
                     />
                     <div id="date-card" class="card mx-auto mt-2 bg-light text-center shadow-sm fw-light">
-                        Author, Level Designer (2022)
+                        Author, Level Designer, Graphic Designer (2022)
                     </div>
                 </div>
 
@@ -189,35 +238,35 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active pt-4 pb-5">
                             <img
-                                src="img/atone/atone-p1.png"
+                                src="img/wads/atone/atone-p1.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Level 1: Teleporter Accident"
                             />
                         </div>
                         <div class="carousel-item pt-4 pb-5">
                             <img
-                                src="img/atone/atone-p2.png"
+                                src="img/wads/atone/atone-p2.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Level 10: Filtration Station"
                             />
                         </div>
                         <div class="carousel-item pt-4 pb-5">
                             <img
-                                src="img/atone/atone-p3.png"
+                                src="img/wads/atone/atone-p3.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Level 16: Redeployment"
                             />
                         </div>
                         <div class="carousel-item pt-4 pb-5">
                             <img
-                                src="img/atone/atone-p4.png"
+                                src="img/wads/atone/atone-p4.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Level 16: Redeployment"
                             />
                         </div>
                         <div class="carousel-item pt-4 pb-5">
                             <img
-                                src="img/atone/atone-p5.png"
+                                src="img/wads/atone/atone-p5.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Level 32: Doom Inc."
                             />
@@ -264,7 +313,7 @@
                     <!-- /idgames page link -->
                     <div class="col text-center">
                         <a
-                            class="btn bg-primary bg-gradient shadow-sm mx-2"
+                            class="btn btn-primary bg-gradient shadow-sm mx-2"
                             href="https://www.gamers.org/pub/idgames/levels/doom2/megawads/atone.zip"
                             role="button"
                             >Download (5.4 MB)</a
@@ -284,7 +333,7 @@
                 <!-- Interception II: logo -->
                 <div class="container-fluid mt-3">
                     <img
-                        src="img/intercep2/intercep2-title.png"
+                        src="img/wads/intercep2/intercep2-title.png"
                         class="d-block mx-auto py-1 img-fluid"
                         alt="Interception II"
                     />
@@ -303,21 +352,21 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active pt-4 pb-5">
                             <img
-                                src="img/intercep2/intercep2-p1.png"
+                                src="img/wads/intercep2/intercep2-p1.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Level 10: Eldritch Apparitions"
                             />
                         </div>
                         <div class="carousel-item pt-4 pb-5">
                             <img
-                                src="img/intercep2/intercep2-p2.png"
+                                src="img/wads/intercep2/intercep2-p2.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Level 12: Deep Space Mine"
                             />
                         </div>
                         <div class="carousel-item pt-4 pb-5">
                             <img
-                                src="img/intercep2/intercep2-p3.png"
+                                src="img/wads/intercep2/intercep2-p3.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Level 22: System Corruption"
                             />
@@ -365,7 +414,7 @@
                     <!-- Direct download link -->
                     <div class="col">
                         <a
-                            class="btn bg-primary bg-gradient float-end shadow-sm"
+                            class="btn btn-primary bg-gradient float-end shadow-sm"
                             href="https://www.gamers.org/pub/idgames/levels/doom2/Ports/megawads/intercep2.zip"
                             role="button"
                             >Download (14.7 MB)</a
@@ -389,7 +438,7 @@
                 <!-- Interception: logo -->
                 <div class="container-fluid mt-3">
                     <img
-                        src="img/intercep/intercep-title.png"
+                        src="img/wads/intercep/intercep-title.png"
                         class="d-block mx-auto py-1 img-fluid"
                         alt="Interception"
                     />
@@ -408,21 +457,21 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active pt-4 pb-5">
                             <img
-                                src="img/intercep/intercep-p1.png"
+                                src="img/wads/intercep/intercep-p1.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Level 2: Research Facility"
                             />
                         </div>
                         <div class="carousel-item pt-4 pb-5">
                             <img
-                                src="img/intercep/intercep-p2.png"
+                                src="img/wads/intercep/intercep-p2.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Level 7: Floodgates"
                             />
                         </div>
                         <div class="carousel-item pt-4 pb-5">
                             <img
-                                src="img/intercep/intercep-p3.png"
+                                src="img/wads/intercep/intercep-p3.png"
                                 class="img-thumbnail bg-light rounded d-block mx-auto img-fluid shadow"
                                 alt="Level 20: Beta Tower"
                             />
@@ -471,7 +520,7 @@
                     <!-- Direct download link -->
                     <div class="col">
                         <a
-                            class="btn bg-primary bg-gradient float-end shadow-sm"
+                            class="btn btn-primary bg-gradient float-end shadow-sm"
                             href="https://www.gamers.org/pub/idgames/levels/doom2/megawads/intercep.zip"
                             role="button"
                             >Download (3.7 MB)</a
@@ -500,15 +549,7 @@
 
     <!-- Add some padding underneath the navbar
             equal to the height of the navbar in pixels -->
-    <script type="text/javascript">
-        function addPadToNav() {
-            document.getElementById("navpad").style.height = document.getElementById("navi").offsetHeight + "px";
-        }
-
-        addPadToNav();
-        window.onresize = function() {
-            addPadToNav();
-        }
+    <script src="js/tidyElements.js">
     </script>
 
     <!-- Bootstrap JavaScript Libraries -->
