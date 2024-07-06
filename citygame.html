@@ -141,13 +141,13 @@
     <!-- Add some padding underneath the navbar
     equal to the height of the navbar in pixels -->
     <script type="text/javascript">
-        function addPad() {
+        function addPadToNav() {
             document.getElementById("navpad").style.height = document.getElementById("navi").offsetHeight + "px";
         }
 
-        addPad();
+        addPadToNav();
         window.onresize = function() {
-            addPad();
+            addPadToNav();
         }
     </script>
 
