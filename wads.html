@@ -55,6 +55,34 @@
         #body {
             background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(116, 8, 8, 0.808));
         }
+
+        #nav-link {
+            width:max-content;
+        }
+
+        div {
+            font-size: clamp(.75rem, 3.25vw, 1rem);
+        }
+
+        p {
+            font-size: clamp(.75rem, 3.25vw, 1rem);
+        }
+
+        a {
+            font-size: clamp(.75rem, 3.25vw, 1rem);
+        }
+
+        h1 {
+            font-size: clamp(1rem, 7vw, 2.75rem);
+        }
+
+        h2 {
+            font-size: clamp(1rem, 5vw, 2rem);
+        }
+
+        h4 {
+            font-size:clamp(1rem, 3vw, 1.5rem);
+        }
     </style>
 </head>
 
@@ -65,30 +93,30 @@
         <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
             <div class="container-xxl">
                 <!-- Site brand -->
-                <a class="navbar-brand fw-bold px-5" href="index.html">
-                    <img src="img/landing/mateo.png" style="max-width:20rem;"/>
+                <a class="navbar-brand fw-bold px-5 mx-auto" href="index.html">
+                    <img src="img/landing/mateo.png" style="width:clamp(1rem, 50vw, 14rem);"/>
                 </a>
 
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <!-- Websites page link -->
                         <li class="nav-item">
-                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
+                            <a id="nav-link" class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
                         </li>
 
                         <!-- Video Games page link -->
                         <li class="nav-item">
-                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="games.html">Video Games</a>
+                            <a id="nav-link" class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="games.html">Video Games</a>
                         </li>
 
                         <!-- Art page link 
                         <li class="nav-item">
-                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Art</a>
+                            <a id="nav-link" class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Art</a>
                         </li>-->
 
                         <!-- Music page link -->
                         <li class="nav-item">
-                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
+                            <a id="nav-link" class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
                         </li>
                     </ul>
                 </div>
