@@ -47,6 +47,34 @@
             object-fit: cover;
             z-index: -2;
         }
+
+        #nav-link {
+            font-size: clamp(.5rem, 2.5vw, 1rem);
+        }
+
+        div {
+            font-size: clamp(.75rem, 3.25vw, 1rem);
+        }
+
+        p {
+            font-size: clamp(.75rem, 3.25vw, 1rem);
+        }
+
+        a {
+            font-size: clamp(.75rem, 3.25vw, 1rem);
+        }
+
+        h1 {
+            font-size: clamp(1rem, 7vw, 2.75rem);
+        }
+
+        h2 {
+            font-size: clamp(1rem, 5vw, 2rem);
+        }
+
+        h4 {
+            font-size:clamp(1rem, 3vw, 1.5rem);
+        }
     </style>
 </head>
 
@@ -57,10 +85,10 @@
             <img src="img/landing/mateowhite.png" class="pt-5 pb-4 container-xxl"/>
         </div>
         <nav class="nav justify-content-center">
-            <a class="nav-link active" href="websites.html">Websites</a>
-            <!-- <a class="nav-link active" href="index.html">Art</a> -->
-            <a class="nav-link active" href="games.html">Video Games</a>
-            <a class="nav-link active" href="music.html">Music</a>
+            <a id="nav-link" class="nav-link active" href="websites.html">Websites</a>
+            <!-- <a id="nav-link" class="nav-link active" href="index.html">Art</a> -->
+            <a id="nav-link" class="nav-link active" href="games.html">Video Games</a>
+            <a id="nav-link" class="nav-link active" href="music.html">Music</a>
         </nav>
         <section id="description">
             <div class="container-xxl text-center py-5">
