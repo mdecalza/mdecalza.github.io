@@ -1,3 +1,5 @@
+/* Copyright 2024 Matthew DeCalzadilla */
+
 /* game canv setup */
 const canv = document.getElementById('game-window');
 const cotx = canv.getContext('2d');
