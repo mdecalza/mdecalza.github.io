@@ -27,16 +27,35 @@
                 background-color: white;
                 width: fit-content;
             }
-            </style>
+
+            #word-card {
+                max-width: 12rem;
+            }
+        </style>
     </head>
-    <body id="main-content" class="text-center">
+    <body id="main-content" class="text-center container-xxl">
         <section id="topside" style="height:100px;">
             <img id="bg-art" src="img/games/wordsearch/wordsearch.jpg"/>
         </section>
-        <section id="word-search-container" class="p-4 mx-auto my-5 rounded">
+        <section id="word-search-container" class="p-4 mx-auto mb-5 rounded">
             <canvas id="word-search"></canvas>
         </section>
-        <footer>
+        <div id="word-list" class="row">
+            <div id="col2" class="col">
+            </div>
+            <div id="col3" class="col">
+            </div>
+            <div id="col4" class="col">
+            </div>
+        </div>
+        <form class="mt-5 mb-4" onsubmit="addWordToList(); return false;">
+            <input type="text" id="word-input"/>
+            <input type="button" onclick="addWordToList();" value="Add"/>
+        </form>
+        <form>
+            <input type="button" onclick="btnGenerate();" value="Generate" class="btn btn-primary my-3"/>
+        </form>
+        <footer class="mt-5 mb-2">
             © Matthew DeCalzadilla 2024
         </footer>    
     </body>
