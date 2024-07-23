@@ -11,26 +11,16 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <style>
-        #body {
+        #main-content {
             background-color: rgb(14, 25, 56);
         }
 
         #topside {
             background-image: linear-gradient(to left, rgba(0,0,0,0), rgb(14, 27, 63));
-            color: rgb(255, 255, 255);
-            position: relative;
         }
 
         #topside::before {
-            content: '';
-            position: absolute;
-            inset: 0;
             background: rgba(10, 23, 58, 0.8);
-            z-index: -1;
-        }
-
-        #button-col {
-            width: 64rem;
         }
 
         #footer {
@@ -38,54 +28,12 @@
             width: 100%;
             height: 100%;
         }
-
-        video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -2;
-        }
-
-        #info-card {
-            max-width: 42rem;
-        }
-
-        #nav-link {
-            width:max-content;
-        }
-
-        div {
-            font-size: clamp(.75rem, 3.25vw, 1rem);
-        }
-
-        p {
-            font-size: clamp(.75rem, 3.25vw, 1rem);
-        }
-
-        a {
-            font-size: clamp(.75rem, 3.25vw, 1rem);
-        }
-
-        h1 {
-            font-size: clamp(1rem, 7vw, 2.75rem);
-        }
-
-        h2 {
-            font-size: clamp(1rem, 5vw, 2rem);
-        }
-
-        h4 {
-            font-size:clamp(1rem, 4.75vw, 1.5rem);
-        }
     </style>
 </head>
 
-<body id="body">
+<body id="main-content">
     <section id="topside">
-        <video src="img/websites/Cyber.mp4" playsinline autoplay loop muted preload="auto"></video>
+        <video id="bg-art" src="img/websites/Cyber.mp4" playsinline autoplay loop muted preload="auto"></video>
         <header>
             <!-- place navbar here -->
             <!-- Nav tabs -->
