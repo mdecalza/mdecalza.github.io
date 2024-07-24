@@ -48,8 +48,8 @@ class Tile {
         }
 
         cotx.fillText(this.letter,
-            (this.x * TILE_W) + (TILE_W * .333),
-            (this.y * TILE_H) + (TILE_H * .75)
+            (this.x * TILE_W) + (TILE_W * .5),
+            (this.y * TILE_H) + (TILE_H * .85)
         );
 
         cotx.font = font;
@@ -157,9 +157,13 @@ function generateWordSearch(words, gridWidth, gridHeight) {
 function drawWordSearch(grid, showWords) {
     cotx.clearRect(0, 0, canv.width, canv.height);
     cotx.font = FONT_SIZE.toString() + "px sans-serif";
+    cotx.textAlign = "center";
+
     grid.forEach((tile) => {
         tile.draw(showWords);
     });
+
+    cotx.textAlign = "start";
 }
 
 function addWordToList(word, list = wordList) {
