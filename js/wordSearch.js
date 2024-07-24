@@ -20,9 +20,10 @@ const defaultWordList2 = [' robin ', 'sparrow  ', 'parrot', 'hummingbird', 'eagl
 const defaultWordList3 = ['Hulk', 'Spider-Man', 'Deadpool', 'Iron Man', 'Cap America', 'Peter Quill'];
 const defaultWordList4 = ['Hawk', 'Mullen', 'Caballero', 'Huston', 'Palmer', 'Horigome', 'Bufoni', 'Song', 'Margera'];
 const defaultWordList5 = ['Walt', 'Jesse', 'Tuco', 'Gus', 'Mike', 'Hank', 'Badger', 'Skinny Pete', 'Combo'];
+const defaultWordList6 = ['Cooper', 'Cooper', 'Laura', 'BOB', 'MIKE', 'Hank', 'Harry', 'Josie', 'Pete', 'Bobby', 'Margaret', 'Andy', 'Lucy', 'Leland', 'Hawk'];
 
-const choice = Math.floor(Math.random() * 5);
-var wordList = [defaultWordList1, defaultWordList2, defaultWordList3, defaultWordList4, defaultWordList5][choice];
+const choice = Math.floor(Math.random() * 6);
+var wordList = [defaultWordList1, defaultWordList2, defaultWordList3, defaultWordList4, defaultWordList5, defaultWordList6][choice];
 filterWordList(wordList);
 
 class Tile {
