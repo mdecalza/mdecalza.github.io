@@ -155,44 +155,54 @@ function generateWordSearch(words, gridWidth, gridHeight) {
 }
 
 function drawWordSearch(grid, showWords) {
+    cotx.clearRect(0, 0, canv.width, canv.height);
     cotx.font = FONT_SIZE.toString() + "px sans-serif";
     grid.forEach((tile) => {
         tile.draw(showWords);
     });
 }
 
-function addWordToList() {
-    let word = document.getElementById('word-input').value;
+function addWordToList(word, list = wordList) {
     word = filterWord(word);
 
     if (!word) {
-        return;
+        return false;
     }
 
     if (word.length >= gridWidth || word >= gridHeight) {
-        return;
+        return false;
     }
 
-    if (wordList.includes(word)) {
-        return;
+    if (list.includes(word)) {
+        return false;
     }
 
-    wordList.push(word);
+    list.push(word);
     populateWordList();
-    document.getElementById('word-input').value = '';
+
+    return true;
 }
 
-function populateWordList() {
-    const colPattern = [2,3,1];
-    colPattern.forEach((i) => {
+function clearWordColumns() {
+    for (i = 1; i <= 5; i++) {
         const colElement = document.getElementById('col' + (i + 1).toString());
+
+        if (!colElement) {
+            return;
+        }
+
         while (colElement.firstChild) {
             colElement.removeChild(colElement.firstChild);
         }
-    });
+    }
+}
+
+function populateWordList(list = wordList) {
+    const colPattern = [2,3,1];
+    clearWordColumns();
 
     let colIndex = 0;
-    wordList.forEach((word) => {
+    list.forEach((word) => {
         const colElement = document.getElementById('col' + (colPattern[colIndex] + 1).toString());
         const listItem = document.createElement('p');
         const listWord = document.createTextNode(word);
@@ -202,17 +212,14 @@ function populateWordList() {
         listItem.appendChild(listWord);
         listItem.onclick = () => {
             colElement.removeChild(listItem);
-            wordList.splice(wordList.indexOf(word), 1);
+            list.splice(list.indexOf(word), 1);
+            btnGenerate();
         };
 
         colElement.appendChild(listItem);
 
         colIndex = (colIndex + 1) % colPattern.length;
     });
-}
-
-function btnGenerate() {
-    drawWordSearch(generateWordSearch(wordList, gridWidth, gridHeight), false);
 }
 
 function filterWord(word) {
@@ -230,6 +237,23 @@ function filterWordList(list, gridW = gridWidth, gridH = gridHeight) {
 
         list[i] = filterWord(list[i]);
     }
+}
+
+function btnGenerate() {
+    drawWordSearch(generateWordSearch(wordList, gridWidth, gridHeight), false);
+}
+
+function btnAdd() {
+    if (addWordToList(document.getElementById('word-input').value)) {
+        document.getElementById('word-input').value = '';
+        btnGenerate();
+    };
+}
+
+function btnClear() {
+    clearWordColumns();
+    wordList = [];
+    btnGenerate();
 }
 
 /* on page load */
