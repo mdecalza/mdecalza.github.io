@@ -5,15 +5,15 @@ const canv = document.getElementById('word-search');
 const cotx = canv.getContext('2d');
 
 /* grid setup */
-const TILE_W = 35;
-const TILE_H = TILE_W;
-
-const FONT_SIZE = 25;
-
-const WORD_INSERT_TRY_LIMIT = 1000000;
-
+var TILE_W = 0;
+var TILE_H = 0;
+var FONT_SIZE = 0;
 var gridWidth = 15;
 var gridHeight = 15;
+resizeCanvas();
+resizeTiles();
+
+const WORD_INSERT_TRY_LIMIT = 1000000;
 
 const defaultWordList1 = ['Sweeney', 'Lovett', 'Johanna', 'Turpin', 'Pirelli', 'Beadle', 'Anthony'];
 const defaultWordList2 = [' robin ', 'sparrow  ', 'parrot', 'hummingbird', 'eagle', 'hawk'];
@@ -124,9 +124,8 @@ function insertWords(words, grid, gridWidth, gridHeight, iter = 0) {
 
 /* generate word search algorithmically */
 function generateWordSearch(words, gridWidth, gridHeight) {
-    /* resize canvas */
-    canv.width = gridWidth * TILE_W;
-    canv.height = gridHeight * TILE_H;
+    resizeCanvas();
+    resizeTiles();
 
     let grid = [];
 
@@ -152,6 +151,20 @@ function generateWordSearch(words, gridWidth, gridHeight) {
     insertWords(words, grid, gridWidth, gridHeight);
 
     return grid;
+}
+
+/* change the size of letter tiles to match the canvas size */
+function resizeTiles() {
+    TILE_W = canv.width / gridWidth;
+    TILE_H = TILE_W;
+    FONT_SIZE = TILE_W * .75;
+}
+
+/* change the size of the canvas to match the page width */
+function resizeCanvas() {
+    const size = document.getElementById('word-search-container').offsetHeight;
+    canv.width = size;
+    canv.height = canv.width;
 }
 
 function drawWordSearch(grid, showWords) {
@@ -259,6 +272,7 @@ function btnClear() {
     wordList = [];
     btnGenerate();
 }
+
 
 /* on page load */
 populateWordList();
