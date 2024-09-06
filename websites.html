@@ -30,7 +30,8 @@
         }
 
         #info-card {
-            min-height: 500px;
+            width: clamp(1rem, 85vw, 40rem);
+            height: clamp(1rem, 60vh, 30rem);
             display: flex;
             align-items: bottom;
             justify-content: end;
@@ -92,13 +93,11 @@
             <hr>
         </section>
 
-        <a class="nav-link" href="https://casafrescacleaning.com/">
-            <div id="info-card" class="container-sm card bg-transparent text-dark text-center shadow rounded border border-1 border-light">
-                <img id="card-art" class="rounded" src="img/websites/casafrescapage.png"/>
-                <p class="text-light fs-2" style="text-shadow:1px 2px black;">
-                    casafrescacleaning.com
-                </p>
-            </div>
+        <a id="info-card" class="nav-link mx-auto card bg-transparent text-dark text-center shadow rounded border border-1 border-light" href="https://casafrescacleaning.com/">
+            <img id="card-art" class="rounded" src="img/websites/casafrescapage.png"/>
+            <p class="text-light fs-2" style="text-shadow:1px 2px black;">
+                casafrescacleaning.com
+            </p>
         </a>
 
         <footer id="footer">
