@@ -11891,7 +11891,32 @@ h4, .h4 {
   z-index: -3;
 }
 
-#card-art {
+#button-col {
+  width: 64rem;
+}
+
+#nav-link {
+  width: max-content;
+}
+
+.info-card {
+  width: 42rem;
+}
+
+.info-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.art-card {
+  max-width: none;
+  max-height: none;
+  aspect-ratio: 1/1;
+}
+
+.card-art {
   position: absolute;
   top: 0;
   left: 0;
@@ -11901,23 +11926,12 @@ h4, .h4 {
   z-index: -2;
 }
 
-#button-col {
-  width: 64rem;
-}
-
-#nav-link {
-  width: max-content;
-}
-
-#info-card {
-  max-width: 42rem;
-}
-
-#info-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
+.grow-button {
+  max-width: none;
+  max-height: none;
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
 }
 
 #socials-icon {

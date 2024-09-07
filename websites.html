@@ -29,15 +29,15 @@
             height: 100%;
         }
 
-        #info-card {
-            width: clamp(1rem, 85vw, 40rem);
-            height: clamp(1rem, 60vh, 30rem);
+        .info-card {
+            width: 500px;
+            height: 500px;
             display: flex;
             align-items: bottom;
             justify-content: end;
         }
 
-        #info-card::before {
+        .info-card::before {
             background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(14, 25, 58, 0.651));
         }
     </style>
@@ -93,8 +93,8 @@
             <hr>
         </section>
 
-        <a id="info-card" class="nav-link mx-auto card bg-transparent text-dark text-center shadow rounded border border-1 border-light" href="https://casafrescacleaning.com/">
-            <img id="card-art" class="rounded" src="img/websites/casafrescapage.png"/>
+        <a class="info-card grow-button nav-link mx-auto card bg-transparent text-dark text-center shadow rounded border border-1 border-light" href="https://casafrescacleaning.com/">
+            <img class="card-art rounded" src="img/websites/casafrescapage.png"/>
             <p class="text-light fs-2" style="text-shadow:1px 2px black;">
                 casafrescacleaning.com
             </p>
@@ -120,6 +120,10 @@
     <!-- Add some padding underneath the navbar
     equal to the height of the navbar in pixels -->
     <script src="js/navbarPad.js">
+    </script>
+
+    <!-- Grow the size of a card when the mouse hovers over it -->
+    <script src="js/elemGrow.js">
     </script>
 </body>
 </html>

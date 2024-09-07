@@ -6,7 +6,7 @@
 // Add or remove padding from the topside div
 // depending on how wide the info card element is.
 function topsidePad() {
-    if (document.getElementById("info-card").scrollWidth + 45 >= window.innerWidth) {
+    if (window.innerWidth / window.innerHeight < .85) {
         document.getElementById("topside").className = "";
     }
     else {
@@ -15,6 +15,6 @@ function topsidePad() {
 }
 
 topsidePad();  // on start
-window.onresize = function() {
+window.onresize = () => {
     topsidePad();
 }
