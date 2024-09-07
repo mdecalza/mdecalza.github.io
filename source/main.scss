@@ -21,14 +21,21 @@ a {
 
 h1 {
     font-size: clamp(1rem, 7vw, 2.75rem);
+    text-shadow:1px 3px black;
 }
 
 h2 {
     font-size: clamp(1rem, 5vw, 2rem);
+    text-shadow:1px 3px black;
+}
+
+h3 {
+    text-shadow:1px 2px black;
 }
 
 h4 {
     font-size:clamp(1rem, 4.75vw, 1.5rem);
+    text-shadow:1px 2px black;
 }
 
 #topside {
@@ -94,6 +101,11 @@ h4 {
     display: flex;
     align-items: bottom;
     justify-content: center;
+}
+
+.card {
+    max-width: 42rem;
+    margin:auto;
 }
 
 #socials-icon {
