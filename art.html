@@ -1,0 +1,122 @@
+<!-- Copyright 2024 Matthew DeCalzadilla -->
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="build/main.css">
+    <title>
+        Art — It's Mateo!
+    </title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <style>
+        #main-content {
+            background-color: rgb(248, 237, 228);
+        }
+
+        #topside {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(248, 237, 228));
+            position: relative;
+        }
+
+        #topside::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 238, 200, 0.836);
+            z-index: -1;
+        }
+
+        .art-card {
+            width: 35vw;
+        }
+
+        .card-art {
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body id="main-content">
+    <header>
+        <!-- place navbar here -->
+        <!-- Nav tabs -->
+        <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
+            <div class="container-xxl">
+                <!-- Site brand -->
+                <a class="navbar-brand fw-bold px-5 mx-auto" href="index.html">
+                    <img src="img/landing/mateo.png" style="width:clamp(1rem, 50vw, 14rem);"/>
+                </a>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <!-- Websites page link -->
+                        <li class="nav-item">
+                            <a id="nav-link" class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
+                        </li>
+
+                        <!-- Video Games page link -->
+                        <li class="nav-item">
+                            <a id="nav-link" class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="games.html">Video Games</a>
+                        </li>
+
+                        <!-- Art page link -->
+                        <li class="nav-item">
+                            <a id="nav-link" class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="art.html">Art</a>
+                        </li>
+
+                        <!-- Music page link -->
+                        <li class="nav-item">
+                            <a id="nav-link" class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Padding for navbar -->
+        <div id="navpad"></div>
+    </header>
+
+    <section>
+        <!-- Main page body container -->
+        <div id="topside" class="pt-1">
+            <img id="bg-art" src="img/art/art-bg.png"/>
+
+            <div class="art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark">
+                <img class="card-art" src="img/art/art-bg.png"/>
+            </div>
+
+            <footer id="footer" class="text-white">
+                <!-- place footer here -->
+                <div class="container-xxl my-1 text-center">
+                    <a href="https://www.linkedin.com/in/mdecalzadilla/" class="link-underline link-underline-opacity-0">
+                        <img class="mx-2" id="socials-icon" src="img/icons/linkedin-icon.png" alt="LinkedIn"/>
+                    </a>
+                </div>
+    
+                <div id="footer-copyright" class="container-xxl mt-3 p-4 fs-6 text-center text-dark">
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <!-- Update the copyright year in the footer -->
+    <script src="js/copyright.js">
+    </script>
+
+    <!-- Add some padding underneath the navbar
+    equal to the height of the navbar in pixels -->
+    <script src="js/navbarPad.js">
+    </script>
+
+    <!-- Adjust topside padding based on page width -->
+    <script src="js/topsidePad.js">
+    </script>
+
+    <!-- Grow the size of a card when the mouse hovers over it -->
+    <script src="js/elemGrow.js">
+    </script>
+</body>
+</html>

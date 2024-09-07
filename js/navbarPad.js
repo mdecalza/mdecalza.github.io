@@ -7,6 +7,6 @@ function navbarPad() {
 }
 
 navbarPad();  // on start
-window.onresize = function() {
+window.onresize = () => {
     navbarPad();
 }
