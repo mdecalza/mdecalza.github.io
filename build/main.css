@@ -11906,9 +11906,12 @@ h4, .h4 {
   width: max-content;
 }
 
+.navbar-logo {
+  width: clamp(1rem, 50vw, 14rem);
+}
+
 .info-card {
-  min-width: 24rem;
-  max-width: 100%;
+  width: clamp(1rem, 90vw, 40rem);
 }
 
 .info-card::before {
@@ -11916,13 +11919,6 @@ h4, .h4 {
   position: absolute;
   inset: 0;
   z-index: -1;
-}
-
-.art-card {
-  min-width: 640px;
-  min-height: 480px;
-  max-width: none;
-  max-height: none;
 }
 
 .card-art {
