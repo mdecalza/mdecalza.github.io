@@ -6,7 +6,7 @@
 // Add or remove padding from the topside div
 // depending on how wide the info card element is.
 function topsidePad() {
-    if (window.innerWidth / window.innerHeight < .85) {
+    if (window.innerWidth / window.innerHeight < .6) {
         document.getElementById("topside").className = "";
     }
     else {
