@@ -6,6 +6,7 @@ const GROW_BUTTONS = document.getElementsByClassName("grow-button");
 
 for (let i = 0; i < ART_CARDS.length; i++) {
     const MAX_WTH_VW = 65;
+    const MAX_HGT_VH = 100;
 
     const growthRate = 1;
     const intervalRate = 8;
@@ -14,28 +15,33 @@ for (let i = 0; i < ART_CARDS.length; i++) {
     const CARD_RECT = CARD.getBoundingClientRect();
 
     const ORIGINAL_WTH_PX = CARD_RECT.width;
-    const ORIGINAL_WTH_VW = Math.ceil(ORIGINAL_WTH_PX  / window.innerWidth  * 100);
+    const ORIGINAL_WTH_VW = Math.ceil(ORIGINAL_WTH_PX / window.innerWidth  * 100);
+
+    const ORIGINAL_HGT_PX = CARD_RECT.height;
+    const ORIGINAL_HGT_VH = Math.ceil(ORIGINAL_HGT_PX / window.innerHeight * 100);
+    
     CARD.style.width = ORIGINAL_WTH_VW.toString() + "vw";
-    CARD.style.height = CARD.style.width;
+    CARD.style.height = ORIGINAL_HGT_VH.toString() + "vh";
 
     let growfunc = null;
 
     let card_wth_vw = Math.ceil(CARD_RECT.width / window.innerWidth * 100);
+    let card_hgt_vh = Math.ceil(CARD_RECT.height / window.innerHeight * 100);
 
-    CARD.addEventListener("mouseenter", () => {
+    CARD.addEventListener("click", () => {
         clearInterval(growfunc);
         growfunc = setInterval(() => {
             if (card_wth_vw < MAX_WTH_VW) {
                 CARD.style.width = (card_wth_vw + growthRate).toString() + "vw";
-                CARD.style.height = CARD.style.width;
+                CARD.style.height = (card_hgt_vh + growthRate).toString() + "vh";
 
                 card_wth_vw = parseInt(/^[0-9]+/g.exec(CARD.style.width));
-                console.log(card_wth_vw);
+                card_hgt_vh = parseInt(/^[0-9]+/g.exec(CARD.style.height));
             }
 
             if (card_wth_vw > MAX_WTH_VW) {
                 CARD.style.width = MAX_WTH_VW.toString() + "vw";
-                CARD.style.height = CARD.style.width;
+                CARD.style.height = MAX_HGT_VH.toString() + "vh";
             }
         }, intervalRate);
     });
@@ -45,15 +51,15 @@ for (let i = 0; i < ART_CARDS.length; i++) {
         growfunc = setInterval(() => {
             if (card_wth_vw > ORIGINAL_WTH_VW) {
                 CARD.style.width = (card_wth_vw - growthRate * 3).toString() + "vw";
-                CARD.style.height = CARD.style.width;
+                CARD.style.height = (card_hgt_vh - growthRate * 3).toString() + "vh";
 
                 card_wth_vw = parseInt(/^[0-9]+/g.exec(CARD.style.width));
-                console.log(card_wth_vw);
+                card_hgt_vh = parseInt(/^[0-9]+/g.exec(CARD.style.height));
             }
 
             if (card_wth_vw < ORIGINAL_WTH_VW) {
                 CARD.style.width = ORIGINAL_WTH_VW.toString() + "vw";
-                CARD.style.height = CARD.style.width;
+                CARD.style.height = ORIGINAL_HGT_VH.toString() + "vh";
             }
         }, intervalRate);
     });
@@ -67,10 +73,10 @@ for (let i = 0; i < GROW_BUTTONS.length; i++) {
     const BUTTON_RECT = BUTTON.getBoundingClientRect();
 
     const ORIGINAL_WTH_PX = BUTTON_RECT.width;
-    const ORIGINAL_WTH_VW = Math.ceil(ORIGINAL_WTH_PX  / window.innerWidth  * 100);
+    const ORIGINAL_WTH_VW = Math.ceil(ORIGINAL_WTH_PX / window.innerWidth  * 100);
 
     const ORIGINAL_HGT_PX = BUTTON_RECT.height;
-    const ORIGINAL_HGT_VH = Math.ceil(ORIGINAL_HGT_PX  / window.innerHeight * 100);
+    const ORIGINAL_HGT_VH = Math.ceil(ORIGINAL_HGT_PX / window.innerHeight * 100);
 
     BUTTON.style.width = ORIGINAL_WTH_VW.toString() + "vw";
     BUTTON.style.height = ORIGINAL_HGT_VH.toString() + "vh";
@@ -80,7 +86,7 @@ for (let i = 0; i < GROW_BUTTONS.length; i++) {
 
     let growfunc = null;
 
-    let button_wth_vw = Math.ceil(BUTTON_RECT.width / window.innerWidth * 100);
+    let button_wth_vw = Math.ceil(BUTTON_RECT.width  / window.innerWidth * 100);
     let button_hgt_vh = Math.ceil(BUTTON_RECT.height / window.innerHeight * 100);
 
     BUTTON.addEventListener("mouseenter", () => {
