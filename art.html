@@ -16,7 +16,7 @@
         }
 
         #topside {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(248, 237, 228));
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(30, 31, 104, 0.644));
             position: relative;
         }
 
@@ -24,12 +24,13 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: rgba(255, 238, 200, 0.836);
+            background: rgba(25, 57, 100, 0.877);
             z-index: -1;
         }
 
         .art-card {
-            width: 35vw;
+            min-width: 1280px;
+            min-height: 720px;
         }
 
         .card-art {
@@ -82,21 +83,35 @@
     <section>
         <!-- Main page body container -->
         <div id="topside" class="pt-1">
-            <img id="bg-art" src="img/art/art-bg.png"/>
+            <img id="bg-art" src="img/art/blue-big-cheeseburger-banner-youtube.jpg"/>
 
-            <div class="art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark">
-                <img class="card-art" src="img/art/art-bg.png"/>
+            <div class="grow-button art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark mb-5">
+                <img class="card-art" src="img/art/88bpm.png"/>
             </div>
 
-            <footer id="footer" class="text-white">
+            <div class="grow-button art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark my-5">
+                <img class="card-art" src="img/art/1.png"/>
+            </div>
+
+            <div class="grow-button art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark my-5">
+                <img class="card-art" src="img/art/casafresca_background3.png"/>
+            </div>
+
+            <div class="grow-button art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark my-5">
+                <img class="card-art" src="img/art/crux_titlepic_large.png"/>
+            </div>
+
+
+
+            <footer id="footer">
                 <!-- place footer here -->
-                <div class="container-xxl my-1 text-center">
+                <div class="container-xxl mt-5 mb-1 text-center">
                     <a href="https://www.linkedin.com/in/mdecalzadilla/" class="link-underline link-underline-opacity-0">
                         <img class="mx-2" id="socials-icon" src="img/icons/linkedin-icon.png" alt="LinkedIn"/>
                     </a>
                 </div>
     
-                <div id="footer-copyright" class="container-xxl mt-3 p-4 fs-6 text-center text-dark">
+                <div id="footer-copyright" class="container-xxl mt-3 p-4 fs-6 text-center text-light">
                 </div>
             </footer>
         </div>
