@@ -16,7 +16,7 @@
         }
 
         #topside {
-            background-image: linear-gradient(to bottom, rgb(0,0,0,0), rgb(34, 3, 3));
+            background-image: linear-gradient(to bottom, rgb(0,0,0,0), rgba(34, 3, 3, 0.808));
             position: relative;
         }
 
@@ -30,11 +30,6 @@
 
         .art-card {
             width: clamp(10vw, 65rem, 100vw);
-        }
-
-        #below-intro-pad {
-            height: 20vh;
-            background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0, 3, 12, 1));
         }
     </style>
 </head>
@@ -85,8 +80,7 @@
         <div id="topside">
             <img id="bg-art" src="img/art/art-bg.jpg"/>
             <img src="img/art/wavyy8.png" style="width:100%;"/>
-
-            <div id="below-intro-pad"></div>
+            <div style="height:20vh; background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0, 3, 12, 1));"></div>
 
             <h1 class="text-center pt-5">
                 Illustrations
@@ -165,8 +159,11 @@
             </div>
 
             <div class="grow-button art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark my-5">
-                <img src="img/art/Sontomorio - Sonto IV - iv_sleeve_PAL.jpg"/>
             </div>
+
+            <div style="height:20vh;background-image:linear-gradient(to bottom, rgba(0,0,0,0), rgb(254,99,95))"></div>
+            <img src="img/art/Sontomorio - Sonto IV - iv_sleeve_PAL.jpg" style="width:100%;"/>
+            <div style="height:20vh;background-image:linear-gradient(to top, rgba(0,0,0,0), rgb(254,99,95))"></div>
 
             <div class="grow-button art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark my-5" style="width:clamp(10vw,850px,85vw)">
                 <img src="img/art/freeway.jpg"/>
@@ -201,16 +198,16 @@
             </div>
 
             <div class="grow-button art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark my-5">
-                <img src="img/music/music-bg.png"/>
-            </div>
-
-            <div class="grow-button art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark my-5">
                 <img src="img/art/casafresca-bg1.png"/>
             </div>
 
             <div class="grow-button art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark my-5">
                 <img src="img/art/casafresca_background3.png"/>
             </div>
+
+            <div style="height:20vh;background-image:linear-gradient(to bottom, rgba(0,0,0,0), rgb(0,0,0))"></div>
+            <img src="img/music/music-bg.png" style="width:100%;"/>
+            <div style="height:20vh;background-image:linear-gradient(to top, rgba(0,0,0,0), rgb(0,0,0))"></div>
 
             <div class="grow-button art-card card mx-auto shadow bg-transparent rounded-0 border-4 border-dark my-5" style="width:clamp(10vw,640px,85vw)">
                 <img src="img/art/wavyy7.png"/>
