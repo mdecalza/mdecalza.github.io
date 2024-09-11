@@ -4,9 +4,7 @@
 const today = new Date(Date.now());
 const thisYear = today.getFullYear().toString();
 
-if (thisYear === "2024") {
-    document.getElementById("footer-copyright").innerText = "© Matthew DeCalzadilla 2024";
-}
-else {
-    document.getElementById("footer-copyright").innerText = "© Matthew DeCalzadilla 2024 - " + thisYear;
+const divs = document.getElementsByClassName("copyright-text");
+for (let i = 0; i < divs.length; i++) {
+    divs.item(i).innerText = thisYear === "2024" ? "© Matthew DeCalzadilla 2024" : "© Matthew DeCalzadilla 2024 - " + thisYear;
 }
