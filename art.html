@@ -12,7 +12,7 @@
 
     <style>
         #main-content {
-            background-color: rgb(131, 230, 131);
+            background-color: rgb(70, 0, 9);
         }
 
         #topside {
@@ -28,8 +28,42 @@
             z-index: -1;
         }
 
+        #back-to-top {
+            display: none;
+            position: fixed;
+            width: 100%;
+            min-height: 20px;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        #toc-container {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+        }
+
         .art-card {
             width: clamp(10vw, 65rem, 100vw);
+        }
+
+        .skip-link {
+            background-color:rgba(0, 0, 0, 0.616);
+            color:white;
+            width:clamp(10vw,24rem,90vw);
+        }
+
+        .skip-link:visited {
+            color:white;
+            display: none;
+        }
+
+        .skip-link:hover {
+            color:rgb(47, 64, 79);
+        }
+
+        .skip-link:active {
+            color:darkslategrey;
         }
     </style>
 </head>
@@ -79,10 +113,49 @@
         <!-- Main page body container -->
         <div id="topside">
             <img id="bg-art" src="img/art/art-bg.jpg"/>
+
+            <div id="back-to-top" class="text-center">
+                <div class="list-group">
+                    <a href="#" class="skip-link list-group-item list-group-item-action ms-3" style="width: clamp(5vw, 10rem, 85vw);">
+                        Back to top
+                    </a>
+                    <a class="d-none list-group-item"></a>
+                </div>
+            </div>
+
+            <div id="toc-container">
+                <div id="table-of-contents" class="text-center py-5">
+                    <div class="container-xxl mb-4 text-center">
+                        <a href="https://www.linkedin.com/in/mdecalzadilla/" class="link-underline link-underline-opacity-0">
+                            <img class="mx-2" id="socials-icon" src="img/icons/linkedin-icon.png" alt="LinkedIn"/>
+                        </a>
+                    </div>    
+                    <h2>
+                        Table of Contents
+                    </h2>
+                    <div class="list-group mt-4 shadow">
+                        <a href="#illustrations" class="skip-link list-group-item list-group-item-action mx-auto">
+                            Illustrations
+                        </a>
+                        <a href="#sketches" class="skip-link list-group-item list-group-item-action mx-auto">
+                            Sketches
+                        </a>
+                        <a href="#graphic-design" class="skip-link list-group-item list-group-item-action mx-auto">
+                            Graphic Design
+                        </a>
+                        <a href="#environmental-design" class="skip-link list-group-item list-group-item-action mx-auto">
+                            Environmental Design
+                        </a>
+                    </div>
+                    <div class="copyright-text container-xxl mt-4 fs-6 text-secondary">
+                    </div>
+                </div>
+            </div>
+
             <img src="img/art/wavyy8.png" style="width:100%;"/>
             <div style="height:20vh; background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0, 3, 12, 1));"></div>
 
-            <h1 class="text-center pt-5">
+            <h1 id="illustrations" class="text-center pt-5">
                 Illustrations
             </h1>
 
@@ -94,7 +167,7 @@
                 <img src="img/art/doom290.png"/>
             </div>
 
-            <h1 class="text-center">
+            <h1 id="sketches" class="text-center">
                 Sketches
             </h1>
 
@@ -134,7 +207,7 @@
                 <img src="img/art/7-sketchofnic.png"/>
             </div>
 
-            <h1 class="text-center">
+            <h1 id="graphic-design" class="text-center">
                 Graphic Design
             </h1>
 
@@ -270,7 +343,7 @@
                 <img src="img/art/hers-TITLEPIC.png"/>
             </div>
 
-            <h1 class="text-center">
+            <h1 id="environmental-design" class="text-center">
                 Environmental Design
             </h1>
 
@@ -310,19 +383,20 @@
                     </a>
                 </div>
     
-                <div id="footer-copyright" class="container-xxl mt-3 p-4 fs-6 text-center text-light">
+                <div class="copyright-text container-xxl mt-3 p-4 fs-6 text-center text-light">
                 </div>
             </footer>
         </div>
     </section>
 
     <!-- Update the copyright year in the footer -->
-    <script src="js/copyright.js">
-    </script>
+    <script src="js/copyright.js"></script>
 
     <!-- Add some padding underneath the navbar
     equal to the height of the navbar in pixels -->
-    <script src="js/navbarPad.js">
-    </script>
+    <script src="js/navbarPad.js"></script>
+
+    <!-- Hide back to top link when at top of page -->
+    <script src="js/hideBackToTop.js"></script>
 </body>
 </html>
