@@ -37,7 +37,6 @@
 
         #game-window {
             background-image: linear-gradient(rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 1));
-            /*width: clamp(1rem, 90vw, 50rem);*/
         }
 
         #budget-container {
@@ -91,14 +90,18 @@
     </header>
 
     <main id="main-content" class="py-4 rounded-bottom">
+        <img id="bg-art" src="img/games/citygame/nyc.jpg"/>
+
         <div id="title-card" class="mx-auto pt-1 pb-2 text-center rounded fw-semibold fs-3 text-light">
             City Builder '24
         </div>
+
         <div id="canvas-container" class="mx-auto">
             <canvas id="game-window" class="rounded border border-dark border-5 mt-3 mb-4 mx-auto"></canvas>
         </div>
-        <div id="budget-container" class="container-xxl p-2 rounded-top text-center text-white">
-        </div>
+
+        <div id="budget-container" class="container-xxl p-2 rounded-top text-center text-white"></div>
+
         <div id="tools-container" class="container-xxl px-4 pt-2 pb-5">
             <a class="btn btn-danger bg-gradient text-light" role="button" onclick="maintool.switchTool('bulldozer');">
                 Bulldozer
