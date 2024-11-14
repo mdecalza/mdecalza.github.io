@@ -13,6 +13,8 @@
     <style>
         #main-content {
             background-color: rgb(70, 0, 9);
+            background-image: url("img/art/art-bg.jpg");
+            background-repeat: repeat-y;
         }
 
         #topside {
@@ -41,6 +43,10 @@
             position: absolute;
             z-index: 1;
             width: 100%;
+        }
+
+        #bottom-pad {
+            background-color: rgb(34, 3, 3);
         }
 
         .art-card {
@@ -117,8 +123,6 @@
     <section>
         <!-- Main page body container -->
         <div id="topside">
-            <img id="bg-art" src="img/art/art-bg.jpg"/>
-
             <div id="back-to-top" class="text-center">
                 <div class="list-group">
                     <a href="#" class="skip-link list-group-item list-group-item-action ms-3" style="width: clamp(5vw, 10rem, 85vw);">
@@ -398,6 +402,10 @@
     <!-- Add some padding underneath the navbar
     equal to the height of the navbar in pixels -->
     <script src="js/navbarPad.js"></script>
+
+    <!-- Add a div to fill out the bottom of the page -->
+    <script src="js/bottomPad.js">
+    </script>
 
     <!-- Hide back to top link when at top of page -->
     <script src="js/hideBackToTop.js"></script>

@@ -7,6 +7,10 @@ $warning: #F0DF8E;
 // Bootstrap and its default variables
 @import "vendors/bootstrap.scss";
 
+body {
+    overflow-x: hidden;
+}
+
 div {
     font-size: clamp(.75rem, 3.25vw, 1rem);
 }
@@ -45,6 +49,10 @@ h5 {
 #topside {
     color: rgb(255, 255, 255);
     position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 }
 
 #topside::before {
@@ -58,10 +66,26 @@ h5 {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -4;
+
+    aspect-ratio: 1 / 1;
+}
+
+#bg-art::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -3;
+}
+
+#bottom-pad {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: -3;
+
+    flex-grow: 1;
 }
 
 #button-col {
@@ -95,6 +119,7 @@ h5 {
     height: 100%;
     object-fit: cover;
     z-index: -2;
+
     aspect-ratio: 1 / 1;
 }
 

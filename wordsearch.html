@@ -1,139 +1,143 @@
 <!-- Copyright 2024 Matthew DeCalzadilla -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="build/main.css">
-        <title>
-            Word Search Generator — It's Mateo!
-        </title>
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    
-        <style>
-            h1 {
-                text-shadow: 1px 2px rgb(255, 199, 149);
-            }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="build/main.css">
+    <title>
+        Word Search Generator — It's Mateo!
+    </title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
-            #main-content {
-                background-color: rgb(248, 248, 255);
-            }
+    <style>
+        h1 {
+            text-shadow: 1px 2px rgb(255, 199, 149);
+        }
 
-            #topside {
-                background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(248, 248, 255));
-                color: rgb(255, 255, 255);
-                position: relative;
-            }
-    
-            #topside::before {
-                content: '';
-                position: absolute;
-                inset: 0;
-                background: rgba(248,248,255,.8);
-                background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(248, 248, 255, 0.95));
-                z-index: -1;
-            }
+        #main-content {
+            background-color: rgb(248, 248, 255);
+        }
 
-            #word-search-container {
-                background-color: white;
-                width: fit-content;
-            }
+        #topside {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(248, 248, 255));
+            color: rgb(255, 255, 255);
+            position: relative;
+        }
 
-            #word-search {
-                width: clamp(1rem, 75vw, 35rem);
-            }
+        #topside::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(248,248,255,.8);
+            background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(248, 248, 255, 0.95));
+            z-index: -1;
+        }
 
-            #word-card {
-                max-width: 12rem;
-            }
-        </style>
-    </head>
-    <body id="main-content" class="text-center">
-        <header>
-            <!-- Nav tabs -->
-            <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
-                <div class="container-xxl">
-                    <!-- Site brand -->
-                    <a class="navbar-brand fw-bold px-5 mx-auto" href="index.html">
-                        <img class="navbar-logo" src="img/landing/mateo.png"/>
-                    </a>
-    
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <!-- Bio page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="bio.html">Bio</a>
-                            </li>
+        #word-search-container {
+            background-color: white;
+            width: fit-content;
+        }
 
-                            <!-- Websites page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
-                            </li>
-    
-                            <!-- Games page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="games.html">Video Games</a>
-                            </li>
-    
-                            <!-- Art page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="art.html">Art</a>
-                            </li>
-    
-                            <!-- Music page link -->
-                            <li class="nav-item">
-                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-    
-            <!-- Padding for navbar -->
-            <div id="navpad"></div>
-        </header>
-        <section id="topside" class="pt-5 text-dark">
-            <img id="bg-art" src="img/games/wordsearch/wordsearch.jpg"/>
+        #word-search {
+            width: clamp(1rem, 75vw, 35rem);
+        }
+
+        #word-card {
+            max-width: 12rem;
+        }
+
+        #bottom-pad {
+            background-color: rgb(248, 248, 255);
+        }
+    </style>
+</head>
+<body id="main-content" class="text-center">
+    <header>
+        <!-- Nav tabs -->
+        <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
             <div class="container-xxl">
-                <h1 class="pb-1">Mateo's Word Search Generator</h1>
-                <hr class="pb-4">
+                <!-- Site brand -->
+                <a class="navbar-brand fw-bold px-5 mx-auto" href="index.html">
+                    <img class="navbar-logo" src="img/landing/mateo.png"/>
+                </a>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <!-- Bio page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="bio.html">Bio</a>
+                        </li>
+
+                        <!-- Websites page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
+                        </li>
+
+                        <!-- Games page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="games.html">Video Games</a>
+                        </li>
+
+                        <!-- Art page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="art.html">Art</a>
+                        </li>
+
+                        <!-- Music page link -->
+                        <li class="nav-item">
+                            <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <section id="word-search-container" class="p-4 mx-auto mb-5 rounded">
-                <canvas id="word-search"></canvas>
-            </section>
-    </section>
-        <div id="word-list" class="row container-xxl mx-auto">
-            <div id="col2" class="col">
-            </div>
-            <div id="col3" class="col">
-            </div>
-            <div id="col4" class="col">
-            </div>
+        </nav>
+
+        <!-- Padding for navbar -->
+        <div id="navpad"></div>
+    </header>
+    <section id="topside" class="pt-5 text-dark">
+        <img id="bg-art" src="img/games/wordsearch/wordsearch.jpg"/>
+        <div class="container-xxl">
+            <h1 class="pb-1">Mateo's Word Search Generator</h1>
+            <hr class="pb-4">
         </div>
-        <form class="mt-5 mb-4" onsubmit="btnAdd(); return false;">
-            <input type="text" id="word-input"/>
-            <input type="button" onclick="btnAdd();" value="Add"/>
-            <input type="button" onclick="btnClear();" value="Clear list" class="ms-2"/>
-        </form>
-        <form>
-            <input type="button" onclick="btnGenerate();" value="Generate" class="btn btn-primary my-3"/>
-        </form>
-        <footer>
-            <div class="copyright-text mt-5 mb-2 text-dark">
-            </div>
-        </footer>    
-    </body>
+        <section id="word-search-container" class="p-4 mx-auto mb-5 rounded">
+            <canvas id="word-search"></canvas>
+        </section>
+</section>
+    <div id="word-list" class="row container-xxl mx-auto">
+        <div id="col2" class="col">
+        </div>
+        <div id="col3" class="col">
+        </div>
+        <div id="col4" class="col">
+        </div>
+    </div>
+    <form class="mt-5 mb-4" onsubmit="btnAdd(); return false;">
+        <input type="text" id="word-input"/>
+        <input type="button" onclick="btnAdd();" value="Add"/>
+        <input type="button" onclick="btnClear();" value="Clear list" class="ms-2"/>
+    </form>
+    <form>
+        <input type="button" onclick="btnGenerate();" value="Generate" class="btn btn-primary my-3"/>
+    </form>
+    <footer>
+        <div class="copyright-text mt-5 mb-2 text-dark">
+        </div>
+    </footer>    
+</body>
 
-    <!-- Update the copyright year in the footer -->
-    <script src="js/copyright.js">
-    </script>
+<!-- Update the copyright year in the footer -->
+<script src="js/copyright.js">
+</script>
 
-    <!-- Add some padding underneath the navbar
-    equal to the height of the navbar in pixels -->
-    <script src="js/navbarPad.js">
-    </script>
+<!-- Add some padding underneath the navbar
+equal to the height of the navbar in pixels -->
+<script src="js/navbarPad.js">
+</script>
 
-    <!-- word search generator script -->
-    <script src="js/wordSearch.js">
-    </script>
+<!-- word search generator script -->
+<script src="js/wordSearch.js">
+</script>
 </html>
