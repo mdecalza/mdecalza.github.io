@@ -11,22 +11,27 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <style>
-        #main-content {
-            background-color: rgb(17, 92, 81);
+        html, body {
+            background: url("img/bio/stu.jpg") left top no-repeat fixed;
+            background-size: auto 100vh;
         }
 
         #topside {
-            background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(17, 92, 81, .7));
+            background-image: linear-gradient(to left, rgba(17, 92, 81, 0.95), rgb(17, 92, 81));
         }
 
         #topside::before {
-            background: rgba(17, 92, 81, 0.95);
+            background-image: linear-gradient(to bottom, rgba(17, 92, 81, 0.95), rgb(17, 92, 81));
         }
 
         #footer {
             background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(17, 92, 81));
             width: 100%;
             height: 100%;
+        }
+
+        #bottom-pad {
+            background-color: rgb(17, 92, 81);
         }
     </style>
 </head>
@@ -149,10 +154,14 @@
     <script src="js/navbarPad.js">
     </script>
 
+    <!-- Add a div to fill out the bottom of the page -->
+    <script src="js/bottomPad.js">
+    </script>
+    
     <!-- Dropdown functionality -->
     <script src="js/dropdown.js">
     </script>
-
+    
     <!-- Bootstrap JavaScript Libraries -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

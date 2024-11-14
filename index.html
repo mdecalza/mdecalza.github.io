@@ -24,13 +24,17 @@
         }
 
         #description {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(15,21,37,1));
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(15,21,37));
             width: 100%;
             height: 100%;
         }
 
         #nav-link {
             font-size: clamp(.75rem, 3.5vw, 1rem);
+        }
+
+        #bottom-pad {
+            background-color: rgb(15,21,37);
         }
     </style>
 </head>
@@ -61,27 +65,32 @@
                 <h1>Email & Socials</h1>
                 <hr>
             </div>
+
+            <footer>
+                <div class="container-xxl my-1 text-center">
+                    <a href="mailto:matt.decalzadilla@gmail.com" class="link-underline link-underline-opacity-0">
+                        <img class="mx-2" id="socials-icon" src="img/icons/gmail-icon.png" alt="Gmail"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mdecalzadilla/" class="link-underline link-underline-opacity-0">
+                        <img class="mx-2" id="socials-icon" src="img/icons/linkedin-icon.png" alt="LinkedIn"/>
+                    </a>
+                    <a href="https://www.instagram.com/the_decalzone/" class="link-underline link-underline-opacity-0">
+                        <img class="mx-2" id="socials-icon" src="img/icons/inst-icon.png" alt="Instagram"/>
+                    </a>
+                </div>
+        
+                <div class="copyright-text container-xxl text-center text-light my-5">
+                </div>
+            </footer>
         </section>
     </section>
-    <footer>
-        <div class="container-xxl my-1 text-center">
-            <a href="mailto:matt.decalzadilla@gmail.com" class="link-underline link-underline-opacity-0">
-                <img class="mx-2" id="socials-icon" src="img/icons/gmail-icon.png" alt="Gmail"/>
-            </a>
-            <a href="https://www.linkedin.com/in/mdecalzadilla/" class="link-underline link-underline-opacity-0">
-                <img class="mx-2" id="socials-icon" src="img/icons/linkedin-icon.png" alt="LinkedIn"/>
-            </a>
-            <a href="https://www.instagram.com/the_decalzone/" class="link-underline link-underline-opacity-0">
-                <img class="mx-2" id="socials-icon" src="img/icons/inst-icon.png" alt="Instagram"/>
-            </a>
-        </div>
-
-        <div class="copyright-text container-xxl text-center text-light my-5">
-        </div>
-    </footer>
-
-    <!-- Update the copyright year in the footer -->
-    <script src="js/copyright.js">
-    </script>
 </body>
+
+<!-- Update the copyright year in the footer -->
+<script src="js/copyright.js">
+</script>
+
+<!-- Add a div to fill out the bottom of the page -->
+<script src="js/bottomPad.js">
+</script>
 </html>

@@ -28,7 +28,7 @@
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 36pt;
             max-width: 24rem;
-            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(50, 50, 50, 1));
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(50, 50, 50));
         }
 
         #canvas-container {
@@ -36,7 +36,7 @@
         }
 
         #game-window {
-            background-image: linear-gradient(rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 1));
+            background-image: linear-gradient(rgba(33, 37, 41, 0.5), rgb(33, 37, 41));
         }
 
         #budget-container {
@@ -44,7 +44,11 @@
         }
 
         #tools-container {
-            background-image: linear-gradient(rgba(50, 50, 50, 1), rgba(0, 0, 0, 0));
+            background-image: linear-gradient(rgb(50, 50, 50), rgba(0, 0, 0, 0));
+        }
+
+        #bottom-pad {
+            background-color: rgb(19, 20, 27);
         }
     </style>
 </head>
@@ -94,41 +98,43 @@
         <div id="navpad"></div>
     </header>
 
-    <main id="main-content" class="py-4 rounded-bottom">
-        <img id="bg-art" src="img/games/citygame/nyc.jpg"/>
+    <main id="main-content">
+        <div id="topside" class="py-4">
+            <img id="bg-art" src="img/games/citygame/nyc.jpg"/>
 
-        <div id="title-card" class="mx-auto pt-1 pb-2 text-center rounded fw-semibold fs-3 text-light">
-            City Builder '24
-        </div>
-
-        <div id="canvas-container" class="mx-auto">
-            <canvas id="game-window" class="rounded border border-dark border-5 mt-3 mb-4 mx-auto"></canvas>
-        </div>
-
-        <div id="budget-container" class="container-xxl p-2 rounded-top text-center text-white"></div>
-
-        <div id="tools-container" class="container-xxl px-4 pt-2 pb-5">
-            <a class="btn btn-danger bg-gradient text-light" role="button" onclick="maintool.switchTool('bulldozer');">
-                Bulldozer
-            </a>
-            <a class="btn btn-dark bg-gradient" role="button" onclick="maintool.switchTool('road');">
-                Road
-            </a>
-            <a class="btn btn-primary bg-gradient" role="button" onclick="maintool.switchTool('water');">
-                Water
-            </a>
-            <a class="btn btn-success bg-gradient" role="button" onclick="maintool.switchTool('rzone');">
-                Residential Zone
-            </a>
-            <a class="btn btn-primary bg-gradient" role="button" onclick="maintool.switchTool('czone');">
-                Commercial Zone
-            </a>
-            <a class="btn btn-secondary bg-gradient" role="button" onclick="maintool.switchTool('smiley');">
-                Smiley Statue
-            </a>
-            <a class="btn btn-light bg-gradient float-end" role="button" onclick="resetCamera();">
-                Reset Camera
-            </a>
+            <div id="title-card" class="mx-auto pt-1 pb-2 px-4 text-center rounded fw-semibold fs-3 text-light">
+                City Builder '24
+            </div>
+    
+            <div id="canvas-container" class="mx-auto">
+                <canvas id="game-window" class="rounded border border-dark border-5 mt-3 mb-4 mx-auto"></canvas>
+            </div>
+    
+            <div id="budget-container" class="container-xxl p-2 rounded-top text-center text-white"></div>
+    
+            <div id="tools-container" class="container-xxl px-4 pt-2 pb-5">
+                <a class="btn btn-danger bg-gradient text-light" role="button" onclick="maintool.switchTool('bulldozer');">
+                    Bulldozer
+                </a>
+                <a class="btn btn-dark bg-gradient" role="button" onclick="maintool.switchTool('road');">
+                    Road
+                </a>
+                <a class="btn btn-primary bg-gradient" role="button" onclick="maintool.switchTool('water');">
+                    Water
+                </a>
+                <a class="btn btn-success bg-gradient" role="button" onclick="maintool.switchTool('rzone');">
+                    Residential Zone
+                </a>
+                <a class="btn btn-primary bg-gradient" role="button" onclick="maintool.switchTool('czone');">
+                    Commercial Zone
+                </a>
+                <a class="btn btn-secondary bg-gradient" role="button" onclick="maintool.switchTool('smiley');">
+                    Smiley Statue
+                </a>
+                <a class="btn btn-light bg-gradient float-end" role="button" onclick="resetCamera();">
+                    Reset Camera
+                </a>
+            </div>    
         </div>
     </main>
 
@@ -142,6 +148,10 @@
     <!-- Add some padding underneath the navbar
     equal to the height of the navbar in pixels -->
     <script src="js/navbarPad.js">
+    </script>
+
+    <!-- Add a div to fill out the bottom of the page -->
+    <script src="js/bottomPad.js">
     </script>
 
     <!-- Game Script -->
