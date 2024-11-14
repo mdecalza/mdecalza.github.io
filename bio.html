@@ -1,0 +1,163 @@
+<!-- Copyright 2024 Matthew DeCalzadilla -->
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="build/main.css">
+    <title>
+        Websites — It's Mateo!
+    </title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <style>
+        #main-content {
+            background-color: rgb(17, 92, 81);
+        }
+
+        #topside {
+            background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(17, 92, 81, .7));
+        }
+
+        #topside::before {
+            background: rgba(17, 92, 81, 0.95);
+        }
+
+        #footer {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(17, 92, 81));
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body id="main-content">
+    <section id="topside">
+        <img id="bg-art" src="img/bio/stu.jpg"/>
+        <header>
+            <!-- place navbar here -->
+            <!-- Nav tabs -->
+            <nav id="navi" class="navbar navbar-expand-sm bg-light fixed-top shadow">
+                <div class="container-xxl">
+                    <!-- Site brand -->
+                    <a class="navbar-brand fw-bold px-5 mx-auto" href="index.html">
+                        <img class="navbar-logo" src="img/landing/mateo.png"/>
+                    </a>
+    
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <!-- Bio page link -->
+                            <li class="nav-item">
+                                <a class="nav-link active bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="bio.html">Bio</a>
+                            </li>
+
+                            <!-- Websites page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="websites.html">Websites</a>
+                            </li>
+    
+                            <!-- Video Games page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="games.html">Games</a>
+                            </li>
+    
+                            <!-- Art page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="art.html">Art</a>
+                            </li>
+    
+                            <!-- Music page link -->
+                            <li class="nav-item">
+                                <a class="nav-link bg-white bg-gradient rounded px-3 ms-2 me-1 my-1 shadow-sm" href="music.html">Music</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- Padding for navbar -->
+            <div id="navpad"></div>
+        </header>
+
+        <section class="container-xxl text-center text-light py-5">
+            <h1 class="pt-2 pb-4">
+                Bio
+            </h1>
+            <hr/>
+
+            <button class="btn btn-dark dropdown-btn dropdown-toggle mx-auto my-4 p-3" type="button">
+                <h6 class="my-auto">
+                    AS AN ARTIST
+                </h6>
+            </button>
+            <button class="btn btn-dark dropdown-btn dropdown-toggle mx-auto my-4 p-3" type="button">
+                <h6 class="my-auto">
+                    AS A MUSICIAN
+                </h6>
+            </button>
+
+            <div class="dropdown-element text-light mx-auto" style="width: clamp(33%, 50rem, 100%); display: none;">
+                <hr/>
+                <p class="p-4">
+                    Beginning his artistic journey in grade school, Matthew DeCalzadilla has learned to apply his abilities to a wide variety of situations. At a young age, he began making pixel art in Microsoft Paint, lending his designs to his Game Maker projects. In elementary school, he found his passion for pencil drawing. In high school, he was given his first Intuos tablet, and he began to draw and paint digitally in Adobe Photoshop in addition to taking art classes at school.
+                    <br/>
+                    <br/>
+                    Over the years, Matthew has used his design skills to provide illustrations and graphics for game design projects, websites, YouTube videos, and more. He continues to post art on Instagram (@the_decalzone) and on his portfolio website.
+                </p>
+                <hr/>
+            </div>
+            <div class="dropdown-element text-light mx-auto" style="width: clamp(33%, 50rem, 100%); display: none;">
+                <hr/>
+                <p class="p-4">
+                    Since 2018, Matthew DeCalzadilla has been quietly broadcasting his musical experiments from his home in Northern Colorado as Sontomorio.
+                    <br/>
+                    <br/>
+                    Though amateur, his first releases Strangest Ways and Space and Time (Unkillable Nature) showcased a penchant for lo-fi, bedroom pop, and rap. This eclectic combination of sounds coalesced into Sontomorio’s maligned debut album, aptly titled Deibyu. However mixed the quality, Deibyu was a huge accomplishment for the budding artist, and marked Sontomorio’s first of many collaborations with Narly Nate and Jay Ashr.
+                    <br/>
+                    <br/>
+                    Looking to improve his sound, Burning My Time Building My Mind was released just months later in April 2019. In contrast to the debut record, Burning My Time features slim, sleek production and mostly instrumental songs.
+                    <br/>
+                    <br/>
+                    As the 2019 was coming to an end, Sontomorio began to experiment more heavily with samples. The Midnight Movies album was released in December 2019, showcasing Sontomorio’s unique ear for samples and a knack for light, funky hip-hop. The latter half of the record featured more original instrumentals, however, leading to the release of the singles When We Make It and The Forest Spirits.
+                    <br/>
+                    <br/>
+                    Sontomorio continues to experiment with new sounds into the 2020s, releasing new music on YouTube and SoundCloud. The Sonto IV EP (2020) showcases some of his most dense samples and rhymes, while the beattapes The Freeway (2021) and Sonto'olegio (2022) each feature more refined production than the last.
+                </p>
+                <hr/>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <!-- place footer here -->
+            <div class="container-xxl mt-5 mb-1 text-center">
+                <a href="https://www.linkedin.com/in/mdecalzadilla/" class="link-underline link-underline-opacity-0">
+                    <img class="mx-2" id="socials-icon" src="img/icons/linkedin-icon.png" alt="LinkedIn"/>
+                </a>
+            </div>
+
+            <div class="copyright-text container-xxl mt-3 p-4 text-center">
+            </div>
+        </footer>
+    </section>
+
+    <!-- Update the copyright year in the footer -->
+    <script src="js/copyright.js">
+    </script>
+
+    <!-- Add some padding underneath the navbar
+    equal to the height of the navbar in pixels -->
+    <script src="js/navbarPad.js">
+    </script>
+
+    <!-- Dropdown functionality -->
+    <script src="js/dropdown.js">
+    </script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>
