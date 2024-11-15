@@ -11859,6 +11859,7 @@ p {
 
 a {
   font-size: clamp(0.75rem, 3.25vw, 1rem);
+  text-decoration: none;
 }
 
 h1, .h1 {
