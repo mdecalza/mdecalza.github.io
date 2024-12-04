@@ -95,7 +95,7 @@ export default function Music() {
             src={sontomorioLogo}
             className='w-25 m-5 rounded-5' />
             <Socials
-            socialsList={['spotify', 'bandcamp', 'soundcloud', 'music-youtube', 'music-insta', 'twitter', 'main-email']} />
+            socialsList={['spotify', 'bandcamp', 'soundcloud', 'music-youtube', 'music-insta', 'twitter', 'music-email']} />
             <Header
             title='Music'
             blurb='I&apos;ve made a ton of music over the years as Sontomorio. Here you can find a catalogue of all my released music.' />
