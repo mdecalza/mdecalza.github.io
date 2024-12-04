@@ -1,0 +1,14 @@
+/* 2024 Matthew DeCalzadilla */
+
+.Page {
+    min-height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(15, 21, 37));
+}
+
+.Page::before {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(15, 21, 37, 0.7));
+    z-index: -1;
+    inset: 0;
+    content: '';
+    position: absolute;
+}

@@ -1,0 +1,21 @@
+/* 2024 Matthew DeCalzadilla */
+
+.NavbarContainer {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.Navbar {
+    overflow: hidden;
+    width: fit-content;
+}
+
+.NavbarLogo {
+    max-width: 100%;
+    max-height: 36px;
+}
+
+.NavbarButtons {
+    width: 100%;
+}
