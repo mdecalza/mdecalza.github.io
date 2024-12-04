@@ -35,6 +35,10 @@ html, body {
     overflow-x: hidden;
 }
 
+body {
+    background-color: rgb(15, 21, 37);
+}
+
 // HTML elements
 div {
     font-size: clamp(.75rem, 3.25vw, 1rem);
