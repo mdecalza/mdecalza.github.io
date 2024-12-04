@@ -11967,6 +11967,7 @@ textarea.form-control-lg {
 }
 
 html, body {
+  background-color: rgb(15, 21, 37);
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   overflow-x: hidden;
