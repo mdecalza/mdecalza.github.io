@@ -19,6 +19,7 @@ import theFreewayCover from '../../../assets/music/5.png'
 import sundayMorningTVCover from '../../../assets/art/sunday-morning-tv_big.png';
 import sontoOlegioCover from '../../../assets/art/sonto6_cover4.png';
 import whopperCover from '../../../assets/art/whopper-big.png';
+import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
 import intercontinentalCover from '../../../assets/art/intercontinental-cover.png';
 
 export default function Music() {
@@ -36,6 +37,14 @@ export default function Music() {
             releaseDate: 'November 27, 2023',
             genre: 'Drum \'n bass, techno, noise',
             coverImageSrc: whopperCover,
+        }),
+        createElement(MusicRelease, {
+            title: 'THE NARLY Y MORIO LP',
+            subtitle: '(with Narly Nate)',
+            type: 'Album',
+            releaseDate: 'Unreleased',
+            genre: 'Experimental, hip-hop, rock',
+            coverImageSrc: narlyYmorioCover,
         }),
         createElement(MusicRelease, {
             title: 'Sonto\'olegio',
@@ -106,7 +115,7 @@ export default function Music() {
             socialsList={['spotify', 'bandcamp', 'soundcloud', 'music-youtube', 'music-instagram', 'twitter', 'music-email']} />
             <Header
             title='Music'
-            blurb='I&apos;ve made a ton of music over the years as Sontomorio. Here you can find a catalogue of all my released music.' />
+            blurb='I&apos;ve made a ton of music over the years as Sontomorio. On this page is a catalogue of my most notable works.' />
         </div>
         <Scroller
         elements={musicReleases} />
