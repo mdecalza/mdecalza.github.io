@@ -1,6 +1,6 @@
 /* 2024 Matthew DeCalzadilla */
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router';
+import { HashRouter as Router, Route, Routes } from 'react-router';
 
 /* components */
 import Navbar from './Navbar/Navbar';
