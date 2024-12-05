@@ -1,7 +1,8 @@
 /* 2024 Matthew DeCalzadilla */
 
 .ArtImage {
-    min-width: clamp(320px, 32em, 95vw);
+    max-width: 100vw;
+    max-height: 75vh;
 }
 
 .ImageBlur {
