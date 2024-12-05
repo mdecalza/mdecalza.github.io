@@ -13,6 +13,9 @@ import CRUDtitle from '../../../assets/art/crud-title.png';
 import CRUDinter from '../../../assets/art/CRUD_INT.png';
 import hovercabTitle from '../../../assets/art/hov-titlepic.png';
 import hovercabInter from '../../../assets/art/hov-interpic2.png';
+import atoneTitle from '../../../assets/art/atn_TITLEPIC.png';
+import atoneCredit from '../../../assets/art/atn_credit2.png';
+import atoneEnding from '../../../assets/art/atone_bossback_aspect.png';
 import embryoTitle from '../../../assets/art/emb-titlepic.png';
 import intercep3title from '../../../assets/art/int3-title.png';
 import intercep3inter from '../../../assets/art/int3-inter.png';
@@ -23,7 +26,9 @@ import cloudSketch from '../../../assets/art/17-cloud.png';
 import intercep3sketch1 from '../../../assets/art/illustration-sketch1.png';
 import intercep3sketch2 from '../../../assets/art/illustration-sketch2.png';
 import intercep3sketch3 from '../../../assets/art/illustration-sketch4.png';
-import intercep3sketch4 from '../../../assets/art/illustration-sketch3.png';
+import sketchbook1 from '../../../assets/art/2-2024sketches-511.png';
+import sketchbook2 from '../../../assets/art/2-2024sketches-511-2.png';
+import sketchbook3 from '../../../assets/art/6-2024sketches-5-14.png';
 
 /* 3D level design */
 import atonementScreenshots from '../../../assets/art/atn_screenshots.png'
@@ -33,15 +38,17 @@ import tropicHELLscreenshot from '../../../assets/art/tropichell-screen.png';
 import doomedResidentScreenshots from '../../../assets/art/doomedresident-screens.png';
 
 /* album art */
+import deibyuCoverAlt from '../../../assets/art/deibyu2.png';
 import burningMyTimeCover from '../../../assets/art/burnin.jpg';
 import lucidCover from '../../../assets/art/lucid.jpg';
 import midnightMoviesCover from '../../../assets/art/midnight-movies.jpg';
 import sontoIVgatefold from '../../../assets/art/Sontomorio - Sonto IV - iv_sleeve_PAL.jpg';
 import sundayMorningTVCover from '../../../assets/art/sunday-morning-tv_big.png';
-import sontoOlegioCover from '../../../assets/art/sonto6_cover4.png';
+import bpmCover from '../../../assets/art/88bpm.png';
 import sontoOlegioCoverAlt from '../../../assets/art/olegio.png';
 import sontoOlegioCoverAlt2 from '../../../assets/art/SONTO-OLEGIO.jpg';
-import whopperCover from '../../../assets/art/whopper-big.png'
+import whopperCover from '../../../assets/art/whopper-big.png';
+import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
 import intercontinentalCover from '../../../assets/art/intercontinental-cover.png';
 import Socials from '../../Socials/Socials';
 
@@ -54,15 +61,20 @@ export default function Art() {
         createElement(ArtImage, { src: embryoTitle }),
         createElement(ArtImage, { src: CRUDinter }),
         createElement(ArtImage, { src: CRUDtitle }),
+        createElement(ArtImage, { src: atoneTitle }),
+        createElement(ArtImage, { src: atoneEnding }),
+        createElement(ArtImage, { src: atoneCredit }),
     ];
     
     const sketches = [
         createElement(ArtImage, { src: aerithSketch }),
         createElement(ArtImage, { src: cloudSketch }),
-        createElement(ArtImage, { src: intercep3sketch1 }),
         createElement(ArtImage, { src: intercep3sketch2 }),
+        createElement(ArtImage, { src: sketchbook1 }),
         createElement(ArtImage, { src: intercep3sketch3 }),
-        createElement(ArtImage, { src: intercep3sketch4 }),
+        createElement(ArtImage, { src: sketchbook2 }),
+        createElement(ArtImage, { src: intercep3sketch1 }),
+        createElement(ArtImage, { src: sketchbook3 }),
     ];
     
     const levelDesign = [
@@ -75,15 +87,17 @@ export default function Art() {
     
     const albumArt = [
         createElement(ArtImage, { src: intercontinentalCover }),
-        createElement(ArtImage, { src: sontoIVgatefold }),
+        createElement(ArtImage, { src: narlyYmorioCover }),
         createElement(ArtImage, { src: midnightMoviesCover }),
-        createElement(ArtImage, { src: sontoOlegioCover }),
-        createElement(ArtImage, { src: sontoOlegioCoverAlt2 }),
+        createElement(ArtImage, { src: deibyuCoverAlt }),
+        createElement(ArtImage, { src: sontoIVgatefold }),
         createElement(ArtImage, { src: sontoOlegioCoverAlt }),
-        createElement(ArtImage, { src: sundayMorningTVCover }),
         createElement(ArtImage, { src: lucidCover }),
-        createElement(ArtImage, { src: burningMyTimeCover }),
+        createElement(ArtImage, { src: sontoOlegioCoverAlt2 }),
         createElement(ArtImage, { src: whopperCover }),
+        createElement(ArtImage, { src: sundayMorningTVCover }),
+        createElement(ArtImage, { src: bpmCover }),
+        createElement(ArtImage, { src: burningMyTimeCover }),
     ];
 
     return (
@@ -102,11 +116,11 @@ export default function Art() {
         title='Sketches'
         elements={sketches} />
         <Scroller
-        title='3D Level Design'
-        elements={levelDesign} />
-        <Scroller
         title='Album Art'
         elements={albumArt} />
+        <Scroller
+        title='3D Level Design'
+        elements={levelDesign} />
         </>
     );
 }
