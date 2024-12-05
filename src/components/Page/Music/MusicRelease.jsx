@@ -2,13 +2,14 @@
 
 MusicRelease.propTypes = {
     title: '',
+    subtitle: '',
     releaseDate: '',
     type: '',
     genre: '',
     coverImageSrc: '',
 };
 
-export default function MusicRelease({title = '', releaseDate = '', type = '', genre = '', coverImageSrc = ''}) {
+export default function MusicRelease({title = '', subtitle = '', releaseDate = '', type = '', genre = '', coverImageSrc = ''}) {
     return (
         <div
         className='MusicRelease mx-5'>
@@ -18,13 +19,14 @@ export default function MusicRelease({title = '', releaseDate = '', type = '', g
             <div
             className='card bg-light px-5 py-3 w-100'>
                 <p
-                className='fs-4'>
-                    <b><i>{title}</i></b>
+                className='fs-4 mb-0'>
+                    <b><i>{title}</i></b><br />
                 </p>
                 <p>
+                    <b className='fs-6'><i>{subtitle}</i></b><br />
                     {type}<br />
                     <i>{genre}</i><br />
-                    Released: {releaseDate}<br />
+                    Released: {releaseDate}
                 </p>
             </div>
         </div>
