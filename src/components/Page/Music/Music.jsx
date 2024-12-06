@@ -10,13 +10,13 @@ import Socials from '../../Socials/Socials';
 
 /* assets */
 import sontomorioLogo from '../../../assets/music/sonto-logo.png';
-import deibyuCover from '../../../assets/music/1.png';
+import deibyuCover from '../../../assets/music/1.jpg';
 import burningMyTimeCover from '../../../assets/music/2.png';
 import lucidCover from '../../../assets/art/lucid.jpg';
 import midnightMoviesCover from '../../../assets/art/midnight-movies.jpg';
-import sontoIVcover from '../../../assets/music/4.png';
+import sontoIVcover from '../../../assets/music/4.jpg';
 import theFreewayCover from '../../../assets/music/5.png'
-import sundayMorningTVCover from '../../../assets/art/sunday-morning-tv_big.png';
+import sundayMorningTVCover from '../../../assets/music/tv.png';
 import sontoOlegioCover from '../../../assets/art/sonto6_cover4.png';
 import whopperCover from '../../../assets/art/whopper-big.png';
 import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
@@ -40,7 +40,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'THE NARLY Y MORIO LP',
-            subtitle: '(with Narly Nate)',
+            subtitle: '(with A. J. Abrahamson)',
             type: 'Album',
             releaseDate: 'Unreleased',
             genre: 'Experimental, hip-hop, rock',
