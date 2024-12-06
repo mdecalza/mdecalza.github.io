@@ -11969,12 +11969,6 @@ textarea.form-control-lg {
   max-width: 100vw;
 }
 
-.AlbumCard {
-  height: max(11em, 20vh);
-  min-width: 75%;
-  max-width: 100vw;
-}
-
 /* 2024 Matthew DeCalzadilla */
 .WadRelease {
   min-width: clamp(320px, 32em, 95vw);
