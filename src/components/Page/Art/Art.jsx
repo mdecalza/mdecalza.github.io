@@ -41,7 +41,7 @@ import doomedResidentScreenshots from '../../../assets/art/doomedresident-screen
 import deibyuCoverAlt from '../../../assets/art/deibyu2.png';
 import burningMyTimeCover from '../../../assets/art/burnin.jpg';
 import lucidCover from '../../../assets/art/lucid.jpg';
-import midnightMoviesCover from '../../../assets/art/midnight-movies.jpg';
+import midnightMoviesSleeve from '../../../assets/art/midnight-movies-sleeve.jpg';
 import sontoIVgatefold from '../../../assets/art/Sontomorio - Sonto IV - iv_sleeve_PAL.jpg';
 import sundayMorningTVCover from '../../../assets/art/sunday-morning-tv_big.png';
 import bpmCover from '../../../assets/art/88bpm.png';
@@ -88,8 +88,7 @@ export default function Art() {
     const albumArt = [
         createElement(ArtImage, { src: intercontinentalCover }),
         createElement(ArtImage, { src: narlyYmorioCover }),
-        createElement(ArtImage, { src: midnightMoviesCover }),
-        createElement(ArtImage, { src: deibyuCoverAlt }),
+        createElement(ArtImage, { src: midnightMoviesSleeve }),
         createElement(ArtImage, { src: sontoIVgatefold }),
         createElement(ArtImage, { src: sontoOlegioCoverAlt }),
         createElement(ArtImage, { src: lucidCover }),
@@ -98,6 +97,7 @@ export default function Art() {
         createElement(ArtImage, { src: sundayMorningTVCover }),
         createElement(ArtImage, { src: bpmCover }),
         createElement(ArtImage, { src: burningMyTimeCover }),
+        createElement(ArtImage, { src: deibyuCoverAlt }),
     ];
 
     return (
