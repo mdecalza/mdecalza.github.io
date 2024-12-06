@@ -47,8 +47,9 @@ import sundayMorningTVCover from '../../../assets/art/sunday-morning-tv_big.png'
 import bpmCover from '../../../assets/art/88bpm.png';
 import sontoOlegioCoverAlt from '../../../assets/art/olegio.png';
 import sontoOlegioCoverAlt2 from '../../../assets/art/SONTO-OLEGIO.jpg';
-import whopperCover from '../../../assets/art/whopper-big.png';
 import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
+import whopperCover from '../../../assets/art/whopper-big.png';
+import smoothSailingCover from '../../../assets/art/sailing-cover2.png';
 import intercontinentalCover from '../../../assets/art/intercontinental-sleeve.jpg';
 import Socials from '../../Socials/Socials';
 
@@ -87,6 +88,7 @@ export default function Art() {
     
     const albumArt = [
         createElement(ArtImage, { src: intercontinentalCover }),
+        createElement(ArtImage, { src: smoothSailingCover }),
         createElement(ArtImage, { src: midnightMoviesSleeve }),
         createElement(ArtImage, { src: sontoIVgatefold }),
         createElement(ArtImage, { src: sontoOlegioCoverAlt }),
