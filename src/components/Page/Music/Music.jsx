@@ -20,7 +20,7 @@ import sundayMorningTVCover from '../../../assets/art/sunday-morning-tv_big.png'
 import sontoOlegioCover from '../../../assets/art/sonto6_cover4.png';
 import whopperCover from '../../../assets/art/whopper-big.png';
 import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
-import intercontinentalCover from '../../../assets/art/intercontinental-cover.png';
+import intercontinentalCover from '../../../assets/music/7.png';
 
 export default function Music() {
     const musicReleases = [
