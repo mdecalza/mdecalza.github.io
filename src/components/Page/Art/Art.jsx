@@ -6,6 +6,7 @@ import { createElement } from 'react';
 import ArtImage from './ArtImage';
 import Header from '../../Header/Header';
 import Scroller from '../../Scroller/Scroller';
+import Socials from '../../Socials/Socials';
 
 /* assets */
 /* pixel illustrations */
@@ -51,7 +52,6 @@ import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
 import whopperCover from '../../../assets/art/whopper-big.png';
 import smoothSailingCover from '../../../assets/art/sailing-cover2.png';
 import intercontinentalCover from '../../../assets/art/intercontinental-sleeve.jpg';
-import Socials from '../../Socials/Socials';
 
 export default function Art() {
     const pixelArt = [
