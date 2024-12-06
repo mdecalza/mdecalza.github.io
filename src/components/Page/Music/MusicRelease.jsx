@@ -17,7 +17,7 @@ export default function MusicRelease({title = '', subtitle = '', releaseDate = '
             src={coverImageSrc}
             className='AlbumArt mx-auto my-5 rounded-2 border border-3 border-light border-opacity-75' />
             <div
-            className='AlbumCard card bg-light w-fit-content mx-auto px-4 py-3'>
+            className='card bg-light w-fit-content h-fit-content mx-auto px-5 pt-4 pb-3'>
                 <div
                 className='my-auto'>
                     <p
