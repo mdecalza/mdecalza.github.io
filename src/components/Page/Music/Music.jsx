@@ -40,7 +40,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'THE NARLY Y MORIO LP',
-            subtitle: '(with A. J. Abrahamson)',
+            subtitle: '(with A. J. A.)',
             type: 'Album',
             releaseDate: 'Unreleased',
             genre: 'Experimental, hip-hop, rock',
