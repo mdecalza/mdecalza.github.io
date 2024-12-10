@@ -110,7 +110,7 @@ export default function Music() {
         className='container-xxl'>
             <img
             src={sontomorioLogo}
-            className='w-25 m-5 rounded-5' />
+            className='w-25 m-5 rounded-5 shadow' />
             <Socials
             socialsList={['spotify', 'bandcamp', 'soundcloud', 'music-youtube', 'music-instagram', 'twitter', 'music-email']} />
             <Header

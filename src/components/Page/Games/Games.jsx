@@ -10,9 +10,6 @@ import Socials from '../../Socials/Socials';
 import wadsThumbnail from '../../../assets/games/wads-thumb.png';
 
 export default function Games() {
-    const gameButtonClasses = 'm-3 btn btn-transparent';
-    const gameThumbnailClasses = 'Thumbnail rounded-2 border border-2 border-light border-opacity-75';
-
     return (
         <div
         className='container-xxl'>
@@ -22,10 +19,10 @@ export default function Games() {
             socialsList={['linkedin', 'doomwiki', 'doomworld', 'doom-youtube', 'main-email']} />
             <Link
             to={{ pathname: '/wads', }}
-            className={gameButtonClasses}>
+            className='m-3 btn btn-transparent'>
                 <img
                 src={wadsThumbnail}
-                className={gameThumbnailClasses}/>
+                className='Thumbnail rounded-2 border border-2 border-light border-opacity-75 shadow'/>
             </Link>
         </div>
     );

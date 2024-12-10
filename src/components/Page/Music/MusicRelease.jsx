@@ -12,12 +12,12 @@ MusicRelease.propTypes = {
 export default function MusicRelease({title = '', subtitle = '', releaseDate = '', type = '', genre = '', coverImageSrc = ''}) {
     return (
         <div
-        className='MusicRelease d-flex flex-column mx-5 justify-content-center'>
+        className='MusicRelease d-flex flex-column justify-content-center'>
             <img
             src={coverImageSrc}
-            className='AlbumArt mx-auto my-5 rounded-2 border border-3 border-light border-opacity-75' />
+            className='AlbumArt mx-auto my-5 rounded-2 border border-3 border-light border-opacity-75 shadow' />
             <div
-            className='card bg-light w-fit-content h-fit-content mx-auto px-5 pt-4 pb-3'>
+            className='card bg-light w-fit-content h-fit-content mx-auto px-5 pt-4 pb-3 shadow-sm'>
                 <div
                 className='my-auto'>
                     <p
