@@ -13,7 +13,7 @@ export default function Navbar() {
         <div
         className='NavbarContainer'>
             <div
-            className='Navbar mx-auto pt-2 bg-light rounded-bottom-3'>
+            className='Navbar mx-auto pt-2 bg-light rounded-bottom-3 shadow-sm'>
                 <NavbarLogo/>
                 {allButtonsDisplay() ? <NavbarWidescreen /> : <NavbarDropdown />}
             </div>
