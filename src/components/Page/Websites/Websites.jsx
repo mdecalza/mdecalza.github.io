@@ -1,11 +1,13 @@
 /* 2024 Matthew DeCalzadilla */
 
+/* assets */
 import casaFrescaThumbnail from '../../../assets/websites/casafrescapage.jpg';
 import itsMateoThumbnail from '../../../assets/websites/itsmateopage.png';
 
+/* components */
 import Header from '../../Header/Header';
 import Socials from '../../Socials/Socials';
-import WebsiteThumbnail from './WebsiteThumbnail';
+import Thumbnail from '../../Thumbnail/Thumbnail';
 
 export default function Websites() {
 
@@ -16,13 +18,12 @@ export default function Websites() {
             title='Websites' />
             <Socials
             socialsList={[ 'linkedin', 'main-email' ]} />
-            <WebsiteThumbnail
+            <Thumbnail
             to={{ pathname: 'https://casafrescacleaning.com/' }}
-            imgSrc={casaFrescaThumbnail} />
-            <WebsiteThumbnail
+            imgSrc={ casaFrescaThumbnail } />
+            <Thumbnail
             to={{ pathname: '/' }}
-            imgSrc={itsMateoThumbnail}
-            innerLink={true} />
+            imgSrc={ itsMateoThumbnail } />
         </div>
     );
 }
