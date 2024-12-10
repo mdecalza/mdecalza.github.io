@@ -20,7 +20,7 @@ WebsiteThumbnail.propTypes = {
     innerLink: false
 };
 
-export function WebsiteThumbnail({ to = { pathname: '/', }, imgSrc = '', innerLink = false }) {
+export default function WebsiteThumbnail({ to = { pathname: '/', }, imgSrc = '', innerLink = false }) {
     const websiteButtonClasses = 'mx-auto my-3 btn btn-transparent';
 
     return (
