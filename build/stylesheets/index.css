@@ -11914,6 +11914,15 @@ textarea.form-control-lg {
 }
 
 /* 2024 Matthew DeCalzadilla */
+.IconButton {
+  width: fit-content;
+}
+
+.IconButtonIcon {
+  max-height: 20px;
+}
+
+/* 2024 Matthew DeCalzadilla */
 .Scroller {
   height: max(600px, fit-content);
 }
@@ -11960,8 +11969,8 @@ textarea.form-control-lg {
 
 /* 2024 Matthew DeCalzadilla */
 .MusicRelease {
-  min-width: 45em;
-  max-height: 110vh;
+  width: clamp(45em, 45em, 100vw);
+  aspect-ratio: 1/1.1;
 }
 
 .AlbumArt {
