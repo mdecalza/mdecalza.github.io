@@ -11935,6 +11935,12 @@ textarea.form-control-lg {
 }
 
 /* 2024 Matthew DeCalzadilla */
+.UnorderedList {
+  width: fit-content;
+  max-width: 95vw;
+}
+
+/* 2024 Matthew DeCalzadilla */
 .Page {
   min-height: 100%;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(15, 21, 37));
