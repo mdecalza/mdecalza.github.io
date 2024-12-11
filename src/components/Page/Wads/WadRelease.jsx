@@ -35,7 +35,7 @@ export default function WadRelease({title = '', role = '', logoSrc = '', screens
 
     return (
         <div
-        className='WadRelease d-flex flex-column justify-content-evenly mx-5'>
+        className='WadRelease d-flex flex-column justify-content-evenly me-5'>
             <div
             className='my-4'>
                 <img
@@ -54,7 +54,7 @@ export default function WadRelease({title = '', role = '', logoSrc = '', screens
                 { screenshots }
             </div>
             <figure
-            className={`${checkTitle(quote) ? 'd-block' : 'd-none'} card text-center px-2 pt-3 pb-2`}>
+            className={`${checkTitle(quote) ? 'd-block' : 'd-none'} card text-center px-2 pt-3 pb-2 shadow`}>
                 <blockquote
                 className='blockquote p-1'>
                     <p><q>{ quote }</q></p>

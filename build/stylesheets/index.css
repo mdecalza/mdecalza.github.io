@@ -11980,7 +11980,7 @@ textarea.form-control-lg {
 
 /* 2024 Matthew DeCalzadilla */
 .WadRelease {
-  min-width: clamp(320px, 32em, 95vw);
+  min-width: min(32em, 100vw);
 }
 
 #root {
