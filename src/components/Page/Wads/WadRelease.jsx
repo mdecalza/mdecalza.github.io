@@ -1,12 +1,12 @@
 /* 2024 Matthew DeCalzadilla */
 
-import { createElement, useEffect, useState } from "react";
+import { createElement, useEffect, useState } from 'react';
 
 /* tests */
-import checkTitle from "../../Scroller/__tests__/checkTitle";
+import checkTitle from '../../Scroller/__tests__/checkTitle';
 
 /* components */
-import WadScreenshot from "./WadScreenshot";
+import WadScreenshot from './WadScreenshot';
 
 WadRelease.propTypes = {
     title: '',
@@ -17,50 +17,51 @@ WadRelease.propTypes = {
     quoteCredit: '',
     quoteSource: '',
     quoteHREF: '',
+    links: [],
 };
 
-export default function WadRelease({title = '', role = '', logoSrc = '', screenshotImageSources = [], quote = '', quoteCredit = '', quoteSource = '', quoteHREF = ''}) {
-    const [screenshots, setScreenshots] = useState([]);
+export default function WadRelease({title = '', role = '', logoSrc = '', screenshotImageSources = [], quote = '', quoteCredit = '', quoteSource = '', quoteHREF = '', links = [] }) {
+    const [ screenshots, setScreenshots ] = useState([]);
 
     useEffect(() => {
         let content = [];
 
         screenshotImageSources.forEach((source) => {
-            content.push(createElement(WadScreenshot, {src: source}));
+            content.push(createElement(WadScreenshot, { src: source }));
         });
 
         setScreenshots(content);
-    }, [screenshotImageSources]);
+    }, [ screenshotImageSources ]);
 
     return (
         <div
-        className='WadRelease mx-5'>
+        className='WadRelease d-flex flex-column justify-content-evenly mx-5'>
             <div
-            style={{ minHeight: '150px', }}>
+            className='my-4'>
                 <img
-                src={logoSrc}
-                alt={checkTitle(title) ? title : ''}
-                id={checkTitle(title) ? title : ''} />
+                src={ logoSrc }
+                alt={ checkTitle(title) ? title : '' }
+                id={ checkTitle(title) ? title : '' } />
             </div>
             <div
-            className='card w-50 mx-auto'>
+            className='card w-50 mx-auto shadow-sm'>
                 <p
                 className='fs-6 my-auto p-1'>
-                    {role}
+                    { role }
                 </p>
             </div>
             <div>
-                {screenshots}
+                { screenshots }
             </div>
             <figure
             className={`${checkTitle(quote) ? 'd-block' : 'd-none'} card text-center px-2 pt-3 pb-2`}>
                 <blockquote
                 className='blockquote p-1'>
-                    <p><q>{quote}</q></p>
+                    <p><q>{ quote }</q></p>
                 </blockquote>
                 <figcaption
                 className='blockquote-footer p-1'>
-                    <a href={quoteHREF}>{quoteCredit}</a>, &ndash; <cite title='source'>{quoteSource}</cite>
+                    <a href={ quoteHREF }>{ quoteCredit }</a>, &ndash; <cite title='source'>{ quoteSource }</cite>
                 </figcaption>
             </figure>
             <div
@@ -71,6 +72,10 @@ export default function WadRelease({title = '', role = '', logoSrc = '', screens
                 type='button'>
                     Download
                 </a>
+            </div>
+            <div
+            className='d-flex flex-wrap justify-content-center'>
+                { links }
             </div>
         </div>
     );
