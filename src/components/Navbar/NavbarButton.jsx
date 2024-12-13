@@ -8,7 +8,7 @@ NavbarButton.propTypes = {
 }
 
 export default function NavbarButton({text = '', widescreen = false}) {
-    const navbarButtonClassBase = 'NavbarButton btn btn-dark bg-gradient my-1';
+    const navbarButtonClassBase = 'NavbarButton btn btn-dark my-1';
 
     return (
         <NavLink
