@@ -11,4 +11,15 @@
     inset: 0;
     content: '';
     position: absolute;
+
+    animation: backgroundFadeIn 2.25s ease forwards;
+}
+
+@keyframes backgroundFadeIn {
+    0% {
+        background-color: rgba(15, 21, 37, 1);
+    }
+    100% {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(15, 21, 37, 0.7));
+    }
 }

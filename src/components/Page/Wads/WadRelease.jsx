@@ -35,7 +35,7 @@ export default function WadRelease({title = '', role = '', logoSrc = '', screens
 
     return (
         <div
-        className='WadRelease d-flex flex-column justify-content-evenly align-items-center me-5'>
+        className='WadRelease fadeInDelayed d-flex flex-column justify-content-evenly align-items-center me-5'>
             <div
             className='my-4'>
                 <img

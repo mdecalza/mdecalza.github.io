@@ -13,7 +13,7 @@ export default function Websites() {
 
     return (
         <div
-        className='container-xxl'>
+        className='fadeIn container-xxl'>
             <Header
             title='Websites' />
             <Socials

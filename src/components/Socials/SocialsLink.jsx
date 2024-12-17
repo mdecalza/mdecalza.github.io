@@ -103,7 +103,7 @@ export default function SocialsLink({target = ''}) {
         href={targetURL}>
             <img
             src={iconSource}
-            className={`m-2 ${(targetURL === '#') ? 'd-none' : 'd-inline'}`}
+            className={`SocialsLink popIn m-2 ${(targetURL === '#') ? 'd-none' : 'd-inline'}`}
             style={{ width: '64px', }}/>
         </a>
         </>

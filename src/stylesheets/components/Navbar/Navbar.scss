@@ -1,9 +1,14 @@
 /* 2024 Matthew DeCalzadilla */
 
+@import '../../keyframes/fadeIn.scss';
+
 .NavbarContainer {
     position: fixed;
     width: 100%;
     z-index: 4;
+
+    animation: fadeIn 0.9s ease 0.25s 1 forwards;
+    opacity: 0;
 }
 
 .Navbar {

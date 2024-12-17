@@ -1,0 +1,20 @@
+/* 2024 Matthew DeCalzadilla */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+}
+
+.fadeInDelayed {
+    animation: fadeIn 1s ease 0.3s forwards;
+    opacity: 0;
+}

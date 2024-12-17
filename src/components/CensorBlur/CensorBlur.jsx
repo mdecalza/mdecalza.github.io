@@ -32,8 +32,11 @@ export default function CensorBlur({ contentWarningList = [] }) {
                 </h3>
                 <hr />
                 <p
-                className='fs-4'>
+                className='fs-5'>
                     The art featured on this page contains depections of:<br />
+                </p>
+                <p
+                className='fs-4'>
                     <b>{warnings}</b>
                 </p>
                 <hr />
@@ -46,7 +49,7 @@ export default function CensorBlur({ contentWarningList = [] }) {
                         &ldquo;No, thanks. Please, take me home.&rdquo;
                     </Link>
                     <button
-                    className='btn btn-light opacity-50 my-2'
+                    className='btn btn-light opacity-75 my-2'
                     onClick={() => { setOn(false) }}>
                         &ldquo;I am 18+ years of age, and I am okay with seeing this content.&rdquo;
                     </button>

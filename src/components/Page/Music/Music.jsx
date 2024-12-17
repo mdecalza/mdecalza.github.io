@@ -210,10 +210,10 @@ export default function Music() {
     return (
         <>
         <div
-        className='container-xxl'>
+        className='fadeIn container-xxl'>
             <iframe
             src='https://open.spotify.com/embed/artist/3goR9KK8F6uqLA7yoXjYgL?utm_source=generator'
-            className='border border-0 shadow mb-5'
+            className='popInDelayed border border-0 shadow mb-5'
             style={{ borderRadius: '12px' }}
             width='95%'
             height='152px'
