@@ -55,10 +55,12 @@ import smoothSailingCover from '../../../assets/art/sailing-cover2.png';
 import intercontinentalCover from '../../../assets/art/intercontinental-sleeve.jpg';
 
 /* graphic design */
-import casaFrescaLogo from '../../../assets/art/casaFrescaLogo.png';
-import atoneLogo from '../../../assets/art/atoneLogo.png';
-import CRUDlogo from '../../../assets/art/CRUDlogo.png';
-import embryoLogo from '../../../assets/art/embryoLogo.png';
+import casaFrescaLogo from '../../../assets/art/casa-fresca-logo.png';
+import sontomorioLogo from '../../../assets/music/sonto-logo.png';
+import burningLogo from '../../../assets/art/burning-logo.png';
+import atoneLogo from '../../../assets/art/atone-logo.png';
+import CRUDlogo from '../../../assets/art/CRUD-logo.png';
+import embryoLogo from '../../../assets/art/embryo-logo.png';
 
 export default function Art() {
     const pixelArt = [
@@ -111,6 +113,8 @@ export default function Art() {
 
     const graphicDesign = [
         createElement(ArtImage, { src: casaFrescaLogo, border: false }),
+        createElement(ArtImage, { src: sontomorioLogo, border: false }),
+        createElement(ArtImage, { src: burningLogo, border: false }),
         createElement(ArtImage, { src: atoneLogo, border: false }),
         createElement(ArtImage, { src: CRUDlogo, border: false }),
         createElement(ArtImage, { src: embryoLogo, border: false }),
