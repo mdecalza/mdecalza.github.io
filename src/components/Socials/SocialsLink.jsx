@@ -7,6 +7,7 @@ import bandcamp from '../../assets/socials/bandcamp-icon.png';
 import bethesda from '../../assets/socials/bethesdanet-icon.png';
 import doomWiki from '../../assets/socials/doomwiki-icon.png';
 import doomworld from '../../assets/socials/doomworld-icon.png';
+import github from '../../assets/socials/github-mark-white.svg';
 import gmail from '../../assets/socials/gmail-icon.png';
 import instagram from '../../assets/socials/inst-icon.png';
 import linkedIn from '../../assets/socials/linkedin-icon.png';
@@ -40,6 +41,10 @@ export default function SocialsLink({target = ''}) {
             case 'doomworld':
                 setTargetURL('https://www.doomworld.com/profile/12411-moustachio/');
                 setIconSource(doomworld);
+                break;
+            case 'github':
+                setTargetURL('https://github.com/mdecalza');
+                setIconSource(github);
                 break;
             case 'gmail':
             case 'main-gmail':

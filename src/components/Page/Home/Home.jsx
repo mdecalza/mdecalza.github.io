@@ -13,7 +13,7 @@ export default function Home() {
             <div
             className='Home'>
                 <img
-                src={mateoLogo}
+                src={ mateoLogo }
                 className='w-100'/>
                 <hr
                 className='my-4'/>
@@ -27,7 +27,7 @@ export default function Home() {
             </h2>
             <hr/>
             <Socials
-            socialsList={['linkedin', 'main-email']}/>
+            socialsList={[ 'linkedin', 'main-email', 'github' ]}/>
         </div>
     );
 }

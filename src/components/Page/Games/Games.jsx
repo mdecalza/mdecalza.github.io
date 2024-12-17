@@ -15,7 +15,7 @@ export default function Games() {
             <Header
             title='Games'/>
             <Socials
-            socialsList={['linkedin', 'doomwiki', 'doomworld', 'doom-youtube', 'main-email']} />
+            socialsList={['linkedin', 'doomwiki', 'doomworld', 'doom-youtube', 'main-email', 'github']} />
             <Thumbnail
             to={{ pathname: '/wads' }}
             imgSrc={ wadsThumbnail } />

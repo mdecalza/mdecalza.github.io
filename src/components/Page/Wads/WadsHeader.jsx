@@ -11,7 +11,7 @@ export default function WadsHeader() {
             <Header
             title='Doom Wads' />
             <Socials
-            socialsList={[ 'doomworld', 'doomwiki', 'main-email' ]} />
+            socialsList={[ 'doomworld', 'doomwiki', 'main-email', 'github' ]} />
             <p
             className='pt-3 fs-4'>
                 <b>What is a wad anyway?</b>
