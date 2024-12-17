@@ -59,7 +59,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'THE NARLY Y MORIO LP',
-            subtitle: '(with A. J. A.)',
+            subtitle: '(with "Shreds" Abrahamson)',
             type: 'Album',
             releaseDate: 'Unreleased',
             genre: 'Psychedelic, hip-hop, rock',
