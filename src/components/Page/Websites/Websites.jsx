@@ -1,7 +1,7 @@
 /* 2024 Matthew DeCalzadilla */
 
 /* assets */
-import casaFrescaThumbnail from '../../../assets/websites/casafrescapage.jpg';
+import casaFrescaThumbnail from '../../../assets/websites/casafrescapage.png';
 import itsMateoThumbnail from '../../../assets/websites/itsmateopage.png';
 
 /* components */
