@@ -1,0 +1,9 @@
+/* 2024 Matthew DeCalzadilla */
+
+#CensorBlur {
+    backdrop-filter: blur(20px);
+    content: '';
+    inset: 0;
+    position: absolute;
+    z-index: 3;
+}

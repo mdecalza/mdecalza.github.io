@@ -4,6 +4,7 @@ import { createElement } from 'react';
 
 /* components */
 import ArtImage from './ArtImage';
+import CensorBlur from '../../CensorBlur/CensorBlur';
 import Header from '../../Header/Header';
 import Scroller from '../../Scroller/Scroller';
 import Socials from '../../Socials/Socials';
@@ -52,6 +53,14 @@ import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
 import whopperCover from '../../../assets/art/whopper-big.png';
 import smoothSailingCover from '../../../assets/art/sailing-cover2.png';
 import intercontinentalCover from '../../../assets/art/intercontinental-sleeve.jpg';
+
+/* graphic design */
+import casaFrescaLogo from '../../../assets/art/casa-fresca-logo.png';
+import sontomorioLogo from '../../../assets/music/sonto-logo.png';
+import burningLogo from '../../../assets/art/burning-logo.png';
+import atoneLogo from '../../../assets/art/atone-logo.png';
+import CRUDlogo from '../../../assets/art/CRUD-logo.png';
+import embryoLogo from '../../../assets/art/embryo-logo.png';
 
 export default function Art() {
     const pixelArt = [
@@ -102,27 +111,41 @@ export default function Art() {
         createElement(ArtImage, { src: deibyuCoverAlt }),
     ];
 
+    const graphicDesign = [
+        createElement(ArtImage, { src: casaFrescaLogo, border: false }),
+        createElement(ArtImage, { src: sontomorioLogo, border: false }),
+        createElement(ArtImage, { src: burningLogo, border: false }),
+        createElement(ArtImage, { src: atoneLogo, border: false }),
+        createElement(ArtImage, { src: CRUDlogo, border: false }),
+        createElement(ArtImage, { src: embryoLogo, border: false }),
+    ];
+
     return (
         <>
+        <CensorBlur
+        contentWarningList={[ 'Violence', 'Gore' ]} />
         <div
         className='container-xxl'>
             <Header
             title='Art' />
         </div>
         <Socials
-        socialsList={['art-instagram', 'linkedin', 'main-email']} />
+        socialsList={[ 'art-instagram', 'linkedin', 'main-email' ]} />
         <Scroller
         title='Pixel Illustrations'
-        elements={pixelArt} />
+        elements={ pixelArt } />
         <Scroller
         title='Sketches'
-        elements={sketches} />
+        elements={ sketches } />
         <Scroller
         title='Album Art'
-        elements={albumArt} />
+        elements={ albumArt } />
+        <Scroller
+        title='Graphic Design'
+        elements={ graphicDesign } />
         <Scroller
         title='3D Level Design'
-        elements={levelDesign} />
+        elements={ levelDesign } />
         </>
     );
 }

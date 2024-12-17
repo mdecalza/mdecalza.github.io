@@ -11849,7 +11849,7 @@ textarea.form-control-lg {
 .NavbarContainer {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 4;
 }
 
 .Navbar {
@@ -11901,6 +11901,15 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
   z-index: -2;
+}
+
+/* 2024 Matthew DeCalzadilla */
+#CensorBlur {
+  backdrop-filter: blur(20px);
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: 3;
 }
 
 /* 2024 Matthew DeCalzadilla */
@@ -11959,13 +11968,6 @@ textarea.form-control-lg {
 .ArtImage {
   max-width: 100vw;
   max-height: 75vh;
-}
-
-.ImageBlur {
-  z-index: 1;
-  backdrop-filter: blur(5px);
-  width: 100%;
-  height: 100%;
 }
 
 /* 2024 Matthew DeCalzadilla */
