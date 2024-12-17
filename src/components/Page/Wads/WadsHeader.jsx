@@ -19,9 +19,9 @@ export default function WadsHeader() {
             <p
             className='pb-5'>
                 <br />
-                A <a href='https://doomwiki.org/wiki/WAD'>.wad</a> file contains all of the data for the game <a href='https://doomwiki.org/wiki/Doom'><i>Doom</i> (1993)</a> by <a href='https://doomwiki.org/wiki/Id_Software'>id Software</a>. One can make new levels, graphics, music, and more for <i>Doom</i> by loading an additional .wad file with the game. As such, players and creators alike have enjoyed the pastime of creating new content for <i>Doom</i>.<br />
+                A <a href='https://doomwiki.org/wiki/WAD'>.wad</a> file contains all of the data for the game <a href='https://doomwiki.org/wiki/Doom'><i>Doom</i> (1993)</a> by <a href='https://doomwiki.org/wiki/Id_Software'>id Software</a>. One can enjoy new levels, graphics, music, and more for <i>Doom</i> by loading an extra .wad file on top of the game. Since 1994, players and creators alike have been enjoying a seemingly bottomless buffet of these wad files.<br />
                 <br />
-                Since 2011, I&apos;ve designed many custom levels for the classic video game, Doom. Here is a list of my most notable Doom creations—or those that I had a large part in creating.            
+                Since 2011, I&apos;ve designed many wads&mdash;either all on my own or with the help of others. Here are my most notable Doom creations, including collaborative projects that I had a leading role in creating. I&apos;ve also listed wads by others for which I&apos;ve designed levels.
             </p>
         </div>
     );
