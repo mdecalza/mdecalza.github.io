@@ -11932,6 +11932,10 @@ textarea.form-control-lg {
   inset: 0;
   position: absolute;
   z-index: 3;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /* 2024 Matthew DeCalzadilla */
