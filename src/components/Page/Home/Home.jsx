@@ -9,12 +9,11 @@ import Socials from '../../Socials/Socials';
 export default function Home() {
     return(
         <div
-        className='container-xxl'>
-            <div
-            className='Home'>
+        className='fadeIn container-xxl'>
+            <div>
                 <img
                 src={ mateoLogo }
-                className='w-100'/>
+                className='MateoLogo w-100'/>
                 <hr
                 className='my-4'/>
                 <p

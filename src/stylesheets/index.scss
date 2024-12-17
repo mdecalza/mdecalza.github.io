@@ -17,6 +17,7 @@ $warning: #F0DF8E;
 @import 'components/Footer.scss';
 @import 'components/IconButton.scss';
 @import 'components/Scroller.scss';
+@import 'components/SocialsLink.scss';
 @import 'components/Thumbnail.scss';
 @import 'components/UnorderedList.scss';
 
@@ -26,6 +27,11 @@ $warning: #F0DF8E;
 @import 'pages/Home/Home.scss';
 @import 'pages/Music/MusicRelease.scss';
 @import 'pages/Wads/WadRelease.scss';
+
+// Animation keyframes
+@import 'keyframes/fadeIn.scss';
+@import 'keyframes/growOnHover.scss';
+@import 'keyframes/popIn.scss';
 
 // root element style
 #root {

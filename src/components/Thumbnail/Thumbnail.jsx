@@ -10,7 +10,7 @@ Thumbnail.propTypes = {
 
 export default function Thumbnail({ to = { pathname: '/' }, imgSrc = '', isInnerLink = !to.pathname.includes('://') }) {
     const websiteButtonClasses = 'mx-auto my-3 btn btn-transparent';
-    const thumbnailImageClasses = 'Thumbnail rounded-4 border border-2 border-light border-opacity-75 shadow';
+    const thumbnailImageClasses = 'Thumbnail fadeInDelayed rounded-4 border border-2 border-light border-opacity-75 shadow';
 
     return (
         isInnerLink

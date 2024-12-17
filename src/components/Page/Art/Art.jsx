@@ -125,27 +125,30 @@ export default function Art() {
         <CensorBlur
         contentWarningList={[ 'Violence', 'Gore' ]} />
         <div
-        className='container-xxl'>
-            <Header
-            title='Art' />
+        className='fadeIn'>
+            <div
+            className='container-xxl'>
+                <Header
+                title='Art' />
+            </div>
+            <Socials
+            socialsList={[ 'art-instagram', 'linkedin', 'main-email' ]} />
+            <Scroller
+            title='Pixel Illustrations'
+            elements={ pixelArt } />
+            <Scroller
+            title='Sketches'
+            elements={ sketches } />
+            <Scroller
+            title='Album Art'
+            elements={ albumArt } />
+            <Scroller
+            title='Graphic Design'
+            elements={ graphicDesign } />
+            <Scroller
+            title='3D Level Design'
+            elements={ levelDesign } />
         </div>
-        <Socials
-        socialsList={[ 'art-instagram', 'linkedin', 'main-email' ]} />
-        <Scroller
-        title='Pixel Illustrations'
-        elements={ pixelArt } />
-        <Scroller
-        title='Sketches'
-        elements={ sketches } />
-        <Scroller
-        title='Album Art'
-        elements={ albumArt } />
-        <Scroller
-        title='Graphic Design'
-        elements={ graphicDesign } />
-        <Scroller
-        title='3D Level Design'
-        elements={ levelDesign } />
         </>
     );
 }

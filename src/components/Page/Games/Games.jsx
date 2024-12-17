@@ -11,7 +11,7 @@ import Thumbnail from "../../Thumbnail/Thumbnail";
 export default function Games() {
     return (
         <div
-        className='container-xxl'>
+        className='fadeIn container-xxl'>
             <Header
             title='Games'/>
             <Socials

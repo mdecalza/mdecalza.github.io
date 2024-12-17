@@ -7,7 +7,7 @@ import Header from "../../Header/Header";
 export default function Bio() {
     return (
         <div
-        className='container-xxl'>
+        className='fadeIn container-xxl'>
             <Header
             title='Bio' />
             <h3

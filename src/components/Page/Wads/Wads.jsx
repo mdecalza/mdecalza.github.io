@@ -140,12 +140,13 @@ export default function Wads() {
     ];
 
     return (
-        <>
-        <WadsHeader />
-        <Scroller
-        elements={ wadsList } />
-        <UnorderedList
-        title='More WADs I&apos;ve contributed to' />
-        </>
+        <div
+        className='fadeIn'>
+            <WadsHeader />
+            <Scroller
+            elements={ wadsList } />
+            <UnorderedList
+            title='More WADs I&apos;ve contributed to' />
+        </div>
     );
 }

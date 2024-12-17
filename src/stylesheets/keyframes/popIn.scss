@@ -1,0 +1,23 @@
+/* 2024 Matthew DeCalzadilla */
+
+@keyframes popIn {
+    0% {
+        scale: 0;
+    }
+    42% {
+        scale: 1.1;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+.popIn {
+    animation: popIn 0.875s ease 0.25s 1 forwards;
+    scale: 0;
+}
+
+.popInDelayed {
+    animation: popIn 0.875s ease 0.5s 1 forwards;
+    scale: 0;
+}
