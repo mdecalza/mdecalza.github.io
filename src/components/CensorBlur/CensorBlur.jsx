@@ -21,10 +21,6 @@ export default function CensorBlur({ contentWarningList = [] }) {
         setWarnings(listString);
     }, [contentWarningList]);
 
-    useEffect(() => {
-        console.log(on);
-    }, [on]);
-
     return (
         <div
         id='CensorBlur'
@@ -35,10 +31,10 @@ export default function CensorBlur({ contentWarningList = [] }) {
                     <i>CONTENT WARNING</i>
                 </h3>
                 <hr />
-                <p>
-                    The art featured on this page contains depections of: <br />
-                    <br />
-                    {warnings}
+                <p
+                className='fs-4'>
+                    The art featured on this page contains depections of:<br />
+                    <b>{warnings}</b>
                 </p>
                 <hr />
                 <div
