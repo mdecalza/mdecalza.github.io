@@ -1,17 +1,10 @@
 /* 2024 Matthew DeCalzadilla */
 
-@keyframes growOnHover {
-    0% {
-        scale: 1;
-    }
-    42% {
-        scale: 1.2;
-    }
-    100% {
-        scale: 1.15;
-    }
+.growOnHover {
+    transition: scale 0.25s;
+    transition-timing-function: ease;
 }
 
 .growOnHover:hover {
-    animation: growOnHover 0.7s ease forwards;
+    scale: 1.05;
 }

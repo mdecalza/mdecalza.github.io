@@ -23,6 +23,11 @@ SocialsLink.propTypes = {
 export default function SocialsLink({target = ''}) {
     const [targetURL, setTargetURL] = useState('#');
     const [iconSource, setIconSource] = useState(null);
+    const [animation, setAnimation] = useState('popIn');
+
+    useEffect(() => {
+        setTimeout(setAnimation, 875, '');
+    }, []);
 
     useEffect(() => {
         switch (target.toLowerCase()) {
@@ -103,7 +108,7 @@ export default function SocialsLink({target = ''}) {
         href={targetURL}>
             <img
             src={iconSource}
-            className={`SocialsLink popIn m-2 ${(targetURL === '#') ? 'd-none' : 'd-inline'}`}
+            className={`SocialsLink ${animation} m-2 ${(targetURL === '#') ? 'd-none' : 'd-inline'}`}
             style={{ width: '64px', }}/>
         </a>
         </>

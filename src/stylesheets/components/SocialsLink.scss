@@ -1,5 +1,10 @@
 /* 2024 Matthew DeCalzadilla */
 
 .SocialsLink {
-    scale: 0;
+    transition: scale 0.25s;
+    transition-timing-function: ease;
+}
+
+.SocialsLink:hover {
+    scale: 1.1;
 }
