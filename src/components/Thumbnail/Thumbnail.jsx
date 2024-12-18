@@ -1,5 +1,6 @@
 /* 2024 Matthew DeCalzadilla */
 
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 
 Thumbnail.propTypes = {
@@ -9,15 +10,15 @@ Thumbnail.propTypes = {
 };
 
 export default function Thumbnail({ to = { pathname: '/' }, imgSrc = '', isInnerLink = !to.pathname.includes('://') }) {
-    const websiteButtonClasses = 'mx-auto my-3 btn btn-transparent';
-    const thumbnailImageClasses = 'Thumbnail fadeInDelayed rounded-4 border border-2 border-light border-opacity-75 shadow';
+    const thumbnailButtonClasses = 'mx-auto my-3 btn btn-transparent';
+    const thumbnailImageClasses = 'Thumbnail fadeInDelayed growOnHover rounded-4 border border-2 border-light border-opacity-75 shadow';
 
     return (
         isInnerLink
         ?
         <Link
         to={ to }
-        className={ websiteButtonClasses }
+        className={ thumbnailButtonClasses }
         type='button'>
             <img
             src={ imgSrc }
@@ -26,7 +27,7 @@ export default function Thumbnail({ to = { pathname: '/' }, imgSrc = '', isInner
         :
         <a
         href={ to.pathname }
-        className={ websiteButtonClasses }
+        className={ thumbnailButtonClasses }
         type='button'>
             <img
             src={ imgSrc }

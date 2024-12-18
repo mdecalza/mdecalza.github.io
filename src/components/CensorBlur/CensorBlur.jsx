@@ -44,13 +44,13 @@ export default function CensorBlur({ contentWarningList = [] }) {
                 className='d-flex flex-column justify-content-center align-items-center'>
                     <Link
                     to={{ pathname: '/' }}
-                    type='button'
-                    className='btn btn-light my-2'>
+                    className='growOnHover btn btn-light my-2'
+                    type='button'>
                         &ldquo;No, thanks. Please, take me home.&rdquo;
                     </Link>
                     <button
-                    className='btn btn-light opacity-75 my-2'
-                    onClick={() => { setOn(false) }}>
+                    onClick={() => { setOn(false) }}
+                    className='growOnHover btn btn-light opacity-75 my-2'>
                         &ldquo;I am 18+ years of age, and I am okay with seeing this content.&rdquo;
                     </button>
                 </div>
