@@ -44,6 +44,7 @@ html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    text-rendering: geometricPrecision;
 }
 
 body {
@@ -85,4 +86,8 @@ h4 {
 
 h5 {
     text-shadow: 1px 2px black;
+}
+
+img {
+    image-rendering: crisp-edges;
 }

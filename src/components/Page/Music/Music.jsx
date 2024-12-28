@@ -64,6 +64,13 @@ export default function Music() {
             releaseDate: 'Unreleased',
             genre: 'Psychedelic, hip-hop, rock',
             coverImageSrc: narlyYmorioCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/k6R_75SZlbI',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+            ]
         }),
         createElement(MusicRelease, {
             title: 'Sonto\'olegio',
@@ -163,6 +170,11 @@ export default function Music() {
             coverImageSrc: lucidCover,
             links: [
                 createElement(IconButton, {
+                    href: 'https://youtu.be/zEsdQEW04do',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
                     href: 'https://soundcloud.com/sontomorio/lucid-dreaming?si=ee2cbc158e8c4660954530e2aa36625d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
@@ -204,6 +216,13 @@ export default function Music() {
             releaseDate: 'January 23, 2019',
             genre: 'Hip-hop/rap, electronic, psychedelic',
             coverImageSrc: priibyuCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/xJ6Zhng8-KQ',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                })
+            ]
         }),
     ];
 
@@ -231,4 +250,3 @@ export default function Music() {
         </>
     );
 }
-
