@@ -3,7 +3,7 @@
 import { Link } from 'react-router';
 
 /* components */
-import mateoLogo from '../../../assets/home/mateo.png';
+import mateoLogo from '../../../assets/home/mateowhite.png';
 import Socials from '../../Socials/Socials';
 
 export default function Home() {
