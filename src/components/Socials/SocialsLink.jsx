@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 
 /* button icon filepaths */
+import appleMusic from '../../assets/socials/apple-music-icon.svg';
 import bandcamp from '../../assets/socials/bandcamp-icon.png';
 import bethesda from '../../assets/socials/bethesdanet-icon.png';
 import doomWiki from '../../assets/socials/doomwiki-icon.png';
@@ -31,6 +32,12 @@ export default function SocialsLink({target = ''}) {
 
     useEffect(() => {
         switch (target.toLowerCase()) {
+            case 'apple-music':
+            case 'apple':
+            case 'itunes':
+                setTargetURL('https://music.apple.com/us/artist/sontomorio/1490964793');
+                setIconSource(appleMusic);
+                break;
             case 'bandcamp':
                 setTargetURL('https://sontomorio.bandcamp.com/');
                 setIconSource(bandcamp);

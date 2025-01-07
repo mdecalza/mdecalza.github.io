@@ -240,7 +240,7 @@ export default function Music() {
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy" />
             <Socials
-            socialsList={[ 'spotify', 'bandcamp', 'soundcloud', 'music-youtube', 'music-instagram', 'twitter', 'music-email' ]} />
+            socialsList={[ 'spotify', 'apple-music', 'bandcamp', 'soundcloud', 'music-youtube', 'music-instagram', 'twitter', 'music-email' ]} />
             <Header
             title='Music'
             blurb='I&apos;ve made a ton of music over the years as Sontomorio. On this page is a catalogue of my most notable works.' />
