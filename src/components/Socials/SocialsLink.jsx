@@ -12,6 +12,7 @@ import github from '../../assets/socials/github-mark-white.svg';
 import gmail from '../../assets/socials/gmail-icon.png';
 import instagram from '../../assets/socials/inst-icon.png';
 import linkedIn from '../../assets/socials/linkedin-icon.png';
+import patreon from '../../assets/socials/PATREON_SYMBOL_1_WHITE_RGB.svg';
 import soundCloud from '../../assets/socials/soundcloud-icon.png';
 import spotify from '../../assets/socials/spotify-icon.png';
 import twitter from '../../assets/socials/twitter-icon.png';
@@ -80,6 +81,10 @@ export default function SocialsLink({target = ''}) {
             case 'linkedin':
                 setTargetURL('https://www.linkedin.com/in/mdecalzadilla/');
                 setIconSource(linkedIn);
+                break;
+            case 'patreon':
+                setTargetURL('https://patreon.com/Sontomorio?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink');
+                setIconSource(patreon);
                 break;
             case 'soundcloud':
                 setTargetURL('https://soundcloud.com/sontomorio');
