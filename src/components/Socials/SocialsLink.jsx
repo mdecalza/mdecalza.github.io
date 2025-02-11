@@ -117,7 +117,8 @@ export default function SocialsLink({target = ''}) {
     return (
         <>
         <a
-        href={targetURL}>
+        href={targetURL}
+        target='_blank'>
             <img
             src={iconSource}
             className={`SocialsLink ${animation} m-2 ${(targetURL === '#') ? 'd-none' : 'd-inline'}`}
