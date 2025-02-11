@@ -18,7 +18,7 @@ import midnightMoviesCover from '../../../assets/art/midnight-movies.jpg';
 import sontoIVcover from '../../../assets/music/4.jpg';
 import theFreewayCover from '../../../assets/music/5.png'
 import sundayMorningTVCover from '../../../assets/music/tv.png';
-import sontoOlegioCover from '../../../assets/art/sonto6_cover4.png';
+import sontoOlegioCover from '../../../assets/art/olegio.png';
 import whopperCover from '../../../assets/art/whopper-big.png';
 import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
 import intercontinentalCover from '../../../assets/music/7.png';
@@ -61,12 +61,12 @@ export default function Music() {
             title: 'THE NARLY Y MORIO LP',
             subtitle: '(with "Shreds" Abrahamson)',
             type: 'Album',
-            releaseDate: 'Unreleased',
+            releaseDate: 'April 4, 2023 (unfinished)',
             genre: 'Psychedelic, hip-hop, rock',
             coverImageSrc: narlyYmorioCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/k6R_75SZlbI',
+                    href: 'https://youtu.be/X_gEyzTSx6c',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
@@ -80,7 +80,7 @@ export default function Music() {
             coverImageSrc: sontoOlegioCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/M0O79BVAad4?si=dMIvZFxf4QywpZnA',
+                    href: 'https://youtu.be/fJ5Bcy_MBqE',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
@@ -113,7 +113,7 @@ export default function Music() {
             coverImageSrc: theFreewayCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/ky2LwlD8fpU?si=MS47DoAzjFfz7IuV',
+                    href: 'https://youtu.be/2FK6yWV96O8',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
@@ -132,7 +132,7 @@ export default function Music() {
             coverImageSrc: sontoIVcover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/EhAIzKg0xBY?si=Z28cvEfeDMCLbc77',
+                    href: 'https://youtu.be/Z7dY-NgBeVo',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
@@ -151,7 +151,7 @@ export default function Music() {
             coverImageSrc: midnightMoviesCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/UqXEcP8Uw68?si=uaSdkSiqe63-47ce',
+                    href: 'https://youtu.be/cs69xVqK1lo',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
@@ -199,7 +199,7 @@ export default function Music() {
                     text: 'Bandcamp',
                 }),
                 createElement(IconButton, {
-                    href: 'https://youtu.be/Bhj6OgR-pgo?si=Mvcb_iEkbBals7M2',
+                    href: 'https://youtu.be/ziNXngLa_zE',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
@@ -218,10 +218,15 @@ export default function Music() {
             coverImageSrc: priibyuCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/xJ6Zhng8-KQ',
+                    href: 'https://youtu.be/CKVJ4MuKY-g',
                     iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                })
+                    text: 'Priibyu on YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://youtu.be/1dPLJkpZeMA',
+                    iconSrc: youTubeIcon,
+                    text: 'Deibyu on YouTube',
+                }),
             ]
         }),
     ];

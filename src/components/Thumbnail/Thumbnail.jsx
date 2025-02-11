@@ -27,6 +27,7 @@ export default function Thumbnail({ to = { pathname: '/' }, imgSrc = '', isInner
         :
         <a
         href={ to.pathname }
+        target='_blank'
         className={ thumbnailButtonClasses }
         type='button'>
             <img

@@ -21,6 +21,7 @@ import atoneEnding from '../../../assets/art/atone_bossback_aspect.png';
 import embryoTitle from '../../../assets/art/emb-titlepic.png';
 import intercep3title from '../../../assets/art/int3-title.png';
 import intercep3inter from '../../../assets/art/int3-inter.png';
+import intercep3text1 from '../../../assets/art/TEXTPIC1-PAL-2-BIG-2.png';
 
 /* sketches */
 import aerithSketch from '../../../assets/art/16-aerith.png';
@@ -64,6 +65,7 @@ import embryoLogo from '../../../assets/art/embryo-logo.png';
 
 export default function Art() {
     const pixelArt = [
+        createElement(ArtImage, { src: intercep3text1 }),
         createElement(ArtImage, { src: intercep3title }),
         createElement(ArtImage, { src: intercep3inter }),
         createElement(ArtImage, { src: hovercabTitle }),
