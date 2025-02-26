@@ -19,13 +19,15 @@ import atoneTitle from '../../../assets/art/atn_TITLEPIC.png';
 import atoneCredit from '../../../assets/art/atn_credit2.png';
 import atoneEnding from '../../../assets/art/atone_bossback_aspect.png';
 import embryoTitle from '../../../assets/art/emb-titlepic.png';
+import intercepTitle from '../../../assets/art/int1-title.png';
 import intercep3title from '../../../assets/art/int3-title.png';
 import intercep3inter from '../../../assets/art/int3-inter.png';
-import intercep3text1 from '../../../assets/art/TEXTPIC1-PAL-4-BIG.png';
+import intercep3text1 from '../../../assets/art/int3-illust1.png';
 
 /* sketches */
 import aerithSketch from '../../../assets/art/16-aerith.png';
 import cloudSketch from '../../../assets/art/17-cloud.png';
+import intercepSketch1 from '../../../assets/art/illustration-sketch5.png';
 import intercep3sketch1 from '../../../assets/art/illustration-sketch1.png';
 import intercep3sketch2 from '../../../assets/art/illustration-sketch2.png';
 import intercep3sketch3 from '../../../assets/art/illustration-sketch4.png';
@@ -65,6 +67,7 @@ import embryoLogo from '../../../assets/art/embryo-logo.png';
 
 export default function Art() {
     const pixelArt = [
+        createElement(ArtImage, { src: intercepTitle }),
         createElement(ArtImage, { src: intercep3text1 }),
         createElement(ArtImage, { src: intercep3title }),
         createElement(ArtImage, { src: intercep3inter }),
@@ -87,6 +90,7 @@ export default function Art() {
         createElement(ArtImage, { src: sketchbook2 }),
         createElement(ArtImage, { src: intercep3sketch1 }),
         createElement(ArtImage, { src: sketchbook3 }),
+        createElement(ArtImage, { src: intercepSketch1 }),
     ];
     
     const levelDesign = [
