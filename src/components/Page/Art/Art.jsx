@@ -16,6 +16,7 @@ import CRUDinter from '../../../assets/art/CRUD_INT.png';
 import hovercabTitle from '../../../assets/art/hov-titlepic.png';
 import hovercabInter from '../../../assets/art/hov-interpic2.png';
 import atoneTitle from '../../../assets/art/atn_TITLEPIC.png';
+import atoneInter from '../../../assets/art/atone-inter.png';
 import atoneCredit from '../../../assets/art/atn_credit2.png';
 import atoneEnding from '../../../assets/art/atone_bossback_aspect.png';
 import embryoTitle from '../../../assets/art/emb-titlepic.png';
@@ -71,6 +72,7 @@ export default function Art() {
         createElement(ArtImage, { src: intercep3text1 }),
         createElement(ArtImage, { src: intercep3title }),
         createElement(ArtImage, { src: intercep3inter }),
+        createElement(ArtImage, { src: atoneInter }),
         createElement(ArtImage, { src: hovercabTitle }),
         createElement(ArtImage, { src: hovercabInter }),
         createElement(ArtImage, { src: embryoTitle }),
