@@ -1,9 +1,10 @@
-/* 2024 Matthew DeCalzadilla */
+/* Copyright © 2024—2025 Matthew DeCalzadilla */
 
 import { createElement } from 'react';
 
 /* components */
 import UnorderedList from '../../UnorderedList/UnorderedList';
+import UnorderedListLink from '../../UnorderedList/UnorderedListLink';
 import WadsHeader from './WadsHeader';
 import WadRelease from './WadRelease';
 
@@ -11,7 +12,13 @@ import IconButton from '../../IconButton/IconButton';
 import Scroller from '../../Scroller/Scroller';
 
 /* assets */
-/* interception ii */
+/* doomed resident */
+import residentLogo from '../../../assets/wads/resident/resident-title.png';
+import residentScreenshot1 from '../../../assets/wads/resident/resident-p1.png';
+import residentScreenshot2 from '../../../assets/wads/resident/resident-p2.png';
+import residentScreenshot3 from '../../../assets/wads/resident/resident-p3.png';
+
+/* interception iii */
 import interception3logo from '../../../assets/wads/intercep3/intercep3-title.png';
 import interception3screenshot1 from '../../../assets/wads/intercep3/intercep3-p1.png';
 
@@ -79,6 +86,20 @@ export default function Wads() {
             ],
         }),
         createElement(WadRelease, {
+            title: 'DOOMed Resident',
+            role: 'Author, Level Designer (2024)',
+            logoSrc: residentLogo,
+            screenshotImageSources: [ residentScreenshot2 ],
+            quote: '',
+            quoteCredit: '',
+            quoteSource: '',
+            quoteHREF: '',
+            links: [
+                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/ed7915cd-7167-42f4-ac96-4a8b90fa31ff/', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/residentdoom', iconSrc: doomworldIcon, text: '/idgames Archive' }),
+            ],
+        }),
+        createElement(WadRelease, {
             title: 'Atonement',
             role: 'Author, Level Designer, Graphic Designer (2022)',
             logoSrc: atonementLogo,
@@ -89,7 +110,7 @@ export default function Wads() {
             quoteHREF: 'https://www.doomworld.com/cacowards/2022/22for22/',
             links: [
                 createElement(IconButton, { href: 'https://doomwiki.org/wiki/Atonement', iconSrc: doomWikiIcon, text: 'The Doom Wiki' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/50c4c308-b420-4041-bbbc-560b64cbf80e/Atonement__Official_', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/50c4c308-b420-4041-bbbc-560b64cbf80e/', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
                 createElement(IconButton, { href: 'https://www.doomworld.com/idgames/?id=20527', iconSrc: doomworldIcon, text: '/idgames Archive' }),
             ],
         }),
@@ -103,7 +124,7 @@ export default function Wads() {
             quoteSource: '"Endless Random /idgames WAD Adventures #040", p. 1, doomworld.com',
             quoteHREF: 'https://www.doomworld.com/forum/post/2535989',
             links: [
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/8e311fcd-58cd-4952-bd91-bc04c335e5f5/CRUD__Official_', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/8e311fcd-58cd-4952-bd91-bc04c335e5f5/', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
                 createElement(IconButton, { href: 'https://www.doomworld.com/idgames/?id=19847', iconSrc: doomworldIcon, text: '/idgames Archive' }),
             ],
         }),
@@ -118,7 +139,7 @@ export default function Wads() {
             quoteHREF: 'https://www.doomworld.com/forum/post/2421738',
             links: [
                 createElement(IconButton, { href: 'https://doomwiki.org/wiki/Interception_II', iconSrc: doomWikiIcon, text: 'The Doom Wiki' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/d9e7a597-384a-40d9-b1a4-0e94ffd12437/Interception_II__Official_', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/d9e7a597-384a-40d9-b1a4-0e94ffd12437/', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
                 createElement(IconButton, { href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/intercep2', iconSrc: doomworldIcon, text: '/idgames Archive' }),
             ],
         }),
@@ -133,10 +154,31 @@ export default function Wads() {
             quoteHREF: 'https://www.youtube.com/watch?v=KBlnPDBgQcs',
             links: [
                 createElement(IconButton, { href: 'https://doomwiki.org/wiki/Interception', iconSrc: doomWikiIcon, text: 'The Doom Wiki' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/6a4f32ce-f9a6-4138-91f9-235c1a24b1d6/Interception__Official_', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/6a4f32ce-f9a6-4138-91f9-235c1a24b1d6/', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
                 createElement(IconButton, { href: 'https://www.doomworld.com/idgames/?id=17082', iconSrc: doomworldIcon, text: '/idgames Archive' }),
             ],
         }),
+    ];
+
+    const moreWadsList = [
+        createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Doom_the_Way_id_Did:_The_Lost_Episodes', text: 'Doom the Way id Did: The Lost Episodes', year: 2012 }),
+        createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Doomworld_Mega_Project_2013', text: 'Doomworld Mega Project 2013', year: 2013 }),
+        createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Akeldama', text: 'Akeldama', year: 2020 }),
+        createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Rowdy_Rudy_II:_POWERTRIP', text: 'Rowdy Rudy II: POWERTRIP', year: 2020 }),
+        createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Skulltiverse', text: 'Skulltiverse', year: 2021 }),
+        createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Ray_Mohawk_2:_Ray_Wreaks_Havoc!', text: 'Ray Mohawk 2: Ray Wreaks Havoc!', year: 2021 }),
+        createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Doomworld_Mega_Project_2022', text: 'Doomworld Mega Project 2022', year: 2022 }),
+        createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Not_Even_Remotely_Fair', text: 'Not Even Remotely Fair', year: 2023 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/vb/thread/134536', text: 'Super Doom TV', year: 2024 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21326', text: 'Doomworld Dating Simulator (w/ Stochastic)', year: 2024 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/vb/thread/145820', text: 'Blocked-Out!', year: 2024 }),
+        createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Constriction:_1024', text: 'Constriction: 1024', year: 2024 }),
+        createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Tribute_Quilt_II', text: 'Tribute Quilt II', year: 2024 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21381', text: 'Box Doom', year: 2024 }),
+        createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Paint_It_Doom', text: 'Paint It Doom', year: 2024 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21472', text: 'Hell on World Tour', year: 2024 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21562', text: 'Rusty Drill', year: 2024 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21528', text: 'TNT Tribute Quilt', year: 2024 }),
     ];
 
     return (
@@ -146,7 +188,8 @@ export default function Wads() {
             <Scroller
             elements={ wadsList } />
             <UnorderedList
-            title='More WADs I&apos;ve contributed to' />
+            title='More WADs I&apos;ve contributed to'
+            items={ moreWadsList } />
         </div>
     );
 }
