@@ -1,4 +1,4 @@
-/* 2024 Matthew DeCalzadilla */
+/* Copyright © 2024—2025 Matthew DeCalzadilla */
 
 import { Link } from 'react-router';
 

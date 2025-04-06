@@ -1,4 +1,4 @@
-/* 2024 Matthew DeCalzadilla */
+/* Copyright © 2024—2025 Matthew DeCalzadilla */
 
 const initialDate = 2024;
 const currentDate = new Date().getFullYear();

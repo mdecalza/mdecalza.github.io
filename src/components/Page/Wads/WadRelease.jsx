@@ -1,4 +1,4 @@
-/* 2024 Matthew DeCalzadilla */
+/* Copyright © 2024—2025 Matthew DeCalzadilla */
 
 import { createElement, useEffect, useState } from 'react';
 
@@ -44,7 +44,7 @@ export default function WadRelease({title = '', role = '', logoSrc = '', screens
                 id={ checkTitle(title) ? title : '' } />
             </div>
             <div
-            className='card w-50 mx-auto shadow-sm'>
+            className='card w-50 mx-auto shadow-sm px-1'>
                 <p
                 className='fs-6 my-auto p-1'>
                     { role }
