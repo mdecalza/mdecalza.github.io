@@ -59,8 +59,9 @@ import smoothSailingCover from '../../../assets/art/sailing-cover2.png';
 import intercontinentalCover from '../../../assets/art/intercontinental-sleeve.jpg';
 
 /* graphic design */
+import sontomorioBanner from '../../../assets/art/sonto-art-small.png';
 import casaFrescaLogo from '../../../assets/art/casa-fresca-logo.png';
-import sontomorioLogo from '../../../assets/music/sonto-logo.png';
+import sontomorioLogo from '../../../assets/art/sonto-logo-4.png';
 import burningLogo from '../../../assets/art/burning-logo.png';
 import atoneLogo from '../../../assets/art/atone-logo.png';
 import CRUDlogo from '../../../assets/art/CRUD-logo.png';
@@ -120,6 +121,7 @@ export default function Art() {
     ];
 
     const graphicDesign = [
+        createElement(ArtImage, { src: sontomorioBanner }),
         createElement(ArtImage, { src: casaFrescaLogo, border: false }),
         createElement(ArtImage, { src: sontomorioLogo, border: false }),
         createElement(ArtImage, { src: burningLogo, border: false }),
@@ -142,6 +144,9 @@ export default function Art() {
             <Socials
             socialsList={[ 'art-instagram', 'linkedin', 'main-email' ]} />
             <Scroller
+            title='Graphic Design'
+            elements={ graphicDesign } />
+            <Scroller
             title='Pixel Illustrations'
             elements={ pixelArt } />
             <Scroller
@@ -150,9 +155,6 @@ export default function Art() {
             <Scroller
             title='Album Art'
             elements={ albumArt } />
-            <Scroller
-            title='Graphic Design'
-            elements={ graphicDesign } />
             <Scroller
             title='3D Level Design'
             elements={ levelDesign } />
