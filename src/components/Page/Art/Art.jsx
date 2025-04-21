@@ -4,7 +4,6 @@ import { createElement } from 'react';
 
 /* components */
 import ArtImage from './ArtImage';
-import CensorBlur from '../../CensorBlur/CensorBlur';
 import Header from '../../Header/Header';
 import Scroller from '../../Scroller/Scroller';
 import Socials from '../../Socials/Socials';
@@ -69,8 +68,8 @@ import embryoLogo from '../../../assets/art/embryo-logo.png';
 
 export default function Art() {
     const pixelArt = [
-        createElement(ArtImage, { src: intercepTitle }),
-        createElement(ArtImage, { src: intercep3text1 }),
+        createElement(ArtImage, { src: intercepTitle, censor: true, contentWarningList: ['Violence', 'Gore'] }),
+        createElement(ArtImage, { src: intercep3text1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: intercep3title }),
         createElement(ArtImage, { src: intercep3inter }),
         createElement(ArtImage, { src: atoneInter }),
@@ -132,8 +131,6 @@ export default function Art() {
 
     return (
         <>
-        <CensorBlur
-        contentWarningList={[ 'Violence', 'Gore' ]} />
         <div
         className='fadeIn'>
             <div
