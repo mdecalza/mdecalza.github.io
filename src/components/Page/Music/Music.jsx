@@ -29,6 +29,9 @@ import soundCloudIcon from '../../../assets/socials/soundcloud-icon.png';
 import spotifyIcon from '../../../assets/socials/spotify-icon.png';
 import youTubeIcon from '../../../assets/socials/yt-icon.png';
 
+/* graphics */
+import sontomorioLogo from '../../../assets/art/sonto-logo-4.png';
+
 export default function Music() {
     const musicReleases = [
         createElement(MusicRelease, {
@@ -235,6 +238,9 @@ export default function Music() {
         <>
         <div
         className='fadeIn container-xxl'>
+            <img
+            src={ sontomorioLogo }
+            className='w-25' />
             <iframe
             src='https://open.spotify.com/embed/artist/3goR9KK8F6uqLA7yoXjYgL?utm_source=generator'
             className='popInDelayed border border-0 shadow mb-5'
