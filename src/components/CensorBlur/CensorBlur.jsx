@@ -1,7 +1,6 @@
 /* Copyright © 2024—2025 Matthew DeCalzadilla */
 
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router';
 
 CensorBlur.propTypes = {
     contentWarningList: [],
@@ -26,14 +25,14 @@ export default function CensorBlur({ contentWarningList = [] }) {
         id='CensorBlur'
         className={`CensorBlur ${on ? 'd-flex' : 'd-none'} flex-column flex-wrap justify-content-center align-items-center`}>
             <div
-            className='container-xxl'>
+            className=''>
                 <h3>
                     <i>CONTENT WARNING</i>
                 </h3>
                 <hr />
                 <p
                 className='fs-5'>
-                    The art featured on this page contains depections of:<br />
+                    This content contains depections of:<br />
                 </p>
                 <p
                 className='fs-4'>
@@ -42,12 +41,6 @@ export default function CensorBlur({ contentWarningList = [] }) {
                 <hr />
                 <div
                 className='d-flex flex-column justify-content-center align-items-center'>
-                    <Link
-                    to={{ pathname: '/' }}
-                    className='growOnHover btn btn-light my-2'
-                    type='button'>
-                        &ldquo;No, thanks. Please, take me home.&rdquo;
-                    </Link>
                     <button
                     onClick={() => { setOn(false) }}
                     className='growOnHover btn btn-light opacity-75 my-2'>
