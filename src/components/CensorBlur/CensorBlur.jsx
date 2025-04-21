@@ -27,7 +27,7 @@ export default function CensorBlur({ contentWarningList = [] }) {
             <div
             className='w-75'
             style={{ fontSize: '0.85em' }}>
-                CONTENT WARNING<br />
+                <b>CONTENT WARNING</b><br />
                 This content contains depections of:<br />
                 <b>{warnings}</b>
                 <div
