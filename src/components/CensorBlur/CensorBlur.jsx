@@ -23,27 +23,19 @@ export default function CensorBlur({ contentWarningList = [] }) {
     return (
         <div
         id='CensorBlur'
-        className={`CensorBlur ${on ? 'd-flex' : 'd-none'} flex-column flex-wrap justify-content-center align-items-center`}>
+        className={`CensorBlur ${on ? 'd-flex' : 'd-none'} flex-column flex-wrap justify-content-center align-items-center overflow-hidden`}>
             <div
-            className=''>
-                <h3>
-                    <i>CONTENT WARNING</i>
-                </h3>
-                <hr />
-                <p
-                className='fs-5'>
-                    This content contains depections of:<br />
-                </p>
-                <p
-                className='fs-4'>
-                    <b>{warnings}</b>
-                </p>
-                <hr />
+            className='w-75'
+            style={{ fontSize: '0.85em' }}>
+                CONTENT WARNING<br />
+                This content contains depections of:<br />
+                <b>{warnings}</b>
                 <div
-                className='d-flex flex-column justify-content-center align-items-center'>
+                className='d-flex flex-column justify-content-center align-items-center mx-auto'>
                     <button
                     onClick={() => { setOn(false) }}
-                    className='growOnHover btn btn-light opacity-75 my-2'>
+                    className='growOnHover btn btn-light opacity-75 p-1'
+                    style={{ fontSize: '0.85em' }}>
                         &ldquo;I am 18+ years of age, and I am okay with seeing this content.&rdquo;
                     </button>
                 </div>
