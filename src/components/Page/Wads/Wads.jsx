@@ -3,13 +3,13 @@
 import { createElement } from 'react';
 
 /* components */
-import UnorderedList from '../../UnorderedList/UnorderedList';
-import UnorderedListLink from '../../UnorderedList/UnorderedListLink';
-import WadsHeader from './WadsHeader';
-import WadRelease from './WadRelease';
-
+import Header from '../../Header/Header';
 import IconButton from '../../IconButton/IconButton';
 import Scroller from '../../Scroller/Scroller';
+import Socials from '../../Socials/Socials';
+import UnorderedList from '../../UnorderedList/UnorderedList';
+import UnorderedListLink from '../../UnorderedList/UnorderedListLink';
+import WadRelease from './WadRelease';
 
 /* assets */
 /* doomed resident */
@@ -184,11 +184,28 @@ export default function Wads() {
     return (
         <div
         className='fadeIn'>
-            <WadsHeader />
+            <div
+            className='container-xxl'>
+                <Header
+                title='Doom Wads' />
+                <Socials
+                socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube', 'main-email', 'github' ]} />
+                <p
+                className='pt-3 fs-4'>
+                    <b>What&apos;s a wad?</b>
+                </p>
+                <p
+                className='pb-5'>
+                    <br />
+                    A <a href='https://doomwiki.org/wiki/WAD'>.wad</a> file contains all of the data for the game <a href='https://doomwiki.org/wiki/Doom'><i>Doom</i> (1993)</a> by <a href='https://doomwiki.org/wiki/Id_Software'>id Software</a>. One can enjoy new levels, graphics, music, and more for <i>Doom</i> by loading an extra .wad file on top of the game. <a href='#'>Since 1994</a>, players and creators alike have been enjoying a seemingly bottomless buffet of these wad files.<br />
+                    <br />
+                    Since 2011, I&apos;ve designed many wads&mdash;either all on my own or with the help of others. Here are my most notable Doom creations, including collaborative projects that I had a leading role in creating. I&apos;ve also listed wads by others for which I&apos;ve designed levels.
+                </p>
+            </div>
             <Scroller
             elements={ wadsList } />
             <UnorderedList
-            title='More WADs I&apos;ve contributed to'
+            title='More wads I&apos;ve contributed to:'
             items={ moreWadsList } />
         </div>
     );
