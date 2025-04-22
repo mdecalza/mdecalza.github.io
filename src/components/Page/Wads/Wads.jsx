@@ -205,7 +205,7 @@ export default function Wads() {
             <Scroller
             elements={ wadsList } />
             <UnorderedList
-            title='More WADs I&apos;ve contributed to'
+            title='More wads I&apos;ve contributed to:'
             items={ moreWadsList } />
         </div>
     );
