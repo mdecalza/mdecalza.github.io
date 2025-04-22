@@ -32,7 +32,7 @@ export default function NavbarButtonContainer({widescreen = false}) {
             text='Websites'
             widescreen={widescreen}/>
             <NavbarButton
-            text='Games'
+            text='Wads'
             widescreen={widescreen}/>
             <NavbarButton
             text='Art'

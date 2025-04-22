@@ -55,7 +55,7 @@ export default function Page({pageType = 'home'}) {
             <div
             style={{ height: '100px', }}></div>
             <Background/>
-            {pageElement}
+            { pageElement }
             <Footer/>
         </div>  
     );
