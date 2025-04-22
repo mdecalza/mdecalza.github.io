@@ -4,7 +4,7 @@ import { useLocation } from 'react-router';
 import { useEffect, useState } from 'react';
 
 /* background filepaths */
-import homeBackground from '../../assets/background/bg3.mp4';
+import homeBackground from '../../assets/background/pexels-scottwebb-2824173.jpg';
 
 export default function Background() {
     const location = useLocation();
