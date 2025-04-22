@@ -11989,11 +11989,11 @@ textarea.form-control-lg {
 /* Copyright © 2024—2025 Matthew DeCalzadilla */
 .Page {
   min-height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(15, 21, 37));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(29, 31, 36));
 }
 
 .Page::before {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(15, 21, 37, 0.7));
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(29, 31, 36, 0.7));
   z-index: -1;
   inset: 0;
   content: "";
@@ -12003,10 +12003,10 @@ textarea.form-control-lg {
 
 @keyframes backgroundFadeIn {
   0% {
-    background-color: rgb(15, 21, 37);
+    background-color: rgb(31, 32, 34);
   }
   100% {
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(15, 21, 37, 0.7));
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(29, 31, 36, 0.7));
   }
 }
 /* Copyright © 2024—2025 Matthew DeCalzadilla */
