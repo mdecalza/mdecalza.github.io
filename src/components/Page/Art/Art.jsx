@@ -33,7 +33,6 @@ import intercep3sketch2 from '../../../assets/art/illustration-sketch2.png';
 import intercep3sketch3 from '../../../assets/art/illustration-sketch4.png';
 import sketchbook1 from '../../../assets/art/2-2024sketches-511.png';
 import sketchbook2 from '../../../assets/art/2-2024sketches-511-2.png';
-import sketchbook3 from '../../../assets/art/6-2024sketches-5-14.png';
 
 /* 3D level design */
 import atonementScreenshots from '../../../assets/art/atn_screenshots.png'
@@ -91,7 +90,6 @@ export default function Art() {
         createElement(ArtImage, { src: intercep3sketch3 }),
         createElement(ArtImage, { src: sketchbook2 }),
         createElement(ArtImage, { src: intercep3sketch1 }),
-        createElement(ArtImage, { src: sketchbook3 }),
         createElement(ArtImage, { src: intercepSketch1 }),
     ];
     
