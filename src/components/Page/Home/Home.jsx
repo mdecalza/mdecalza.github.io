@@ -18,7 +18,7 @@ export default function Home() {
                 className='my-4'/>
                 <p
                 className='mb-5'>
-                I&apos;m Matthew DeCalzadilla. I make <Link to={{ pathname: '/websites' }}>websites</Link> (like the one you&apos;re reading now!), <Link to={{ pathname: '/wads' }}>wads</Link>, <Link to={{ pathname: '/art' }}>art</Link>, and <Link to={{ pathname: '/music' }}>music</Link>. Please, contact me if you&apos;d like me to make you things.
+                I&apos;m Matthew DeCalzadilla. I make <Link to={{ pathname: '/websites' }}>websites</Link> (like the one you&apos;re on now!), <Link to={{ pathname: '/wads' }}>wads</Link>, <Link to={{ pathname: '/art' }}>art</Link>, and <Link to={{ pathname: '/music' }}>music</Link>. Please, contact me if you&apos;d like me to make you things.
                 </p>
             </div>
             <h2 className='pt-2'>
