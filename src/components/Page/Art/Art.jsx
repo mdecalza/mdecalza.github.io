@@ -67,29 +67,23 @@ import embryoLogo from '../../../assets/art/embryo-logo.png';
 
 export default function Art() {
     const pixelArt = [
-        createElement(ArtImage, { src: intercepTitle, censor: true, contentWarningList: ['Violence', 'Gore'] }),
-        createElement(ArtImage, { src: intercep3text1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: intercep3title }),
-        createElement(ArtImage, { src: intercep3inter }),
         createElement(ArtImage, { src: atoneInter }),
+        createElement(ArtImage, { src: intercep3inter }),
+        createElement(ArtImage, { src: intercep3text1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
+        createElement(ArtImage, { src: intercepTitle, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: hovercabTitle }),
         createElement(ArtImage, { src: hovercabInter }),
-        createElement(ArtImage, { src: embryoTitle }),
-        createElement(ArtImage, { src: CRUDinter }),
-        createElement(ArtImage, { src: CRUDtitle }),
-        createElement(ArtImage, { src: atoneTitle }),
-        createElement(ArtImage, { src: atoneEnding }),
-        createElement(ArtImage, { src: atoneCredit }),
     ];
     
     const sketches = [
         createElement(ArtImage, { src: aerithSketch }),
         createElement(ArtImage, { src: cloudSketch }),
-        createElement(ArtImage, { src: intercep3sketch2 }),
         createElement(ArtImage, { src: sketchbook1 }),
-        createElement(ArtImage, { src: intercep3sketch3, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: sketchbook2 }),
         createElement(ArtImage, { src: intercep3sketch1 }),
+        createElement(ArtImage, { src: intercep3sketch2, censor: true, contentWarningList: ['Violence', 'Gore'] }),
+        createElement(ArtImage, { src: intercep3sketch3, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: intercepSketch1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
     ];
     
@@ -125,6 +119,12 @@ export default function Art() {
         createElement(ArtImage, { src: atoneLogo, border: false }),
         createElement(ArtImage, { src: CRUDlogo, border: false }),
         createElement(ArtImage, { src: embryoLogo, border: false }),
+        createElement(ArtImage, { src: embryoTitle }),
+        createElement(ArtImage, { src: CRUDinter }),
+        createElement(ArtImage, { src: CRUDtitle }),
+        createElement(ArtImage, { src: atoneTitle }),
+        createElement(ArtImage, { src: atoneEnding }),
+        createElement(ArtImage, { src: atoneCredit }),
     ];
 
     return (
