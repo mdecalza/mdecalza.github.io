@@ -87,18 +87,18 @@ export default function Art() {
         createElement(ArtImage, { src: cloudSketch }),
         createElement(ArtImage, { src: intercep3sketch2 }),
         createElement(ArtImage, { src: sketchbook1 }),
-        createElement(ArtImage, { src: intercep3sketch3 }),
+        createElement(ArtImage, { src: intercep3sketch3, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: sketchbook2 }),
         createElement(ArtImage, { src: intercep3sketch1 }),
-        createElement(ArtImage, { src: intercepSketch1 }),
+        createElement(ArtImage, { src: intercepSketch1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
     ];
     
     const levelDesign = [
+        createElement(ArtImage, { src: herschelScreenshot }),
+        createElement(ArtImage, { src: tropicHELLscreenshot }),
+        createElement(ArtImage, { src: hovercabScreenshot }),
         createElement(ArtImage, { src: doomedResidentScreenshots }),
         createElement(ArtImage, { src: atonementScreenshots }),
-        createElement(ArtImage, { src: herschelScreenshot }),
-        createElement(ArtImage, { src: hovercabScreenshot }),
-        createElement(ArtImage, { src: tropicHELLscreenshot }),
     ];
     
     const albumArt = [
