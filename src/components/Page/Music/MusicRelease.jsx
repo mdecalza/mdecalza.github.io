@@ -13,7 +13,7 @@ MusicRelease.propTypes = {
 export default function MusicRelease({ title = '', subtitle = '', releaseDate = '', type = '', genre = '', coverImageSrc = '', links = [] }) {
     return (
         <div
-        className='MusicRelease fadeInDelayed d-flex flex-column justify-content-evenly align-items-center mx-3'>
+        className='MusicRelease fadeInDelayed d-flex flex-column justify-content-between align-items-center mx-3'>
             <img
             src={ coverImageSrc }
             className='AlbumArt mx-auto my-5 rounded-2 border border-3 border-light border-opacity-75 shadow' />
@@ -21,12 +21,11 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
             className='card bg-light w-fit-content h-fit-content mx-auto px-5 pt-4 pb-3 shadow-sm'>
                 <div
                 className='my-auto'>
-                    <p
-                    className='fs-4 mb-0'>
-                        <b><i>{ title }</i></b><br />
-                    </p>
                     <p>
-                        <b className='fs-6'><i>{ subtitle }</i></b><br />
+                        <b>
+                            <i style={{ fontSize: 'clamp(1vw, 1.5rem, 1.1vw)' }}>{ title }</i>
+                            {subtitle !== '' ? <><br /><i className='fs-6'>{ subtitle }</i></> : <></>}
+                        </b><br />
                         { type }<br />
                         <i>{ genre }</i><br />
                         Released: { releaseDate }

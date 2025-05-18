@@ -12,16 +12,18 @@ import Socials from '../../Socials/Socials';
 /* assets */
 /* album covers */
 import priibyuCover from '../../../assets/music/1.png';
+import deibyuCover from '../../../assets/music/deibyu.png';
 import burningMyTimeCover from '../../../assets/music/2.png';
 import lucidCover from '../../../assets/art/lucid.jpg';
 import midnightMoviesCover from '../../../assets/art/midnight-movies.jpg';
-import sontoIVcover from '../../../assets/music/4.jpg';
+import sontoIVcover from '../../../assets/music/4.png';
 import theFreewayCover from '../../../assets/music/5.png'
 import sundayMorningTVCover from '../../../assets/music/tv.png';
 import sontoOlegioCover from '../../../assets/art/olegio.png';
 import whopperCover from '../../../assets/art/whopper-big.png';
 import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
 import intercontinentalCover from '../../../assets/music/7.png';
+import sonidoAmorCover from '../../../assets/music/8.png';
 
 /* link icons */
 import bandcampIcon from '../../../assets/socials/bandcamp-icon.png';
@@ -34,6 +36,19 @@ import sontomorioLogo from '../../../assets/art/sonto-logo-4.png';
 
 export default function Music() {
     const musicReleases = [
+        createElement(MusicRelease, {
+            title: 'Sonido Amor',
+            type: 'Album',
+            releaseDate: 'In production',
+            genre: 'Pop, hip-hop, electronic',
+            coverImageSrc: sonidoAmorCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://www.pexels.com/photo/man-standing-beside-his-car-in-front-of-colorful-buildings-in-havana-cuba-14462602/',
+                    text: 'Cover Photo by Vlad Vasnetsov',
+                }),
+            ],
+        }),
         createElement(MusicRelease, {
             title: 'Intercontinental',
             type: 'Album',
@@ -64,7 +79,7 @@ export default function Music() {
             title: 'THE NARLY Y MORIO LP',
             subtitle: '(with "Shreds" Abrahamson)',
             type: 'Album',
-            releaseDate: 'April 4, 2023 (unfinished)',
+            releaseDate: 'Unreleased (April 4, 2023)',
             genre: 'Psychedelic, hip-hop, rock',
             coverImageSrc: narlyYmorioCover,
             links: [
@@ -214,21 +229,30 @@ export default function Music() {
             ],
         }),
         createElement(MusicRelease, {
-            title: 'Priibyu/Deibyu',
+            title: 'Deibyu',
             type: 'Album',
             releaseDate: 'January 23, 2019',
+            genre: 'Hip-hop/rap, electronic, psychedelic',
+            coverImageSrc: deibyuCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/1dPLJkpZeMA',
+                    iconSrc: youTubeIcon,
+                    text: 'Deibyu',
+                }),
+            ]
+        }),
+        createElement(MusicRelease, {
+            title: 'Priibyu',
+            type: 'Album',
+            releaseDate: 'Unreleased (late 2018)',
             genre: 'Hip-hop/rap, electronic, psychedelic',
             coverImageSrc: priibyuCover,
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/CKVJ4MuKY-g',
                     iconSrc: youTubeIcon,
-                    text: 'Priibyu on YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://youtu.be/1dPLJkpZeMA',
-                    iconSrc: youTubeIcon,
-                    text: 'Deibyu on YouTube',
+                    text: 'YouTube',
                 }),
             ]
         }),
