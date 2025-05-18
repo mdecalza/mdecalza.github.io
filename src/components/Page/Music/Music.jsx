@@ -39,8 +39,8 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'Sonido Amor',
             type: 'Album',
-            releaseDate: 'In production',
-            genre: 'Pop, hip-hop, electronic',
+            releaseDate: '(In Production)',
+            genre: 'hip-hop, boombap, salsa',
             coverImageSrc: sonidoAmorCover,
             links: [
                 createElement(IconButton, {
@@ -52,15 +52,15 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'Intercontinental',
             type: 'Album',
-            releaseDate: 'In production',
-            genre: 'Pop, hip-hop, electronic',
+            releaseDate: '(In Production)',
+            genre: 'pop, hip-hop, electronic',
             coverImageSrc: intercontinentalCover,
         }),
         createElement(MusicRelease, {
             title: 'Sunset Whopper',
             type: 'Single',
             releaseDate: 'November 27, 2023',
-            genre: 'Drum \'n bass, techno, noise',
+            genre: 'drum \'n bass, techno, noise',
             coverImageSrc: whopperCover,
             links: [
                 createElement(IconButton, {
@@ -80,7 +80,7 @@ export default function Music() {
             subtitle: '(with "Shreds" Abrahamson)',
             type: 'Album',
             releaseDate: 'Unreleased (April 4, 2023)',
-            genre: 'Psychedelic, hip-hop, rock',
+            genre: 'psychedelic, hip-hop, rock',
             coverImageSrc: narlyYmorioCover,
             links: [
                 createElement(IconButton, {
@@ -94,7 +94,7 @@ export default function Music() {
             title: 'Sonto\'olegio',
             type: 'Album',
             releaseDate: 'December 31, 2022',
-            genre: 'Electronic, hip-hop, psychedelic',
+            genre: 'electronic, hip-hop, psychedelic',
             coverImageSrc: sontoOlegioCover,
             links: [
                 createElement(IconButton, {
@@ -113,7 +113,7 @@ export default function Music() {
             title: 'Sunday Morning TV',
             type: 'Compilation',
             releaseDate: 'October 19, 2021',
-            genre: 'Electronic, hip-hop/rap, ambient',
+            genre: 'electronic, hip-hop/rap, ambient',
             coverImageSrc: sundayMorningTVCover,
             links: [
                 createElement(IconButton, {
@@ -127,7 +127,7 @@ export default function Music() {
             title: 'The Freeway',
             type: 'Album',
             releaseDate: 'February 27, 2021',
-            genre: 'Hip-hop, boombap, lofi',
+            genre: 'hip-hop, boombap, lofi',
             coverImageSrc: theFreewayCover,
             links: [
                 createElement(IconButton, {
@@ -146,7 +146,7 @@ export default function Music() {
             title: 'Sonto IV',
             type: 'EP',
             releaseDate: 'April 22, 2020',
-            genre: 'Hip-hop/rap, noise, psychedelic',
+            genre: 'hip-hop/rap, noise, psychedelic',
             coverImageSrc: sontoIVcover,
             links: [
                 createElement(IconButton, {
@@ -165,7 +165,7 @@ export default function Music() {
             title: 'Midnight Movies',
             type: 'Album',
             releaseDate: 'December 20, 2019',
-            genre: 'Hip-hop, pop, ambient',
+            genre: 'hip-hop, pop, ambient',
             coverImageSrc: midnightMoviesCover,
             links: [
                 createElement(IconButton, {
@@ -184,7 +184,7 @@ export default function Music() {
             title: 'Lucid Dreaming',
             type: 'Single',
             releaseDate: 'September 29, 2019',
-            genre: 'Hip-hop, trap, electronic',
+            genre: 'hip-hop, trap, electronic',
             coverImageSrc: lucidCover,
             links: [
                 createElement(IconButton, {
@@ -203,7 +203,7 @@ export default function Music() {
             title: 'Burning My Time Building My Mind',
             type: 'EP',
             releaseDate: 'April 23, 2019',
-            genre: 'Hip-hop/rap, lofi, chillout',
+            genre: 'hip-hop/rap, lofi, chillout',
             coverImageSrc: burningMyTimeCover,
             links: [
                 createElement(IconButton, {
@@ -232,13 +232,13 @@ export default function Music() {
             title: 'Deibyu',
             type: 'Album',
             releaseDate: 'January 23, 2019',
-            genre: 'Hip-hop/rap, electronic, psychedelic',
+            genre: 'hip-hop/rap, electronic, psychedelic',
             coverImageSrc: deibyuCover,
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/1dPLJkpZeMA',
                     iconSrc: youTubeIcon,
-                    text: 'Deibyu',
+                    text: 'YouTube',
                 }),
             ]
         }),
@@ -246,7 +246,7 @@ export default function Music() {
             title: 'Priibyu',
             type: 'Album',
             releaseDate: 'Unreleased (late 2018)',
-            genre: 'Hip-hop/rap, electronic, psychedelic',
+            genre: 'hip-hop/rap, electronic, psychedelic',
             coverImageSrc: priibyuCover,
             links: [
                 createElement(IconButton, {
