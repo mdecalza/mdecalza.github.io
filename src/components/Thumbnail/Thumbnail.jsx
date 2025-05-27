@@ -1,6 +1,5 @@
 /* Copyright © 2024—2025 Matthew DeCalzadilla */
 
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 
 Thumbnail.propTypes = {
