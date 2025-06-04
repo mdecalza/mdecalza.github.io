@@ -94,7 +94,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Sonto\'olegio',
-            type: 'Album',
+            type: 'Beat Tape',
             releaseDate: 'December 31, 2022',
             description: 'A dark mix of original tunes among diverse beats, samples, and soundscapes.',
             genre: 'electronic, hip-hop, psychedelic',
@@ -114,7 +114,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Sunday Morning TV',
-            type: 'Compilation',
+            type: 'Compilation EP',
             releaseDate: 'October 19, 2021',
             description: 'Combines two tracks from Midnight Movies with three previously unreleased original tracks. A compilation of music from The Freeway and prior that is suitable for streaming.',
             genre: 'electronic, hip-hop/rap, ambient',
@@ -174,9 +174,9 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Midnight Movies',
-            type: 'Mixtape',
+            type: 'Instrumental Mixtape',
             releaseDate: 'December 20, 2019',
-            description: 'An expressive journey told through patchwork samples and idiosyncratic beats. A descent into dreams inspired by a bygone time.',
+            description: 'A picturesque journey told through patchwork samples and idiosyncratic beats woven together into soundscapes. A descent into dreams inspired by a bygone time.',
             genre: 'hip-hop, pop, ambient',
             coverImageSrc: midnightMoviesCover,
             links: [
@@ -194,7 +194,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Lucid Dreaming',
-            type: 'Single',
+            type: 'Instrumental Remix',
             releaseDate: 'September 29, 2019',
             description: 'Ne expergisci possit.',
             genre: 'hip-hop, trap, electronic',
@@ -244,9 +244,9 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Deibyu',
-            type: 'Album',
+            type: 'Mixtape',
             releaseDate: 'January 23, 2019',
-            description: 'My first published album. The dense and distorted counterpart to the Priibyu mixtape. Part of a double LP package with Priibyu.',
+            description: 'My first published album. A dense and distorted evolution of the Priibyu mixtape. Part of a double LP package with Priibyu.',
             genre: 'hip-hop/rap, electronic, psychedelic',
             coverImageSrc: deibyuCover,
             links: [
@@ -259,8 +259,9 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Priibyu',
-            type: 'Album',
-            description: 'Recently published demo of Deibyu. A bright and eclectic mix of outsider music. Part of a double LP package with Deibyu.',
+            type: 'Mixtape Demo',
+            releaseDate: 'February 3, 2025 (late 2018 demo)',
+            description: 'Demo of the Deibyu mixtape. A bright, loose string of eclectic outsider music. Part of a double LP package with Deibyu.',
             genre: 'hip-hop/rap, electronic, psychedelic',
             coverImageSrc: priibyuCover,
             links: [
