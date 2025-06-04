@@ -60,7 +60,7 @@ export default function Music() {
             title: 'Sunset Whopper',
             type: 'Hyper Drum\'n\' Bass Mix',
             releaseDate: 'November 27, 2023',
-            description: 'Abrasive DnB mix of distorted breaks, looping effects, varied samples, and lots of noisy synthesizers. Originally the soundtrack to Sunset Whopper, a video game for university.',
+            description: 'High-energy DnB mix filled with distorted breaks, looping effects, varied samples, and lots of noisy synthesizers. Originally the soundtrack to Sunset Whopper, a video game for university.',
             genre: 'techno, hip-hop, noise, drum and bass',
             coverImageSrc: whopperCover,
             links: [
