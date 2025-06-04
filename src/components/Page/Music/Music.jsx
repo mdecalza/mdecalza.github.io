@@ -22,7 +22,7 @@ import sundayMorningTVCover from '../../../assets/music/tv.png';
 import sontoOlegioCover from '../../../assets/art/olegio.png';
 import whopperCover from '../../../assets/art/whopper-big.png';
 import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
-import intercontinentalCover from '../../../assets/music/7.png';
+import travelogueCover from '../../../assets/music/7.png';
 import sonidoAmorCover from '../../../assets/music/8.png';
 
 /* link icons */
@@ -50,11 +50,11 @@ export default function Music() {
             ],
         }),
         createElement(MusicRelease, {
-            title: 'Intercontinental',
+            title: 'Travelogue',
             type: 'Album',
             description: 'Coming June 18, 2025.',
             genre: 'pop, hip-hop, electronic',
-            coverImageSrc: intercontinentalCover,
+            coverImageSrc: travelogueCover,
         }),
         createElement(MusicRelease, {
             title: 'Sunset Whopper',
