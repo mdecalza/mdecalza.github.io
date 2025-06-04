@@ -1,4 +1,4 @@
-/* Copyright © 2024—2025 Matthew DeCalzadilla */
+/* Code by 2024—2025 Matthew DeCalzadilla */
 
 import { useEffect } from 'react';
 import { useLocation } from 'react-router';

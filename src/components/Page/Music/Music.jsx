@@ -1,4 +1,4 @@
-/* Copyright © 2024—2025 Matthew DeCalzadilla */
+/* Code by 2024—2025 Matthew DeCalzadilla */
 
 import { createElement } from 'react';
 
@@ -38,29 +38,30 @@ export default function Music() {
     const musicReleases = [
         createElement(MusicRelease, {
             title: 'Sonido Amor',
-            type: 'Album',
-            releaseDate: '(In Production)',
+            type: 'Mixtape',
+            description: 'Coming September 3, 2025.',
             genre: 'hip-hop, boombap, salsa',
             coverImageSrc: sonidoAmorCover,
             links: [
                 createElement(IconButton, {
                     href: 'https://www.pexels.com/photo/man-standing-beside-his-car-in-front-of-colorful-buildings-in-havana-cuba-14462602/',
-                    text: 'Cover Photo by Vlad Vasnetsov',
+                    text: 'Album cover source photo by Vlad Vasnetsov',
                 }),
             ],
         }),
         createElement(MusicRelease, {
             title: 'Intercontinental',
             type: 'Album',
-            releaseDate: '(In Production)',
+            description: 'Coming June 18, 2025.',
             genre: 'pop, hip-hop, electronic',
             coverImageSrc: intercontinentalCover,
         }),
         createElement(MusicRelease, {
             title: 'Sunset Whopper',
-            type: 'Single',
+            type: 'Hyper Drum\'n\' Bass Mix',
             releaseDate: 'November 27, 2023',
-            genre: 'drum \'n bass, techno, noise',
+            description: 'Abrasive DnB mix of distorted breaks, looping effects, varied samples, and lots of noisy synthesizers. Originally the soundtrack to Sunset Whopper, a video game for university.',
+            genre: 'techno, hip-hop, noise, drum and bass',
             coverImageSrc: whopperCover,
             links: [
                 createElement(IconButton, {
@@ -77,9 +78,10 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'THE NARLY Y MORIO LP',
-            subtitle: '(with "Shreds" Abrahamson)',
-            type: 'Album',
-            releaseDate: 'Unreleased (April 4, 2023)',
+            subtitle: '(with Aspen "Shreds" Abrahamson)',
+            type: 'Unfinished Album',
+            releaseDate: 'February 3, 2025 (April 4, 2023 demo)',
+            description: 'An ambitious, experimental collaboration with "Shreds". We each did a fair bit of the work (though this ratio varies from track to track). It was about 85% done before dropped.',
             genre: 'psychedelic, hip-hop, rock',
             coverImageSrc: narlyYmorioCover,
             links: [
@@ -94,6 +96,7 @@ export default function Music() {
             title: 'Sonto\'olegio',
             type: 'Album',
             releaseDate: 'December 31, 2022',
+            description: 'A dark mix of original tunes among diverse beats, samples, and soundscapes.',
             genre: 'electronic, hip-hop, psychedelic',
             coverImageSrc: sontoOlegioCover,
             links: [
@@ -113,6 +116,7 @@ export default function Music() {
             title: 'Sunday Morning TV',
             type: 'Compilation',
             releaseDate: 'October 19, 2021',
+            description: 'Combines two tracks from Midnight Movies with three previously unreleased original tracks. A compilation of music from The Freeway and prior that is suitable for streaming.',
             genre: 'electronic, hip-hop/rap, ambient',
             coverImageSrc: sundayMorningTVCover,
             links: [
@@ -121,12 +125,18 @@ export default function Music() {
                     iconSrc: spotifyIcon,
                     text: 'Spotify',
                 }),
+                createElement(IconButton, {
+                    href: 'https://sontomorio.bandcamp.com/album/sunday-morning-tv',
+                    iconSrc: bandcampIcon,
+                    text: 'Bandcamp',
+                }),
             ],
         }),
         createElement(MusicRelease, {
             title: 'The Freeway',
-            type: 'Album',
+            type: 'Beat Tape',
             releaseDate: 'February 27, 2021',
+            description: 'An assorted mix of driving-inspired loops and breakbeats.',
             genre: 'hip-hop, boombap, lofi',
             coverImageSrc: theFreewayCover,
             links: [
@@ -144,8 +154,9 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Sonto IV',
-            type: 'EP',
+            type: 'Mix EP',
             releaseDate: 'April 22, 2020',
+            description: 'Bold and brash, this EP drives oddball loops through high levels of distortion underneath esoteric lyrics.',
             genre: 'hip-hop/rap, noise, psychedelic',
             coverImageSrc: sontoIVcover,
             links: [
@@ -163,8 +174,9 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Midnight Movies',
-            type: 'Album',
+            type: 'Mixtape',
             releaseDate: 'December 20, 2019',
+            description: 'An expressive journey told through patchwork samples and idiosyncratic beats. A descent into dreams inspired by a bygone time.',
             genre: 'hip-hop, pop, ambient',
             coverImageSrc: midnightMoviesCover,
             links: [
@@ -184,6 +196,7 @@ export default function Music() {
             title: 'Lucid Dreaming',
             type: 'Single',
             releaseDate: 'September 29, 2019',
+            description: 'Ne expergisci possit.',
             genre: 'hip-hop, trap, electronic',
             coverImageSrc: lucidCover,
             links: [
@@ -203,6 +216,7 @@ export default function Music() {
             title: 'Burning My Time Building My Mind',
             type: 'EP',
             releaseDate: 'April 23, 2019',
+            description: 'An ethereal mix of reverbed beats, spacey melodies, and bombastic rap verses.',
             genre: 'hip-hop/rap, lofi, chillout',
             coverImageSrc: burningMyTimeCover,
             links: [
@@ -232,6 +246,7 @@ export default function Music() {
             title: 'Deibyu',
             type: 'Album',
             releaseDate: 'January 23, 2019',
+            description: 'My first published album. The dense and distorted counterpart to the Priibyu mixtape. Part of a double LP package with Priibyu.',
             genre: 'hip-hop/rap, electronic, psychedelic',
             coverImageSrc: deibyuCover,
             links: [
@@ -245,7 +260,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'Priibyu',
             type: 'Album',
-            releaseDate: 'Unreleased (late 2018)',
+            description: 'Recently published demo of Deibyu. A bright and eclectic mix of outsider music. Part of a double LP package with Deibyu.',
             genre: 'hip-hop/rap, electronic, psychedelic',
             coverImageSrc: priibyuCover,
             links: [
@@ -265,6 +280,8 @@ export default function Music() {
             <img
             src={ sontomorioLogo }
             className='w-25' />
+            <Socials
+            socialsList={[ 'patreon', 'bandcamp', 'spotify', 'apple-music', 'soundcloud', 'music-youtube', 'music-instagram', 'twitter', 'music-email' ]} />
             <iframe
             src='https://open.spotify.com/embed/artist/3goR9KK8F6uqLA7yoXjYgL?utm_source=generator'
             className='popInDelayed border border-0 shadow mb-5'
@@ -274,8 +291,6 @@ export default function Music() {
             allowfullscreen=''
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy" />
-            <Socials
-            socialsList={[ 'patreon', 'bandcamp', 'spotify', 'apple-music', 'soundcloud', 'music-youtube', 'music-instagram', 'twitter', 'music-email' ]} />
             <Header
             title='Music'
             blurb='I&apos;ve made a ton of music over the years as Sontomorio. On this page is a catalogue of my most notable works.' />

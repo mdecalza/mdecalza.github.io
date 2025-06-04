@@ -1,4 +1,4 @@
-/* Copyright © 2024—2025 Matthew DeCalzadilla */
+/* Code by 2024—2025 Matthew DeCalzadilla */
 
 import NavbarDropdown from './NavbarDropdown';
 import NavbarLogo from './NavbarLogo';
