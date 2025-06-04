@@ -246,7 +246,7 @@ export default function Music() {
             title: 'Deibyu',
             type: 'Mixtape',
             releaseDate: 'January 23, 2019',
-            description: 'My first published album. A dense and distorted evolution of the Priibyu mixtape. Part of a double LP package with Priibyu.',
+            description: 'My first published album, featuring many collaborators. A dense and distorted evolution of the Priibyu mixtape. Part of a double LP package with Priibyu.',
             genre: 'hip-hop/rap, electronic, psychedelic',
             coverImageSrc: deibyuCover,
             links: [
