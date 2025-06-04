@@ -5,7 +5,7 @@ BlockQuote.propTypes = {
     textAlign: 'end',
 };
 
-export function BlockQuote({ text = '', textAlign = 'start' }) {
+export default function BlockQuote({ text = '', textAlign = 'start' }) {
     return (
         <div
         className={`${ textAlign === 'center' ? 'text-center' : `${ textAlign === 'end' ? 'text-end' : 'text-start' }` } py-2`}>
