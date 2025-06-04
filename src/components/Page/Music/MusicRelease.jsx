@@ -26,7 +26,7 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
                 className='d-flex flex-column my-auto align-items-center justify-content-around py-3'>
                     <p>
                         <b>
-                            <i style={{ fontSize: 'clamp(1vw, 1.45rem, 5vw)' }}>{ title }</i>
+                            <i style={{ fontSize: 'clamp(105%, 1.3rem, 1.6vw)' }}>{ title }</i>
                             {subtitle !== '' ? <><br /><i className='fs-6'>{ subtitle }</i></> : <></>}
                         </b><br />
                         <i
