@@ -35,47 +35,51 @@ export default function WadRelease({title = '', role = '', logoSrc = '', screens
 
     return (
         <div
-        className='WadRelease fadeInDelayed d-flex flex-column justify-content-evenly align-items-center me-5'>
+        className='WadRelease fadeInDelayed d-flex flex-column justify-content-start align-items-center me-5'>
             <div
-            className='my-4'>
-                <img
-                src={ logoSrc }
-                alt={ checkTitle(title) ? title : '' }
-                id={ checkTitle(title) ? title : '' } />
-            </div>
-            <div
-            className='card w-50 mx-auto shadow-sm px-1'>
-                <p
-                className='fs-6 my-auto p-1'>
-                    { role }
-                </p>
+            className='d-flex flex-column justify-content-center my-2'
+            style={{ height: '128px' }}>
+                <div
+                className='my-4'>
+                    <img
+                    src={ logoSrc }
+                    alt={ checkTitle(title) ? title : '' }
+                    id={ checkTitle(title) ? title : '' } />
+                </div>
             </div>
             <div>
+                <div
+                className='card w-50 mx-auto shadow-sm px-1'>
+                    <p
+                    className='fs-6 m-1'>
+                        { role }
+                    </p>
+                </div>
                 { screenshots }
-            </div>
-            <figure
-            className={`${checkTitle(quote) ? 'd-block' : 'd-none'} card text-center px-2 pt-3 pb-2 shadow`}>
-                <blockquote
-                className='blockquote p-1'>
-                    <p><q>{ quote }</q></p>
-                </blockquote>
-                <figcaption
-                className='blockquote-footer p-1'>
-                    <a href={ quoteHREF }>{ quoteCredit }</a>, &ndash; <cite title='source'>{ quoteSource }</cite>
-                </figcaption>
-            </figure>
-            <div
-            className='pt-2'>
-                <a
-                href=''
-                className='d-none btn btn-primary'
-                type='button'>
-                    Download
-                </a>
-            </div>
-            <div
-            className='d-flex flex-wrap justify-content-center'>
-                { links }
+                <figure
+                className={`${checkTitle(quote) ? 'd-block' : 'd-none'} card text-center px-2 pt-3 pb-2 shadow`}>
+                    <blockquote
+                    className='blockquote p-1'>
+                        <p><q>{ quote }</q></p>
+                    </blockquote>
+                    <figcaption
+                    className='blockquote-footer p-1'>
+                        <a href={ quoteHREF }>{ quoteCredit }</a>, &ndash; <cite title='source'>{ quoteSource }</cite>
+                    </figcaption>
+                </figure>
+                <div
+                className='pt-2'>
+                    <a
+                    href=''
+                    className='d-none btn btn-primary'
+                    type='button'>
+                        Download
+                    </a>
+                </div>
+                <div
+                className='d-flex flex-wrap justify-content-center'>
+                    { links }
+                </div>
             </div>
         </div>
     );
