@@ -1,6 +1,10 @@
 /* Code by 2024—2025 Matthew DeCalzadilla */
 
+/* components */
 import BlockQuote from '../../BlockQuote/BlockQuote';
+
+/* icons */
+import explicitIcon from '../../../assets/icons/alphabet-e-icon.svg'
 
 MusicRelease.propTypes = {
     title: '',
@@ -10,23 +14,28 @@ MusicRelease.propTypes = {
     genre: '',
     description: '',
     coverImageSrc: '',
+    explicit: false,
     links: [],
 };
 
-export default function MusicRelease({ title = '', subtitle = '', releaseDate = '', type = '', genre = '', description = '', coverImageSrc = '', links = [] }) {
+export default function MusicRelease({ title = '', subtitle = '', releaseDate = '', type = '', genre = '', description = '', coverImageSrc = '', explicit = false, links = [] }) {
     return (
         <div
-        className='MusicRelease fadeInDelayed d-flex flex-column justify-content-between align-items-center mx-3 h-100'>
+        className='MusicRelease fadeInDelayed d-flex flex-column align-items-center mx-3'>
             <img
             src={ coverImageSrc }
             className='AlbumArt mx-auto my-5 rounded-2 border border-3 border-light border-opacity-75 shadow' />
             <div
-            className='card bg-light w-fit-content mx-auto px-5 py-1 shadow-sm'>
+            className='card bg-light w-100 mx-auto px-5 py-1 shadow-sm'>
                 <div
-                className='d-flex flex-column my-auto align-items-center justify-content-around py-3'>
+                className='d-flex flex-column my-auto py-3 flex-fill justify-content-between'>
                     <p>
                         <b>
-                            <i style={{ fontSize: 'clamp(105%, 1.3rem, 1.6vw)' }}>{ title }</i>
+                            <div
+                            className='d-flex flex-row m-0 p-0 justify-content-center'>
+                                <i className='pe-1' style={{ fontSize: 'clamp(105%, 1.24rem, 1.6vw)' }}>{ title }</i>
+                                { explicit ? <img src={ explicitIcon } className='ps-2 align-self-center' style={{ height: '1rem' }} /> : <></> }
+                            </div>
                             {subtitle !== '' ? <><br /><i className='fs-6'>{ subtitle }</i></> : <></>}
                         </b><br />
                         <i
@@ -36,10 +45,12 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
                         { releaseDate !== '' ? <div className='pt-2'>Released: { releaseDate }</div> : <></> }
                     </p>
                     { description !== '' ? <BlockQuote text={ description } textAlign='center' /> : <></> }
-                    { links.length != 0 ? <i className='opacity-50 pb-1' style={{ fontSize: 'clamp(0.5vw, 0.95rem, 0.85vw)' }}>Listen on:</i> : <></> }
-                    <div
-                    className='d-flex flex-wrap justify-content-center mx-auto pt-1'>
-                        { links }
+                    <div>
+                        { links.length != 0 ? <i className='opacity-50 pb-1' style={{ fontSize: 'clamp(0.5vw, 0.95rem, 0.85vw)' }}>Listen on:</i> : <></> }
+                        <div
+                        className='d-flex flex-wrap justify-content-center mx-auto pt-1'>
+                            { links }
+                        </div>
                     </div>
                 </div>
             </div>
