@@ -192,7 +192,7 @@ export default function Wads() {
                 socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube', 'main-email', 'github' ]} />
                 <p
                 className='pt-3 fs-4'>
-                    <b>What&apos;s a wad?</b>
+                    <b>What Is a Wad Anyway?</b>
                 </p>
                 <p
                 className='pb-5'>
