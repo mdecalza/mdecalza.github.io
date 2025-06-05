@@ -44,7 +44,7 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
                         className='opacity-75'>{ type }</i><br />
                         <i
                         className='opacity-50'>{ genre }</i><br />
-                        { releaseDate !== '' ? <div className='pt-3'>Released: { releaseDate }</div> : <></> }
+                        { releaseDate !== '' ? <div className='pt-1'>Released: { releaseDate }</div> : <></> }
                     </p>
                     <div
                     className='py-3'>
