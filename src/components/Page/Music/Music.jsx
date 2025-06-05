@@ -21,6 +21,7 @@ import theFreewayCover from '../../../assets/music/5.png'
 import sundayMorningTVCover from '../../../assets/music/tv.png';
 import sontoOlegioCover from '../../../assets/art/olegio.png';
 import whopperCover from '../../../assets/art/whopper-big.png';
+import ostJam7cover from '../../../assets/music/ostjam7.png';
 import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
 import travelogueCover from '../../../assets/music/7.png';
 import sonidoAmorCover from '../../../assets/music/8.png';
@@ -57,11 +58,36 @@ export default function Music() {
             coverImageSrc: travelogueCover,
         }),
         createElement(MusicRelease, {
+            title: 'Tropical New World',
+            type: 'Soundtrack',
+            releaseDate: 'July 21, 2024',
+            description: 'Light and loose bits of music composed for OST Jam 7 on itch.io.',
+            genre: 'chillout, world, hip-hop',
+            coverImageSrc: ostJam7cover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://www.youtube.com/playlist?list=PLdSVpo8uVNGWpYIPuigj2JNwaj9oUtjhD',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: '#',
+                    iconSrc: bandcampIcon,
+                    text: 'Bandcamp',
+                }),
+                createElement(IconButton, {
+                    href: 'https://soundcloud.com/sontomorio/sets/tropical-new-world?si=793bbcfcbfd84d88a574a5fdca9626f4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+                    iconSrc: soundCloudIcon,
+                    text: 'SoundCloud',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
             title: 'Sunset Whopper',
             type: 'Hyper Drum\'n\' Bass Mix',
             releaseDate: 'November 27, 2023',
             description: 'High-energy DnB mix filled with distorted breaks, looping effects, varied samples, and lots of noisy synthesizers. Originally the soundtrack to Sunset Whopper, a video game for university.',
-            genre: 'techno, hip-hop, noise, drum and bass',
+            genre: 'techno, noise, drum and bass',
             coverImageSrc: whopperCover,
             links: [
                 createElement(IconButton, {
@@ -226,14 +252,14 @@ export default function Music() {
                     text: 'Spotify',
                 }),
                 createElement(IconButton, {
-                    href: 'https://sontomorio.bandcamp.com/album/burning-my-time-building-my-mind',
-                    iconSrc: bandcampIcon,
-                    text: 'Bandcamp',
-                }),
-                createElement(IconButton, {
                     href: 'https://youtu.be/ziNXngLa_zE',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://sontomorio.bandcamp.com/album/burning-my-time-building-my-mind',
+                    iconSrc: bandcampIcon,
+                    text: 'Bandcamp',
                 }),
                 createElement(IconButton, {
                     href: 'https://soundcloud.com/sontomorio/sets/burning-my-time-building-my-mind?si=73ed1b6432b34b578118422d43b807a4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
