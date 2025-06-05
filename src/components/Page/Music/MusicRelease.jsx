@@ -35,7 +35,7 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
                                 <div
                                 className='d-flex flex-row m-0 p-0 justify-content-center'>
                                     <i className='pe-1' style={{ fontSize: 'clamp(105%, 1.24rem, 1.6vw)' }}>{ title }</i>
-                                    { explicit ? <img src={ explicitIcon } className='ps-2 align-self-center' style={{ height: '1rem' }} /> : <></> }
+                                    { explicit ? <img src={ explicitIcon } alt='(Explicit)' className='ps-2 align-self-center' style={{ height: '1rem' }} /> : <></> }
                                 </div>
                                 {subtitle !== '' ? <><i className='fs-6'>{ subtitle }</i></> : <></>}
                             </b>
