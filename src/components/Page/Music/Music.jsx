@@ -57,6 +57,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Album',
+            releaseDate: 'June 18, 2025',
             description: 'Busy soundscapes, funky beats, and strange electronic noises. A globetrotting voyage in 45 minutes.',
             genre: 'pop, hip-hop, electronic',
             coverImageSrc: travelogueCover,
