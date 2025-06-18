@@ -51,7 +51,7 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
                         { description !== '' ? <BlockQuote text={ description } textAlign='center' /> : <></> }
                     </div>
                     <div>
-                        { links.length != 0 ? <i className='opacity-50 pb-1' style={{ fontSize: 'clamp(0.5vw, 0.95rem, 0.85vw)' }}>Listen on:</i> : <></> }
+                        { links.length != 0 ? <i className='opacity-50 pb-1' style={{ fontSize: '1.1em' }}>Listen on:</i> : <></> }
                         <div
                         className='d-flex flex-wrap justify-content-center mx-auto pt-1'>
                             { links }
