@@ -27,10 +27,12 @@ import travelogueCover from '../../../assets/music/7.png';
 import sonidoAmorCover from '../../../assets/music/8.png';
 
 /* link icons */
-import bandcampIcon from '../../../assets/socials/bandcamp-icon.png';
-import soundCloudIcon from '../../../assets/socials/soundcloud-icon.png';
 import spotifyIcon from '../../../assets/socials/spotify-icon.png';
+import appleMusicIcon from '../../../assets/socials/apple-music-icon.svg';
 import youTubeIcon from '../../../assets/socials/yt-icon.png';
+import bandcampIcon from '../../../assets/socials/bandcamp-icon.png';
+import patreonIcon from '../../../assets/socials/PATREON_SYMBOL_1_BLACK_RGB.svg';
+import soundCloudIcon from '../../../assets/socials/soundcloud-icon.png';
 
 /* graphics */
 import sontomorioLogo from '../../../assets/art/sonto-logo-4.png';
@@ -53,9 +55,31 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Album',
-            description: 'Coming June 18, 2025.',
+            description: 'Busy soundscapes, funky beats, and strange electronic noises. A globetrotting voyage in 45 minutes.',
             genre: 'pop, hip-hop, electronic',
             coverImageSrc: travelogueCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://distrokid.com/hyperfollow/sontomorio/travelogue',
+                    iconSrc: spotifyIcon,
+                    text: 'Spotify',
+                }),
+                createElement(IconButton, {
+                    href: 'https://youtu.be/FRbNazs6Wv4',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://sontomorio.bandcamp.com/album/travelogue',
+                    iconSrc: bandcampIcon,
+                    text: 'Bandcamp',
+                }),
+                createElement(IconButton, {
+                    href: 'https://www.patreon.com/Sontomorio/shop/travelogue-instrumental-album-2025-1814640?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=productshare_creator&utm_content=join_link',
+                    iconSrc: patreonIcon,
+                    text: 'Patreon',
+                }),
+            ],
         }),
         createElement(MusicRelease, {
             title: 'Tropical New World',
