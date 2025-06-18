@@ -39,6 +39,7 @@ import sontomorioLogo from '../../../assets/art/sonto-logo-4.png';
 
 export default function Music() {
     const musicReleases = [
+/*
         createElement(MusicRelease, {
             title: 'Sonido Amor',
             type: 'Mixtape',
@@ -52,6 +53,7 @@ export default function Music() {
                 }),
             ],
         }),
+*/
         createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Album',
