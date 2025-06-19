@@ -11,8 +11,8 @@ import Socials from '../../Socials/Socials';
 
 /* assets */
 /* album covers */
-import priibyuCover from '../../../assets/music/1.png';
-import deibyuCover from '../../../assets/music/deibyu.png';
+import priibyuCover from '../../../assets/music/0.png';
+import deibyuCover from '../../../assets/music/1.png';
 import burningMyTimeCover from '../../../assets/music/2.png';
 import lucidCover from '../../../assets/art/lucid.jpg';
 import midnightMoviesCover from '../../../assets/art/midnight-movies.jpg';
