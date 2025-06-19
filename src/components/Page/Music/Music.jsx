@@ -138,7 +138,7 @@ export default function Music() {
             subtitle: '(with Aspen "Shreds" Abrahamson)',
             type: 'Unfinished Album',
             releaseDate: 'February 3, 2025 (April 4, 2023 demo)',
-            description: 'An ambitious, experimental collaboration with "Shreds". We each did a fair bit of the work (though this ratio varies from track to track). It was about 85% done before dropped.',
+            description: 'An ambitious, experimental collaboration with "Shreds". We each did a fair bit of the work. It was about 85% done before dropped.',
             genre: 'psychedelic, hip-hop, rock',
             coverImageSrc: narlyYmorioCover,
             links: [
