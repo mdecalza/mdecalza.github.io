@@ -63,9 +63,14 @@ export default function Music() {
             coverImageSrc: travelogueCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://distrokid.com/hyperfollow/sontomorio/travelogue',
+                    href: 'https://open.spotify.com/album/3qwrwW9pb67tjaoCDvmkBt?si=GVWk0s48QfODow9WSjkdZg',
                     iconSrc: spotifyIcon,
                     text: 'Spotify',
+                }),
+                createElement(IconButton, {
+                    href: 'https://music.apple.com/us/album/travelogue/1821441225',
+                    iconSrc: appleMusicIcon,
+                    text: 'Apple Music',
                 }),
                 createElement(IconButton, {
                     href: 'https://youtu.be/FRbNazs6Wv4',
@@ -93,12 +98,22 @@ export default function Music() {
             coverImageSrc: ostJam7cover,
             links: [
                 createElement(IconButton, {
+                    href: 'https://open.spotify.com/album/1hxirm6dCM385FgHlsYaTf?si=dsBB2dmiT7-ZcR8U7FUREA',
+                    iconSrc: spotifyIcon,
+                    text: 'Spotify',
+                }),
+                createElement(IconButton, {
+                    href: 'https://music.apple.com/us/album/tropical-new-world-ep/1818972447',
+                    iconSrc: appleMusicIcon,
+                    text: 'Apple Music',
+                }),
+                createElement(IconButton, {
                     href: 'https://www.youtube.com/playlist?list=PLdSVpo8uVNGWpYIPuigj2JNwaj9oUtjhD',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
                 createElement(IconButton, {
-                    href: '#',
+                    href: 'https://sontomorio.bandcamp.com/album/tropical-new-world',
                     iconSrc: bandcampIcon,
                     text: 'Bandcamp',
                 }),
@@ -184,9 +199,19 @@ export default function Music() {
                     text: 'Spotify',
                 }),
                 createElement(IconButton, {
+                    href: 'https://music.apple.com/us/album/sunday-morning-tv-ep/1591252601',
+                    iconSrc: appleMusicIcon,
+                    text: 'Apple Music',
+                }),
+                createElement(IconButton, {
                     href: 'https://sontomorio.bandcamp.com/album/sunday-morning-tv',
                     iconSrc: bandcampIcon,
                     text: 'Bandcamp',
+                }),
+                createElement(IconButton, {
+                    href: 'https://www.patreon.com/Sontomorio/shop/sunday-morning-tv-ep-2021-1506796?source=storefront',
+                    iconSrc: patreonIcon,
+                    text: 'Patreon',
                 }),
             ],
         }),
@@ -285,6 +310,11 @@ export default function Music() {
                     text: 'Spotify',
                 }),
                 createElement(IconButton, {
+                    href: 'https://music.apple.com/us/album/burning-my-time-building-my-mind-ep/1774373578',
+                    iconSrc: appleMusicIcon,
+                    text: 'Apple Music',
+                }),
+                createElement(IconButton, {
                     href: 'https://youtu.be/ziNXngLa_zE',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
@@ -293,6 +323,11 @@ export default function Music() {
                     href: 'https://sontomorio.bandcamp.com/album/burning-my-time-building-my-mind',
                     iconSrc: bandcampIcon,
                     text: 'Bandcamp',
+                }),
+                createElement(IconButton, {
+                    href: 'https://www.patreon.com/Sontomorio/shop/burning-my-time-building-my-mind-ep-2019-1506967?source=storefront',
+                    iconSrc: patreonIcon,
+                    text: 'Patreon',
                 }),
                 createElement(IconButton, {
                     href: 'https://soundcloud.com/sontomorio/sets/burning-my-time-building-my-mind?si=73ed1b6432b34b578118422d43b807a4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
