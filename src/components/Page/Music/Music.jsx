@@ -118,11 +118,6 @@ export default function Music() {
                     text: 'Bandcamp',
                 }),
                 createElement(IconButton, {
-                    href: 'https://www.patreon.com/Sontomorio/shop/sunday-morning-tv-ep-2021-1506796?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=productshare_fan&utm_content=join_link',
-                    iconSrc: patreonIcon,
-                    text: 'Patreon',
-                }),
-                createElement(IconButton, {
                     href: 'https://soundcloud.com/sontomorio/sets/tropical-new-world?si=793bbcfcbfd84d88a574a5fdca9626f4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
