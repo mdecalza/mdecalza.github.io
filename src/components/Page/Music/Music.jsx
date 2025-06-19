@@ -208,6 +208,11 @@ export default function Music() {
                     iconSrc: bandcampIcon,
                     text: 'Bandcamp',
                 }),
+                createElement(IconButton, {
+                    href: 'https://www.patreon.com/Sontomorio/shop/sunday-morning-tv-ep-2021-1506796?source=storefront',
+                    iconSrc: patreonIcon,
+                    text: 'Patreon',
+                }),
             ],
         }),
         createElement(MusicRelease, {
