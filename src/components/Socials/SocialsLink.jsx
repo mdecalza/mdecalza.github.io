@@ -88,15 +88,15 @@ export default function SocialsLink({target = ''}) {
                 setIconSource(patreon);
                 break;
             case 'soundcloud':
-                setTargetURL('https://soundcloud.com/sontomorio');
+                setTargetURL('https://soundcloud.com/sontomorio?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing');
                 setIconSource(soundCloud);
                 break;
             case 'spotify':
-                setTargetURL('https://open.spotify.com/artist/3goR9KK8F6uqLA7yoXjYgL');
+                setTargetURL('https://open.spotify.com/artist/3goR9KK8F6uqLA7yoXjYgL?si=6s0jB9SuRvq6SH2gI0mD1w');
                 setIconSource(spotify);
                 break;
             case 'tiktok':
-                setTargetURL('https://www.tiktok.com/@sontomorio');
+                setTargetURL('https://www.tiktok.com/@sontomorio?is_from_webapp=1&sender_device=pc');
                 setIconSource(tikTok);
                 break;
             case 'twitter':
@@ -105,11 +105,11 @@ export default function SocialsLink({target = ''}) {
                 setIconSource(twitter);
                 break;
             case 'doom-youtube':
-                setTargetURL('https://www.youtube.com/channel/UC0l2XkWTdfrPMLqLBXklBXA');
+                setTargetURL('https://youtube.com/@matt534dog?feature=shared');
                 setIconSource(youTube);
                 break;
             case 'music-youtube':
-                setTargetURL('https://www.youtube.com/channel/UCPeP7F5d_NSwuAxlEMr3ukQ');
+                setTargetURL('https://youtube.com/@sontomorio4653?si=Yte3pFjgHcrZjeXg');
                 setIconSource(youTube);
                 break;
             default:
