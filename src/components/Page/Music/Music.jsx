@@ -24,7 +24,6 @@ import whopperCover from '../../../assets/art/whopper-big.png';
 import ostJam7cover from '../../../assets/music/ostjam7.png';
 import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
 import travelogueCover from '../../../assets/music/7.png';
-import sonidoAmorCover from '../../../assets/music/8.png';
 
 /* link icons */
 import spotifyIcon from '../../../assets/socials/spotify-icon.png';
@@ -39,21 +38,6 @@ import sontomorioLogo from '../../../assets/art/sonto-logo-4.png';
 
 export default function Music() {
     const musicReleases = [
-/*
-        createElement(MusicRelease, {
-            title: 'Sonido Amor',
-            type: 'Mixtape',
-            description: 'Coming September 3, 2025.',
-            genre: 'hip-hop, boombap, salsa',
-            coverImageSrc: sonidoAmorCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://www.pexels.com/photo/man-standing-beside-his-car-in-front-of-colorful-buildings-in-havana-cuba-14462602/',
-                    text: 'Cover source photo by Vlad Vasnetsov',
-                }),
-            ],
-        }),
-*/
         createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Album',
@@ -378,7 +362,7 @@ export default function Music() {
             src={ sontomorioLogo }
             className='w-25' />
             <Socials
-            socialsList={[ 'patreon', 'bandcamp', 'spotify', 'apple-music', 'soundcloud', 'music-youtube', 'music-instagram', 'twitter', 'music-email' ]} />
+            socialsList={[ 'spotify', 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter', 'music-email' ]} />
             <iframe
             src='https://open.spotify.com/embed/artist/3goR9KK8F6uqLA7yoXjYgL?utm_source=generator'
             className='popInDelayed border border-0 shadow mb-5'
