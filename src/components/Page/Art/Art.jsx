@@ -25,6 +25,7 @@ import intercep3inter from '../../../assets/art/int3-inter.png';
 import intercep3text1 from '../../../assets/art/int3-illust1.png';
 
 /* sketches */
+import amineFox from '../../../assets/art/amine-fox.png';
 import aerithSketch from '../../../assets/art/16-aerith.png';
 import cloudSketch from '../../../assets/art/17-cloud.png';
 import intercepSketch1 from '../../../assets/art/illustration-sketch5.png';
@@ -77,6 +78,7 @@ export default function Art() {
     ];
     
     const sketches = [
+        createElement(ArtImage, { src: amineFox }),
         createElement(ArtImage, { src: aerithSketch }),
         createElement(ArtImage, { src: cloudSketch }),
         createElement(ArtImage, { src: sketchbook1 }),
@@ -139,9 +141,6 @@ export default function Art() {
             <Socials
             socialsList={[ 'art-instagram', 'linkedin', 'main-email' ]} />
             <Scroller
-            title='Graphic Design'
-            elements={ graphicDesign } />
-            <Scroller
             title='Pixel Illustrations'
             elements={ pixelArt } />
             <Scroller
@@ -150,6 +149,9 @@ export default function Art() {
             <Scroller
             title='Album Art'
             elements={ albumArt } />
+            <Scroller
+            title='Graphic Design'
+            elements={ graphicDesign } />
             <Scroller
             title='3D Level Design'
             elements={ levelDesign } />
