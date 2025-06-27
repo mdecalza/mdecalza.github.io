@@ -11945,7 +11945,7 @@ textarea.form-control-lg {
 }
 
 .Footer {
-  width: 90%;
+  width: min(30em, 95vw);
 }
 
 /* Code by 2024—2025 Matthew DeCalzadilla */
