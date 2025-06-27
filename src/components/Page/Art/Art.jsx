@@ -78,8 +78,8 @@ export default function Art() {
     ];
     
     const sketches = [
-        createElement(ArtImage, { src: amineFox }),
         createElement(ArtImage, { src: aerithSketch }),
+        createElement(ArtImage, { src: amineFox }),
         createElement(ArtImage, { src: cloudSketch }),
         createElement(ArtImage, { src: sketchbook1 }),
         createElement(ArtImage, { src: sketchbook2 }),
