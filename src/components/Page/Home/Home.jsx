@@ -31,27 +31,27 @@ export default function Home() {
                 <div className='row'>
                     <div className='col-lg my-3'>
                         <div
-                        className='h-100 py-3 rounded-5 bg-light bg-opacity-10'>
+                        className='h-100 mx-4 p-3 rounded-5 bg-light bg-opacity-10'>
                             <h4>
                                 Music
                             </h4>
                             <a
                             href='mailto:&#115;&#111;&#110;&#116;&#111;&#109;&#111;&#114;&#105;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'
                             rel='noopener nofollower noreferrer'
-                            style={{ fontSize: 'min(1.75rem, 5.5vw)' }}>
+                            style={{ fontSize: 'min(1.75rem, 4.5vw)' }}>
                                 &#115;&#111;&#110;&#116;&#111;&#109;&#111;&#114;&#105;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
                             </a>
                         </div>
                     </div>
                     <div className='col-lg my-3'>
-                        <div className='h-100 py-3 rounded-5 bg-light bg-opacity-10'>
+                        <div className='h-100 mx-4 p-3 rounded-5 bg-light bg-opacity-10'>
                             <h4>
-                                Art & more
+                                General
                             </h4>
                             <a
                             href='mailto:&#109;&#97;&#116;&#116;&#46;&#100;&#101;&#99;&#97;&#108;&#122;&#97;&#100;&#105;&#108;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'
                             rel='noopener nofollower noreferrer'
-                            style={{ fontSize: 'min(1.75rem, 5.5vw)' }}>
+                            style={{ fontSize: 'min(1.75rem, 4.5vw)' }}>
                                 &#109;&#97;&#116;&#116;&#46;&#100;&#101;&#99;&#97;&#108;&#122;&#97;&#100;&#105;&#108;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
                             </a>
                         </div>
