@@ -24,6 +24,7 @@ import whopperCover from '../../../assets/art/whopper-big.png';
 import ostJam7cover from '../../../assets/music/ostjam7.png';
 import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
 import travelogueCover from '../../../assets/music/7.png';
+import sonidoAmorCover from '../../../assets/music/8.png';
 
 /* link icons */
 import spotifyIcon from '../../../assets/socials/spotify-icon.png';
@@ -39,11 +40,24 @@ import sontomorioLogo from '../../../assets/art/sonto-logo-4.png';
 export default function Music() {
     const musicReleases = [
         createElement(MusicRelease, {
+            title: 'Sonido Amor',
+            type: 'Mixtape',
+            description: 'Hip-hop beats, salsa samples, and smooth vibes. Coming September 30, 2025.',
+            genre: 'hip-hop, boombap, chillout',
+            coverImageSrc: sonidoAmorCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://www.pexels.com/photo/man-standing-beside-his-car-in-front-of-colorful-buildings-in-havana-cuba-14462602/',
+                    text: 'Cover source photo by Vlad Vasnetsov',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Album',
-            releaseDate: 'June 18, 2025',
+            releaseDate: 'June 17, 2025',
             description: 'Busy soundscapes, funky beats, and strange electronic noises. A globetrotting voyage in 45 minutes.',
-            genre: 'pop, hip-hop, electronic',
+            genre: 'downtempo, hip-hop, ambient',
             coverImageSrc: travelogueCover,
             links: [
                 createElement(IconButton, {
@@ -153,7 +167,7 @@ export default function Music() {
             type: 'Beat Tape',
             releaseDate: 'December 31, 2022',
             description: 'A dark mix of original tunes among diverse beats, samples, and soundscapes.',
-            genre: 'electronic, hip-hop, psychedelic',
+            genre: 'downtempo, hip-hop, psychedelic',
             coverImageSrc: sontoOlegioCover,
             links: [
                 createElement(IconButton, {
@@ -174,7 +188,7 @@ export default function Music() {
             type: 'Compilation EP',
             releaseDate: 'October 19, 2021',
             description: 'Combines two tracks from Midnight Movies with three previously unreleased original tracks. A compilation of music from The Freeway and prior that is suitable for streaming.',
-            genre: 'electronic, hip-hop/rap, ambient',
+            genre: 'downtempo, hip-hop/rap, ambient',
             coverImageSrc: sundayMorningTVCover,
             links: [
                 createElement(IconButton, {
@@ -244,7 +258,7 @@ export default function Music() {
             type: 'Instrumental Mixtape',
             releaseDate: 'December 20, 2019',
             description: 'A picturesque journey told through patchwork samples and idiosyncratic beats woven together into soundscapes. A descent into dreams inspired by a bygone time.',
-            genre: 'hip-hop, pop, ambient',
+            genre: 'hip-hop, downtempo, ambient',
             coverImageSrc: midnightMoviesCover,
             links: [
                 createElement(IconButton, {
@@ -326,7 +340,7 @@ export default function Music() {
             type: 'Mixtape',
             releaseDate: 'January 23, 2019',
             description: 'My first published album, featuring many collaborators. A dense and distorted evolution of the Priibyu mixtape. Part of a double LP package with Priibyu.',
-            genre: 'hip-hop/rap, electronic, psychedelic',
+            genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: deibyuCover,
             links: [
                 createElement(IconButton, {
@@ -342,7 +356,7 @@ export default function Music() {
             type: 'Mixtape Demo',
             releaseDate: 'February 3, 2025 (late 2018 demo)',
             description: 'Demo of the Deibyu mixtape. A bright, loose string of eclectic outsider music. Part of a double LP package with Deibyu.',
-            genre: 'hip-hop/rap, electronic, psychedelic',
+            genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: priibyuCover,
             links: [
                 createElement(IconButton, {
