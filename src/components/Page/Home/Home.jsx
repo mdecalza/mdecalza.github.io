@@ -27,39 +27,6 @@ export default function Home() {
             </div>
             <div className='pb-5'>
                 <Header
-                title='Email' />
-                <div className='row'>
-                    <div className='col-lg my-3'>
-                        <div
-                        className='h-100 mx-4 p-3 rounded-5 bg-light bg-opacity-10'>
-                            <h4>
-                                Music
-                            </h4>
-                            <a
-                            href='mailto:&#115;&#111;&#110;&#116;&#111;&#109;&#111;&#114;&#105;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'
-                            rel='noopener nofollower noreferrer'
-                            style={{ fontSize: 'min(1.75rem, 4.5vw)' }}>
-                                &#115;&#111;&#110;&#116;&#111;&#109;&#111;&#114;&#105;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-                            </a>
-                        </div>
-                    </div>
-                    <div className='col-lg my-3'>
-                        <div className='h-100 mx-4 p-3 rounded-5 bg-light bg-opacity-10'>
-                            <h4>
-                                General
-                            </h4>
-                            <a
-                            href='mailto:&#109;&#97;&#116;&#116;&#46;&#100;&#101;&#99;&#97;&#108;&#122;&#97;&#100;&#105;&#108;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'
-                            rel='noopener nofollower noreferrer'
-                            style={{ fontSize: 'min(1.75rem, 4.5vw)' }}>
-                                &#109;&#97;&#116;&#116;&#46;&#100;&#101;&#99;&#97;&#108;&#122;&#97;&#100;&#105;&#108;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='pb-5'>
-                <Header
                 title='Socials' />
                 <div className='row'>
                     <div className='col-lg py-3'>
@@ -110,6 +77,39 @@ export default function Home() {
             </div>
             <div className='pb-5'>
                 <Header
+                title='Email' />
+                <div className='row'>
+                    <div className='col-lg my-3'>
+                        <div
+                        className='h-100 mx-4 p-3 rounded-5 bg-light bg-opacity-10'>
+                            <h4>
+                                Music
+                            </h4>
+                            <a
+                            href='mailto:&#115;&#111;&#110;&#116;&#111;&#109;&#111;&#114;&#105;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'
+                            rel='noopener nofollower noreferrer'
+                            style={{ fontSize: 'min(1.75rem, 4.5vw)' }}>
+                                &#115;&#111;&#110;&#116;&#111;&#109;&#111;&#114;&#105;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+                            </a>
+                        </div>
+                    </div>
+                    <div className='col-lg my-3'>
+                        <div className='h-100 mx-4 p-3 rounded-5 bg-light bg-opacity-10'>
+                            <h4>
+                                General
+                            </h4>
+                            <a
+                            href='mailto:&#109;&#97;&#116;&#116;&#46;&#100;&#101;&#99;&#97;&#108;&#122;&#97;&#100;&#105;&#108;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'
+                            rel='noopener nofollower noreferrer'
+                            style={{ fontSize: 'min(1.75rem, 4.5vw)' }}>
+                                &#109;&#97;&#116;&#116;&#46;&#100;&#101;&#99;&#97;&#108;&#122;&#97;&#100;&#105;&#108;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='pb-5'>
+                <Header
                 title='About Me' />
                 <h3
                 className='mb-4'>
@@ -130,7 +130,7 @@ export default function Home() {
                     <br />
                     In 2025, <a href='https://open.spotify.com/album/3qwrwW9pb67tjaoCDvmkBt'><i>Travelogue</i></a> was released, building upon everything I had done before and taking it all to a new level. This LP was a spiritual successor to <i>Midnight Movies</i>, using samples to weave its songs into a continuous mix while upping the all around quality of the songwriting, production, and everything in-between.<br />
                     <br />
-                    To stay up-to-date on any new Sontomorio releases, check out <Link to={{ pathname: 'music' }}>the music page</Link>.
+                    To stay up-to-date on any new Sontomorio releases, check out <Link to={{ pathname: 'music' }}>the Music page</Link>.
                 </p>
                 <h3
                 className='mb-4'>
