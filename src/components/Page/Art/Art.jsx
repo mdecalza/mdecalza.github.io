@@ -139,7 +139,7 @@ export default function Art() {
                 title='Art' />
             </div>
             <Socials
-            socialsList={[ 'art-instagram', 'linkedin', 'main-email' ]} />
+            socialsList={[ 'art-instagram', 'linkedin' ]} />
             <Scroller
             title='Pixel Illustrations'
             elements={ pixelArt } />

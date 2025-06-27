@@ -189,7 +189,7 @@ export default function Wads() {
                 <Header
                 title='Doom Wads' />
                 <Socials
-                socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube', 'main-email', 'github' ]} />
+                socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube', 'github' ]} />
                 <p
                 className='pt-3 fs-4'>
                     <b>What Is a Wad Anyway?</b>
