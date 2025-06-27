@@ -4,9 +4,7 @@ import { createElement, useEffect, useState } from 'react';
 
 /* page components */
 import Home from './Home/Home.jsx';
-import Bio from './Bio/Bio.jsx';
 import Websites from './Websites/Websites.jsx';
-import Games from './Games/Games.jsx';
 import Wads from './Wads/Wads.jsx';
 import Art from './Art/Art.jsx';
 import Music from './Music/Music.jsx';
@@ -24,14 +22,8 @@ export default function Page({pageType = 'home'}) {
 
     useEffect(() => {
         switch (pageType.toLowerCase()) {
-            case 'bio':
-                setPageElement(createElement(Bio));
-                break;
             case 'websites':
                 setPageElement(createElement(Websites));
-                break;
-            case 'games':
-                setPageElement(createElement(Games));
                 break;
             case 'art':
                 setPageElement(createElement(Art));

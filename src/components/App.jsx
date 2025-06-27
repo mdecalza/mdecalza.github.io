@@ -13,9 +13,7 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={ <Page pageType='home' /> } />
-          <Route path='/bio' element={ <Page pageType='bio' /> } />
           <Route path='/websites' element={ <Page pageType='websites' /> } />
-          <Route path='/games' element={ <Page pageType='games' /> } />
           <Route path='/wads' element={ <Page pageType='wads' /> } />
           <Route path='/art' element={ <Page pageType='art' /> } />
           <Route path='/music' element={ <Page pageType='music' /> } />
