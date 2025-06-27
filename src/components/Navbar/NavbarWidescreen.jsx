@@ -1,13 +1,13 @@
 /* Code by 2024—2025 Matthew DeCalzadilla */
 
 /* components */
-import NavbarButtons from './NavbarButtonContainer';
+import NavbarButtonContainer from './NavbarButtonContainer';
 
 export default function NavbarWidescreen() {
     return(
         <div
         className='overflow-hidden d-flex pb-3'>
-        <NavbarButtons
+        <NavbarButtonContainer
         widescreen={true}/>
         </div>
     );

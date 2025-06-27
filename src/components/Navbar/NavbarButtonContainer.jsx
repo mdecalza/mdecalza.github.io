@@ -26,19 +26,19 @@ export default function NavbarButtonContainer({widescreen = false}) {
         <div
         className={navbarButtonsClass}>
             <NavbarButton
-            text='Bio'
-            widescreen={widescreen}/>
-            <NavbarButton
-            text='Websites'
-            widescreen={widescreen}/>
-            <NavbarButton
-            text='Wads'
+            text='Music'
             widescreen={widescreen}/>
             <NavbarButton
             text='Art'
             widescreen={widescreen}/>
             <NavbarButton
-            text='Music'
+            text='Wads'
+            widescreen={widescreen}/>
+            <NavbarButton
+            text='Websites'
+            widescreen={widescreen}/>
+            <NavbarButton
+            text='Bio'
             widescreen={widescreen}/>
         </div>
     );
