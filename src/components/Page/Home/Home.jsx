@@ -26,7 +26,7 @@ export default function Home() {
             </h2>
             <hr/>
             <Socials
-            socialsList={[ 'linkedin', 'main-email', 'github' ]}/>
+            socialsList={[ 'linkedin', 'github' ]}/>
         </div>
     );
 }

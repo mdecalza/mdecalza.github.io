@@ -13,7 +13,7 @@ export default function Websites() {
             <Header
             title='Websites' />
             <Socials
-            socialsList={[ 'linkedin', 'main-email', 'github' ]} />
+            socialsList={[ 'linkedin', 'github' ]} />
             <WebsiteThumbnail
             to={{ pathname: 'https://casafrescacleaning.com' }} />
             <WebsiteThumbnail

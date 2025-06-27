@@ -376,7 +376,7 @@ export default function Music() {
             src={ sontomorioLogo }
             className='w-25' />
             <Socials
-            socialsList={[ 'spotify', 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter', 'music-email' ]} />
+            socialsList={[ 'spotify', 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
             <iframe
             src='https://open.spotify.com/embed/artist/3goR9KK8F6uqLA7yoXjYgL?utm_source=generator'
             className='popInDelayed border border-0 shadow mb-5'

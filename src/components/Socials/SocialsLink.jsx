@@ -9,7 +9,6 @@ import bethesda from '../../assets/socials/bethesdanet-icon.png';
 import doomWiki from '../../assets/socials/doomwiki-icon.png';
 import doomworld from '../../assets/socials/doomworld-icon.png';
 import github from '../../assets/socials/github-mark-white.svg';
-import gmail from '../../assets/socials/gmail-icon.png';
 import instagram from '../../assets/socials/inst-icon.png';
 import linkedIn from '../../assets/socials/linkedin-icon.png';
 import patreon from '../../assets/socials/PATREON_SYMBOL_1_WHITE_RGB.svg';
@@ -60,17 +59,6 @@ export default function SocialsLink({target = ''}) {
                 setTargetURL('https://github.com/mdecalza');
                 setIconSource(github);
                 break;
-            case 'gmail':
-            case 'main-gmail':
-            case 'main-email':
-                setTargetURL('mailto:matt.decalzadilla@gmail.com');
-                setIconSource(gmail);
-                break;
-            case 'music-gmail':
-            case 'music-email':
-                setTargetURL('mailto:sontomorio@gmail.com');
-                setIconSource(gmail);
-                break;
             case 'art-instagram':
                 setTargetURL('https://www.instagram.com/the_decalzone/');
                 setIconSource(instagram);
@@ -120,7 +108,6 @@ export default function SocialsLink({target = ''}) {
     }, [target]);
 
     return (
-        <>
         <a
         href={targetURL}
         target='_blank'>
@@ -129,6 +116,5 @@ export default function SocialsLink({target = ''}) {
             className={`SocialsLink ${animation} m-2 ${(targetURL === '#') ? 'd-none' : 'd-inline'}`}
             style={{ width: '64px', }}/>
         </a>
-        </>
     );
 }
