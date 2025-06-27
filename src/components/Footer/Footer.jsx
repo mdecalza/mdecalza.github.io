@@ -9,11 +9,11 @@ export default function Footer() {
         className='FooterContainer'>
             <footer
             className='Footer mx-auto p-4 text-center text-light text-opacity-50'>
-                &copy; {
+                &copy; Matthew DeCalzadilla {
                     (currentDate === initialDate) ?
                     initialDate :
                     initialDate.toString() + ' - ' + currentDate
-                } Matthew DeCalzadilla
+                }.
             </footer>
         </div>
     );

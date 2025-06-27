@@ -37,9 +37,6 @@ export default function NavbarButtonContainer({widescreen = false}) {
             <NavbarButton
             text='Websites'
             widescreen={widescreen}/>
-            <NavbarButton
-            text='Bio'
-            widescreen={widescreen}/>
         </div>
     );
 }
