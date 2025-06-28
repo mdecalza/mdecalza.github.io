@@ -6,12 +6,23 @@ import { useLocation } from 'react-router';
 /* components */
 import NavbarButtonContainer from '/src/components/Navbar/NavbarButtonContainer';
 
+/* functions */
+import { collapseButtonContainer } from '/src/functions/collapseButtonContainer';
+
 export default function NavbarDropdown() {
     const location = useLocation();
 
     useEffect(() => {
-        collapseButtonContainer('alwaysCollapse');
-    }, [location.pathname])
+        collapseButtonContainer(true);
+    }, [location.pathname]);
+
+    function handleMouseClick() {
+        if (document.querySelector('.NavbarButtonContainer').classList.contains('d-none')) {
+            collapseButtonContainer(false);
+        } else if (document.querySelector('.NavbarButtonContainer').classList.contains('d-flex')) {
+            collapseButtonContainer(true);
+        }        
+    }
 
     return (
         <div
@@ -25,28 +36,10 @@ export default function NavbarDropdown() {
                 <button
                 className='NavbarDropdownButton btn btn-light mt-2 fs-6 p-0'
                 type='button'
-                onClick={collapseButtonContainer}>
+                onClick={ handleMouseClick }>
                     &#9662;
                 </button>
             </div>
         </div>
     );
-}
-
-function collapseButtonContainer(collapse = null) {
-    const navbarButtonContainer = document.getElementsByClassName('NavbarButtonContainer')[0]
-    const navbarDropdownButton = document.getElementsByClassName('NavbarDropdownButton')[0];
-
-    if (navbarButtonContainer && navbarDropdownButton) {
-        if (navbarButtonContainer.classList.contains('d-flex')) {
-            navbarButtonContainer.classList.remove('d-flex');
-            navbarButtonContainer.classList.add('d-none');
-            navbarDropdownButton.textContent = '\u{25BE}';
-        }
-        else if (navbarButtonContainer.classList.contains('d-none') && collapse !== 'alwaysCollapse') {
-            navbarButtonContainer.classList.remove('d-none');
-            navbarButtonContainer.classList.add('d-flex');
-            navbarDropdownButton.textContent = '\u{25B4}';
-        }
-    }
 }
