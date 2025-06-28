@@ -1,7 +1,7 @@
 /* Code by 2024—2025 Matthew DeCalzadilla */
 
 /* components */
-import NavbarButtonContainer from './NavbarButtonContainer';
+import NavbarButtonContainer from '/src/components/Navbar/NavbarButtonContainer';
 
 export default function NavbarWidescreen() {
     return(

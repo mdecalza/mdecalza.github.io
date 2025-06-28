@@ -1,6 +1,6 @@
 /* Code by 2024—2025 Matthew DeCalzadilla */
 
-import checkTitle from "./__tests__/checkTitle";
+import checkTitle from "/src/components/Scroller/__tests__/checkTitle";
 
 Scroller.propTypes = {
     elements: [],

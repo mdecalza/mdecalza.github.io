@@ -3,68 +3,68 @@
 import { createElement } from 'react';
 
 /* components */
-import ArtImage from './ArtImage';
-import Header from '../../Header/Header';
-import Scroller from '../../Scroller/Scroller';
-import Socials from '../../Socials/Socials';
+import ArtImage from '/src/components/Page/Art/ArtImage';
+import Header from '/src/components/Header/Header';
+import Scroller from '/src/components/Scroller/Scroller';
+import Socials from '/src/components/Socials/Socials';
 
 /* assets */
 /* pixel illustrations */
-import CRUDtitle from '../../../assets/art/crud-title.png';
-import CRUDinter from '../../../assets/art/CRUD_INT.png';
-import hovercabTitle from '../../../assets/art/hov-titlepic.png';
-import hovercabInter from '../../../assets/art/hov-interpic2.png';
-import atoneTitle from '../../../assets/art/atn_TITLEPIC.png';
-import atoneInter from '../../../assets/art/atone-inter.png';
-import atoneCredit from '../../../assets/art/atn_credit2.png';
-import atoneEnding from '../../../assets/art/atone_bossback_aspect.png';
-import embryoTitle from '../../../assets/art/emb-titlepic.png';
-import intercepTitle from '../../../assets/art/int1-title.png';
-import intercep3title from '../../../assets/art/int3-title.png';
-import intercep3inter from '../../../assets/art/int3-inter.png';
-import intercep3text1 from '../../../assets/art/int3-illust1.png';
+import CRUDtitle from '/src/assets/art/crud-title.png';
+import CRUDinter from '/src/assets/art/CRUD_INT.png';
+import hovercabTitle from '/src/assets/art/hov-titlepic.png';
+import hovercabInter from '/src/assets/art/hov-interpic2.png';
+import atoneTitle from '/src/assets/art/atn_TITLEPIC.png';
+import atoneInter from '/src/assets/art/atone-inter.png';
+import atoneCredit from '/src/assets/art/atn_credit2.png';
+import atoneEnding from '/src/assets/art/atone_bossback_aspect.png';
+import embryoTitle from '/src/assets/art/emb-titlepic.png';
+import intercepTitle from '/src/assets/art/int1-title.png';
+import intercep3title from '/src/assets/art/int3-title.png';
+import intercep3inter from '/src/assets/art/int3-inter.png';
+import intercep3text1 from '/src/assets/art/int3-illust1.png';
 
 /* sketches */
-import amineFox from '../../../assets/art/amine-fox.png';
-import aerithSketch from '../../../assets/art/16-aerith.png';
-import cloudSketch from '../../../assets/art/17-cloud.png';
-import intercepSketch1 from '../../../assets/art/illustration-sketch5.png';
-import intercep3sketch1 from '../../../assets/art/illustration-sketch1.png';
-import intercep3sketch2 from '../../../assets/art/illustration-sketch2.png';
-import intercep3sketch3 from '../../../assets/art/illustration-sketch4.png';
-import sketchbook1 from '../../../assets/art/2-2024sketches-511.png';
-import sketchbook2 from '../../../assets/art/2-2024sketches-511-2.png';
+import amineFox from '/src/assets/art/amine-fox.png';
+import aerithSketch from '/src/assets/art/16-aerith.png';
+import cloudSketch from '/src/assets/art/17-cloud.png';
+import intercepSketch1 from '/src/assets/art/illustration-sketch5.png';
+import intercep3sketch1 from '/src/assets/art/illustration-sketch1.png';
+import intercep3sketch2 from '/src/assets/art/illustration-sketch2.png';
+import intercep3sketch3 from '/src/assets/art/illustration-sketch4.png';
+import sketchbook1 from '/src/assets/art/2-2024sketches-511.png';
+import sketchbook2 from '/src/assets/art/2-2024sketches-511-2.png';
 
 /* 3D level design */
-import atonementScreenshots from '../../../assets/art/atn_screenshots.png'
-import herschelScreenshot from '../../../assets/art/herschel-screenshot.png';
-import hovercabScreenshot from '../../../assets/art/hovercab-screen.png';
-import tropicHELLscreenshot from '../../../assets/art/tropichell-screen.png';
-import doomedResidentScreenshots from '../../../assets/art/doomedresident-screens.png';
+import atonementScreenshots from '/src/assets/art/atn_screenshots.png'
+import herschelScreenshot from '/src/assets/art/herschel-screenshot.png';
+import hovercabScreenshot from '/src/assets/art/hovercab-screen.png';
+import tropicHELLscreenshot from '/src/assets/art/tropichell-screen.png';
+import doomedResidentScreenshots from '/src/assets/art/doomedresident-screens.png';
 
 /* album art */
-import deibyuCoverAlt from '../../../assets/art/deibyu2.png';
-import burningMyTimeCover from '../../../assets/art/burnin.jpg';
-import lucidCover from '../../../assets/art/lucid.jpg';
-import midnightMoviesSleeve from '../../../assets/art/midnight-movies-sleeve.jpg';
-import sontoIVgatefold from '../../../assets/art/Sontomorio - Sonto IV - iv_sleeve_PAL.jpg';
-import sundayMorningTVCover from '../../../assets/art/sunday-morning-tv_big.png';
-import bpmCover from '../../../assets/art/88bpm.png';
-import sontoOlegioCoverAlt from '../../../assets/art/olegio.png';
-import sontoOlegioCoverAlt2 from '../../../assets/art/SONTO-OLEGIO.jpg';
-import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
-import whopperCover from '../../../assets/art/whopper-big.png';
-import smoothSailingCover from '../../../assets/art/sailing-cover2.png';
-import intercontinentalCover from '../../../assets/art/intercontinental-sleeve.jpg';
+import deibyuCoverAlt from '/src/assets/art/deibyu2.png';
+import burningMyTimeCover from '/src/assets/art/burnin.jpg';
+import lucidCover from '/src/assets/art/lucid.jpg';
+import midnightMoviesSleeve from '/src/assets/art/midnight-movies-sleeve.jpg';
+import sontoIVgatefold from '/src/assets/art/Sontomorio - Sonto IV - iv_sleeve_PAL.jpg';
+import sundayMorningTVCover from '/src/assets/art/sunday-morning-tv_big.png';
+import bpmCover from '/src/assets/art/88bpm.png';
+import sontoOlegioCoverAlt from '/src/assets/art/olegio.png';
+import sontoOlegioCoverAlt2 from '/src/assets/art/SONTO-OLEGIO.jpg';
+import narlyYmorioCover from '/src/assets/art/narlyYmorio-cover.png';
+import whopperCover from '/src/assets/art/whopper-big.png';
+import smoothSailingCover from '/src/assets/art/sailing-cover2.png';
+import intercontinentalCover from '/src/assets/art/intercontinental-sleeve.jpg';
 
 /* graphic design */
-import sontomorioBanner from '../../../assets/art/sonto-art-small.png';
-import casaFrescaLogo from '../../../assets/art/casa-fresca-logo.png';
-import sontomorioLogo from '../../../assets/art/sonto-logo-4.png';
-import burningLogo from '../../../assets/art/burning-logo.png';
-import atoneLogo from '../../../assets/art/atone-logo.png';
-import CRUDlogo from '../../../assets/art/CRUD-logo.png';
-import embryoLogo from '../../../assets/art/embryo-logo.png';
+import sontomorioBanner from '/src/assets/art/sonto-art-small.png';
+import casaFrescaLogo from '/src/assets/art/casa-fresca-logo.png';
+import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
+import burningLogo from '/src/assets/art/burning-logo.png';
+import atoneLogo from '/src/assets/art/atone-logo.png';
+import CRUDlogo from '/src/assets/art/CRUD-logo.png';
+import embryoLogo from '/src/assets/art/embryo-logo.png';
 
 export default function Art() {
     const pixelArt = [

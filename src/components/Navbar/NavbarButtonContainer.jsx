@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import NavbarButton from './NavbarButton';
+import NavbarButton from '/src/components/Navbar/NavbarButton';
 
 NavbarButtonContainer.propTypes = {
     widescreen: false,

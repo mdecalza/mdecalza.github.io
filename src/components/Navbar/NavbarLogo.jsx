@@ -3,7 +3,7 @@
 import { Link } from 'react-router';
 
 /* components */
-import logo from '../../assets/home/mateo.png';
+import logo from '/src/assets/home/mateo.png';
 
 export default function NavbarLogo() {
     return (

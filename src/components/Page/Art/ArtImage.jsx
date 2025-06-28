@@ -1,6 +1,6 @@
 /* Code by 2024—2025 Matthew DeCalzadilla */
 
-import CensorBlur from '../../CensorBlur/CensorBlur';
+import CensorBlur from '/src/components/CensorBlur/CensorBlur';
 
 ArtImage.propTypes = {
     src: '',

@@ -1,10 +1,10 @@
 /* Code by 2024—2025 Matthew DeCalzadilla */
 
 /* components */
-import BlockQuote from '../../BlockQuote/BlockQuote';
+import BlockQuote from '/src/components/BlockQuote/BlockQuote';
 
 /* icons */
-import explicitIcon from '../../../assets/icons/alphabet-e-icon.svg'
+import explicitIcon from '/src/assets/icons/alphabet-e-icon.svg'
 
 MusicRelease.propTypes = {
     title: '',

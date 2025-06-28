@@ -1,7 +1,7 @@
 /* Code by 2024—2025 Matthew DeCalzadilla */
 
 import { createElement, useEffect, useState } from 'react';
-import SocialsLink from './SocialsLink';
+import SocialsLink from '/src/components/Socials/SocialsLink';
 
 Socials.propTypes = {
     socialsList: [],
