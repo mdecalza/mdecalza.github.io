@@ -3,39 +3,39 @@
 import { createElement } from 'react';
 
 /* components */
-import MusicRelease from './MusicRelease';
-import Header from '../../Header/Header';
-import IconButton from '../../IconButton/IconButton';
-import Scroller from '../../Scroller/Scroller';
-import Socials from '../../Socials/Socials';
+import MusicRelease from '/src/components/Page/Music/MusicRelease';
+import Header from '/src/components/Header/Header';
+import IconButton from '/src/components/IconButton/IconButton';
+import Scroller from '/src/components/Scroller/Scroller';
+import Socials from '/src/components/Socials/Socials';
 
 /* assets */
 /* album covers */
-import priibyuCover from '../../../assets/music/0.png';
-import deibyuCover from '../../../assets/music/1.png';
-import burningMyTimeCover from '../../../assets/music/2.png';
-import lucidCover from '../../../assets/art/lucid.jpg';
-import midnightMoviesCover from '../../../assets/art/midnight-movies.jpg';
-import sontoIVcover from '../../../assets/music/4.png';
-import theFreewayCover from '../../../assets/music/5.png'
-import sundayMorningTVCover from '../../../assets/music/tv.png';
-import sontoOlegioCover from '../../../assets/art/olegio.png';
-import whopperCover from '../../../assets/art/whopper-big.png';
-import ostJam7cover from '../../../assets/music/ostjam7.png';
-import narlyYmorioCover from '../../../assets/art/narlyYmorio-cover.png';
-import travelogueCover from '../../../assets/music/7.png';
-import sonidoAmorCover from '../../../assets/music/8.png';
+import priibyuCover from '/src/assets/music/0.png';
+import deibyuCover from '/src/assets/music/1.png';
+import burningMyTimeCover from '/src/assets/music/2.png';
+import lucidCover from '/src/assets/art/lucid.jpg';
+import midnightMoviesCover from '/src/assets/art/midnight-movies.jpg';
+import sontoIVcover from '/src/assets/music/4.png';
+import theFreewayCover from '/src/assets/music/5.png'
+import sundayMorningTVCover from '/src/assets/music/tv.png';
+import sontoOlegioCover from '/src/assets/art/olegio.png';
+import whopperCover from '/src/assets/art/whopper-big.png';
+import ostJam7cover from '/src/assets/music/ostjam7.png';
+import narlyYmorioCover from '/src/assets/art/narlyYmorio-cover.png';
+import travelogueCover from '/src/assets/music/7.png';
+import sonidoAmorCover from '/src/assets/music/8.png';
 
 /* link icons */
-import spotifyIcon from '../../../assets/socials/spotify-icon.png';
-import appleMusicIcon from '../../../assets/socials/apple-music-icon.svg';
-import youTubeIcon from '../../../assets/socials/yt-icon.png';
-import bandcampIcon from '../../../assets/socials/bandcamp-icon.png';
-import patreonIcon from '../../../assets/socials/PATREON_SYMBOL_1_BLACK_RGB.svg';
-import soundCloudIcon from '../../../assets/socials/soundcloud-icon.png';
+import spotifyIcon from '/src/assets/socials/spotify-icon.png';
+import appleMusicIcon from '/src/assets/socials/apple-music-icon.svg';
+import youTubeIcon from '/src/assets/socials/yt-icon.png';
+import bandcampIcon from '/src/assets/socials/bandcamp-icon.png';
+import patreonIcon from '/src/assets/socials/PATREON_SYMBOL_1_BLACK_RGB.svg';
+import soundCloudIcon from '/src/assets/socials/soundcloud-icon.png';
 
 /* graphics */
-import sontomorioLogo from '../../../assets/art/sonto-logo-4.png';
+import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
     const musicReleases = [

@@ -3,15 +3,15 @@
 import { createElement, useEffect, useState } from 'react';
 
 /* page components */
-import Home from './Home/Home.jsx';
-import Websites from './Websites/Websites.jsx';
-import Wads from './Wads/Wads.jsx';
-import Art from './Art/Art.jsx';
-import Music from './Music/Music.jsx';
+import Home from '/src/components/Page/Home/Home.jsx';
+import Websites from '/src/components/Page/Websites/Websites.jsx';
+import Wads from '/src/components/Page/Wads/Wads.jsx';
+import Art from '/src/components/Page/Art/Art.jsx';
+import Music from '/src/components/Page/Music/Music.jsx';
 
 /* other components */
-import Background from '../Background/Background.jsx';
-import Footer from '../Footer/Footer.jsx';
+import Background from '/src/components/Background/Background.jsx';
+import Footer from '/src/components/Footer/Footer.jsx';
 
 Page.propTypes = {
     pageType: 'home',

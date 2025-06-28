@@ -3,8 +3,8 @@
 import { HashRouter as Router, Route, Routes } from 'react-router';
 
 /* components */
-import Navbar from './Navbar/Navbar';
-import Page from './Page/Page';
+import Navbar from '/src/components/Navbar/Navbar';
+import Page from '/src/components/Page/Page';
 
 export default function App() {
   return (

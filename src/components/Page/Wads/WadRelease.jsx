@@ -3,10 +3,10 @@
 import { createElement, useEffect, useState } from 'react';
 
 /* tests */
-import checkTitle from '../../Scroller/__tests__/checkTitle';
+import checkTitle from '/src/components/Scroller/__tests__/checkTitle';
 
 /* components */
-import WadScreenshot from './WadScreenshot';
+import WadScreenshot from '/src/components/Page/Wads/WadScreenshot';
 
 WadRelease.propTypes = {
     title: '',

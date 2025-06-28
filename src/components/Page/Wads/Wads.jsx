@@ -3,13 +3,13 @@
 import { createElement } from 'react';
 
 /* components */
-import Header from '../../Header/Header';
-import IconButton from '../../IconButton/IconButton';
-import Scroller from '../../Scroller/Scroller';
-import Socials from '../../Socials/Socials';
-import UnorderedList from '../../UnorderedList/UnorderedList';
-import UnorderedListLink from '../../UnorderedList/UnorderedListLink';
-import WadRelease from './WadRelease';
+import Header from '/src/components/Header/Header';
+import IconButton from '/src/components/IconButton/IconButton';
+import Scroller from '/src/components/Scroller/Scroller';
+import Socials from '/src/components/Socials/Socials';
+import UnorderedList from '/src/components/UnorderedList/UnorderedList';
+import UnorderedListLink from '/src/components/UnorderedList/UnorderedListLink';
+import WadRelease from '/src/components/Page/Wads/WadRelease';
 
 /* assets */
 /* doomed resident */

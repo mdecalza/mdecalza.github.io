@@ -1,8 +1,8 @@
 /* Code by 2024—2025 Matthew DeCalzadilla */
 
-import NavbarDropdown from './NavbarDropdown';
-import NavbarLogo from './NavbarLogo';
-import NavbarWidescreen from './NavbarWidescreen';
+import NavbarDropdown from '/src/components/Navbar/NavbarDropdown';
+import NavbarLogo from '/src/components/Navbar/NavbarLogo';
+import NavbarWidescreen from '/src/components/Navbar/NavbarWidescreen';
 
 export default function Navbar() {
     function allButtonsDisplay() {

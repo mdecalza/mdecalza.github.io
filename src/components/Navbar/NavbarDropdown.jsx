@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router';
 
 /* components */
-import NavbarButtonContainer from './NavbarButtonContainer';
+import NavbarButtonContainer from '/src/components/Navbar/NavbarButtonContainer';
 
 export default function NavbarDropdown() {
     const location = useLocation();

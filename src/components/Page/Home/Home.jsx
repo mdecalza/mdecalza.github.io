@@ -3,11 +3,11 @@
 import { Link } from 'react-router';
 
 /* components */
-import Header from '../../Header/Header';
-import Socials from '../../Socials/Socials';
+import Header from '/src/components/Header/Header';
+import Socials from '/src/components/Socials/Socials';
 
 /* assets */
-import mateoLogo from '../../../assets/home/mateowhite.png';
+import mateoLogo from '/src/assets/home/mateowhite.png';
 
 export default function Home() {
     return(

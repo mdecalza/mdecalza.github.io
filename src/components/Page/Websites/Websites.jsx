@@ -1,9 +1,9 @@
 /* Code by 2024—2025 Matthew DeCalzadilla */
 
 /* components */
-import Header from '../../Header/Header';
-import Socials from '../../Socials/Socials';
-import WebsiteThumbnail from '../../Thumbnail/WebsiteThumbnail';
+import Header from '/src/components/Header/Header';
+import Socials from '/src/components/Socials/Socials';
+import WebsiteThumbnail from '/src/components/Thumbnail/WebsiteThumbnail';
 
 export default function Websites() {
 
