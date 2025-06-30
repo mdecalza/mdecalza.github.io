@@ -1,4 +1,4 @@
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 
 /* components */
 import NavbarDropdown from '/src/components/Navbar/NavbarDropdown';
