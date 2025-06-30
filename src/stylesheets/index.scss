@@ -4,6 +4,8 @@ $primary: #88CCEE;
 $danger: #CE5151;
 $warning: #F0DF8E;
 
+@media(hover: hover) and (pointer: fine) {}
+
 // Bootstrap and its default variables
 @import 'vendors/bootstrap.scss';
 
