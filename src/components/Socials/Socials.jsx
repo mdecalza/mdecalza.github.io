@@ -23,11 +23,9 @@ export default function Socials({socialsList = []}) {
     }, [socialsList]);
 
     return (
-        <>
         <div
         className='mx-auto pb-4'>
             { content }
         </div>
-        </>
     );
 }

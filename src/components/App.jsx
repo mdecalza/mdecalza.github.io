@@ -15,6 +15,7 @@ export default function App() {
   const [mousePosition, setMousePosition] = useState({ x: null, y: null });
 
   const handleMouseMove = (e) => {
+    e.preventDefault();
     setMousePosition({ x: e.clientX, y: e.clientY });
   }
 
@@ -36,7 +37,7 @@ export default function App() {
   return (
     <div
     onMouseMove={ handleMouseMove }
-    onClick={ handleMouseClick }>
+    onPointerDown={ handleMouseClick }>
       <Router>
         <Navbar />
         <Routes>
