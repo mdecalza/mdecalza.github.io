@@ -1,4 +1,4 @@
-/* Code by 2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2025 */
 
 BlockQuote.propTypes = {
     text: '',

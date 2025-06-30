@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11845,8 +11845,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* Code by 2024—2025 Matthew DeCalzadilla */
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
+/* Matthew DeCalzadilla 2024—2025 */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -11887,12 +11887,12 @@ textarea.form-control-lg {
   width: 100%;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .NavbarButtons {
   overflow-y: hidden;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .NavbarDropdown {
   width: 100%;
 }
@@ -11901,7 +11901,7 @@ textarea.form-control-lg {
   width: 100%;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .NavbarButton {
   width: 128px;
 }
@@ -11924,7 +11924,7 @@ textarea.form-control-lg {
   z-index: -2;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 #CensorBlur {
   backdrop-filter: blur(20px);
   background-color: rgba(0, 0, 0, 0.75);
@@ -11938,7 +11938,7 @@ textarea.form-control-lg {
   height: 100%;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .FooterContainer {
   width: 100%;
   z-index: 1;
@@ -11948,7 +11948,7 @@ textarea.form-control-lg {
   width: min(30em, 95vw);
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .IconButton {
   width: fit-content;
 }
@@ -11957,13 +11957,13 @@ textarea.form-control-lg {
   height: 1.25em;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .Scroller {
   height: max(600px, fit-content);
   scrollbar-color: rgba(119, 136, 153, 0.55) rgba(0, 0, 0, 0);
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .SocialsLink {
   transition: scale 0.25s;
   transition-timing-function: ease;
@@ -11973,20 +11973,20 @@ textarea.form-control-lg {
   scale: 1.075;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .Thumbnail {
   width: clamp(25vw, 480px, 75vw);
   aspect-ratio: 1.4/1;
   object-fit: cover;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .UnorderedList {
   width: fit-content;
   max-width: 95vw;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .Page {
   min-height: 100%;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(29, 31, 36));
@@ -12009,14 +12009,14 @@ textarea.form-control-lg {
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(29, 31, 36, 0.7));
   }
 }
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .ArtImage {
   max-width: 100vw;
   max-height: 75vh;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
+/* Matthew DeCalzadilla 2024—2025 */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -12042,7 +12042,7 @@ textarea.form-control-lg {
   animation: fadeIn 1.5s ease 0.25s 1 forwards;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .MusicRelease {
   min-width: min(32em, 100vw);
 }
@@ -12052,12 +12052,12 @@ textarea.form-control-lg {
   max-width: 100vw;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .WadRelease {
   min-width: min(32em, 100vw);
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -12076,7 +12076,7 @@ textarea.form-control-lg {
   opacity: 0;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 .growOnHover {
   transition: scale 0.25s;
   transition-timing-function: ease;
@@ -12086,7 +12086,7 @@ textarea.form-control-lg {
   scale: 1.05;
 }
 
-/* Code by 2024—2025 Matthew DeCalzadilla */
+/* Matthew DeCalzadilla 2024—2025 */
 @keyframes popIn {
   0% {
     scale: 0;
