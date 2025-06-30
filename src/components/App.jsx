@@ -34,21 +34,19 @@ export default function App() {
   }
 
   return (
-    <>
-      <div
-      onMouseMove={ handleMouseMove }
-      onClick={ handleMouseClick }>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path='/' element={ <Page pageType='home' /> } />
-            <Route path='/websites' element={ <Page pageType='websites' /> } />
-            <Route path='/wads' element={ <Page pageType='wads' /> } />
-            <Route path='/art' element={ <Page pageType='art' /> } />
-            <Route path='/music' element={ <Page pageType='music' /> } />
-          </Routes>
-        </Router>
-      </div>
-    </>
+    <div
+    onMouseMove={ handleMouseMove }
+    onClick={ handleMouseClick }>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={ <Page pageType='home' /> } />
+          <Route path='/websites' element={ <Page pageType='websites' /> } />
+          <Route path='/wads' element={ <Page pageType='wads' /> } />
+          <Route path='/art' element={ <Page pageType='art' /> } />
+          <Route path='/music' element={ <Page pageType='music' /> } />
+        </Routes>
+      </Router>
+    </div>
   );
 }
