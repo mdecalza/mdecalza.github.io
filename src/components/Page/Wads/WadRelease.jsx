@@ -13,6 +13,7 @@ WadRelease.propTypes = {
     role: '',
     logoSrc: '',
     screenshotImageSources: [],
+    slideshow: true,
     quote: '',
     quoteCredit: '',
     quoteSource: '',
@@ -20,8 +21,26 @@ WadRelease.propTypes = {
     links: [],
 };
 
-export default function WadRelease({title = '', role = '', logoSrc = '', screenshotImageSources = [], quote = '', quoteCredit = '', quoteSource = '', quoteHREF = '', links = [] }) {
+export default function WadRelease({
+    title = '',
+    role = '',
+    logoSrc = '',
+    screenshotImageSources = [],
+    slideshow = true,
+    quote = '',
+    quoteCredit = '',
+    quoteSource = '',
+    quoteHREF = '',
+    links = [],
+}) {
     const [ screenshots, setScreenshots ] = useState([]);
+    const [ slideshowIndex, setSlideshowIndex ] = useState(0);
+
+    if (slideshow && screenshotImageSources.length > 1) {
+        setTimeout(() => {
+            setSlideshowIndex((slideshowIndex + 1) % screenshotImageSources.length);
+        }, 5000);
+    }
 
     useEffect(() => {
         let content = [];
@@ -55,7 +74,7 @@ export default function WadRelease({title = '', role = '', logoSrc = '', screens
                         { role }
                     </p>
                 </div>
-                { screenshots }
+                { screenshots[slideshowIndex] }
                 <figure
                 className={`${checkTitle(quote) ? 'd-block' : 'd-none'} card text-center px-2 pt-3 pb-2 shadow`}>
                     <blockquote
