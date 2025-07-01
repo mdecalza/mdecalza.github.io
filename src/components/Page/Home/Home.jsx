@@ -32,10 +32,14 @@ export default function Home() {
                     <div className='col-lg py-3'>
                         <div
                         className='h-100 py-3 rounded-5 bg-light bg-opacity-10'>
-                            <h2
-                            className='pb-2'>
-                                Music
-                            </h2>
+                            <Link
+                            to={'music'}
+                            className='link-light'>
+                                <h2
+                                className='pb-2'>
+                                    Music
+                                </h2>
+                            </Link>
                             <Socials
                             socialsList={[ 'spotify', 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
                         </div>
@@ -43,10 +47,14 @@ export default function Home() {
                     <div className='col-lg py-3'>
                         <div
                         className='h-100 py-3 rounded-5 bg-light bg-opacity-10'>
-                            <h2
-                            className='pb-2'>
-                                Art
-                            </h2>
+                            <Link
+                            to={'art'}
+                            className='link-light'>
+                                <h2
+                                className='pb-2'>
+                                    Art
+                                </h2>
+                            </Link>
                             <Socials
                             socialsList={[ 'art-instagram' ]} />
                         </div>
@@ -54,10 +62,14 @@ export default function Home() {
                     <div className='col-lg py-3'>
                         <div
                         className='h-100 py-3 rounded-5 bg-light bg-opacity-10'>
-                            <h2
-                            className='pb-2'>
-                                Doom Wads
-                            </h2>
+                            <Link
+                            to={'wads'}
+                            className='link-light'>
+                                <h2
+                                className='pb-2'>
+                                    Doom Wads
+                                </h2>
+                            </Link>
                             <Socials
                             socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube']} />
                         </div>
@@ -65,10 +77,14 @@ export default function Home() {
                     <div className='col-lg py-3'>
                         <div
                         className='h-100 py-3 rounded-5 bg-light bg-opacity-10'>
-                            <h2
-                            className='pb-2'>
-                                Websites
-                            </h2>
+                            <Link
+                            to={'websites'}
+                            className='link-light'>
+                                <h2
+                                className='pb-2'>
+                                    Websites
+                                </h2>
+                            </Link>
                             <Socials
                             socialsList={[ 'linkedin', 'github' ]} />
                         </div>
