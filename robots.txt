@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /index.html
 Allow: /#/
+Allow: /#/music
+Allow: /#/art
+Allow: /#/wads
+Allow: /#/websites
 Disallow: /src/
 Disallow: /build/
 Disallow: /.github/
