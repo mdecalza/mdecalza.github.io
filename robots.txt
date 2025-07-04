@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /index.html
 Allow: /#/
+Disallow: /src/
 Disallow: /build/
 Disallow: /.github/
 Disallow: .gitignore
