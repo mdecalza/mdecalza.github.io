@@ -1,5 +1,13 @@
 User-agent: *
 Allow: /index.html
 Allow: /#/
+Disallow: /build/
+Disallow: /.github/
+Disallow: .gitignore
+Disallow: /eslint.config.js
+Disallow: /package-lock.json
+Disallow: /package.json
+Disallow: /SECURITY.md
+Disallow: /vite.config.js
 Crawl-delay: 30
 Sitemap: https://raw.githubusercontent.com/mdecalza/mdecalza.github.io/refs/heads/main/sitemap.xml
