@@ -155,7 +155,7 @@ export default function Home() {
                 <br />
                 <p
                 className='px-4 pb-4'>
-                    Over the course of my life, I have learned to apply my abilities to a wide variety of situations. I began my journey as an artist in grade school, making pixel art in Microsoft Paint and lending designs to Game Maker projects. I also found a passion for pencil drawing. In high school, I was graciously gifted my first Intuos tablet, and I began to draw and paint digitally in Photoshop while taking art classes at school.<br/>
+                    Over the course of my life, I have learned to apply my abilities to a wide variety of situations. I began my journey as an artist in grade school, making pixel art in Microsoft Paint and lending designs to Game Maker projects. I also found a passion for pencil drawing. In high school, I was graciously gifted my first Intuos tablet, and I began to draw and paint digitally in Photoshop while taking art classes in school.<br/>
                     <br/>
                     I&apos;ve since used my design skills to provide illustrations and graphics for game design projects, websites (including this one!), YouTube videos, and more. I continue to share my artistic progress on <a href="https://www.instagram.com/the_decalzone/">Instagram</a> and on <Link to={{ pathname: "/art", }}>the Art page</Link>.
                 </p>
