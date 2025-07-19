@@ -205,6 +205,7 @@ export default function Wads() {
         createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21472', text: 'Hell on World Tour', year: 2024 }),
         createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21562', text: 'Rusty Drill', year: 2024 }),
         createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21528', text: 'TNT Tribute Quilt', year: 2024 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/vb/thread/153776', text: 'Drake O\'Brien Ovational Megawad', year: 2025 }),
     ];
 
     return (
