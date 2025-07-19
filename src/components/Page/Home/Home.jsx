@@ -22,12 +22,13 @@ export default function Home() {
                 <div className='row'>
                     <div className='col-lg py-3'>
                         <div
-                        className='h-100 py-3 rounded-5 bg-light bg-opacity-10'>
+                        className='h-100 py-3 rounded-5 shadow'
+                        style={{ opacity: "100%", backgroundColor: "rgba(255,255,255,0.165)" }}>
                             <Link
                             to={'music'}
                             className='link-light'>
                                 <h2
-                                className='pb-2'>
+                                className='pb-2 growOnHover'>
                                     Music
                                 </h2>
                             </Link>
@@ -37,12 +38,13 @@ export default function Home() {
                     </div>
                     <div className='col-lg py-3'>
                         <div
-                        className='h-100 py-3 rounded-5 bg-light bg-opacity-10'>
+                        className='h-100 py-3 rounded-5 shadow'
+                        style={{ backgroundColor: "rgba(255, 255, 255, 0.1175)" }}>
                             <Link
                             to={'art'}
                             className='link-light'>
                                 <h2
-                                className='pb-2'>
+                                className='pb-2 growOnHover'>
                                     Art
                                 </h2>
                             </Link>
@@ -52,12 +54,12 @@ export default function Home() {
                     </div>
                     <div className='col-lg py-3'>
                         <div
-                        className='h-100 py-3 rounded-5 bg-light bg-opacity-10'>
+                        className='h-100 py-3 rounded-5 bg-secondary bg-opacity-25 shadow'>
                             <Link
                             to={'wads'}
                             className='link-light'>
                                 <h2
-                                className='pb-2'>
+                                className='pb-2 growOnHover'>
                                     Doom Wads
                                 </h2>
                             </Link>
@@ -67,12 +69,12 @@ export default function Home() {
                     </div>
                     <div className='col-lg py-3'>
                         <div
-                        className='h-100 py-3 rounded-5 bg-light bg-opacity-10'>
+                        className='h-100 py-3 rounded-5 bg-secondary bg-opacity-10 shadow'>
                             <Link
                             to={'websites'}
                             className='link-light'>
                                 <h2
-                                className='pb-2'>
+                                className='pb-2 growOnHover'>
                                     Websites
                                 </h2>
                             </Link>
