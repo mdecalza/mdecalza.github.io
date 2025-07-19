@@ -17,17 +17,8 @@ export default function Home() {
                 <img
                 src={ mateoLogo }
                 className='MateoLogo w-100'/>
-                <hr
-                className='my-4'/>
-                <p
-                className='mb-5'>
-                    I&apos;m Matthew DeCalzadilla. I make <Link to={{ pathname: '/music' }}>music</Link>, <Link to={{ pathname: '/art' }}>art</Link>, <Link to={{ pathname: '/wads' }}>wads</Link>, and <Link to={{ pathname: '/websites' }}>websites</Link> (like the one you&apos;re on now!). Please, contact me if you&apos;d like me to make you things:<br />
-                <br />
-                </p>
             </div>
-            <div className='pb-5'>
-                <Header
-                title='Socials' />
+            <div className='pt-5 pb-4 px-4'>
                 <div className='row'>
                     <div className='col-lg py-3'>
                         <div
@@ -91,40 +82,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='pb-5'>
-                <Header
-                title='Email' />
-                <div className='row'>
-                    <div className='col-lg my-3'>
-                        <div
-                        className='h-100 mx-4 p-3 rounded-5 bg-light bg-opacity-10'>
-                            <h4>
-                                Music
-                            </h4>
-                            <a
-                            href='mailto:&#115;&#111;&#110;&#116;&#111;&#109;&#111;&#114;&#105;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'
-                            rel='noopener nofollower noreferrer'
-                            style={{ fontSize: 'min(1.75rem, 4.5vw)' }}>
-                                &#115;&#111;&#110;&#116;&#111;&#109;&#111;&#114;&#105;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-                            </a>
-                        </div>
-                    </div>
-                    <div className='col-lg my-3'>
-                        <div className='h-100 mx-4 p-3 rounded-5 bg-light bg-opacity-10'>
-                            <h4>
-                                General
-                            </h4>
-                            <a
-                            href='mailto:&#109;&#97;&#116;&#116;&#46;&#100;&#101;&#99;&#97;&#108;&#122;&#97;&#100;&#105;&#108;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'
-                            rel='noopener nofollower noreferrer'
-                            style={{ fontSize: 'min(1.75rem, 4.5vw)' }}>
-                                &#109;&#97;&#116;&#116;&#46;&#100;&#101;&#99;&#97;&#108;&#122;&#97;&#100;&#105;&#108;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='pb-5'>
+            <div className='pb-4'>
                 <Header
                 title='About Me' />
                 <h3
