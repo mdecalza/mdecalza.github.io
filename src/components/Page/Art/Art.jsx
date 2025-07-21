@@ -26,7 +26,6 @@ import intercep3text1 from '/src/assets/art/int3-illust1.png';
 import secondMixTitle from '/src/assets/art/second-mix-titlepic2-PALLARGE.png';
 
 /* sketches */
-import amineFox from '/src/assets/art/amine-fox.png';
 import aerithSketch from '/src/assets/art/16-aerith.png';
 import cloudSketch from '/src/assets/art/17-cloud.png';
 import intercepSketch1 from '/src/assets/art/illustration-sketch5.png';
@@ -82,7 +81,6 @@ export default function Art() {
     const sketches = [
         createElement(ArtImage, { src: aerithSketch }),
         createElement(ArtImage, { src: sketchbook2 }),
-        createElement(ArtImage, { src: amineFox }),
         createElement(ArtImage, { src: cloudSketch }),
         createElement(ArtImage, { src: sketchbook1 }),
         createElement(ArtImage, { src: intercep3sketch1 }),
