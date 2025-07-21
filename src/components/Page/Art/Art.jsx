@@ -23,6 +23,7 @@ import intercepTitle from '/src/assets/art/int1-title.png';
 import intercep3title from '/src/assets/art/int3-title.png';
 import intercep3inter from '/src/assets/art/int3-inter.png';
 import intercep3text1 from '/src/assets/art/int3-illust1.png';
+import secondMixTitle from '/src/assets/art/second-mix-titlepic2-PALLARGE.png';
 
 /* sketches */
 import amineFox from '/src/assets/art/amine-fox.png';
@@ -68,6 +69,7 @@ import embryoLogo from '/src/assets/art/embryo-logo.png';
 
 export default function Art() {
     const pixelArt = [
+        createElement(ArtImage, { src: secondMixTitle }),
         createElement(ArtImage, { src: intercep3title }),
         createElement(ArtImage, { src: atoneInter }),
         createElement(ArtImage, { src: intercep3inter }),
