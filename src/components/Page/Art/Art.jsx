@@ -55,7 +55,9 @@ import sontoOlegioCoverAlt2 from '/src/assets/art/SONTO-OLEGIO.jpg';
 import narlyYmorioCover from '/src/assets/art/narlyYmorio-cover.png';
 import whopperCover from '/src/assets/art/whopper-big.png';
 import smoothSailingCover from '/src/assets/art/sailing-cover2.png';
-import intercontinentalCover from '/src/assets/art/intercontinental-sleeve.jpg';
+import intercontinentalCover from '/src/assets/art/intercontinental-cover-2.jpg';
+import blindPilotCover from '/src/assets/art/blind-pilot-cover.jpg';
+import travelogueCover from '/src/assets/art/intercontinental-sleeve.jpg';
 
 /* graphic design */
 import sontomorioBanner from '/src/assets/art/sonto-art-small.png';
@@ -98,6 +100,8 @@ export default function Art() {
     ];
     
     const albumArt = [
+        createElement(ArtImage, { src: travelogueCover }),
+        createElement(ArtImage, { src: blindPilotCover }),
         createElement(ArtImage, { src: intercontinentalCover }),
         createElement(ArtImage, { src: smoothSailingCover }),
         createElement(ArtImage, { src: midnightMoviesSleeve }),
