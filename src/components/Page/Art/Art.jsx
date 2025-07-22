@@ -148,11 +148,11 @@ export default function Art() {
             title='Pixel Illustrations'
             elements={ pixelArt } />
             <Scroller
-            title='Sketches'
-            elements={ sketches } />
-            <Scroller
             title='Album Art'
             elements={ albumArt } />
+            <Scroller
+            title='Sketches'
+            elements={ sketches } />
             <Scroller
             title='Graphic Design'
             elements={ graphicDesign } />
