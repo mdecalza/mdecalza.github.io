@@ -23,7 +23,7 @@ export default function Home() {
                     <div className='col-lg py-3'>
                         <div
                         className='py-3 rounded-5 shadow'
-                        style={{ opacity: "100%", backgroundColor: "rgba(255,255,255,0.165)" }}>
+                        style={{ opacity: '100%', backgroundColor: 'rgba(255,255,255,0.165)' }}>
                             <Link
                             to={'music'}
                             className='link-light'>
@@ -43,8 +43,8 @@ export default function Home() {
                         <div
                         className='py-3 rounded-5 shadow'
                         style={{
-                            backgroundColor: "rgba(255, 255, 255, 0.1175)",
-                            minHeight: "75%",
+                            backgroundColor: 'rgba(255, 255, 255, 0.1175)',
+                            minHeight: '75%',
                         }}>
                             <Link
                             to={'art'}
@@ -115,9 +115,9 @@ export default function Home() {
                     <br/>
                     Itching to improve my sound, <a href='https://open.spotify.com/album/3xzAg3WGHvCTD05r7pqsJG'><i>Burning My Time Building My Mind</i></a> was released mere months later in April 2019. In contrast to my debut record, <i>Burning My Time...</i> features soft, sleek production with mostly instrumental songs.<br/>
                     <br/>
-                    As 2019 was coming to an end, I began experimenting with heavier samples and more ambitious production. The <a href="https://youtu.be/cs69xVqK1lo"><i>Midnight Movies</i></a> mixtape was released in December 2019, showcasing more overtly my taste for humorous samples and light, funky hip-hop. The latter half of the record featured more original compositions, however, leading to the release of the singles <a href="https://open.spotify.com/track/3fUzaulddG1m6Hs6ai625V"><i>Golden Eyes</i></a>, <a href="https://youtu.be/bOTfRunns14"><i>When We Make It</i></a>, and <a href="https://youtu.be/PLhzyLvYiwM"><i>The Forest Spirits</i></a>.<br/>
+                    As 2019 was coming to an end, I began experimenting with heavier samples and more ambitious production. The <a href='https://youtu.be/cs69xVqK1lo'><i>Midnight Movies</i></a> mixtape was released in December 2019, showcasing more overtly my taste for humorous samples and light, funky hip-hop. The latter half of the record featured more original compositions, however, leading to the release of the singles <a href='https://open.spotify.com/track/3fUzaulddG1m6Hs6ai625V'><i>Golden Eyes</i></a>, <a href='https://youtu.be/bOTfRunns14'><i>When We Make It</i></a>, and <a href='https://youtu.be/PLhzyLvYiwM'><i>The Forest Spirits</i></a>.<br/>
                     <br/>
-                    I&apos;m still experimenting with new sounds into the 2020s, releasing new music on <a href="https://www.youtube.com/channel/UCPeP7F5d_NSwuAxlEMr3ukQ">YouTube</a> and <a href="https://soundcloud.com/sontomorio">SoundCloud</a>. The mix EP <a href="https://youtu.be/Z7dY-NgBeVo"><i>Sonto IV</i></a> (2020) showcases some of my most abrasive hip-hop production yet, while the beattapes <a href="https://youtu.be/2FK6yWV96O8"><i>The Freeway</i></a> (2021) and <a href="https://youtu.be/fJ5Bcy_MBqE"><i>Sonto&apos;olegio</i></a> (2022) each feature more lo-fi production over a variety of genres.<br />
+                    I&apos;m still experimenting with new sounds into the 2020s, releasing new music on <a href='https://www.youtube.com/channel/UCPeP7F5d_NSwuAxlEMr3ukQ'>YouTube</a> and <a href='https://soundcloud.com/sontomorio'>SoundCloud</a>. The mix EP <a href='https://youtu.be/Z7dY-NgBeVo'><i>Sonto IV</i></a> (2020) showcases some of my most abrasive hip-hop production yet, while the beattapes <a href='https://youtu.be/2FK6yWV96O8'><i>The Freeway</i></a> (2021) and <a href='https://youtu.be/fJ5Bcy_MBqE'><i>Sonto&apos;olegio</i></a> (2022) each feature more lo-fi production over a variety of genres.<br />
                     <br />
                     In 2025, <a href='https://open.spotify.com/album/3qwrwW9pb67tjaoCDvmkBt'><i>Travelogue</i></a> was released, building upon everything I had done before and taking it all to a new level. This LP was a spiritual successor to <i>Midnight Movies</i>, using samples to weave its songs into a continuous mix while upping the all around quality of the songwriting, production, and everything in-between.<br />
                     <br />
@@ -132,7 +132,7 @@ export default function Home() {
                 className='px-4 pb-4'>
                     Over the course of my life, I have learned to apply my abilities to a wide variety of situations. I began my journey as an artist in grade school, making pixel art in Microsoft Paint and lending designs to Game Maker projects. I also found a passion for pencil drawing. In high school, I was graciously gifted my first Intuos tablet, and I began to draw and paint digitally in Photoshop while taking art classes in school.<br/>
                     <br/>
-                    I&apos;ve since used my design skills to provide illustrations and graphics for game design projects, websites (including this one!), YouTube videos, and more. I continue to share my artistic progress on <a href="https://www.instagram.com/the_decalzone/">Instagram</a> and on <Link to={{ pathname: "/art", }}>the Art page</Link>.
+                    I&apos;ve since used my design skills to provide illustrations and graphics for game design projects, websites (including this one!), YouTube videos, and more. I continue to share my artistic progress on <a href='https://www.instagram.com/the_decalzone/'>Instagram</a> and on <Link to={{ pathname: '/art', }}>the Art page</Link>.
                 </p>
             </div>
         </div>
