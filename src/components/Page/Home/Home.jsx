@@ -28,7 +28,7 @@ export default function Home() {
                             to={'music'}
                             className='link-light'>
                                 <div
-                                className="btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-auto mb-3 p-2 rounded-5 shadow-sm growOnHover">
+                                className='btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
                                     <h2
                                     className='mx-3 my-2'>
                                         Music
@@ -41,13 +41,16 @@ export default function Home() {
                     </div>
                     <div className='col-lg py-3'>
                         <div
-                        className='h-75 py-3 rounded-5 shadow'
-                        style={{ backgroundColor: "rgba(255, 255, 255, 0.1175)" }}>
+                        className='py-3 rounded-5 shadow'
+                        style={{
+                            backgroundColor: "rgba(255, 255, 255, 0.1175)",
+                            minHeight: "75%",
+                        }}>
                             <Link
                             to={'art'}
                             className='link-light'>
                                 <div
-                                className="btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-auto mb-3 p-2 rounded-5 shadow-sm growOnHover">
+                                className='btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
                                     <h2
                                     className='mx-3 my-2'>
                                         Art
@@ -65,7 +68,7 @@ export default function Home() {
                             to={'wads'}
                             className='link-light'>
                                 <div
-                                className="btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-auto mb-3 p-2 rounded-5 shadow-sm growOnHover">
+                                className='btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
                                     <h2
                                     className='mx-3 my-2'>
                                         Doom Wads
@@ -83,7 +86,7 @@ export default function Home() {
                             to={'websites'}
                             className='link-light'>
                                 <div
-                                className="btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-auto mb-3 p-2 rounded-5 shadow-sm growOnHover">
+                                className='btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
                                     <h2
                                     className='mx-3 my-2'>
                                         Websites
