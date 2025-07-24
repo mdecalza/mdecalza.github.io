@@ -134,7 +134,6 @@ export default function Art() {
     ];
 
     return (
-        <>
         <div
         className='fadeIn'>
             <div
@@ -160,6 +159,5 @@ export default function Art() {
             title='3D Level Design'
             elements={ levelDesign } />
         </div>
-        </>
     );
 }
