@@ -139,10 +139,11 @@ export default function Art() {
             <div
             className='container-xxl'>
                 <Header
-                title='Art' />
+                title='Matthew DeCalzadilla'
+                blurb='Independent Artist' />
+                <Socials
+                socialsList={[ 'art-instagram', 'linkedin' ]} />
             </div>
-            <Socials
-            socialsList={[ 'art-instagram', 'linkedin' ]} />
             <Scroller
             title='Pixel Illustrations'
             elements={ pixelArt } />

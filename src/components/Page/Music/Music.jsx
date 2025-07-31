@@ -4,7 +4,6 @@ import { createElement } from 'react';
 
 /* components */
 import MusicRelease from '/src/components/Page/Music/MusicRelease';
-import Header from '/src/components/Header/Header';
 import IconButton from '/src/components/IconButton/IconButton';
 import Scroller from '/src/components/Scroller/Scroller';
 import Socials from '/src/components/Socials/Socials';
@@ -43,7 +42,7 @@ export default function Music() {
             title: 'Sonido Amor',
             type: 'Mixtape',
             description: 'Hip-hop beats, salsa samples, and smooth vibes. Coming September 30, 2025.',
-            genre: 'hip-hop, boombap, chillout',
+            genre: 'hip-hop, chillout, world',
             coverImageSrc: sonidoAmorCover,
             links: [
                 createElement(IconButton, {
@@ -57,7 +56,7 @@ export default function Music() {
             type: 'Album',
             releaseDate: 'June 17, 2025',
             description: 'Busy soundscapes, funky beats, and strange electronic noises. A globetrotting voyage in 45 minutes.',
-            genre: 'downtempo, hip-hop, ambient',
+            genre: 'downtempo, hip-hop, chillout',
             coverImageSrc: travelogueCover,
             links: [
                 createElement(IconButton, {
@@ -379,16 +378,13 @@ export default function Music() {
             socialsList={[ 'spotify', 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
             <iframe
             src='https://open.spotify.com/embed/artist/3goR9KK8F6uqLA7yoXjYgL?utm_source=generator'
-            className='popInDelayed border border-0 shadow mb-5'
+            className='popInDelayed border border-0 shadow mt-4'
             style={{ borderRadius: '12px' }}
             width='95%'
             height='152px'
             allowfullscreen=''
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy" />
-            <Header
-            title='Music'
-            blurb='I&apos;ve made a ton of music over the years as Sontomorio. On this page is a catalogue of my most notable works.' />
         </div>
         <Scroller
         elements={ musicReleases } />

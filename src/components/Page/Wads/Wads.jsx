@@ -214,7 +214,8 @@ export default function Wads() {
             <div
             className='container-xxl'>
                 <Header
-                title='Doom Wads' />
+                title='Matthew "Moustachio" DeCalzadilla'
+                blurb='Doom Wad Author' />
                 <Socials
                 socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube', 'github' ]} />
                 <p

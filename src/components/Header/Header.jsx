@@ -8,15 +8,13 @@ Header.propTypes = {
 export default function Header({title = '', blurb = ''}) {
     return (
         <>
-        <h1
-        className='pb-2'>
+        <h1>
             {title}
         </h1>
-        <hr
-        className='py-2'/>
-        <p>
+        <h5
+        className='pb-3 opacity-75'>
             {blurb}
-        </p>
+        </h5>
         </>
     );
 }
