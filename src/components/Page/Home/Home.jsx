@@ -17,11 +17,11 @@ export default function Home() {
                 src={ mateoLogo }
                 className='MateoLogo w-100 pb-3'/>
                 <h5
-                className='pt-2 opacity-75'>
+                className='pt-2 pb-1 opacity-75'>
                     Home to the works of Matthew DeCalzadilla
                 </h5>
             </div>
-            <div className='px-4 py-5'>
+            <div className='px-4 pt-4 pb-5'>
                 <div
                 className='row'>
                     <div
