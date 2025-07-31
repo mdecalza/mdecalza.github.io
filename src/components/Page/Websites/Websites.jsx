@@ -11,7 +11,8 @@ export default function Websites() {
         <div
         className='fadeIn container-xxl'>
             <Header
-            title='Websites' />
+            title='Matthew DeCalzadilla'
+            blurb='Front-End Developer' />
             <Socials
             socialsList={[ 'linkedin', 'github' ]} />
             <WebsiteThumbnail

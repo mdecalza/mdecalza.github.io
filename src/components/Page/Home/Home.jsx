@@ -3,7 +3,6 @@
 import { Link } from 'react-router';
 
 /* components */
-import Header from '/src/components/Header/Header';
 import Socials from '/src/components/Socials/Socials';
 
 /* assets */
@@ -16,11 +15,17 @@ export default function Home() {
             <div>
                 <img
                 src={ mateoLogo }
-                className='MateoLogo w-100'/>
+                className='MateoLogo w-100 pb-3'/>
+                <h5
+                className='pt-2 opacity-75'>
+                    Home to the works of Matthew DeCalzadilla
+                </h5>
             </div>
-            <div className='pt-5 pb-4 px-4'>
-                <div className='row'>
-                    <div className='col-lg py-3'>
+            <div className='px-4 py-5'>
+                <div
+                className='row'>
+                    <div
+                    className='col-lg py-3'>
                         <div
                         className='py-3 rounded-5 shadow'
                         style={{ opacity: '100%', backgroundColor: 'rgba(255,255,255,0.165)' }}>
@@ -39,7 +44,8 @@ export default function Home() {
                             socialsList={[ 'spotify', 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
                         </div>
                     </div>
-                    <div className='col-lg py-3'>
+                    <div
+                    className='col-lg py-3'>
                         <div
                         className='py-3 rounded-5 shadow'
                         style={{
@@ -61,7 +67,8 @@ export default function Home() {
                             socialsList={[ 'art-instagram' ]} />
                         </div>
                     </div>
-                    <div className='col-lg py-3'>
+                    <div
+                    className='col-lg py-3'>
                         <div
                         className='py-3 rounded-5 bg-secondary bg-opacity-25 shadow'>
                             <Link
@@ -79,7 +86,8 @@ export default function Home() {
                             socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube']} />
                         </div>
                     </div>
-                    <div className='col-lg py-3'>
+                    <div
+                    className='col-lg py-3'>
                         <div
                         className='py-3 rounded-5 bg-secondary bg-opacity-10 shadow'>
                             <Link
@@ -100,15 +108,16 @@ export default function Home() {
                 </div>
             </div>
             <div className='pb-4'>
-                <Header
-                title='About Me' />
-                <h3
-                className='mb-4'>
+                <h1
+                className='pb-5'>
+                    About Me
+                </h1>
+                <h3>
                     AS A MUSICIAN
                 </h3>
                 <br />
                 <p
-                className='px-4 pb-4'>
+                className='px-4 pb-5'>
                     Since 2018, I&apos;ve been quietly broadcasting my musical experiments from my home studio in Northern Colorado under the pseudonym <Link to={{ pathname: '/music', }}>Sontomorio</Link>.<br/>
                     <br/>
                     Though quite amateur, my first songs <a href='https://open.spotify.com/track/66LjOq1s89FIYDqgZxqRNS'><i>Strangest Ways</i></a> and <a href='https://youtu.be/YUDLJnq4plE'><i>Space and Time (Unkillable Nature)</i></a> showcased my obsession with lofi, bedroom pop, rap, and musical experimentation. This eclectic combination of sounds coalesced into my maligned mixtape debut, <a href='https://youtu.be/1dPLJkpZeMA'><i>Deibyu</i></a> (2019). However mixed the tape, <i>Deibyu</i> was a huge accomplishment for me as an musician, being my first full, published record, and marking the first of many collaborations with Aspen &quot;Shreds&quot; Abrahamson and Josh Jacquot.<br/>
@@ -123,8 +132,7 @@ export default function Home() {
                     <br />
                     To stay up-to-date on any new Sontomorio releases, check out <Link to={{ pathname: 'music' }}>the Music page</Link>.
                 </p>
-                <h3
-                className='mb-4'>
+                <h3>
                     AS AN ARTIST
                 </h3>
                 <br />
