@@ -17,11 +17,11 @@ export default function Home() {
                 src={ mateoLogo }
                 className='MateoLogo w-100 pb-3'/>
                 <h5
-                className='pt-2 opacity-75'>
+                className='pt-2 pb-1 opacity-75'>
                     Home to the works of Matthew DeCalzadilla
                 </h5>
             </div>
-            <div className='px-4 py-5'>
+            <div className='px-4 pt-4 pb-5'>
                 <div
                 className='row'>
                     <div
@@ -109,15 +109,16 @@ export default function Home() {
             </div>
             <div className='pb-4'>
                 <h1
-                className='pb-5'>
+                className='pb-4'>
                     About Me
                 </h1>
-                <h3>
+                <h3
+                className='pt-1'>
                     AS A MUSICIAN
                 </h3>
                 <br />
                 <p
-                className='px-4 pb-5'>
+                className='px-4 pb-4'>
                     Since 2018, I&apos;ve been quietly broadcasting my musical experiments from my home studio in Northern Colorado under the pseudonym <Link to={{ pathname: '/music', }}>Sontomorio</Link>.<br/>
                     <br/>
                     Though quite amateur, my first songs <a href='https://open.spotify.com/track/66LjOq1s89FIYDqgZxqRNS'><i>Strangest Ways</i></a> and <a href='https://youtu.be/YUDLJnq4plE'><i>Space and Time (Unkillable Nature)</i></a> showcased my obsession with lofi, bedroom pop, rap, and musical experimentation. This eclectic combination of sounds coalesced into my maligned mixtape debut, <a href='https://youtu.be/1dPLJkpZeMA'><i>Deibyu</i></a> (2019). However mixed the tape, <i>Deibyu</i> was a huge accomplishment for me as an musician, being my first full, published record, and marking the first of many collaborations with Aspen &quot;Shreds&quot; Abrahamson and Josh Jacquot.<br/>
