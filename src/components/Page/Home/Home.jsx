@@ -78,7 +78,7 @@ export default function Home() {
                                 className='btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
                                     <h2
                                     className='mx-3 my-2'>
-                                        Doom Wads
+                                        Wads
                                     </h2>
                                 </div>
                             </Link>
