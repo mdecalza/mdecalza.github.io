@@ -79,11 +79,6 @@ export default function Music() {
                     iconSrc: bandcampIcon,
                     text: 'Bandcamp',
                 }),
-                createElement(IconButton, {
-                    href: 'https://www.patreon.com/Sontomorio/shop/travelogue-instrumental-album-2025-1814640?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=productshare_creator&utm_content=join_link',
-                    iconSrc: patreonIcon,
-                    text: 'Patreon',
-                }),
             ],
         }),
         createElement(MusicRelease, {
