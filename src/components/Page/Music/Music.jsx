@@ -380,7 +380,10 @@ export default function Music() {
             allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
             loading='lazy'
             className='popInDelayed border border-0 shadow mt-1'
-            style={{ opacity: '90%' }}></iframe>
+            style={{
+                borderRadius: '12px',
+                opacity: '90%',
+            }}></iframe>
         </div>
         <Scroller
         elements={ musicReleases } />
