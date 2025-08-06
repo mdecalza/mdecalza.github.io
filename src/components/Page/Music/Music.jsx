@@ -372,14 +372,18 @@ export default function Music() {
             <Socials
             socialsList={[ 'spotify', 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
             <iframe
-            src='https://open.spotify.com/embed/artist/3goR9KK8F6uqLA7yoXjYgL?utm_source=generator'
-            className='popInDelayed border border-0 shadow mt-4'
-            style={{ borderRadius: '12px' }}
-            width='95%'
-            height='152px'
+            data-testid='embed-iframe'
+            src='https://open.spotify.com/embed/artist/3goR9KK8F6uqLA7yoXjYgL?utm_source=generator&theme=0'
+            width='100%'
+            height='352'
             allowfullscreen=''
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy" />
+            allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+            loading='lazy'
+            className='popInDelayed border border-0 shadow mt-1'
+            style={{
+                borderRadius: '12px',
+                opacity: '90%',
+            }}></iframe>
         </div>
         <Scroller
         elements={ musicReleases } />
