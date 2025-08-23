@@ -23,7 +23,7 @@ import whopperCover from '/src/assets/art/whopper-big.png';
 import ostJam7cover from '/src/assets/music/ostjam7.png';
 import narlyYmorioCover from '/src/assets/art/narlyYmorio-cover.png';
 import travelogueCover from '/src/assets/music/7.png';
-import sonidoAmorCover from '/src/assets/music/8.png';
+import loveOfSoundCover from '/src/assets/music/8.png';
 
 /* link icons */
 import spotifyIcon from '/src/assets/socials/spotify-icon.png';
@@ -37,17 +37,39 @@ import soundCloudIcon from '/src/assets/socials/soundcloud-icon.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
+    const sonto8releaseDate = new Date(2025, 9, 30, 6);
+
     const musicReleases = [
+        Date.now() >= sonto8releaseDate.getTime() ?
         createElement(MusicRelease, {
-            title: 'Sonido Amor',
-            type: 'Mixtape',
-            description: 'Hip-hop beats, salsa samples, and smooth vibes. Coming September 30, 2025.',
-            genre: 'hip-hop, chillout, world',
-            coverImageSrc: sonidoAmorCover,
+            title: 'The Love of Sound',
+            type: 'Beat Tape',
+            releaseDate: 'September 30, 2025',
+            description: '37 minutes of wild breaks and funky chops.',
+            genre: 'hip-hop, old-school, chillout',
+            coverImageSrc: loveOfSoundCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://www.pexels.com/photo/man-standing-beside-his-car-in-front-of-colorful-buildings-in-havana-cuba-14462602/',
-                    text: 'Cover source photo by Vlad Vasnetsov',
+                    href: 'https://youtu.be/a16fHiO9KDw',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://www.pexels.com/photo/a-man-sitting-on-the-table-beside-the-oscilloscope-7858254/',
+                    text: 'Cover art based on a stock photo by cottonbro studio',
+                }),
+            ],
+        }) :
+        createElement(MusicRelease, {
+            title: 'The Love of Sound',
+            type: 'Beat Tape',
+            description: '37 minutes of wild breaks and funky chops. Coming September 30, 2025.',
+            genre: 'hip-hop, old-school, chillout',
+            coverImageSrc: loveOfSoundCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://www.pexels.com/photo/a-man-sitting-on-the-table-beside-the-oscilloscope-7858254/',
+                    text: 'Cover art based on a stock photo by cottonbro studio',
                 }),
             ],
         }),
