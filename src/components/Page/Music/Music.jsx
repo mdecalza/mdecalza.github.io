@@ -75,7 +75,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Travelogue',
-            type: 'Album',
+            type: 'Beat Tape',
             releaseDate: 'June 17, 2025',
             description: 'Busy soundscapes, funky beats, and strange electronic noises. A globetrotting voyage in 45 minutes.',
             genre: 'downtempo, hip-hop, chillout',
@@ -105,7 +105,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Tropical New World',
-            type: 'Soundtrack',
+            type: 'EP',
             releaseDate: 'July 21, 2024',
             description: 'Light and loose bits of music composed for OST Jam 7 on itch.io.',
             genre: 'chillout, world, hip-hop',
@@ -165,7 +165,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'THE NARLY Y MORIO LP',
             subtitle: '(with Aspen "Shreds" Abrahamson)',
-            type: 'Unfinished Album',
+            type: 'Unfinished Mixtape',
             releaseDate: 'February 3, 2025 (April 4, 2023 demo)',
             description: 'An ambitious, experimental collaboration with "Shreds". We each did a fair bit of the work. It was about 85% done before dropped.',
             genre: 'psychedelic, hip-hop, rock',
@@ -251,7 +251,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Sonto IV',
-            type: 'Mix EP',
+            type: 'EP',
             releaseDate: 'April 22, 2020',
             description: 'Bold and brash, this EP drives oddball loops through high levels of distortion underneath esoteric lyrics.',
             genre: 'hip-hop/rap, noise, psychedelic',
@@ -271,7 +271,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Midnight Movies',
-            type: 'Instrumental Mixtape',
+            type: 'Beat Tape',
             releaseDate: 'December 20, 2019',
             description: 'A picturesque journey told through patchwork samples and idiosyncratic beats woven together into soundscapes. A descent into dreams inspired by a bygone time.',
             genre: 'hip-hop, downtempo, ambient',
@@ -291,7 +291,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Lucid Dreaming',
-            type: 'Instrumental Remix',
+            type: 'Single',
             releaseDate: 'September 29, 2019',
             description: 'Ne expergisci possit.',
             genre: 'hip-hop, trap, electronic',
