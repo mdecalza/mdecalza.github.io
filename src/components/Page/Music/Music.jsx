@@ -69,7 +69,7 @@ export default function Music() {
             links: [
                 createElement(IconButton, {
                     href: 'https://www.pexels.com/photo/a-man-sitting-on-the-table-beside-the-oscilloscope-7858254/',
-                    text: 'Cover art based on a stock photo by cottonbro studio',
+                    text: 'Cover source photo by cottonbro studio',
                 }),
             ],
         }),
