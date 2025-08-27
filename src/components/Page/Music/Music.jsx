@@ -45,7 +45,7 @@ export default function Music() {
             title: 'The Love of Sound',
             type: 'Beat Tape',
             releaseDate: 'September 30, 2025',
-            description: '37 minutes of wild breaks and funky chops.',
+            description: '37 minutes of chill chops and funky breaks.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
             links: [
@@ -62,8 +62,8 @@ export default function Music() {
         }) :
         createElement(MusicRelease, {
             title: 'The Love of Sound',
-            type: 'Beat Tape',
-            description: '37 minutes of wild breaks and funky chops. Coming September 30, 2025.',
+            type: 'Upcoming Beat Tape',
+            description: '37 minutes of chill chops and funky breaks. Coming September 30, 2025.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
             links: [
