@@ -46,7 +46,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'Lazy Tapes, Vol. 1',
             type: 'EP',
-            releaseDate: 'October 4, 2025',
+            releaseDate: 'September 27, 2025',
             description: 'Lo-fi, DIY.',
             genre: 'hip-hop, boombap, old-school',
             coverImageSrc: lazyTapesVol1Cover,
