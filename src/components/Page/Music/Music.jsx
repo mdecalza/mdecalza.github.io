@@ -23,7 +23,8 @@ import whopperCover from '/src/assets/art/whopper-big.png';
 import ostJam7cover from '/src/assets/music/ostjam7.png';
 import narlyYmorioCover from '/src/assets/art/narlyYmorio-cover.png';
 import travelogueCover from '/src/assets/music/7.png';
-import loveOfSoundCover from '/src/assets/music/8.png';
+import lazyTapesVol1Cover from '/src/assets/music/8.png';
+import loveOfSoundCover from '/src/assets/music/9.png';
 
 /* link icons */
 import spotifyIcon from '/src/assets/socials/spotify-icon.png';
@@ -37,14 +38,15 @@ import soundCloudIcon from '/src/assets/socials/soundcloud-icon.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
-    const sonto8releaseDate = new Date(2025, 9, 30, 6);
+    const sonto8releaseDate = new Date(2025, 9, 19, 10, 30);
+    const sonto9releaseDate = new Date(2025, 9, 26, 10, 30);
 
     const musicReleases = [
-        Date.now() >= sonto8releaseDate.getTime() ?
+        Date.now() >= sonto9releaseDate.getTime() ?
         createElement(MusicRelease, {
             title: 'The Love of Sound',
             type: 'Beat Tape',
-            releaseDate: 'September 30, 2025',
+            releaseDate: 'September 26, 2025',
             description: '37 minutes of chill chops and funky breaks.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
@@ -63,7 +65,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'The Love of Sound',
             type: 'Upcoming Beat Tape',
-            description: '37 minutes of chill chops and funky breaks. Coming September 30, 2025.',
+            description: '37 minutes of chill chops and funky breaks. Coming September 26, 2025.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
             links: [
@@ -73,6 +75,23 @@ export default function Music() {
                 }),
             ],
         }),
+        Date.now() >= sonto8releaseDate.getTime() ?
+        createElement(MusicRelease, {
+            title: 'Lazy Tapes, Vol. 1',
+            type: 'EP',
+            releaseDate: 'September 19, 2025',
+            description: 'Lo-fi, DIY.',
+            genre: 'hip-hop, boombap, old-school',
+            coverImageSrc: lazyTapesVol1Cover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/YHolQp16Oq8',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+            ],
+        }) :
+        <></>,
         createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Beat Tape',
