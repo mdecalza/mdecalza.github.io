@@ -39,7 +39,7 @@ import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
     const sonto8releaseDate = new Date(2025, 9, 27, 10, 30);
-    const sonto9releaseDate = new Date(2025, 10, 4, 10, 30);
+    const sonto9releaseDate = sonto8releaseDate;
 
     const musicReleases = [
         Date.now() >= sonto9releaseDate.getTime() ?
