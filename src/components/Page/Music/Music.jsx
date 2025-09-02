@@ -38,15 +38,32 @@ import soundCloudIcon from '/src/assets/socials/soundcloud-icon.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
-    const sonto8releaseDate = new Date(2025, 9, 19, 10, 30);
-    const sonto9releaseDate = new Date(2025, 9, 26, 10, 30);
+    const sonto8releaseDate = new Date(2025, 9, 27, 10, 30);
+    const sonto9releaseDate = new Date(2025, 10, 4, 10, 30);
 
     const musicReleases = [
         Date.now() >= sonto9releaseDate.getTime() ?
         createElement(MusicRelease, {
+            title: 'Lazy Tapes, Vol. 1',
+            type: 'EP',
+            releaseDate: 'October 4, 2025',
+            description: 'Lo-fi, DIY.',
+            genre: 'hip-hop, boombap, old-school',
+            coverImageSrc: lazyTapesVol1Cover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/YHolQp16Oq8',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+            ],
+        }) :
+        <></>,
+        Date.now() >= sonto8releaseDate.getTime() ?
+        createElement(MusicRelease, {
             title: 'The Love of Sound',
             type: 'Beat Tape',
-            releaseDate: 'September 26, 2025',
+            releaseDate: 'September 27, 2025',
             description: '37 minutes of chill chops and funky breaks.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
@@ -65,7 +82,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'The Love of Sound',
             type: 'Upcoming Beat Tape',
-            description: '37 minutes of chill chops and funky breaks. Coming September 26, 2025.',
+            description: '37 minutes of chill chops and funky breaks. Coming September 27, 2025.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
             links: [
@@ -75,23 +92,6 @@ export default function Music() {
                 }),
             ],
         }),
-        Date.now() >= sonto8releaseDate.getTime() ?
-        createElement(MusicRelease, {
-            title: 'Lazy Tapes, Vol. 1',
-            type: 'EP',
-            releaseDate: 'September 19, 2025',
-            description: 'Lo-fi, DIY.',
-            genre: 'hip-hop, boombap, old-school',
-            coverImageSrc: lazyTapesVol1Cover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/YHolQp16Oq8',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-            ],
-        }) :
-        <></>,
         createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Beat Tape',
