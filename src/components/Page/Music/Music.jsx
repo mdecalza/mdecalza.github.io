@@ -38,8 +38,8 @@ import soundCloudIcon from '/src/assets/socials/soundcloud-icon.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
-    const sonto8releaseDate = new Date(2025, 9, 27, 10, 30);
-    const sonto9releaseDate = sonto8releaseDate;
+    const sonto8releaseDate = new Date(2025, 8, 27, 10, 30);
+    const sonto9releaseDate = new Date(2025, 11, 25, 0, 0);
 
     const musicReleases = [
         Date.now() >= sonto9releaseDate.getTime() ?
@@ -52,7 +52,7 @@ export default function Music() {
             coverImageSrc: lazyTapesVol1Cover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/YHolQp16Oq8',
+                    href: 'https://youtu.be/vvUKUUDbIR4',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
@@ -69,7 +69,7 @@ export default function Music() {
             coverImageSrc: loveOfSoundCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/a16fHiO9KDw',
+                    href: 'https://youtu.be/K-MZGLKwd2g',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
