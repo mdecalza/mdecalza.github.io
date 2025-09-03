@@ -52,7 +52,7 @@ export default function Music() {
             coverImageSrc: lazyTapesVol1Cover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/YHolQp16Oq8',
+                    href: 'https://youtu.be/vvUKUUDbIR4',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
@@ -69,7 +69,7 @@ export default function Music() {
             coverImageSrc: loveOfSoundCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/a16fHiO9KDw',
+                    href: 'https://youtu.be/K-MZGLKwd2g',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
