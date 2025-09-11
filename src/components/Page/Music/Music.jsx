@@ -38,8 +38,8 @@ import soundCloudIcon from '/src/assets/socials/soundcloud-icon.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
-    const sonto9releaseDate = new Date(2025, 8, 27, 10, 30);
     const sonto8releaseDate = new Date(2025, 8, 11, 13, 0);
+    const sonto9releaseDate = new Date(2025, 8, 27, 10, 30);
 
     const musicReleases = [
         Date.now() >= sonto9releaseDate.getTime() ?
@@ -77,7 +77,7 @@ export default function Music() {
         }),
         Date.now() >= sonto8releaseDate.getTime() ?
         createElement(MusicRelease, {
-            title: 'Lazy Tapes, Vol. 1',
+            title: 'Lazy Tape',
             type: 'EP',
             releaseDate: 'September 27, 2025',
             description: 'Lo-fi, DIY.',
@@ -85,7 +85,7 @@ export default function Music() {
             coverImageSrc: lazyTapesVol1Cover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/vvUKUUDbIR4',
+                    href: 'https://youtu.be/mFckgrMNOjE',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
