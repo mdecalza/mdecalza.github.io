@@ -83,7 +83,7 @@ export default function Music() {
             coverImageSrc: sketchinCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/mFckgrMNOjE',
+                    href: 'https://youtu.be/jLf3ZbvQYDk',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
