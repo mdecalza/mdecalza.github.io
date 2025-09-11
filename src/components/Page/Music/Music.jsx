@@ -23,7 +23,7 @@ import whopperCover from '/src/assets/art/whopper-big.png';
 import ostJam7cover from '/src/assets/music/ostjam7.png';
 import narlyYmorioCover from '/src/assets/art/narlyYmorio-cover.png';
 import travelogueCover from '/src/assets/music/7.png';
-import lazyTapesVol1Cover from '/src/assets/music/8.png';
+import sketchinCover from '/src/assets/music/8.png';
 import loveOfSoundCover from '/src/assets/music/9.png';
 
 /* link icons */
@@ -38,7 +38,6 @@ import soundCloudIcon from '/src/assets/socials/soundcloud-icon.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
-    const sonto8releaseDate = new Date(2025, 8, 11, 13, 0);
     const sonto9releaseDate = new Date(2025, 8, 27, 10, 30);
 
     const musicReleases = [
@@ -75,23 +74,21 @@ export default function Music() {
                 }),
             ],
         }),
-        Date.now() >= sonto8releaseDate.getTime() ?
         createElement(MusicRelease, {
-            title: 'Lazy Tape',
+            title: 'Sketchin\'',
             type: 'EP',
-            releaseDate: 'September 27, 2025',
-            description: 'Lo-fi, DIY.',
+            releaseDate: 'September 11, 2025',
+            description: 'A quick mix of six boombap beats for ears to feast.',
             genre: 'hip-hop, boombap, old-school',
-            coverImageSrc: lazyTapesVol1Cover,
+            coverImageSrc: sketchinCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/mFckgrMNOjE',
+                    href: 'https://youtu.be/jLf3ZbvQYDk',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
             ],
-        }) :
-        <></>,
+        }),
         createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Beat Tape',
