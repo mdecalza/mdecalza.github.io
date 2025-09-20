@@ -302,6 +302,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Early Oddities',
+            explicit: true,
             type: 'Compilation',
             releaseDate: 'December 13, 2019',
             description: 'A collection of odds and ends from the era between Deibyu and Midnight Movies.',
