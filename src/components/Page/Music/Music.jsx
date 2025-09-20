@@ -302,7 +302,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Early Oddities',
-            type: 'Compilation Album',
+            type: 'Compilation Mixtape',
             releaseDate: 'December 13, 2019',
             description: 'A collection of odds and ends from the era between Deibyu and Midnight Movies.',
             genre: 'r&b, bedroom pop, downtempo',
