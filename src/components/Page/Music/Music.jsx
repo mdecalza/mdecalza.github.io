@@ -14,6 +14,7 @@ import priibyuCover from '/src/assets/music/0.png';
 import deibyuCover from '/src/assets/music/1.png';
 import burningMyTimeCover from '/src/assets/music/2.png';
 import lucidCover from '/src/assets/art/lucid.jpg';
+import earlyOdditiesCover from '/src/assets/music/oddities.jpg';
 import midnightMoviesCover from '/src/assets/art/midnight-movies.jpg';
 import sontoIVcover from '/src/assets/music/4.png';
 import theFreewayCover from '/src/assets/music/5.png'
@@ -31,7 +32,6 @@ import spotifyIcon from '/src/assets/socials/spotify-icon.png';
 import appleMusicIcon from '/src/assets/socials/apple-music-icon.svg';
 import youTubeIcon from '/src/assets/socials/yt-icon.png';
 import bandcampIcon from '/src/assets/socials/bandcamp-icon.png';
-import patreonIcon from '/src/assets/socials/PATREON_SYMBOL_1_BLACK_RGB.svg';
 import soundCloudIcon from '/src/assets/socials/soundcloud-icon.png';
 
 /* graphics */
@@ -44,7 +44,7 @@ export default function Music() {
         Date.now() >= sonto9releaseDate.getTime() ?
         createElement(MusicRelease, {
             title: 'The Love of Sound',
-            type: 'Beat Tape',
+            type: 'Mixtape',
             releaseDate: 'September 27, 2025',
             description: '37 minutes of chill chops and funky breaks.',
             genre: 'hip-hop, old-school, chillout',
@@ -63,7 +63,7 @@ export default function Music() {
         }) :
         createElement(MusicRelease, {
             title: 'The Love of Sound',
-            type: 'Upcoming Beat Tape',
+            type: 'Upcoming Mixtape',
             description: '37 minutes of chill chops and funky breaks. Coming September 27, 2025.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
@@ -91,7 +91,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Travelogue',
-            type: 'Beat Tape',
+            type: 'Album',
             releaseDate: 'June 17, 2025',
             description: 'Busy soundscapes, funky beats, and strange electronic noises. A globetrotting voyage in 45 minutes.',
             genre: 'downtempo, hip-hop, chillout',
@@ -160,7 +160,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Sunset Whopper',
-            type: 'Hyper Drum\'n\' Bass Mix',
+            type: 'Single',
             releaseDate: 'November 27, 2023',
             description: 'High-energy DnB mix filled with distorted breaks, looping effects, varied samples, and lots of noisy synthesizers. Originally the soundtrack to Sunset Whopper, a video game for university.',
             genre: 'techno, noise, drum and bass',
@@ -196,7 +196,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Sonto\'olegio',
-            type: 'Beat Tape',
+            type: 'Mixtape',
             releaseDate: 'December 31, 2022',
             description: 'A dark mix of original tunes among diverse beats, samples, and soundscapes.',
             genre: 'downtempo, hip-hop, psychedelic',
@@ -238,16 +238,11 @@ export default function Music() {
                     iconSrc: bandcampIcon,
                     text: 'Bandcamp',
                 }),
-                createElement(IconButton, {
-                    href: 'https://www.patreon.com/Sontomorio/shop/sunday-morning-tv-ep-2021-1506796?source=storefront',
-                    iconSrc: patreonIcon,
-                    text: 'Patreon',
-                }),
             ],
         }),
         createElement(MusicRelease, {
             title: 'The Freeway',
-            type: 'Beat Tape',
+            type: 'Mixtape',
             releaseDate: 'February 27, 2021',
             description: 'An assorted mix of driving-inspired loops and breakbeats.',
             genre: 'hip-hop, boombap, lofi',
@@ -287,7 +282,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Midnight Movies',
-            type: 'Beat Tape',
+            type: 'Mixtape',
             releaseDate: 'December 20, 2019',
             description: 'A picturesque journey told through patchwork samples and idiosyncratic beats woven together into soundscapes. A descent into dreams inspired by a bygone time.',
             genre: 'hip-hop, downtempo, ambient',
@@ -302,6 +297,21 @@ export default function Music() {
                     href: 'https://soundcloud.com/sontomorio/sets/midnight-movies?si=4b6d99e7782d49c98c2eb3862706cd06&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
+            title: 'Early Oddities',
+            type: 'Compilation Album',
+            releaseDate: 'December 13, 2019',
+            description: 'A collection of odds and ends from the era between Deibyu and Midnight Movies.',
+            genre: 'r&b, bedroom pop, downtempo',
+            coverImageSrc: earlyOdditiesCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/dsMD7FMGUAA',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
                 }),
             ],
         }),
@@ -353,11 +363,6 @@ export default function Music() {
                     href: 'https://sontomorio.bandcamp.com/album/burning-my-time-building-my-mind',
                     iconSrc: bandcampIcon,
                     text: 'Bandcamp',
-                }),
-                createElement(IconButton, {
-                    href: 'https://www.patreon.com/Sontomorio/shop/burning-my-time-building-my-mind-ep-2019-1506967?source=storefront',
-                    iconSrc: patreonIcon,
-                    text: 'Patreon',
                 }),
                 createElement(IconButton, {
                     href: 'https://soundcloud.com/sontomorio/sets/burning-my-time-building-my-mind?si=73ed1b6432b34b578118422d43b807a4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
