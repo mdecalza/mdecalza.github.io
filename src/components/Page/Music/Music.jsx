@@ -390,7 +390,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'Priibyu',
             explicit: true,
-            type: 'Mixtape Demo',
+            type: 'Mixtape',
             releaseDate: 'February 3, 2025 (late 2018 demo)',
             description: 'Demo of the Deibyu mixtape. A bright, loose string of eclectic outsider music. Part of a double LP package with Deibyu.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
