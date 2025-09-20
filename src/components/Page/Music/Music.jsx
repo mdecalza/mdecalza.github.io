@@ -217,7 +217,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'Sunday Morning TV',
             explicit: true,
-            type: 'Compilation EP',
+            type: 'Compilation',
             releaseDate: 'October 19, 2021',
             description: 'Combines two tracks from Midnight Movies with three previously unreleased original tracks. A compilation of music from The Freeway and prior that is suitable for streaming.',
             genre: 'downtempo, hip-hop/rap, ambient',
@@ -302,7 +302,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Early Oddities',
-            type: 'Compilation Mixtape',
+            type: 'Compilation',
             releaseDate: 'December 13, 2019',
             description: 'A collection of odds and ends from the era between Deibyu and Midnight Movies.',
             genre: 'r&b, bedroom pop, downtempo',
