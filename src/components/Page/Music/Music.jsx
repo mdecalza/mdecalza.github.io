@@ -38,14 +38,14 @@ import soundCloudIcon from '/src/assets/socials/soundcloud-icon.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
-    const sonto9releaseDate = new Date(2025, 8, 27, 10, 30);
+    const sonto9releaseDate = new Date(2025, 9, 3, 10, 30);
 
     const musicReleases = [
         Date.now() >= sonto9releaseDate.getTime() ?
         createElement(MusicRelease, {
             title: 'The Love of Sound',
             type: 'Mixtape',
-            releaseDate: 'September 27, 2025',
+            releaseDate: 'October 3, 2025',
             description: '37 minutes of chill chops and funky breaks.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
@@ -64,7 +64,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'The Love of Sound',
             type: 'Upcoming Mixtape',
-            description: '37 minutes of chill chops and funky breaks. Coming September 27, 2025.',
+            description: '37 minutes of chill chops and funky breaks. Coming October 3, 2025.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
             links: [
@@ -160,7 +160,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Sunset Whopper',
-            type: 'Single',
+            type: 'Soundtrack',
             releaseDate: 'November 27, 2023',
             description: 'High-energy DnB mix filled with distorted breaks, looping effects, varied samples, and lots of noisy synthesizers. Originally the soundtrack to Sunset Whopper, a video game for university.',
             genre: 'techno, noise, drum and bass',
