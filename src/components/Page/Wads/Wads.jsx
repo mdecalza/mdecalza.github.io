@@ -202,7 +202,7 @@ export default function Wads() {
         createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Doomworld_Mega_Project_2022', text: 'Doomworld Mega Project 2022', year: 2022 }),
         createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Not_Even_Remotely_Fair', text: 'Not Even Remotely Fair', year: 2023 }),
         createElement(UnorderedListLink, { href: 'https://www.doomworld.com/vb/thread/134536', text: 'Super Doom TV', year: 2024 }),
-        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21326', text: 'Doomworld Dating Simulator (w/ Stochastic)', year: 2024 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21326', text: 'Doomworld Dating Simulator (with Stochastic)', year: 2024 }),
         createElement(UnorderedListLink, { href: 'https://www.doomworld.com/vb/thread/145820', text: 'Blocked-Out!', year: 2024 }),
         createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Constriction:_1024', text: 'Constriction: 1024', year: 2024 }),
         createElement(UnorderedListLink, { href: 'https://doomwiki.org/wiki/Tribute_Quilt_II', text: 'Tribute Quilt II', year: 2024 }),
@@ -212,6 +212,9 @@ export default function Wads() {
         createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21562', text: 'Rusty Drill', year: 2024 }),
         createElement(UnorderedListLink, { href: 'https://www.doomworld.com/idgames/?id=21528', text: 'TNT Tribute Quilt', year: 2024 }),
         createElement(UnorderedListLink, { href: 'https://www.doomworld.com/vb/thread/153776', text: 'Drake O\'Brien Ovational Megawad', year: 2025 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/vb/thread/154746', text: 'TropicHELL', year: 2025 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/vb/thread/155176', text: 'Hexen: Community Pouch (with XenoNemesis)', year: 2025 }),
+        createElement(UnorderedListLink, { href: 'https://www.doomworld.com/vb/thread/155293', text: 'THE HALLS SPEAK TO ME', year: 2025 }),
     ];
 
     return (
@@ -223,7 +226,7 @@ export default function Wads() {
                 title='Matthew DeCalzadilla (Moustachio)'
                 blurb='Doom Wad Author' />
                 <Socials
-                socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube', 'github' ]} />
+                socialsList={[ 'doomworld', 'github', 'doom-youtube', 'doomwiki' ]} />
                 <p
                 className='pt-3 fs-4'>
                     <b>What Is a Wad Anyway?</b>
@@ -239,7 +242,7 @@ export default function Wads() {
             <Scroller
             elements={ wadsList } />
             <UnorderedList
-            title='More wads I&apos;ve contributed to:'
+            title='More Wads I&apos;ve Contributed To:'
             items={ moreWadsList } />
         </div>
     );
