@@ -46,16 +46,16 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
                         className='opacity-50'>{ genre }</i><br />
                         { releaseDate !== '' ? <div className='pt-1'>Released: { releaseDate }</div> : <></> }
                     </p>
-                    <div
-                    className='py-3'>
-                        { description !== '' ? <BlockQuote text={ description } textAlign='center' /> : <></> }
-                    </div>
                     <div>
                         { links.length != 0 ? <i className='opacity-50 pb-1' style={{ fontSize: '1.1em' }}>Links:</i> : <></> }
                         <div
                         className='d-flex flex-wrap justify-content-center mx-auto pt-1'>
                             { links }
                         </div>
+                    </div>
+                    <div
+                    className='py-3'>
+                        { description !== '' ? <BlockQuote text={ description } textAlign='center' /> : <></> }
                     </div>
                 </div>
             </div>
