@@ -33,6 +33,7 @@ import appleMusicIcon from '/src/assets/socials/apple-music-icon.svg';
 import youTubeIcon from '/src/assets/socials/yt-icon.png';
 import bandcampIcon from '/src/assets/socials/bandcamp-icon.png';
 import soundCloudIcon from '/src/assets/socials/soundcloud-icon.png';
+import driveIcon from '/src/assets/socials/drive-icon.png';
 
 /* graphics */
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
@@ -46,12 +47,12 @@ export default function Music() {
             title: 'The Love of Sound',
             type: 'Mixtape',
             releaseDate: 'October 3, 2025',
-            description: '37 minutes of chill chops and funky breaks.',
+            description: '40 minutes of chill chops and funky breaks.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/K-MZGLKwd2g',
+                    href: 'https://youtu.be/MYnvvUwo1dU',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
@@ -64,7 +65,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'The Love of Sound',
             type: 'Upcoming Mixtape',
-            description: '37 minutes of chill chops and funky breaks. Coming October 3, 2025.',
+            description: '40 minutes of chill chops and funky breaks. Coming October 3, 2025.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
             links: [
@@ -87,13 +88,18 @@ export default function Music() {
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1yzSIYLuEfPL2B7ZGtrDr5EICLncX3jHN?usp=sharing',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
             ],
         }),
         createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Album',
             releaseDate: 'June 17, 2025',
-            description: 'Busy soundscapes, funky beats, and strange electronic noises. A globetrotting voyage in 45 minutes.',
+            description: 'Busy soundscapes, funky beats, and strange electronic noises. A globetrotting voyage in 44 minutes.',
             genre: 'downtempo, hip-hop, chillout',
             coverImageSrc: travelogueCover,
             links: [
@@ -153,6 +159,11 @@ export default function Music() {
                     text: 'SoundCloud',
                 }),
                 createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1U26QF2IP7L7Yw2nIuHvEnfzQ9yEy1dBC?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+                createElement(IconButton, {
                     href: 'https://www.pexels.com/photo/silhouette-of-mountains-during-sunset-10394187/',
                     text: 'Cover source photo by Shaheem Sjp',
                 }),
@@ -176,6 +187,11 @@ export default function Music() {
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
                 }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/file/d/1Z2YM6gK1McS9DBy5eGKQYJu-ZSqqRtzH/view?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
             ],
         }),
         createElement(MusicRelease, {
@@ -191,6 +207,11 @@ export default function Music() {
                     href: 'https://youtu.be/X_gEyzTSx6c',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1jbhTOGaM88TdXXckxTzOaHZDSwWD0P4I?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
                 }),
             ]
         }),
@@ -211,6 +232,11 @@ export default function Music() {
                     href: 'https://soundcloud.com/sontomorio/sets/sontoolegio?si=f26f92e9a02d4ddfb2e51a5a4a6efc54&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1p9yjCBnb4VWZBRVAPafXJ_huTB8wEZT0?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
                 }),
             ],
         }),
@@ -258,6 +284,11 @@ export default function Music() {
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
                 }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1iNLk9azgMzhwchvHASkw04WgqMFkMitG?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
             ],
         }),
         createElement(MusicRelease, {
@@ -277,6 +308,11 @@ export default function Music() {
                     href: 'https://soundcloud.com/sontomorio/sets/sonto-iv?si=8bb966d2e41d47879e085652a798354f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1x_JNF6_OkpEBF24NxYK3fvfQlT58HWLe?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
                 }),
             ],
         }),
@@ -298,6 +334,11 @@ export default function Music() {
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
                 }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1VvXc4bTkkskv_a2rkCsYgKgjwFjwfs_d?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
             ],
         }),
         createElement(MusicRelease, {
@@ -313,6 +354,11 @@ export default function Music() {
                     href: 'https://youtu.be/dsMD7FMGUAA',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1VtLxTP2zlR2Wea7n3SKHDAoqdBzP46XI?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
                 }),
             ],
         }),
@@ -333,6 +379,11 @@ export default function Music() {
                     href: 'https://soundcloud.com/sontomorio/lucid-dreaming?si=ee2cbc158e8c4660954530e2aa36625d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/file/d/1Lc4I9aZlM-u2J6QCqa3pCMvxo273q8JU/view?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
                 }),
             ],
         }),
@@ -370,6 +421,11 @@ export default function Music() {
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
                 }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1Kcjn8uKhtq2YGzN7JWaAwgS4nn8N6CWJ?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
             ],
         }),
         createElement(MusicRelease, {
@@ -386,6 +442,11 @@ export default function Music() {
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1qXEKJ_-GjAhHWVFYu5R9Q34gP9PW4WT1?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
             ]
         }),
         createElement(MusicRelease, {
@@ -401,6 +462,11 @@ export default function Music() {
                     href: 'https://youtu.be/CKVJ4MuKY-g',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1_8jNbe95Ew5PIZguw6fWz2B4OvNi2Vkz?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
                 }),
             ]
         }),
