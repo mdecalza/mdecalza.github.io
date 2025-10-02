@@ -39,14 +39,14 @@ import driveIcon from '/src/assets/socials/drive-icon.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
-    const sonto9releaseDate = new Date(2025, 9, 3, 10, 30);
+    const sonto9releaseDate = new Date(2025, 9, 10, 10, 30);
 
     const musicReleases = [
         Date.now() >= sonto9releaseDate.getTime() ?
         createElement(MusicRelease, {
             title: 'The Love of Sound',
             type: 'Mixtape',
-            releaseDate: 'October 3, 2025',
+            releaseDate: 'October 10, 2025',
             description: '40 minutes of chill chops and funky breaks.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
@@ -65,7 +65,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'The Love of Sound',
             type: 'Upcoming Mixtape',
-            description: '40 minutes of chill chops and funky breaks. Coming October 3, 2025.',
+            description: '40 minutes of chill chops and funky breaks. Coming October 10, 2025.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
             links: [
