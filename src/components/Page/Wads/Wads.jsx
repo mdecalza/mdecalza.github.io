@@ -81,7 +81,7 @@ export default function Wads() {
         }),
         createElement(WadRelease, {
             title: 'Embryo',
-            role: 'Project Leader, Graphic Designer, Level Designer (in-development)',
+            role: 'Project Leader, Graphic Designer, Level Designer (2025)',
             logoSrc: embryoLogo,
             screenshotImageSources: [
                 embryoScreenshot1,
