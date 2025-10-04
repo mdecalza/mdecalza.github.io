@@ -52,7 +52,7 @@ export default function Music() {
             coverImageSrc: loveOfSoundCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/MYnvvUwo1dU',
+                    href: 'https://youtu.be/B2INvU-pBfk',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
