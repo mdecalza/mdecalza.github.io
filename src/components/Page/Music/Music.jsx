@@ -54,6 +54,11 @@ export default function Music() {
                     text: 'YouTube',
                 }),
                 createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1tNXJAQkCmkR0AX96nRNmz5Oph2YtKRMX?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+                createElement(IconButton, {
                     href: 'https://www.pexels.com/photo/a-man-sitting-on-the-table-beside-the-oscilloscope-7858254/',
                     text: 'Cover art based on a stock photo by cottonbro studio',
                 }),
