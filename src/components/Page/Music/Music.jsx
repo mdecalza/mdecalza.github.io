@@ -112,6 +112,11 @@ export default function Music() {
                     iconSrc: bandcampIcon,
                     text: 'Bandcamp',
                 }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1juW1kSDGDC0Z0_Hvfo9DAv08kk_17sn7?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
             ],
         }),
         createElement(MusicRelease, {
