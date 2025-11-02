@@ -12,6 +12,14 @@ import UnorderedListLink from '/src/components/UnorderedList/UnorderedListLink';
 import WadRelease from '/src/components/Page/Wads/WadRelease';
 
 /* assets */
+/* doomed resident 2 */
+import resident2logo from '../../../assets/wads/resident2/resident2-title.png';
+import resident2screenshot1 from '../../../assets/wads/resident2/resident2-p1.png';
+import resident2screenshot2 from '../../../assets/wads/resident2/resident2-p2.png';
+import resident2screenshot3 from '../../../assets/wads/resident2/resident2-p3.png';
+import resident2screenshot4 from '../../../assets/wads/resident2/resident2-p4.png';
+import resident2screenshot5 from '../../../assets/wads/resident2/resident2-p5.png';
+
 /* doomed resident */
 import residentLogo from '../../../assets/wads/resident/resident-title.png';
 import residentScreenshot1 from '../../../assets/wads/resident/resident-p1.png';
@@ -77,6 +85,26 @@ export default function Wads() {
                 createElement(IconButton, { href: 'https://www.doomworld.com/forum/topic/145230', iconSrc: doomworldIcon, text: 'Doomworld Forums' }),
                 createElement(IconButton, { href: 'https://docs.google.com/spreadsheets/d/11I1mndtPRw_U6WoeiAjvnm2oDjQN13jE6v9twtgVzBo/edit?usp=sharing', iconSrc: driveIcon, text: 'Progress Tracker' }),
                 createElement(IconButton, { href: 'https://github.com/mdecalza/intercep3', iconSrc: gitHubIcon, text: 'GitHub' }),
+            ],
+        }),
+        createElement(WadRelease, {
+            title: 'DOOMed Resident 2',
+            role: 'Author, Level Designer (2025)',
+            logoSrc: resident2logo,
+            screenshotImageSources: [
+                resident2screenshot1,
+                resident2screenshot2,
+                resident2screenshot3,
+                resident2screenshot4,
+                resident2screenshot5,
+            ],
+            quote: '',
+            quoteCredit: '',
+            quoteSource: '',
+            quoteHREF: '',
+            links: [
+                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/5067d3f8-5e4a-4289-896e-97ea0f35506c', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, { href: 'https://github.com/mdecalza/residentdoom2', iconSrc: gitHubIcon, text: 'GitHub' }),
             ],
         }),
         createElement(WadRelease, {
