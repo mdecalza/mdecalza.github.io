@@ -257,7 +257,7 @@ export default function Wads() {
                 title='Matthew DeCalzadilla (Moustachio)'
                 blurb='Doom Wad Author' />
                 <Socials
-                socialsList={[ 'doomworld', 'github', 'doom-youtube', 'doomwiki' ]} />
+                socialsList={[ 'doomworld', 'github', 'bethesda', 'doom-youtube', 'doomwiki' ]} />
                 <p
                 className='pt-3 fs-4'>
                     <b>What Is a Wad Anyway?</b>
