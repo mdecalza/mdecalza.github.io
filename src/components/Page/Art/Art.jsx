@@ -57,7 +57,8 @@ import whopperCover from '/src/assets/art/whopper-big.png';
 import smoothSailingCover from '/src/assets/art/sailing-cover2.png';
 import intercontinentalCover from '/src/assets/art/intercontinental-cover-2.jpg';
 import blindPilotCover from '/src/assets/art/blind-pilot-cover.jpg';
-import travelogueCover from '/src/assets/art/intercontinental-sleeve.jpg';
+import travelogueSleeve1 from '/src/assets/art/cd-cover-back-travelogue.jpg';
+import travelogueSleeve2 from '/src/assets/art/cd-cover-front-travelogue.jpg';
 
 /* graphic design */
 import sontomorioBanner from '/src/assets/art/sonto-art-small.png';
@@ -100,7 +101,8 @@ export default function Art() {
     ];
     
     const albumArt = [
-        createElement(ArtImage, { src: travelogueCover }),
+        createElement(ArtImage, { src: travelogueSleeve2 }),
+        createElement(ArtImage, { src: travelogueSleeve1 }),
         createElement(ArtImage, { src: blindPilotCover }),
         createElement(ArtImage, { src: intercontinentalCover }),
         createElement(ArtImage, { src: smoothSailingCover }),
