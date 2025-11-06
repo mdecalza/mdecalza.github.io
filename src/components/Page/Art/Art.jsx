@@ -50,7 +50,7 @@ import whopperCover from '/src/assets/art/whopper-big.png';
 import smoothSailingCover from '/src/assets/art/sailing-cover2.png';
 import intercontinentalCover from '/src/assets/art/intercontinental-cover-2.jpg';
 import blindPilotCover from '/src/assets/art/blind-pilot-cover.jpg';
-import travelogueSleeve from '/src/assets/art/cd-cover-travelogue.jpg';
+import travelogueSleeve from '/src/assets/art/cd-cover-front-travelogue.jpg';
 
 /* graphic design */
 import sontomorioBanner from '/src/assets/art/sonto-art-small.png';
