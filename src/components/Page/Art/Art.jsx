@@ -10,14 +10,7 @@ import Socials from '/src/components/Socials/Socials';
 
 /* assets */
 /* pixel illustrations */
-import CRUDtitle from '/src/assets/art/crud-title.png';
-import CRUDinter from '/src/assets/art/CRUD_INT.png';
-import hovercabTitle from '/src/assets/art/hov-titlepic.png';
-import hovercabInter from '/src/assets/art/hov-interpic2.png';
-import atoneTitle from '/src/assets/art/atn_TITLEPIC.png';
 import atoneInter from '/src/assets/art/atone-inter.png';
-import atoneCredit from '/src/assets/art/atn_credit2.png';
-import atoneEnding from '/src/assets/art/atone_bossback_aspect.png';
 import embryoTitle from '/src/assets/art/emb-titlepic.png';
 import intercepTitle from '/src/assets/art/int1-title.png';
 import intercep3title from '/src/assets/art/int3-title.png';
@@ -57,16 +50,13 @@ import whopperCover from '/src/assets/art/whopper-big.png';
 import smoothSailingCover from '/src/assets/art/sailing-cover2.png';
 import intercontinentalCover from '/src/assets/art/intercontinental-cover-2.jpg';
 import blindPilotCover from '/src/assets/art/blind-pilot-cover.jpg';
-import travelogueSleeve1 from '/src/assets/art/cd-cover-back-travelogue.jpg';
-import travelogueSleeve2 from '/src/assets/art/cd-cover-front-travelogue.jpg';
+import travelogueSleeve from '/src/assets/art/cd-cover-travelogue.jpg';
 
 /* graphic design */
 import sontomorioBanner from '/src/assets/art/sonto-art-small.png';
 import casaFrescaLogo from '/src/assets/art/casa-fresca-logo.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
-import burningLogo from '/src/assets/art/burning-logo.png';
 import atoneLogo from '/src/assets/art/atone-logo.png';
-import CRUDlogo from '/src/assets/art/CRUD-logo.png';
 import embryoLogo from '/src/assets/art/embryo-logo.png';
 
 export default function Art() {
@@ -77,8 +67,6 @@ export default function Art() {
         createElement(ArtImage, { src: intercep3inter }),
         createElement(ArtImage, { src: intercep3text1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: intercepTitle, censor: true, contentWarningList: ['Violence', 'Gore'] }),
-        createElement(ArtImage, { src: hovercabTitle }),
-        createElement(ArtImage, { src: hovercabInter }),
     ];
     
     const sketches = [
@@ -101,8 +89,7 @@ export default function Art() {
     ];
     
     const albumArt = [
-        createElement(ArtImage, { src: travelogueSleeve2 }),
-        createElement(ArtImage, { src: travelogueSleeve1 }),
+        createElement(ArtImage, { src: travelogueSleeve }),
         createElement(ArtImage, { src: blindPilotCover }),
         createElement(ArtImage, { src: intercontinentalCover }),
         createElement(ArtImage, { src: smoothSailingCover }),
@@ -123,16 +110,9 @@ export default function Art() {
         createElement(ArtImage, { src: sontomorioBanner }),
         createElement(ArtImage, { src: casaFrescaLogo, border: false }),
         createElement(ArtImage, { src: sontomorioLogo, border: false }),
-        createElement(ArtImage, { src: burningLogo, border: false }),
         createElement(ArtImage, { src: atoneLogo, border: false }),
-        createElement(ArtImage, { src: CRUDlogo, border: false }),
         createElement(ArtImage, { src: embryoLogo, border: false }),
         createElement(ArtImage, { src: embryoTitle }),
-        createElement(ArtImage, { src: CRUDinter }),
-        createElement(ArtImage, { src: CRUDtitle }),
-        createElement(ArtImage, { src: atoneTitle }),
-        createElement(ArtImage, { src: atoneEnding }),
-        createElement(ArtImage, { src: atoneCredit }),
     ];
 
     return (
