@@ -25,7 +25,7 @@ import ostJam7cover from '/src/assets/music/ostjam7.png';
 import narlyYmorioCover from '/src/assets/art/narlyYmorio-cover.png';
 import travelogueCover from '/src/assets/music/7.png';
 import sketchinCover from '/src/assets/music/8.png';
-import loveOfSoundCover from '/src/assets/music/9.png';
+import loveOfSoundCover from '/src/assets/art/theLoveOfSound-cover.png';
 
 /* link icons */
 import spotifyIcon from '/src/assets/socials/spotify-icon.png';
