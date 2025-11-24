@@ -121,8 +121,8 @@ export default function Wads() {
             quoteSource: '',
             quoteHREF: '',
             links: [
+                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/embryo', iconSrc: doomworldIcon, text: '/idgames Archive' }),
                 createElement(IconButton, { href: 'https://github.com/mdecalza/embryo', iconSrc: gitHubIcon, text: 'GitHub' }),
-                createElement(IconButton, { href: 'https://www.doomworld.com/forum/topic/155411', iconSrc: doomworldIcon, text: 'Doomworld Forums' }),
                 createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/7d114b64-e6b0-42d9-9af1-34aac598329c', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
             ],
         }),
