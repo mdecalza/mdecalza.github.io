@@ -21,6 +21,8 @@ export default function Page({pageType = 'home'}) {
     const [pageElement, setPageElement] = useState(createElement(Home));
 
     useEffect(() => {
+        document.body.scrollTo(0, 0);
+
         switch (pageType.toLowerCase()) {
             case 'websites':
                 setPageElement(createElement(Websites));
