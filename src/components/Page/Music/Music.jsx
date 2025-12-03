@@ -121,7 +121,7 @@ export default function Music() {
         }),
         createElement(MusicRelease, {
             title: 'Tropical New World',
-            type: 'EP',
+            type: 'Soundtrack',
             releaseDate: 'July 21, 2024',
             description: 'Light and loose bits of music composed for OST Jam 7 on itch.io.',
             genre: 'chillout, world, hip-hop',
