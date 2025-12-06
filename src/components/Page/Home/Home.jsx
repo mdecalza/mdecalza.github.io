@@ -41,7 +41,7 @@ export default function Home() {
                                 </div>
                             </Link>
                             <Socials
-                            socialsList={[ 'spotify', 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
+                            socialsList={[ 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
                         </div>
                     </div>
                     <div

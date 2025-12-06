@@ -28,7 +28,6 @@ import sketchinCover from '/src/assets/music/8.png';
 import loveOfSoundCover from '/src/assets/music/9.png';
 
 /* link icons */
-import spotifyIcon from '/src/assets/socials/spotify-icon.png';
 import appleMusicIcon from '/src/assets/socials/apple-music-icon.svg';
 import youTubeIcon from '/src/assets/socials/yt-icon.png';
 import bandcampIcon from '/src/assets/socials/bandcamp-icon.png';
@@ -93,11 +92,6 @@ export default function Music() {
             coverImageSrc: travelogueCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://open.spotify.com/album/3qwrwW9pb67tjaoCDvmkBt?si=GVWk0s48QfODow9WSjkdZg',
-                    iconSrc: spotifyIcon,
-                    text: 'Spotify',
-                }),
-                createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/travelogue/1821441225',
                     iconSrc: appleMusicIcon,
                     text: 'Apple Music',
@@ -127,11 +121,6 @@ export default function Music() {
             genre: 'chillout, world, hip-hop',
             coverImageSrc: ostJam7cover,
             links: [
-                createElement(IconButton, {
-                    href: 'https://open.spotify.com/album/1hxirm6dCM385FgHlsYaTf?si=dsBB2dmiT7-ZcR8U7FUREA',
-                    iconSrc: spotifyIcon,
-                    text: 'Spotify',
-                }),
                 createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/tropical-new-world-ep/1818972447',
                     iconSrc: appleMusicIcon,
@@ -243,11 +232,6 @@ export default function Music() {
             genre: 'downtempo, hip-hop/rap, ambient',
             coverImageSrc: sundayMorningTVCover,
             links: [
-                createElement(IconButton, {
-                    href: 'https://open.spotify.com/album/1MFqbvKh5fEhGZ2CYJSWHW?si=bB2MUVwWRmOKdj1d47S4Tg',
-                    iconSrc: spotifyIcon,
-                    text: 'Spotify',
-                }),
                 createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/sunday-morning-tv-ep/1591252601',
                     iconSrc: appleMusicIcon,
@@ -391,11 +375,6 @@ export default function Music() {
             coverImageSrc: burningMyTimeCover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://open.spotify.com/album/3xzAg3WGHvCTD05r7pqsJG?si=q3aymKroS5KbdV7by0SYow',
-                    iconSrc: spotifyIcon,
-                    text: 'Spotify',
-                }),
-                createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/burning-my-time-building-my-mind-ep/1774373578',
                     iconSrc: appleMusicIcon,
                     text: 'Apple Music',
@@ -474,20 +453,7 @@ export default function Music() {
             src={ sontomorioLogo }
             className='w-25' />
             <Socials
-            socialsList={[ 'spotify', 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
-            <iframe
-            data-testid='embed-iframe'
-            src='https://open.spotify.com/embed/artist/3goR9KK8F6uqLA7yoXjYgL?utm_source=generator&theme=0'
-            width='100%'
-            height='352'
-            allowfullscreen=''
-            allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-            loading='lazy'
-            className='popInDelayed border border-0 shadow mt-1'
-            style={{
-                borderRadius: '12px',
-                opacity: '90%',
-            }}></iframe>
+            socialsList={[ 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
         </div>
         <Scroller
         elements={ musicReleases } />
