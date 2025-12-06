@@ -13,7 +13,6 @@ import instagram from '../../assets/socials/inst-icon.png';
 import linkedIn from '../../assets/socials/linkedin-icon.png';
 import patreon from '../../assets/socials/PATREON_SYMBOL_1_WHITE_RGB.svg';
 import soundCloud from '../../assets/socials/soundcloud-icon.png';
-import spotify from '../../assets/socials/spotify-icon.png';
 import tikTok from '../../assets/socials/tiktok-icon.png';
 import twitter from '../../assets/socials/twitter-icon.png';
 import youTube from '../../assets/socials/yt-icon.png';
@@ -78,10 +77,6 @@ export default function SocialsLink({target = ''}) {
             case 'soundcloud':
                 setTargetURL('https://soundcloud.com/sontomorio?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing');
                 setIconSource(soundCloud);
-                break;
-            case 'spotify':
-                setTargetURL('https://open.spotify.com/artist/3goR9KK8F6uqLA7yoXjYgL?si=6s0jB9SuRvq6SH2gI0mD1w');
-                setIconSource(spotify);
                 break;
             case 'tiktok':
                 setTargetURL('https://www.tiktok.com/@sontomorio?is_from_webapp=1&sender_device=pc');
