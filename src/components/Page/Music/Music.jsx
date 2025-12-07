@@ -5,8 +5,8 @@ import { createElement } from 'react';
 /* components */
 import MusicRelease from '/src/components/Page/Music/MusicRelease';
 import IconButton from '/src/components/IconButton/IconButton';
-import Scroller from '/src/components/Scroller/Scroller';
 import Socials from '/src/components/Socials/Socials';
+import TileDisplay from '/src/components/TileDisplay/TileDisplay';
 
 /* assets */
 /* album covers */
@@ -38,10 +38,10 @@ import driveIcon from '/src/assets/socials/drive-icon.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
-    const musicReleases = [
+    const latest = [
         createElement(MusicRelease, {
             title: 'The Love of Sound',
-            type: 'Mixtape',
+            type: 'Beat Tape',
             releaseDate: 'October 4, 2025',
             description: '40 minutes of chill chops and funky breaks.',
             genre: 'hip-hop, old-school, chillout',
@@ -63,26 +63,9 @@ export default function Music() {
                 }),
             ],
         }),
-        createElement(MusicRelease, {
-            title: 'Sketchin\'',
-            type: 'EP',
-            releaseDate: 'September 11, 2025',
-            description: 'A quick mix of six boombap beats for ears to feast.',
-            genre: 'hip-hop, boombap, old-school',
-            coverImageSrc: sketchinCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/jLf3ZbvQYDk',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1yzSIYLuEfPL2B7ZGtrDr5EICLncX3jHN?usp=sharing',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
-        }),
+    ];
+
+    const albums = [
         createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Album',
@@ -113,94 +96,12 @@ export default function Music() {
                 }),
             ],
         }),
-        createElement(MusicRelease, {
-            title: 'Tropical New World',
-            type: 'Soundtrack',
-            releaseDate: 'July 21, 2024',
-            description: 'Light and loose bits of music composed for OST Jam 7 on itch.io.',
-            genre: 'chillout, world, hip-hop',
-            coverImageSrc: ostJam7cover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://music.apple.com/us/album/tropical-new-world-ep/1818972447',
-                    iconSrc: appleMusicIcon,
-                    text: 'Apple Music',
-                }),
-                createElement(IconButton, {
-                    href: 'https://www.youtube.com/playlist?list=PLdSVpo8uVNGWpYIPuigj2JNwaj9oUtjhD',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://sontomorio.bandcamp.com/album/tropical-new-world',
-                    iconSrc: bandcampIcon,
-                    text: 'Bandcamp',
-                }),
-                createElement(IconButton, {
-                    href: 'https://soundcloud.com/sontomorio/sets/tropical-new-world?si=793bbcfcbfd84d88a574a5fdca9626f4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
-                    iconSrc: soundCloudIcon,
-                    text: 'SoundCloud',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1U26QF2IP7L7Yw2nIuHvEnfzQ9yEy1dBC?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-                createElement(IconButton, {
-                    href: 'https://www.pexels.com/photo/silhouette-of-mountains-during-sunset-10394187/',
-                    text: 'Cover source photo by Shaheem Sjp',
-                }),
-            ],
-        }),
-        createElement(MusicRelease, {
-            title: 'Sunset Whopper',
-            type: 'Soundtrack',
-            releaseDate: 'November 27, 2023',
-            description: 'High-energy DnB mix filled with distorted breaks, looping effects, varied samples, and lots of noisy synthesizers. Originally the soundtrack to Sunset Whopper, a video game for university.',
-            genre: 'techno, noise, drum and bass',
-            coverImageSrc: whopperCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/LYAIzBTEQVc?si=FkY3GbqPnOJiXy3m',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://soundcloud.com/sontomorio/sunset-whopper-hyper-drumnbass-mix?si=fa61b5a3529d44c1902c72f81ee5e4c0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
-                    iconSrc: soundCloudIcon,
-                    text: 'SoundCloud',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/file/d/1Z2YM6gK1McS9DBy5eGKQYJu-ZSqqRtzH/view?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
-        }),
-        createElement(MusicRelease, {
-            title: 'THE NARLY Y MORIO LP',
-            subtitle: '(with Aspen "Shreds" Abrahamson)',
-            type: 'Unfinished Mixtape',
-            releaseDate: 'February 3, 2025 (April 4, 2023 demo)',
-            description: 'An ambitious, experimental collaboration with "Shreds". We each did a fair bit of the work. It was about 85% done before dropped.',
-            genre: 'psychedelic, hip-hop, rock',
-            coverImageSrc: narlyYmorioCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/X_gEyzTSx6c',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1jbhTOGaM88TdXXckxTzOaHZDSwWD0P4I?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ]
-        }),
+    ];
+
+    const mixtapes = [
         createElement(MusicRelease, {
             title: 'Sonto\'olegio',
-            type: 'Mixtape',
+            type: 'Beat Tape',
             releaseDate: 'December 31, 2022',
             description: 'A dark mix of original tunes among diverse beats, samples, and soundscapes.',
             genre: 'downtempo, hip-hop, psychedelic',
@@ -224,29 +125,8 @@ export default function Music() {
             ],
         }),
         createElement(MusicRelease, {
-            title: 'Sunday Morning TV',
-            explicit: true,
-            type: 'Compilation',
-            releaseDate: 'October 19, 2021',
-            description: 'Combines two tracks from Midnight Movies with three previously unreleased original tracks. A compilation of music from The Freeway and prior that is suitable for streaming.',
-            genre: 'downtempo, hip-hop/rap, ambient',
-            coverImageSrc: sundayMorningTVCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://music.apple.com/us/album/sunday-morning-tv-ep/1591252601',
-                    iconSrc: appleMusicIcon,
-                    text: 'Apple Music',
-                }),
-                createElement(IconButton, {
-                    href: 'https://sontomorio.bandcamp.com/album/sunday-morning-tv',
-                    iconSrc: bandcampIcon,
-                    text: 'Bandcamp',
-                }),
-            ],
-        }),
-        createElement(MusicRelease, {
             title: 'The Freeway',
-            type: 'Mixtape',
+            type: 'Beat Tape',
             releaseDate: 'February 27, 2021',
             description: 'An assorted mix of driving-inspired loops and breakbeats.',
             genre: 'hip-hop, boombap, lofi',
@@ -264,6 +144,75 @@ export default function Music() {
                 }),
                 createElement(IconButton, {
                     href: 'https://drive.google.com/drive/folders/1iNLk9azgMzhwchvHASkw04WgqMFkMitG?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
+            title: 'Midnight Movies',
+            type: 'Beat Tape',
+            releaseDate: 'December 20, 2019',
+            description: 'A picturesque journey told through patchwork samples and idiosyncratic beats woven together into soundscapes. A descent into dreams inspired by a bygone time.',
+            genre: 'hip-hop, downtempo, ambient',
+            coverImageSrc: midnightMoviesCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/cs69xVqK1lo',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://soundcloud.com/sontomorio/sets/midnight-movies?si=4b6d99e7782d49c98c2eb3862706cd06&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+                    iconSrc: soundCloudIcon,
+                    text: 'SoundCloud',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1VvXc4bTkkskv_a2rkCsYgKgjwFjwfs_d?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
+            title: 'Deibyu',
+            explicit: true,
+            type: 'Mixtape',
+            releaseDate: 'January 23, 2019',
+            description: 'My first published album, featuring many collaborators. A dense and distorted evolution of the Priibyu mixtape. Part of a double LP package with Priibyu.',
+            genre: 'hip-hop/rap, downtempo, psychedelic',
+            coverImageSrc: deibyuCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/1dPLJkpZeMA',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1qXEKJ_-GjAhHWVFYu5R9Q34gP9PW4WT1?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ]
+        }),
+    ];
+
+    const EPsSingles = [
+        createElement(MusicRelease, {
+            title: 'Sketchin\'',
+            type: 'EP',
+            releaseDate: 'September 11, 2025',
+            description: 'A quick mix of six boombap beats for ears to feast.',
+            genre: 'hip-hop, boombap, old-school',
+            coverImageSrc: sketchinCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/jLf3ZbvQYDk',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1yzSIYLuEfPL2B7ZGtrDr5EICLncX3jHN?usp=sharing',
                     iconSrc: driveIcon,
                     text: 'Google Drive',
                 }),
@@ -289,52 +238,6 @@ export default function Music() {
                 }),
                 createElement(IconButton, {
                     href: 'https://drive.google.com/drive/folders/1x_JNF6_OkpEBF24NxYK3fvfQlT58HWLe?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
-        }),
-        createElement(MusicRelease, {
-            title: 'Midnight Movies',
-            type: 'Mixtape',
-            releaseDate: 'December 20, 2019',
-            description: 'A picturesque journey told through patchwork samples and idiosyncratic beats woven together into soundscapes. A descent into dreams inspired by a bygone time.',
-            genre: 'hip-hop, downtempo, ambient',
-            coverImageSrc: midnightMoviesCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/cs69xVqK1lo',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://soundcloud.com/sontomorio/sets/midnight-movies?si=4b6d99e7782d49c98c2eb3862706cd06&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
-                    iconSrc: soundCloudIcon,
-                    text: 'SoundCloud',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1VvXc4bTkkskv_a2rkCsYgKgjwFjwfs_d?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
-        }),
-        createElement(MusicRelease, {
-            title: 'Early Oddities',
-            explicit: true,
-            type: 'Compilation',
-            releaseDate: 'December 13, 2019',
-            description: 'A collection of odds and ends from the era between Deibyu and Midnight Movies.',
-            genre: 'r&b, bedroom pop, downtempo',
-            coverImageSrc: earlyOdditiesCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/dsMD7FMGUAA',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1VtLxTP2zlR2Wea7n3SKHDAoqdBzP46XI?usp=drive_link',
                     iconSrc: driveIcon,
                     text: 'Google Drive',
                 }),
@@ -401,31 +304,143 @@ export default function Music() {
                 }),
             ],
         }),
+    ];
+
+    const soundtracks = [
         createElement(MusicRelease, {
-            title: 'Deibyu',
-            explicit: true,
-            type: 'Mixtape',
-            releaseDate: 'January 23, 2019',
-            description: 'My first published album, featuring many collaborators. A dense and distorted evolution of the Priibyu mixtape. Part of a double LP package with Priibyu.',
-            genre: 'hip-hop/rap, downtempo, psychedelic',
-            coverImageSrc: deibyuCover,
+            title: 'Tropical New World',
+            type: 'Soundtrack',
+            releaseDate: 'July 21, 2024',
+            description: 'Light and loose bits of music composed for OST Jam 7 on itch.io.',
+            genre: 'chillout, world, hip-hop',
+            coverImageSrc: ostJam7cover,
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/1dPLJkpZeMA',
+                    href: 'https://music.apple.com/us/album/tropical-new-world-ep/1818972447',
+                    iconSrc: appleMusicIcon,
+                    text: 'Apple Music',
+                }),
+                createElement(IconButton, {
+                    href: 'https://www.youtube.com/playlist?list=PLdSVpo8uVNGWpYIPuigj2JNwaj9oUtjhD',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
                 createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1qXEKJ_-GjAhHWVFYu5R9Q34gP9PW4WT1?usp=drive_link',
+                    href: 'https://sontomorio.bandcamp.com/album/tropical-new-world',
+                    iconSrc: bandcampIcon,
+                    text: 'Bandcamp',
+                }),
+                createElement(IconButton, {
+                    href: 'https://soundcloud.com/sontomorio/sets/tropical-new-world?si=793bbcfcbfd84d88a574a5fdca9626f4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+                    iconSrc: soundCloudIcon,
+                    text: 'SoundCloud',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1U26QF2IP7L7Yw2nIuHvEnfzQ9yEy1dBC?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+                createElement(IconButton, {
+                    href: 'https://www.pexels.com/photo/silhouette-of-mountains-during-sunset-10394187/',
+                    text: 'Cover source photo by Shaheem Sjp',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
+            title: 'Sunset Whopper',
+            type: 'Soundtrack',
+            releaseDate: 'November 27, 2023',
+            description: 'High-energy DnB mix filled with distorted breaks, looping effects, varied samples, and lots of noisy synthesizers. Originally the soundtrack to Sunset Whopper, a video game for university.',
+            genre: 'techno, noise, drum and bass',
+            coverImageSrc: whopperCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/LYAIzBTEQVc?si=FkY3GbqPnOJiXy3m',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://soundcloud.com/sontomorio/sunset-whopper-hyper-drumnbass-mix?si=fa61b5a3529d44c1902c72f81ee5e4c0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+                    iconSrc: soundCloudIcon,
+                    text: 'SoundCloud',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/file/d/1Z2YM6gK1McS9DBy5eGKQYJu-ZSqqRtzH/view?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
+    ];
+
+    const oddities = [
+        createElement(MusicRelease, {
+            title: 'THE NARLY Y MORIO LP',
+            subtitle: '(with Aspen "Shreds" Abrahamson)',
+            type: 'Demo',
+            releaseDate: 'February 3, 2025 (April 4, 2023 demo)',
+            description: 'An ambitious, experimental collaboration with "Shreds". We each did a fair bit of the work. It was about 85% done before dropped.',
+            genre: 'psychedelic, hip-hop, rock',
+            coverImageSrc: narlyYmorioCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/X_gEyzTSx6c',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1jbhTOGaM88TdXXckxTzOaHZDSwWD0P4I?usp=drive_link',
                     iconSrc: driveIcon,
                     text: 'Google Drive',
                 }),
             ]
         }),
         createElement(MusicRelease, {
+            title: 'Sunday Morning TV',
+            explicit: true,
+            type: 'Compilation',
+            releaseDate: 'October 19, 2021',
+            description: 'Combines two tracks from Midnight Movies with three previously unreleased original tracks. A compilation of music from The Freeway and prior that is suitable for streaming.',
+            genre: 'downtempo, hip-hop/rap, ambient',
+            coverImageSrc: sundayMorningTVCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://music.apple.com/us/album/sunday-morning-tv-ep/1591252601',
+                    iconSrc: appleMusicIcon,
+                    text: 'Apple Music',
+                }),
+                createElement(IconButton, {
+                    href: 'https://sontomorio.bandcamp.com/album/sunday-morning-tv',
+                    iconSrc: bandcampIcon,
+                    text: 'Bandcamp',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
+            title: 'Early Oddities',
+            explicit: true,
+            type: 'Compilation',
+            releaseDate: 'December 13, 2019',
+            description: 'A collection of odds and ends from the era between Deibyu and Midnight Movies.',
+            genre: 'r&b, bedroom pop, downtempo',
+            coverImageSrc: earlyOdditiesCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/dsMD7FMGUAA',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1VtLxTP2zlR2Wea7n3SKHDAoqdBzP46XI?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
             title: 'Priibyu',
             explicit: true,
-            type: 'Mixtape',
+            type: 'Demo',
             releaseDate: 'February 3, 2025 (late 2018 demo)',
             description: 'Demo of the Deibyu mixtape. A bright, loose string of eclectic outsider music. Part of a double LP package with Deibyu.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
@@ -455,8 +470,24 @@ export default function Music() {
             <Socials
             socialsList={[ 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
         </div>
-        <Scroller
-        elements={ musicReleases } />
+        <TileDisplay
+        title='Latest Release'
+        elements={ latest } />
+        <TileDisplay
+        title='Albums'
+        elements={ albums } />
+        <TileDisplay
+        title='Mixtapes'
+        elements={ mixtapes } />
+        <TileDisplay
+        title='EPs & Singles'
+        elements={ EPsSingles } />
+        <TileDisplay
+        title='Soundtracks'
+        elements={ soundtracks } />
+        <TileDisplay
+        title='Compilations, Demos, & Other Oddities'
+        elements={ oddities } />
         </>
     );
 }

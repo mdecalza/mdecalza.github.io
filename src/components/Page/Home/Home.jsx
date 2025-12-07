@@ -25,15 +25,18 @@ export default function Home() {
                 <div
                 className='row'>
                     <div
-                    className='col-lg py-3'>
+                    className='py-3'>
                         <div
-                        className='py-3 rounded-5 shadow'
-                        style={{ opacity: '100%', backgroundColor: 'rgba(255,255,255,0.165)' }}>
+                        className='py-3 rounded-5 border border-3 border-dark'
+                        style={{
+                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
+                            minHeight: '75%',
+                        }}>
                             <Link
                             to={'music'}
                             className='link-light'>
                                 <div
-                                className='btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
+                                className='btn border-0 text-white bg-secondary bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
                                     <h2
                                     className='mx-3 my-2'>
                                         Music
@@ -47,16 +50,16 @@ export default function Home() {
                     <div
                     className='col-lg py-3'>
                         <div
-                        className='py-3 rounded-5 shadow'
+                        className='py-3 rounded-5 border border-3 border-dark'
                         style={{
-                            backgroundColor: 'rgba(255, 255, 255, 0.1175)',
+                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
                             minHeight: '75%',
                         }}>
                             <Link
                             to={'art'}
                             className='link-light'>
                                 <div
-                                className='btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
+                                className='btn border-0 text-white bg-secondary bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
                                     <h2
                                     className='mx-3 my-2'>
                                         Art
@@ -70,12 +73,16 @@ export default function Home() {
                     <div
                     className='col-lg py-3'>
                         <div
-                        className='py-3 rounded-5 bg-secondary bg-opacity-25 shadow'>
+                        className='py-3 rounded-5 shadow border border-3 border-dark'
+                        style={{
+                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
+                            minHeight: '75%',
+                        }}>
                             <Link
                             to={'wads'}
                             className='link-light'>
                                 <div
-                                className='btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
+                                className='btn border-0 text-white bg-secondary bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
                                     <h2
                                     className='mx-3 my-2'>
                                         Wads
@@ -89,12 +96,16 @@ export default function Home() {
                     <div
                     className='col-lg py-3'>
                         <div
-                        className='py-3 rounded-5 bg-secondary bg-opacity-10 shadow'>
+                        className='py-3 rounded-5 border border-3 border-dark'
+                        style={{
+                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
+                            minHeight: '75%',
+                        }}>
                             <Link
                             to={'websites'}
                             className='link-light'>
                                 <div
-                                className='btn border-0 text-white bg-secondary bg-gradient bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
+                                className='btn border-0 text-white bg-secondary bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
                                     <h2
                                     className='mx-3 my-2'>
                                         Websites
