@@ -18,7 +18,9 @@ export default function IconButton({ href = '', onClick = null, iconSrc = '', te
             <img
             src={ iconSrc }
             className='IconButtonIcon me-2 my-auto' />
-            { text }
+            <div>
+                { text }
+            </div>
         </a>
     );
 }
