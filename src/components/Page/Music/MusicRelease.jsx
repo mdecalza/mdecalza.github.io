@@ -24,7 +24,7 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
         <div
         className='MusicRelease fadeInDelayed d-flex flex-column align-items-center px-5'>
             <div
-            className='position-relative mx-auto my-5 rounded-2 shadow'
+            className='position-relative mx-auto my-5 shadow'
             style={{ width: '90%'
             }}>
                 <iframe
@@ -33,7 +33,7 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
                 frameBorder="0"
                 allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
-                className='MusicEmbed z-2 w-100 h-100 position-absolute rounded-2'></iframe>
+                className='MusicEmbed z-2 w-100 h-100 position-absolute rounded-1'></iframe>
                 <img
                 src={ coverImageSrc }
                 className='AlbumArt rounded-1' />
