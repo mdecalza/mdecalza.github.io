@@ -24,7 +24,7 @@ export default function Socials({socialsList = []}) {
 
     return (
         <div
-        className='mx-auto pb-4'>
+        className='mx-auto py-4'>
             { content }
         </div>
     );
