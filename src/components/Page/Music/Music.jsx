@@ -57,6 +57,7 @@ export default function Music() {
             description: '40 minutes of chill chops and funky breaks.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/B2INvU-pBfk?si=3IqUYjLoGPosvAon',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/B2INvU-pBfk',
@@ -84,6 +85,7 @@ export default function Music() {
             description: 'Busy soundscapes, funky beats, and strange electronic noises. A globetrotting voyage in 44 minutes.',
             genre: 'downtempo, hip-hop, chillout',
             coverImageSrc: travelogueCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/FRbNazs6Wv4?si=AaIEit6BtliUC4so',
             links: [
                 createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/travelogue/1821441225',
@@ -117,6 +119,7 @@ export default function Music() {
             description: 'A dark mix of original tunes among diverse beats, samples, and soundscapes.',
             genre: 'downtempo, hip-hop, psychedelic',
             coverImageSrc: sontoOlegioCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/fJ5Bcy_MBqE?si=LfejcpgkFRnhbigs',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/fJ5Bcy_MBqE',
@@ -142,6 +145,7 @@ export default function Music() {
             description: 'An assorted mix of driving-inspired loops and breakbeats.',
             genre: 'hip-hop, boombap, lofi',
             coverImageSrc: theFreewayCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/2FK6yWV96O8?si=w9Vu237GKs3LlITb',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/2FK6yWV96O8',
@@ -167,6 +171,7 @@ export default function Music() {
             description: 'A picturesque journey told through patchwork samples and idiosyncratic beats woven together into soundscapes. A descent into dreams inspired by a bygone time.',
             genre: 'hip-hop, downtempo, ambient',
             coverImageSrc: midnightMoviesCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/cs69xVqK1lo?si=P-U3TUkHHomb-ls0',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/cs69xVqK1lo',
@@ -216,6 +221,7 @@ export default function Music() {
             description: 'A quick mix of six boombap beats for ears to feast.',
             genre: 'hip-hop, boombap, old-school',
             coverImageSrc: sketchinCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/jLf3ZbvQYDk?si=uPwgqmqKTsmiupIV',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/jLf3ZbvQYDk',
@@ -236,6 +242,7 @@ export default function Music() {
             description: 'Bold and brash, this EP drives oddball loops through high levels of distortion underneath esoteric lyrics.',
             genre: 'hip-hop/rap, noise, psychedelic',
             coverImageSrc: sontoIVcover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/Z7dY-NgBeVo?si=vHcyUpNkx_37h3hM',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/Z7dY-NgBeVo',
@@ -325,6 +332,7 @@ export default function Music() {
             description: 'Light and loose bits of music composed for OST Jam 7 on itch.io.',
             genre: 'chillout, world, hip-hop',
             coverImageSrc: ostJam7cover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/videoseries?si=nd9HAgvb1TnycwXE&amp;list=PLdSVpo8uVNGWpYIPuigj2JNwaj9oUtjhD',
             links: [
                 createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/tropical-new-world-ep/1818972447',
@@ -364,6 +372,7 @@ export default function Music() {
             description: 'High-energy DnB mix filled with distorted breaks, looping effects, varied samples, and lots of noisy synthesizers. Originally the soundtrack to Sunset Whopper, a video game for university.',
             genre: 'techno, noise, drum and bass',
             coverImageSrc: whopperCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/LYAIzBTEQVc?si=YyUcGRm9MlCWoNyf',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/LYAIzBTEQVc?si=FkY3GbqPnOJiXy3m',
@@ -393,6 +402,7 @@ export default function Music() {
             description: 'An ambitious, experimental collaboration with "Shreds". We each did a fair bit of the work. It was about 85% done before dropped.',
             genre: 'psychedelic, hip-hop, rock',
             coverImageSrc: narlyYmorioCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/X_gEyzTSx6c?si=eQWxtyiocKokkAxH',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/X_gEyzTSx6c',
