@@ -38,6 +38,17 @@ import driveIcon from '/src/assets/socials/drive-icon.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
+    const socialsList = [
+        'apple-music',
+        'music-youtube',
+        'bandcamp',
+        'patreon',
+        'tiktok',
+        'music-instagram',
+        'soundcloud',
+        'twitter',
+    ];
+
     const latest = [
         createElement(MusicRelease, {
             title: 'The Love of Sound',
@@ -468,7 +479,7 @@ export default function Music() {
             src={ sontomorioLogo }
             className='w-25' />
             <Socials
-            socialsList={[ 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
+            socialsList={ socialsList } />
         </div>
         <TileDisplay
         title='Latest Release'
@@ -488,6 +499,8 @@ export default function Music() {
         <TileDisplay
         title='Compilations, Demos, & Other Oddities'
         elements={ oddities } />
+        <Socials
+        socialsList={ socialsList } />
         </>
     );
 }

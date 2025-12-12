@@ -24,7 +24,7 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
         className='MusicRelease fadeInDelayed d-flex flex-column align-items-center px-5'>
             <img
             src={ coverImageSrc }
-            className='AlbumArt mx-auto my-5 rounded-2 border border-3 border-light border-opacity-75 shadow'/>
+            className='AlbumArt mx-auto my-5 rounded-2 border border-3 border-light border-opacity-75 shadow' />
             <div
             className='card bg-light w-100 mx-auto px-5 py-2 shadow-sm'>
                 <div

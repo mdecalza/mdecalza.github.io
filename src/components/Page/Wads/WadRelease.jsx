@@ -54,9 +54,9 @@ export default function WadRelease({
 
     return (
         <div
-        className='WadRelease fadeInDelayed d-flex flex-column justify-content-start align-items-center me-5'>
+        className='WadRelease fadeInDelayed d-flex flex-column justify-content-start align-items-center my-4'>
             <div
-            className='d-flex flex-column justify-content-center my-2'
+            className='d-flex flex-column justify-content-center mb-2'
             style={{ height: '128px' }}>
                 <div
                 className='my-4'>
@@ -76,7 +76,7 @@ export default function WadRelease({
                 </div>
                 { screenshots[slideshowIndex] }
                 <figure
-                className={`${checkTitle(quote) ? 'd-block' : 'd-none'} card text-center px-2 pt-3 pb-2 shadow`}>
+                className={`${checkTitle(quote) ? 'd-block' : 'd-none'} card text-center mx-3 px-2 pt-3 pb-2 shadow`}>
                     <blockquote
                     className='blockquote p-1'>
                         <p><q>{ quote }</q></p>

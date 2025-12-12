@@ -2,19 +2,27 @@
 
 UnorderedListLink.propTypes = {
     href: '',
-    text: '',
-    year: null,
+    wadTitle: '',
+    mapTitle: '',
+    releaseYear: null,
 };
 
-export default function UnorderedListLink({ href = '', text = '', year = null }) {
-    const yearString = ` (${ year })`;
+export default function UnorderedListLink({ href = '', wadTitle = '', mapTitle = '', releaseYear = null }) {
+    const yearString = ` (${ releaseYear })`;
 
     return (
         <a
         href={ href }
         className='list-group-item list-group-item-action list-group-item-light py-2'
         type='button'>
-            { `${text}${year ? yearString : ''}` }
+            { `${wadTitle}${releaseYear ? yearString : ''}` }
+            <div
+            style={{
+                fontSize: '0.8em',
+                opacity: '70%',
+            }}>
+                { mapTitle }
+            </div>
         </a>
     );
 }
