@@ -15,16 +15,28 @@ MusicRelease.propTypes = {
     description: '',
     coverImageSrc: '',
     explicit: false,
+    embedLink: '',
     links: [],
 };
 
-export default function MusicRelease({ title = '', subtitle = '', releaseDate = '', type = '', genre = '', description = '', coverImageSrc = '', explicit = false, links = [] }) {
+export default function MusicRelease({ title = '', subtitle = '', releaseDate = '', type = '', genre = '', description = '', coverImageSrc = '', explicit = false, embedLink = '', links = [] }) {
     return (
         <div
         className='MusicRelease fadeInDelayed d-flex flex-column align-items-center px-5'>
-            <img
-            src={ coverImageSrc }
-            className='AlbumArt mx-auto my-5 rounded-2 border border-3 border-light border-opacity-75 shadow' />
+            <div
+            className='position-relative mx-auto my-5 shadow'
+            style={{ width: '90%' }}>
+                <iframe
+                src={ embedLink }
+                title={ title }
+                frameBorder="0"
+                allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                className='MusicEmbed z-2 w-100 h-100 position-absolute rounded-1'></iframe>
+                <img
+                src={ coverImageSrc }
+                className='AlbumArt rounded-1' />
+            </div>
             <div
             className='card bg-light w-100 mx-auto px-5 py-2 shadow-sm'>
                 <div
