@@ -25,8 +25,7 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
         className='MusicRelease fadeInDelayed d-flex flex-column align-items-center px-5'>
             <div
             className='position-relative mx-auto my-5 shadow'
-            style={{ width: '90%'
-            }}>
+            style={{ width: '90%' }}>
                 <iframe
                 src={ embedLink }
                 title={ title }
