@@ -268,6 +268,7 @@ export default function Music() {
             description: 'Ne expergisci possit.',
             genre: 'hip-hop, trap, electronic',
             coverImageSrc: lucidCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/zEsdQEW04do?si=GiGm33FtBzMv5vlW',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/zEsdQEW04do',
