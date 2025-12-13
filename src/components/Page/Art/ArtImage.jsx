@@ -18,7 +18,7 @@ export default function ArtImage({ src = '', border = true, censor = false, cont
                 { censor ? <CensorBlur contentWarningList={ contentWarningList } /> : <></> }
                 <img
                 src={ src }
-                className={ `ArtImage` }
+                className={ 'ArtImage rounded-1' }
                 />
             </div>
         </div>
