@@ -97,65 +97,6 @@ export default function Wads() {
         }),
     ];
 
-    const communityProjects = [
-        createElement(WadRelease, {
-            title: 'Embryo',
-            role: 'Project Leader, Graphic Designer, Level Designer (2025)',
-            logoSrc: embryoLogo,
-            screenshotImageSources: [
-                embryoScreenshot1,
-                embryoScreenshot2,
-            ],
-            quote: '',
-            quoteCredit: '',
-            quoteSource: '',
-            quoteHREF: '',
-            links: [
-                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/embryo', iconSrc: doomworldIcon, text: '/idgames Archive' }),
-                createElement(IconButton, { href: 'https://github.com/mdecalza/embryo', iconSrc: gitHubIcon, text: 'GitHub' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/7d114b64-e6b0-42d9-9af1-34aac598329c', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
-            ],
-        }),
-        createElement(WadRelease, {
-            title: 'Interception II',
-            role: 'Project Leader, Level Designer (2020)',
-            logoSrc: interception2logo,
-            screenshotImageSources: [
-                interception2screenshot1,
-                interception2screenshot2,
-                interception2screenshot3,
-            ],
-            quote: 'Enjoying myself so much on Interception 2 was quite a revelation, as I usually struggle with large maps and prefer shorter adventures. The quality of the gameplay and the theme kept me engaged beyond expectation [...] the megaWAD offers many creations to be astonished at, and solid Doom gameplay with contemporary graphics and effects.',
-            quoteCredit: 'Book Lord',
-            quoteSource: '"The DWmegawad Club plays: Interception II", p. 14, doomworld.com',
-            quoteHREF: 'https://www.doomworld.com/forum/post/2421738',
-            links: [
-                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/intercep2', iconSrc: doomworldIcon, text: '/idgames Archive' }),
-                createElement(IconButton, { href: 'https://doomwiki.org/wiki/Interception_II', iconSrc: doomWikiIcon, text: 'The Doom Wiki' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/d9e7a597-384a-40d9-b1a4-0e94ffd12437', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
-            ],
-        }),
-        createElement(WadRelease, {
-            title: 'Interception',
-            role: 'Project Leader, Level Designer (2013)',
-            logoSrc: interceptionLogo,
-            screenshotImageSources: [
-                interceptionScreenshot1,
-                interceptionScreenshot2,
-                interceptionScreenshot3,
-            ],
-            quote: 'The thing that sticks with me about Interception? It\'s [sic] mapping which lends itself between nature settings, brown brick fortresses, techbases and bloody steel hell maps, all of them feel like they were crafted to flow from one to the next, the maps neither too small nor too big and well placed ammo and health. [...] Interception is among my most played wads, It keeps speaking to me, honestly, as a one of kind megawad that has everything I expect in a megawad.',
-            quoteCredit: 'Andrew Mullens',
-            quoteSource: '"Doom Wads/Mods #490:Interception," youtube.com',
-            quoteHREF: 'https://www.youtube.com/watch?v=KBlnPDBgQcs',
-            links: [
-                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/?id=17082', iconSrc: doomworldIcon, text: '/idgames Archive' }),
-                createElement(IconButton, { href: 'https://doomwiki.org/wiki/Interception', iconSrc: doomWikiIcon, text: 'The Doom Wiki' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/6a4f32ce-f9a6-4138-91f9-235c1a24b1d6', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
-            ],
-        }),
-    ];
-
     const releasedWads = [
         createElement(WadRelease, {
             title: 'DOOMed Resident 2',
@@ -234,6 +175,65 @@ export default function Wads() {
             links: [
                 createElement(IconButton, { href: 'https://www.doomworld.com/idgames/?id=19847', iconSrc: doomworldIcon, text: '/idgames Archive' }),
                 createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/8e311fcd-58cd-4952-bd91-bc04c335e5f5', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+            ],
+        }),
+    ];
+
+    const communityProjects = [
+        createElement(WadRelease, {
+            title: 'Embryo',
+            role: 'Project Leader, Graphic Designer, Level Designer (2025)',
+            logoSrc: embryoLogo,
+            screenshotImageSources: [
+                embryoScreenshot1,
+                embryoScreenshot2,
+            ],
+            quote: '',
+            quoteCredit: '',
+            quoteSource: '',
+            quoteHREF: '',
+            links: [
+                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/embryo', iconSrc: doomworldIcon, text: '/idgames Archive' }),
+                createElement(IconButton, { href: 'https://github.com/mdecalza/embryo', iconSrc: gitHubIcon, text: 'GitHub' }),
+                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/7d114b64-e6b0-42d9-9af1-34aac598329c', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+            ],
+        }),
+        createElement(WadRelease, {
+            title: 'Interception II',
+            role: 'Project Leader, Level Designer (2020)',
+            logoSrc: interception2logo,
+            screenshotImageSources: [
+                interception2screenshot1,
+                interception2screenshot2,
+                interception2screenshot3,
+            ],
+            quote: 'Enjoying myself so much on Interception 2 was quite a revelation, as I usually struggle with large maps and prefer shorter adventures. The quality of the gameplay and the theme kept me engaged beyond expectation [...] the megaWAD offers many creations to be astonished at, and solid Doom gameplay with contemporary graphics and effects.',
+            quoteCredit: 'Book Lord',
+            quoteSource: '"The DWmegawad Club plays: Interception II", p. 14, doomworld.com',
+            quoteHREF: 'https://www.doomworld.com/forum/post/2421738',
+            links: [
+                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/intercep2', iconSrc: doomworldIcon, text: '/idgames Archive' }),
+                createElement(IconButton, { href: 'https://doomwiki.org/wiki/Interception_II', iconSrc: doomWikiIcon, text: 'The Doom Wiki' }),
+                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/d9e7a597-384a-40d9-b1a4-0e94ffd12437', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+            ],
+        }),
+        createElement(WadRelease, {
+            title: 'Interception',
+            role: 'Project Leader, Level Designer (2013)',
+            logoSrc: interceptionLogo,
+            screenshotImageSources: [
+                interceptionScreenshot1,
+                interceptionScreenshot2,
+                interceptionScreenshot3,
+            ],
+            quote: 'The thing that sticks with me about Interception? It\'s [sic] mapping which lends itself between nature settings, brown brick fortresses, techbases and bloody steel hell maps, all of them feel like they were crafted to flow from one to the next, the maps neither too small nor too big and well placed ammo and health. [...] Interception is among my most played wads, It keeps speaking to me, honestly, as a one of kind megawad that has everything I expect in a megawad.',
+            quoteCredit: 'Andrew Mullens',
+            quoteSource: '"Doom Wads/Mods #490:Interception," youtube.com',
+            quoteHREF: 'https://www.youtube.com/watch?v=KBlnPDBgQcs',
+            links: [
+                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/?id=17082', iconSrc: doomworldIcon, text: '/idgames Archive' }),
+                createElement(IconButton, { href: 'https://doomwiki.org/wiki/Interception', iconSrc: doomWikiIcon, text: 'The Doom Wiki' }),
+                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/6a4f32ce-f9a6-4138-91f9-235c1a24b1d6', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
             ],
         }),
     ];
@@ -404,11 +404,11 @@ export default function Wads() {
             elements={ inProgressWads }
             title="Works in Progress" />
             <TileDisplay
-            elements={ communityProjects }
-            title="Community Projects" />
-            <TileDisplay
             elements={ releasedWads }
             title="Solo Works" />
+            <TileDisplay
+            elements={ communityProjects }
+            title="Community Projects" />
             <UnorderedList
             title='More Wads I&apos;ve Contributed To:'
             items={ moreWadsList } />
