@@ -26,13 +26,16 @@ export default function NavbarButtonContainer({widescreen = false}) {
         <div
         className={navbarButtonsClass}>
             <NavbarButton
-            text='Music'
+            buttonText='Music'
+            pageURLname='music'
             widescreen={widescreen}/>
             <NavbarButton
-            text='Art'
+            buttonText='Art'
+            pageURLname = 'art'
             widescreen={widescreen}/>
             <NavbarButton
-            text='Wads'
+            buttonText='Doom Wads'
+            pageURLname='wads'
             widescreen={widescreen}/>
         </div>
     );

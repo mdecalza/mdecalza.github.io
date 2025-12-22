@@ -3,17 +3,18 @@
 import { NavLink } from 'react-router';
 
 NavbarButton.propTypes = {
-    text: '',
+    buttonText: '',
+    pageURLname: '',
     widescreen: false,
 }
 
-export default function NavbarButton({text = '', widescreen = false}) {
+export default function NavbarButton({buttonText = '', pageURLname = '', widescreen = false}) {
     return (
         <NavLink
-        to={{ pathname: `/${ text.toLowerCase() }`,}}
+        to={{ pathname: `/${ pageURLname.toLowerCase() }`,}}
         className={`NavbarButton growOnHover btn btn-dark my-1 ${ widescreen ? 'mx-1' : 'mx-auto' }`}
         type='button'>
-            {text}
+            { buttonText }
         </NavLink>
     );
 }
