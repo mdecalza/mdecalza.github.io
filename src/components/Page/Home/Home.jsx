@@ -23,9 +23,9 @@ export default function Home() {
             </div>
             <div className='px-4 pt-4 pb-5'>
                 <div
-                className='row'>
+                className='row justify-content-center'>
                     <div
-                    className='py-3'>
+                    className='col-lg-10 py-3'>
                         <div
                         className='py-3 rounded-5 border border-3 border-dark'
                         style={{
@@ -48,7 +48,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div
-                    className='col-lg py-3'>
+                    className='col-lg-4 py-3'>
                         <div
                         className='py-3 rounded-5 border border-3 border-dark'
                         style={{
@@ -71,7 +71,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div
-                    className='col-lg py-3'>
+                    className='col-lg-4 py-3'>
                         <div
                         className='py-3 rounded-5 shadow border border-3 border-dark'
                         style={{
@@ -91,29 +91,6 @@ export default function Home() {
                             </Link>
                             <Socials
                             socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube']} />
-                        </div>
-                    </div>
-                    <div
-                    className='col-lg py-3'>
-                        <div
-                        className='py-3 rounded-5 border border-3 border-dark'
-                        style={{
-                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
-                            minHeight: '75%',
-                        }}>
-                            <Link
-                            to={'websites'}
-                            className='link-light'>
-                                <div
-                                className='btn border-0 text-white bg-secondary bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
-                                    <h2
-                                    className='mx-3 my-2'>
-                                        Websites
-                                    </h2>
-                                </div>
-                            </Link>
-                            <Socials
-                            socialsList={[ 'linkedin', 'github' ]} />
                         </div>
                     </div>
                 </div>
