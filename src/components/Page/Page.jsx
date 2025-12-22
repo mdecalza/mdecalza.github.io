@@ -4,7 +4,6 @@ import { createElement, useEffect, useState } from 'react';
 
 /* page components */
 import Home from '/src/components/Page/Home/Home.jsx';
-import Websites from '/src/components/Page/Websites/Websites.jsx';
 import Wads from '/src/components/Page/Wads/Wads.jsx';
 import Art from '/src/components/Page/Art/Art.jsx';
 import Music from '/src/components/Page/Music/Music.jsx';
@@ -24,9 +23,6 @@ export default function Page({pageType = 'home'}) {
         document.body.scrollTo(0, 0);
 
         switch (pageType.toLowerCase()) {
-            case 'websites':
-                setPageElement(createElement(Websites));
-                break;
             case 'art':
                 setPageElement(createElement(Art));
                 break;
