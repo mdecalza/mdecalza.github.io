@@ -95,6 +95,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <Socials
+            socialsList={[ 'linkedin' ]} />
         </div>
     );
 }
