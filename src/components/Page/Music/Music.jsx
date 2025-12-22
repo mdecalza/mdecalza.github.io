@@ -71,7 +71,7 @@ export default function Music() {
                 }),
                 createElement(IconButton, {
                     href: 'https://www.pexels.com/photo/a-man-sitting-on-the-table-beside-the-oscilloscope-7858254/',
-                    text: 'Cover art based on a stock photo by cottonbro studio',
+                    text: 'Cover based on a photo by cottonbro studio',
                 }),
             ],
         }),
@@ -88,6 +88,11 @@ export default function Music() {
             embedLink: 'https://www.youtube-nocookie.com/embed/FRbNazs6Wv4?si=AaIEit6BtliUC4so',
             links: [
                 createElement(IconButton, {
+                    href: 'https://sontomorio.bandcamp.com/album/travelogue',
+                    iconSrc: bandcampIcon,
+                    text: 'Bandcamp',
+                }),
+                createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/travelogue/1821441225',
                     iconSrc: appleMusicIcon,
                     text: 'Apple Music',
@@ -96,11 +101,6 @@ export default function Music() {
                     href: 'https://youtu.be/FRbNazs6Wv4',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://sontomorio.bandcamp.com/album/travelogue',
-                    iconSrc: bandcampIcon,
-                    text: 'Bandcamp',
                 }),
                 createElement(IconButton, {
                     href: 'https://drive.google.com/drive/folders/1juW1kSDGDC0Z0_Hvfo9DAv08kk_17sn7?usp=drive_link',
@@ -198,18 +198,6 @@ export default function Music() {
             description: 'My first published album, featuring many collaborators. A dense and distorted evolution of the Priibyu mixtape. Part of a double LP package with Priibyu.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: deibyuCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/1dPLJkpZeMA',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1qXEKJ_-GjAhHWVFYu5R9Q34gP9PW4WT1?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ]
         }),
     ];
 
@@ -297,6 +285,11 @@ export default function Music() {
             coverImageSrc: burningMyTimeCover,
             links: [
                 createElement(IconButton, {
+                    href: 'https://sontomorio.bandcamp.com/album/burning-my-time-building-my-mind',
+                    iconSrc: bandcampIcon,
+                    text: 'Bandcamp',
+                }),
+                createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/burning-my-time-building-my-mind-ep/1774373578',
                     iconSrc: appleMusicIcon,
                     text: 'Apple Music',
@@ -305,11 +298,6 @@ export default function Music() {
                     href: 'https://youtu.be/ziNXngLa_zE',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://sontomorio.bandcamp.com/album/burning-my-time-building-my-mind',
-                    iconSrc: bandcampIcon,
-                    text: 'Bandcamp',
                 }),
                 createElement(IconButton, {
                     href: 'https://soundcloud.com/sontomorio/sets/burning-my-time-building-my-mind?si=73ed1b6432b34b578118422d43b807a4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
@@ -336,6 +324,11 @@ export default function Music() {
             embedLink: 'https://www.youtube-nocookie.com/embed/videoseries?si=nd9HAgvb1TnycwXE&amp;list=PLdSVpo8uVNGWpYIPuigj2JNwaj9oUtjhD',
             links: [
                 createElement(IconButton, {
+                    href: 'https://sontomorio.bandcamp.com/album/tropical-new-world',
+                    iconSrc: bandcampIcon,
+                    text: 'Bandcamp',
+                }),
+                createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/tropical-new-world-ep/1818972447',
                     iconSrc: appleMusicIcon,
                     text: 'Apple Music',
@@ -344,11 +337,6 @@ export default function Music() {
                     href: 'https://www.youtube.com/playlist?list=PLdSVpo8uVNGWpYIPuigj2JNwaj9oUtjhD',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://sontomorio.bandcamp.com/album/tropical-new-world',
-                    iconSrc: bandcampIcon,
-                    text: 'Bandcamp',
                 }),
                 createElement(IconButton, {
                     href: 'https://soundcloud.com/sontomorio/sets/tropical-new-world?si=793bbcfcbfd84d88a574a5fdca9626f4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
@@ -362,7 +350,7 @@ export default function Music() {
                 }),
                 createElement(IconButton, {
                     href: 'https://www.pexels.com/photo/silhouette-of-mountains-during-sunset-10394187/',
-                    text: 'Cover source photo by Shaheem Sjp',
+                    text: 'Cover photo by Shaheem Sjp',
                 }),
             ],
         }),
@@ -427,14 +415,19 @@ export default function Music() {
             coverImageSrc: sundayMorningTVCover,
             links: [
                 createElement(IconButton, {
+                    href: 'https://sontomorio.bandcamp.com/album/sunday-morning-tv',
+                    iconSrc: bandcampIcon,
+                    text: 'Bandcamp',
+                }),
+                createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/sunday-morning-tv-ep/1591252601',
                     iconSrc: appleMusicIcon,
                     text: 'Apple Music',
                 }),
                 createElement(IconButton, {
-                    href: 'https://sontomorio.bandcamp.com/album/sunday-morning-tv',
-                    iconSrc: bandcampIcon,
-                    text: 'Bandcamp',
+                    href: 'https://www.youtube.com/playlist?list=OLAK5uy_nHoFzba7KlS4EIAY4wU9SoJd1X154npe4',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
                 }),
             ],
         }),
@@ -446,18 +439,6 @@ export default function Music() {
             description: 'A collection of odds and ends from the era between Deibyu and Midnight Movies.',
             genre: 'r&b, bedroom pop, downtempo',
             coverImageSrc: earlyOdditiesCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/dsMD7FMGUAA',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1VtLxTP2zlR2Wea7n3SKHDAoqdBzP46XI?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
         }),
         createElement(MusicRelease, {
             title: 'Priibyu',
@@ -467,18 +448,6 @@ export default function Music() {
             description: 'Demo of the Deibyu mixtape. A bright, loose string of eclectic outsider music. Part of a double LP package with Deibyu.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: priibyuCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/CKVJ4MuKY-g',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1_8jNbe95Ew5PIZguw6fWz2B4OvNi2Vkz?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ]
         }),
     ];
 
