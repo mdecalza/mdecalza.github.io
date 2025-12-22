@@ -124,7 +124,7 @@ export default function Art() {
                 title='Matthew DeCalzadilla'
                 blurb='Independent Artist' />
                 <Socials
-                socialsList={[ 'art-instagram', 'linkedin' ]} />
+                socialsList={[ 'art-instagram' ]} />
             </div>
             <Scroller
             title='Pixel Illustrations'
