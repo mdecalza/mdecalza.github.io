@@ -133,14 +133,14 @@ export default function Art() {
             title='Album Art'
             elements={ albumArt } />
             <Scroller
-            title='Sketches'
-            elements={ sketches } />
-            <Scroller
             title='Graphic Design'
             elements={ graphicDesign } />
             <Scroller
             title='3D Level Design'
             elements={ levelDesign } />
+            <Scroller
+            title='Sketches'
+            elements={ sketches } />
         </div>
     );
 }
