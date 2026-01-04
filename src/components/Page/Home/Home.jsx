@@ -1,12 +1,14 @@
 /* Matthew DeCalzadilla 2024—2025 */
 
-import { Link } from 'react-router';
-
 /* components */
 import Socials from '/src/components/Socials/Socials';
+import Thumbnail from '../../Thumbnail/Thumbnail';
 
 /* assets */
+import artThumbnail from '/src/assets/art/int3-title.png';
 import mateoLogo from '/src/assets/home/mateowhite.png';
+import musicThumbnail from '/src/assets/music/7.png';
+import wadsThumbnail from '/src/assets/wads/atone/atone-p1.png';
 
 export default function Home() {
     return(
@@ -25,72 +27,57 @@ export default function Home() {
                 <div
                 className='row justify-content-center'>
                     <div
-                    className='col-lg-10 py-3'>
-                        <div
-                        className='py-3 rounded-5 border border-3 border-dark'
-                        style={{
-                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
-                            minHeight: '75%',
-                        }}>
-                            <Link
-                            to={'music'}
-                            className='link-light'>
-                                <div
-                                className='btn border-0 text-white bg-secondary bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
-                                    <h2
-                                    className='mx-3 my-2'>
-                                        Music
-                                    </h2>
-                                </div>
-                            </Link>
-                            <Socials
-                            socialsList={[ 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
-                        </div>
-                    </div>
-                    <div
-                    className='col-lg-4 py-3'>
-                        <div
-                        className='py-3 rounded-5 border border-3 border-dark'
-                        style={{
-                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
-                            minHeight: '75%',
-                        }}>
-                            <Link
-                            to={'art'}
-                            className='link-light'>
-                                <div
-                                className='btn border-0 text-white bg-secondary bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
-                                    <h2
-                                    className='mx-3 my-2'>
-                                        Art
-                                    </h2>
-                                </div>
-                            </Link>
-                            <Socials
-                            socialsList={[ 'art-instagram' ]} />
-                        </div>
-                    </div>
-                    <div
-                    className='col-lg-4 py-3'>
+                    className='col-lg-5 py-3'>
                         <div
                         className='py-3 rounded-5 shadow border border-3 border-dark'
                         style={{
                             backgroundColor: 'rgba(0, 0, 0, 0.25)',
                             minHeight: '75%',
                         }}>
-                            <Link
-                            to={'wads'}
-                            className='link-light'>
-                                <div
-                                className='btn border-0 text-white bg-secondary bg-opacity-25 mx-3 mb-3 p-2 rounded-4 shadow-sm growOnHover'>
-                                    <h2
-                                    className='mx-3 my-2'>
-                                        Doom Wads
-                                    </h2>
-                                </div>
-                            </Link>
+                            <Thumbnail
+                            to={{ pathname: 'wads' }}
+                            imgSrc={ wadsThumbnail }
+                            text='Doom Wads'
+                            width='90%'
+                            height='128px' />
                             <Socials
                             socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube']} />
+                        </div>
+                    </div>
+                    <div
+                    className='col-lg-5 py-3'>
+                        <div
+                        className='py-3 rounded-5 border border-3 border-dark'
+                        style={{
+                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
+                            minHeight: '75%',
+                        }}>
+                            <Thumbnail
+                            to={{ pathname: 'art' }}
+                            imgSrc={ artThumbnail }
+                            text='Art'
+                            width='90%'
+                            height='128px' />
+                            <Socials
+                            socialsList={[ 'art-instagram' ]} />
+                        </div>
+                    </div>
+                    <div
+                    className='col-lg-8 py-3'>
+                        <div
+                        className='py-3 rounded-5 border border-3 border-dark'
+                        style={{
+                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
+                            minHeight: '75%',
+                        }}>
+                            <Thumbnail
+                            to={{ pathname: 'music' }}
+                            imgSrc={ musicThumbnail }
+                            text='Music'
+                            width='90%'
+                            height='128px' />
+                            <Socials
+                            socialsList={[ 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
                         </div>
                     </div>
                 </div>
