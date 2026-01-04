@@ -13,21 +13,17 @@ export default function Background() {
 
     const imageBackgroundElement = (
         <img
-        className='Background'
-        src={backgroundSource}
-        ></img>
+        src={ backgroundSource } />
     );
 
     const videoBackgroundElement = (
         <video
-        className='Background'
-        src={backgroundSource}
+        src={ backgroundSource }
         autoPlay
         playsInline
         muted
         loop
-        preload={'auto'}
-        ></video>
+        preload={ 'auto' }></video>
     );
 
     useEffect(() => {
@@ -47,7 +43,10 @@ export default function Background() {
         <>
         <div
         className='BackgroundTop'></div>
-        { videoBackground ? videoBackgroundElement : imageBackgroundElement }
+        <div
+        className='Background'>
+            { videoBackground ? videoBackgroundElement : imageBackgroundElement }
+        </div>
         </>
     );
 }
