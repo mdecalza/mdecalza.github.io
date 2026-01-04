@@ -42,9 +42,9 @@ export default function Background() {
     return (
         <>
         <div
-        className='BackgroundTop'></div>
+        className='BackgroundTop overflow-hidden'></div>
         <div
-        className='Background'>
+        className='Background overflow-hidden'>
             { videoBackground ? videoBackgroundElement : imageBackgroundElement }
         </div>
         </>
