@@ -11981,7 +11981,7 @@ textarea.form-control-lg {
 
 /* Matthew DeCalzadilla 2024—2025 */
 .Page {
-  min-height: 100%;
+  min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(29, 31, 36));
 }
 
@@ -11991,6 +11991,8 @@ textarea.form-control-lg {
   inset: 0;
   content: "";
   position: absolute;
+  width: 100vw;
+  height: 100vh;
   animation: backgroundFadeIn 2.25s ease forwards;
 }
 
