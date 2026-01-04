@@ -41,12 +41,13 @@ export default function Page({pageType = 'home'}) {
 
     return (
         <div
-        className='Page d-flex flex-column w-100 pt-5 text-white text-center'>
+        className='Page d-flex flex-column w-100 h-100 text-white text-center'>
             <div
+            className='mt-5'
             style={{ height: '100px', }}></div>
-            <Background/>
+            <Background />
             { pageElement }
-            <Footer/>
+            <Footer />
         </div>  
     );
 }
