@@ -28,11 +28,11 @@ export default function Footer() {
                 </div>
                 <div
                 className='pt-5'>
-                    &copy; Matthew DeCalzadilla {
+                    &copy; {
                         (currentDate === initialDate) ?
                         initialDate :
                         initialDate.toString() + ' - ' + currentDate
-                    }.
+                    } Matthew DeCalzadilla.
                 </div>
             </footer>
         </div>
