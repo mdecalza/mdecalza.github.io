@@ -60,6 +60,8 @@ import atoneLogo from '/src/assets/art/atone-logo.png';
 import embryoLogo from '/src/assets/art/embryo-logo.png';
 
 export default function Art() {
+    const socialsList = [ 'art-instagram' ];
+
     const pixelArt = [
         createElement(ArtImage, { src: secondMixTitle }),
         createElement(ArtImage, { src: intercep3title }),
@@ -124,7 +126,7 @@ export default function Art() {
                 title='Matthew DeCalzadilla'
                 blurb='Independent Artist' />
                 <Socials
-                socialsList={[ 'art-instagram' ]} />
+                socialsList={ socialsList } />
             </div>
             <Scroller
             title='Pixel Illustrations'
@@ -141,6 +143,8 @@ export default function Art() {
             <Scroller
             title='Sketches'
             elements={ sketches } />
+            <Socials
+            socialsList={ socialsList } />
         </div>
     );
 }
