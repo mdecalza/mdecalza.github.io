@@ -32,7 +32,7 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
                 frameBorder="0"
                 allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
-                className='MusicEmbed z-2 w-100 h-100 position-absolute rounded-1'></iframe>
+                className='MusicEmbed z-2 w-100 h-100 position-absolute rounded-1 d-none d-md-block'></iframe>
                 <img
                 src={ coverImageSrc }
                 className='AlbumArt rounded-1' />
