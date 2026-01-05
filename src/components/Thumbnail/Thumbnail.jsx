@@ -48,11 +48,11 @@ export default function Thumbnail({ to = { pathname: '/' }, imgSrc = '', text = 
         style={{ width: width, height: height }}>
             <div
             className={ thumbnailButtonClasses }>
-                <h3
+                <h1
                 className={ thumbnailTextClasses }
                 style={{ textShadow: textShadowStyle }}>
                     { text }
-                </h3>
+                </h1>
                 <img
                 src={ imgSrc }
                 className={ thumbnailImageClasses }
