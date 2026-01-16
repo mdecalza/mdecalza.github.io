@@ -13,9 +13,9 @@ Thumbnail.propTypes = {
 
 export default function Thumbnail({ to = { pathname: '/' }, imgSrc = '', text = '', width = '100%', height = '25%', isInnerLink = !to.pathname.includes('://') }) {
     const thumbnailLinkClasses = 'fadeInDelayed growOnHover mx-auto my-3 text-light';
-    const thumbnailButtonClasses = 'mx-3 position-relative d-flex justify-content-center align-items-center';
+    const thumbnailButtonClasses = 'mx-3 position-relative d-flex justify-content-center align-items-center rounded-4 border border-2 border-light border-opacity-75';
     const thumbnailTextClasses = 'z-1 position-absolute';
-    const thumbnailImageClasses = 'thumbnailImage z-0 w-100 object-fit-cover rounded-4 border border-2 border-light border-opacity-75 shadow';
+    const thumbnailImageClasses = 'thumbnailImage rounded-4 shadow';
     const textShadowStyle = '0px 0px 10px black, 3px 3px 0 black, -1px 0px black, 1px 0px black, 0px -1px black, 0px 1px black, -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black';
 
     return (
