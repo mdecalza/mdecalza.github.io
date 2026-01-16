@@ -31,7 +31,8 @@ export default function TileDisplay({ elements = [], title = '' }) {
         { checkTitle(title) ? <h2 className='mt-4'>{title}</h2> : <></> }
         <div
         id={ checkTitle(title) ? title : '' }
-        className='TileDisplay row justify-content-center pb-4'>
+        className='row justify-content-center mx-auto pb-4'
+        style={{ maxWidth: '1920px' }}>
             { cols }
         </div>
         </>
