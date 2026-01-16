@@ -11983,7 +11983,10 @@ textarea.form-control-lg {
 
 /* Matthew DeCalzadilla 2026 */
 .thumbnailImage {
-  filter: blur(0.5px);
+  object-fit: cover;
+  width: 100%;
+  z-index: 0;
+  filter: blur(1.25px);
 }
 
 /* Matthew DeCalzadilla 2024—2025 */
