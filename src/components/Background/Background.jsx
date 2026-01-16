@@ -13,7 +13,8 @@ export default function Background() {
 
     const imageBackgroundElement = (
         <img
-        src={ backgroundSource } />
+        src={ backgroundSource }
+        className='BackgroundImage' />
     );
 
     const videoBackgroundElement = (
@@ -42,9 +43,9 @@ export default function Background() {
     return (
         <>
         <div
-        className='BackgroundTop overflow-hidden'></div>
+        className='BackgroundTop'></div>
         <div
-        className='Background overflow-hidden'>
+        className='Background'>
             { videoBackground ? videoBackgroundElement : imageBackgroundElement }
         </div>
         </>

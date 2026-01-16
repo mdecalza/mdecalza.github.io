@@ -9,9 +9,17 @@
 }
 
 .Background {
+    overflow: hidden;
     position: absolute;
-    object-fit: cover;
     width: 100vw;
     height: 100vh;
     z-index: -2;
+}
+
+.BackgroundImage {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    image-rendering: pixelated;
+    filter: blur(3px);
 }
