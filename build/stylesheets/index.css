@@ -11986,6 +11986,7 @@ textarea.form-control-lg {
   object-fit: cover;
   width: 100%;
   z-index: 0;
+  image-rendering: pixelated;
   filter: blur(1.25px);
 }
 
