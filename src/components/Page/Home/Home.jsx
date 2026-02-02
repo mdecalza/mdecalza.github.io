@@ -41,7 +41,11 @@ export default function Home() {
                             width='90%'
                             height='128px' />
                             <Socials
-                            socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube']} />
+                            socialsList={[
+                                'doomwiki',
+                                'doomworld',
+                                'doom-youtube',
+                            ]} />
                         </div>
                     </div>
                     <div
@@ -77,13 +81,24 @@ export default function Home() {
                             width='90%'
                             height='128px' />
                             <Socials
-                            socialsList={[ 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
+                            socialsList={[
+                                'apple-music',
+                                'music-youtube',
+                                'bandcamp',
+                                'tiktok',
+                                'music-instagram',
+                                'soundcloud',
+                                'twitter',
+                            ]} />
                         </div>
                     </div>
                 </div>
             </div>
             <Socials
-            socialsList={[ 'linkedin' ]} />
+            socialsList={[
+                'linkedin',
+                'patreon-doom',
+            ]} />
         </div>
     );
 }
