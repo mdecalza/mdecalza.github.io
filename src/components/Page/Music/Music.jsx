@@ -42,7 +42,6 @@ export default function Music() {
         'apple-music',
         'music-youtube',
         'bandcamp',
-        'patreon',
         'tiktok',
         'music-instagram',
         'soundcloud',
