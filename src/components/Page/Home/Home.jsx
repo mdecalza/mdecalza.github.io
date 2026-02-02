@@ -41,7 +41,11 @@ export default function Home() {
                             width='90%'
                             height='128px' />
                             <Socials
-                            socialsList={[ 'doomwiki', 'doomworld', 'doom-youtube']} />
+                            socialsList={[
+                                'doomwiki',
+                                'doomworld',
+                                'doom-youtube',
+                            ]} />
                         </div>
                     </div>
                     <div
@@ -91,7 +95,10 @@ export default function Home() {
                 </div>
             </div>
             <Socials
-            socialsList={[ 'linkedin' ]} />
+            socialsList={[
+                'linkedin',
+                'patreon-doom',
+            ]} />
         </div>
     );
 }

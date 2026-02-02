@@ -70,7 +70,11 @@ export default function SocialsLink({target = ''}) {
                 setTargetURL('https://www.linkedin.com/in/mdecalzadilla/');
                 setIconSource(linkedIn);
                 break;
-            case 'patreon':
+            case 'patreon-doom':
+                setTargetURL('https://patreon.com/Moustachio?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink');
+                setIconSource(patreon);
+                break;
+            case 'patreon-music':
                 setTargetURL('https://patreon.com/Sontomorio?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink');
                 setIconSource(patreon);
                 break;

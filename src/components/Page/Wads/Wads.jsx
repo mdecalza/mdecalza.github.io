@@ -71,10 +71,11 @@ import gitHubIcon from '../../../assets/socials/github-mark.svg';
 export default function Wads() {
     const socialsList = [
         'doomworld',
-        'github',
         'bethesda',
         'doom-youtube',
         'doomwiki',
+        'github',
+        'patreon-doom',
     ];
 
     const inProgressWads = [
