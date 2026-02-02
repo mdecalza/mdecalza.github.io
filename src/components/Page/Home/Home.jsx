@@ -77,7 +77,15 @@ export default function Home() {
                             width='90%'
                             height='128px' />
                             <Socials
-                            socialsList={[ 'apple-music', 'music-youtube', 'bandcamp', 'patreon', 'tiktok', 'music-instagram', 'soundcloud', 'twitter' ]} />
+                            socialsList={[
+                                'apple-music',
+                                'music-youtube',
+                                'bandcamp',
+                                'tiktok',
+                                'music-instagram',
+                                'soundcloud',
+                                'twitter',
+                            ]} />
                         </div>
                     </div>
                 </div>
