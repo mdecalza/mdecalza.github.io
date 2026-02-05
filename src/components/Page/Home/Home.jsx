@@ -42,9 +42,10 @@ export default function Home() {
                             height='128px' />
                             <Socials
                             socialsList={[
-                                'doomwiki',
                                 'doomworld',
+                                'bethesda',
                                 'doom-youtube',
+                                'doomwiki',
                             ]} />
                         </div>
                     </div>
@@ -97,6 +98,7 @@ export default function Home() {
             <Socials
             socialsList={[
                 'linkedin',
+                'github',
                 'patreon-doom',
             ]} />
         </div>
