@@ -76,7 +76,7 @@ export default function Music() {
         }),
     ];
 
-    const albums = [
+    const albumsMixtapes = [
         createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Album',
@@ -84,7 +84,7 @@ export default function Music() {
             description: 'Busy soundscapes, funky beats, and strange electronic noises. A globetrotting voyage in 44 minutes.',
             genre: 'downtempo, hip-hop, chillout',
             coverImageSrc: travelogueCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/FRbNazs6Wv4?si=AaIEit6BtliUC4so',
+            embedLink: 'https://www.youtube-nocookie.com/embed/videoseries?si=w_xarfUtPjcYor0m&amp;list=OLAK5uy_maqEULkRZT6NepowCIXMWmSp6AUOqKt8U',
             links: [
                 createElement(IconButton, {
                     href: 'https://sontomorio.bandcamp.com/album/travelogue',
@@ -108,9 +108,6 @@ export default function Music() {
                 }),
             ],
         }),
-    ];
-
-    const mixtapes = [
         createElement(MusicRelease, {
             title: 'Sonto\'olegio',
             type: 'Beat Tape',
@@ -197,6 +194,14 @@ export default function Music() {
             description: 'My first published album, featuring many collaborators. A dense and distorted evolution of the Priibyu mixtape. Part of a double LP package with Priibyu.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: deibyuCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/1dPLJkpZeMA?si=x0bKOGvLdaCVxSLF',
+            links: [
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1qXEKJ_-GjAhHWVFYu5R9Q34gP9PW4WT1?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
         }),
     ];
 
@@ -282,6 +287,7 @@ export default function Music() {
             description: 'An ethereal mix of reverbed beats, spacey melodies, and bombastic rap verses.',
             genre: 'hip-hop/rap, lofi, chillout',
             coverImageSrc: burningMyTimeCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/Bhj6OgR-pgo?si=fafEYyGS0h47jXT-',
             links: [
                 createElement(IconButton, {
                     href: 'https://sontomorio.bandcamp.com/album/burning-my-time-building-my-mind',
@@ -292,16 +298,6 @@ export default function Music() {
                     href: 'https://music.apple.com/us/album/burning-my-time-building-my-mind-ep/1774373578',
                     iconSrc: appleMusicIcon,
                     text: 'Apple Music',
-                }),
-                createElement(IconButton, {
-                    href: 'https://youtu.be/ziNXngLa_zE',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://soundcloud.com/sontomorio/sets/burning-my-time-building-my-mind?si=73ed1b6432b34b578118422d43b807a4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
-                    iconSrc: soundCloudIcon,
-                    text: 'SoundCloud',
                 }),
                 createElement(IconButton, {
                     href: 'https://drive.google.com/drive/folders/1Kcjn8uKhtq2YGzN7JWaAwgS4nn8N6CWJ?usp=drive_link',
@@ -320,7 +316,7 @@ export default function Music() {
             description: 'Light and loose bits of music composed for OST Jam 7 on itch.io.',
             genre: 'chillout, world, hip-hop',
             coverImageSrc: ostJam7cover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/videoseries?si=nd9HAgvb1TnycwXE&amp;list=PLdSVpo8uVNGWpYIPuigj2JNwaj9oUtjhD',
+            embedLink: 'https://www.youtube-nocookie.com/embed/videoseries?si=lj2YsZ9vpTM29tKA&amp;list=OLAK5uy_kYhwSgORiAl4tI4PhYuJwtBSMtCSRDTaA',
             links: [
                 createElement(IconButton, {
                     href: 'https://sontomorio.bandcamp.com/album/tropical-new-world',
@@ -402,7 +398,7 @@ export default function Music() {
                     iconSrc: driveIcon,
                     text: 'Google Drive',
                 }),
-            ]
+            ],
         }),
         createElement(MusicRelease, {
             title: 'Sunday Morning TV',
@@ -412,6 +408,7 @@ export default function Music() {
             description: 'Combines two tracks from Midnight Movies with three previously unreleased original tracks. A compilation of music from The Freeway and prior that is suitable for streaming.',
             genre: 'downtempo, hip-hop/rap, ambient',
             coverImageSrc: sundayMorningTVCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/videoseries?si=INwalZS91D8951Mm&amp;list=OLAK5uy_ldTsWEcR15b8g2sbZBfyuhxWmpENunLNY',
             links: [
                 createElement(IconButton, {
                     href: 'https://sontomorio.bandcamp.com/album/sunday-morning-tv',
@@ -423,11 +420,6 @@ export default function Music() {
                     iconSrc: appleMusicIcon,
                     text: 'Apple Music',
                 }),
-                createElement(IconButton, {
-                    href: 'https://www.youtube.com/playlist?list=OLAK5uy_nHoFzba7KlS4EIAY4wU9SoJd1X154npe4',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
             ],
         }),
         createElement(MusicRelease, {
@@ -438,6 +430,14 @@ export default function Music() {
             description: 'A collection of odds and ends from the era between Deibyu and Midnight Movies.',
             genre: 'r&b, bedroom pop, downtempo',
             coverImageSrc: earlyOdditiesCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/dsMD7FMGUAA?si=kymngGkfORyIDH8x',
+            links: [
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1VtLxTP2zlR2Wea7n3SKHDAoqdBzP46XI?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive'
+                }),
+            ],
         }),
         createElement(MusicRelease, {
             title: 'Priibyu',
@@ -447,6 +447,14 @@ export default function Music() {
             description: 'Demo of the Deibyu mixtape. A bright, loose string of eclectic outsider music. Part of a double LP package with Deibyu.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: priibyuCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/CKVJ4MuKY-g?si=bhNL4rQi1yhjVlC_',
+            links: [
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1_8jNbe95Ew5PIZguw6fWz2B4OvNi2Vkz?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive'
+                }),
+            ],
         }),
     ];
 
@@ -464,11 +472,8 @@ export default function Music() {
         title='Latest Release'
         elements={ latest } />
         <TileDisplay
-        title='Albums'
-        elements={ albums } />
-        <TileDisplay
-        title='Mixtapes'
-        elements={ mixtapes } />
+        title='Albums & Mixtapes'
+        elements={ albumsMixtapes } />
         <TileDisplay
         title='EPs & Singles'
         elements={ EPsSingles } />
