@@ -1,6 +1,13 @@
 /* Matthew DeCalzadilla 2026 */
 
+/* components */
+
 import { useEffect, useState } from "react";
+
+/* assets */
+
+import leftArrowIcon from '/src/assets/icons/arrow-previous-left-icon.svg';
+import rightArrowIcon from '/src/assets/icons/arrow-next-right-icon.svg';
 
 ScrollerButtons.propTypes = {
     scrollerID: 0,
@@ -59,7 +66,7 @@ function ScrollerButton({ scrollerID = 0, direction = 'right' }) {
         onTouchCancel={ mouseOff }>
             <div
             className='mx-auto fs-2'>
-                { direction === 'right' ? '►' : '◄' }
+                { direction === 'right' ? <img src={ rightArrowIcon } alt={ '►' } style={{ filter: 'invert(1)', width: '33%', pointerEvents: 'none' }} /> : <img src={ leftArrowIcon } alt={ '◄' } style={{ filter: 'invert(1)', width: '33%', pointerEvents: 'none' }} /> }
             </div>
         </div>
     )
