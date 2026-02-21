@@ -11974,11 +11974,24 @@ textarea.form-control-lg {
 .ScrollerButton {
   width: 6.5%;
   min-width: 96px;
+  pointer-events: all;
+  transition: background-color 0.35s;
+  transition-timing-function: ease;
+}
+
+.ScrollerButton:hover {
+  background-color: rgba(143, 169, 235, 0.5);
+}
+
+.ScrollerButton:active {
+  background-color: rgba(143, 169, 235, 0.8);
 }
 
 .ScrollerButtonContainer {
   height: 87.75%;
   bottom: 5%;
+  pointer-events: none;
+  z-index: 4;
 }
 
 /* Matthew DeCalzadilla 2024—2025 */
