@@ -14,13 +14,13 @@ export default function Scroller({ scrollerID = 0, elements = [], title = '' }) 
         <div
         className='position-relative'>
             { checkTitle(title) ? <h2 className='mt-4'>{title}</h2> : <></> }
+            <ScrollerButtons
+            scrollerID={ scrollerID } />
             <div
             id={`scroller-${scrollerID}`}
             className='Scroller d-flex mt-3 mb-5 pb-4 overflow-y-hidden'>
                 { elements }
             </div>
-            <ScrollerButtons
-            scrollerID={ scrollerID } />
         </div>
     );
 }

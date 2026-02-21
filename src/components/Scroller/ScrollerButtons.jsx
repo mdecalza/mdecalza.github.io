@@ -14,7 +14,7 @@ ScrollerButton.propTypes = {
 export default function ScrollerButtons({ scrollerID = 0 }) {
     return (
         <div
-        className='ScrollerButtonContainer position-absolute fadeInDelayed d-flex justify-content-between w-100 z-1'>
+        className='ScrollerButtonContainer position-absolute fadeInDelayed d-flex justify-content-between w-100'>
             <ScrollerButton
             scrollerID={ scrollerID }
             direction={ 'left' } />
@@ -29,7 +29,7 @@ function ScrollerButton({ scrollerID = 0, direction = 'right' }) {
     const [mouseHover, setMouseHover] = useState(false);
     const [scrollIntervalID, setScrollIntervalID] = useState(0);
 
-    const scrollRate = 2.5;
+    const scrollRate = 4.5;
     const intervalRate = 12.5;
     const gradientColor = 'rgb(29, 31, 36)';
 
@@ -41,17 +41,22 @@ function ScrollerButton({ scrollerID = 0, direction = 'right' }) {
         }
     }, [ mouseHover, direction, scrollerID ]);
 
+    function mouseOff() {
+        setMouseHover(false);
+        clearInterval(scrollIntervalID);
+    }
+
     return (
         <div
         className='ScrollerButton h-100 d-flex flex-column justify-content-center'
         style={{
             backgroundImage: `linear-gradient(to ${ direction }, rgba(0, 0, 0, 0), ${ gradientColor }`,
         }}
-        onMouseEnter={() => { setMouseHover(true); }}
-        onMouseLeave={() => {
-            setMouseHover(false);
-            clearInterval(scrollIntervalID);
-        }}>
+        onMouseDown={() => { setMouseHover(true) }}
+        onTouchStart={() => { setMouseHover(true) }}
+        onMouseUp={ mouseOff }
+        onMouseLeave={ mouseOff }
+        onTouchCancel={ mouseOff }>
             <div
             className='mx-auto fs-2'>
                 { direction === 'right' ? '►' : '◄' }
