@@ -133,19 +133,24 @@ export default function Art() {
             </div>
             <Scroller
             title='Pixel Illustrations'
-            elements={ pixelArt } />
+            elements={ pixelArt }
+            scrollerID={ 0 } />
             <Scroller
             title='Album Art'
-            elements={ albumArt } />
+            elements={ albumArt }
+            scrollerID={ 1 } />
             <Scroller
             title='Graphic Design'
-            elements={ graphicDesign } />
+            elements={ graphicDesign }
+            scrollerID={ 2 } />
             <Scroller
             title='3D Level Design'
-            elements={ levelDesign } />
+            elements={ levelDesign }
+            scrollerID={ 3 } />
             <Scroller
             title='Sketches'
-            elements={ sketches } />
+            elements={ sketches }
+            scrollerID={ 4 } />
             <Socials
             socialsList={ socialsList } />
         </div>

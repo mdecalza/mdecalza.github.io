@@ -11971,6 +11971,16 @@ textarea.form-control-lg {
   scrollbar-color: rgba(119, 136, 153, 0.55) rgba(0, 0, 0, 0);
 }
 
+.ScrollerButton {
+  width: 6.5%;
+  min-width: 96px;
+}
+
+.ScrollerButtonContainer {
+  height: 87.75%;
+  bottom: 5%;
+}
+
 /* Matthew DeCalzadilla 2024—2025 */
 .SocialsLink {
   transition: scale 0.25s;
