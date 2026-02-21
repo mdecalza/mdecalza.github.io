@@ -1,4 +1,4 @@
-/* Matthew DeCalzadilla 2024—2025 */
+/* Matthew DeCalzadilla 2024—2026 */
 
 import ScrollerButtons from "./ScrollerButtons";
 import checkTitle from "/src/components/Scroller/__tests__/checkTitle";

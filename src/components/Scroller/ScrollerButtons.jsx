@@ -1,3 +1,5 @@
+/* Matthew DeCalzadilla 2026 */
+
 import { useEffect, useState } from "react";
 
 ScrollerButtons.propTypes = {
