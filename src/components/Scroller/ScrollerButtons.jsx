@@ -21,7 +21,7 @@ ScrollerButton.propTypes = {
 export default function ScrollerButtons({ scrollerID = 0 }) {
     return (
         <div
-        className='ScrollerButtonContainer position-absolute fadeInDelayed d-flex align-items-center justify-content-between w-100 h-100 my-auto'>
+        className='ScrollerButtonContainer fadeInDelayed d-flex w-100 h-100 position-absolute align-items-center justify-content-between'>
             <ScrollerButton
             scrollerID={ scrollerID }
             direction={ 'left' } />
@@ -56,7 +56,7 @@ function ScrollerButton({ scrollerID = 0, direction = 'right' }) {
     return (
         <button
         type='button'
-        className='ScrollerButton h-25 d-flex flex-column justify-content-center btn border-0 rounded-4'
+        className={ `ScrollerButton h-25 d-flex flex-column justify-content-center btn border-0 rounded-0 ${ direction === 'right' ? 'rounded-start-pill' : 'rounded-end-pill' }` }
         onMouseDown={() => { setMouseHover(true) }}
         onTouchStart={() => { setMouseHover(true) }}
         onMouseUp={ mouseOff }
