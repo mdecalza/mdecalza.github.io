@@ -11973,7 +11973,7 @@ textarea.form-control-lg {
 
 .ScrollerButton {
   width: 6.5%;
-  min-width: 96px;
+  min-width: 64px;
   pointer-events: all;
   transition: background-color 0.35s;
   transition-timing-function: ease;
@@ -11988,8 +11988,7 @@ textarea.form-control-lg {
 }
 
 .ScrollerButtonContainer {
-  height: 87.75%;
-  bottom: 5%;
+  bottom: 0;
   pointer-events: none;
   z-index: 4;
 }
