@@ -2,7 +2,7 @@
 
 /* components */
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 /* assets */
 
@@ -21,7 +21,7 @@ ScrollerButton.propTypes = {
 export default function ScrollerButtons({ scrollerID = 0 }) {
     return (
         <div
-        className='ScrollerButtonContainer position-absolute fadeInDelayed d-flex justify-content-between w-100'>
+        className='ScrollerButtonContainer position-absolute fadeInDelayed d-flex align-items-center justify-content-between w-100 h-100 my-auto'>
             <ScrollerButton
             scrollerID={ scrollerID }
             direction={ 'left' } />
@@ -54,20 +54,19 @@ function ScrollerButton({ scrollerID = 0, direction = 'right' }) {
     }
 
     return (
-        <div
-        className='ScrollerButton h-100 d-flex flex-column justify-content-center'
-        style={{
-            backgroundImage: `linear-gradient(to ${ direction }, rgba(0, 0, 0, 0), ${ gradientColor }`,
-        }}
+        <button
+        type='button'
+        className='ScrollerButton h-25 d-flex flex-column justify-content-center btn border-0 rounded-4'
         onMouseDown={() => { setMouseHover(true) }}
         onTouchStart={() => { setMouseHover(true) }}
         onMouseUp={ mouseOff }
         onMouseLeave={ mouseOff }
-        onTouchCancel={ mouseOff }>
+        onTouchCancel={ mouseOff }
+        style={{ backgroundImage: `linear-gradient(to ${ direction }, rgba(0, 0, 0, 0), ${ gradientColor }` }}>
             <div
             className='mx-auto fs-2'>
                 { direction === 'right' ? <img src={ rightArrowIcon } alt={ '►' } style={{ filter: 'invert(1)', width: '33%', pointerEvents: 'none' }} /> : <img src={ leftArrowIcon } alt={ '◄' } style={{ filter: 'invert(1)', width: '33%', pointerEvents: 'none' }} /> }
             </div>
-        </div>
+        </button>
     )
 }
