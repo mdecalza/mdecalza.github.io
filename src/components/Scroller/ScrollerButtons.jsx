@@ -48,6 +48,10 @@ function ScrollerButton({ scrollerID = 0, direction = 'right' }) {
         }
     }, [ mouseHover, direction, scrollerID ]);
 
+    function mouseOn() {
+        setMouseHover(true);
+    }
+
     function mouseOff() {
         setMouseHover(false);
         clearInterval(scrollIntervalID);
@@ -57,8 +61,8 @@ function ScrollerButton({ scrollerID = 0, direction = 'right' }) {
         <button
         type='button'
         className={ `ScrollerButton h-25 d-flex flex-column justify-content-center btn border-0 rounded-0 ${ direction === 'right' ? 'rounded-start-pill' : 'rounded-end-pill' }` }
-        onMouseDown={() => { setMouseHover(true) }}
-        onTouchStart={() => { setMouseHover(true) }}
+        onMouseDown={ mouseOn }
+        onTouchStart={ mouseOn }
         onMouseUp={ mouseOff }
         onMouseLeave={ mouseOff }
         onTouchEnd={ mouseOff }
