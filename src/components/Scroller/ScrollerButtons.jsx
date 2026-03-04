@@ -61,6 +61,7 @@ function ScrollerButton({ scrollerID = 0, direction = 'right' }) {
         onTouchStart={() => { setMouseHover(true) }}
         onMouseUp={ mouseOff }
         onMouseLeave={ mouseOff }
+        onTouchEnd={ mouseOff }
         onTouchCancel={ mouseOff }
         style={{ backgroundImage: `linear-gradient(to ${ direction }, rgba(0, 0, 0, 0), ${ gradientColor }` }}>
             <div
