@@ -9,6 +9,7 @@
     width: 6.5%;
     min-width: 64px;
     pointer-events: all;
+    touch-action: none;
     transition: background-color 0.35s;
     transition-timing-function: ease;
 }
