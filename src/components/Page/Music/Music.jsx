@@ -39,13 +39,14 @@ import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 
 export default function Music() {
     const socialsList = [
-        'apple-music',
         'music-youtube',
         'bandcamp',
+        'apple-music',
+        'soundcloud',
         'tiktok',
         'music-instagram',
-        'soundcloud',
         'twitter',
+        'patreon-music',
     ];
 
     const latest = [
