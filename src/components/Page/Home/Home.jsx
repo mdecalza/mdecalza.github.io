@@ -19,7 +19,8 @@ export default function Home() {
                 src={ mateoLogo }
                 className='MateoLogo w-100 pb-3'/>
                 <h5
-                className='pt-2 pb-1 opacity-75'>
+                className='pt-2 pb-1 opacity-75'
+                style={{ fontFamily: 'Metropolis Thin' }}>
                     Home to the works of Matthew DeCalzadilla
                 </h5>
             </div>
@@ -40,57 +41,18 @@ export default function Home() {
                             text='Doom Wads'
                             width='90%'
                             height='128px' />
-                            <Socials
-                            socialsList={[
-                                'doomworld',
-                                'bethesda',
-                                'doom-youtube',
-                                'doomwiki',
-                            ]} />
-                        </div>
-                    </div>
-                    <div
-                    className='col-lg-5 py-3'>
-                        <div
-                        className='py-3 rounded-5 border border-3 border-dark'
-                        style={{
-                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
-                            minHeight: '75%',
-                        }}>
                             <Thumbnail
                             to={{ pathname: 'art' }}
                             imgSrc={ artThumbnail }
                             text='Art'
                             width='90%'
                             height='128px' />
-                            <Socials
-                            socialsList={[ 'art-instagram' ]} />
-                        </div>
-                    </div>
-                    <div
-                    className='col-lg-8 py-3'>
-                        <div
-                        className='py-3 rounded-5 border border-3 border-dark'
-                        style={{
-                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
-                            minHeight: '75%',
-                        }}>
                             <Thumbnail
                             to={{ pathname: 'music' }}
                             imgSrc={ musicThumbnail }
                             text='Music'
                             width='90%'
                             height='128px' />
-                            <Socials
-                            socialsList={[
-                                'apple-music',
-                                'music-youtube',
-                                'bandcamp',
-                                'tiktok',
-                                'music-instagram',
-                                'soundcloud',
-                                'twitter',
-                            ]} />
                         </div>
                     </div>
                 </div>
@@ -99,7 +61,6 @@ export default function Home() {
             socialsList={[
                 'linkedin',
                 'github',
-                'patreon-doom',
             ]} />
         </div>
     );
