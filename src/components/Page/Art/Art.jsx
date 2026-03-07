@@ -17,6 +17,7 @@ import intercep3title from '/src/assets/art/int3-title.png';
 import intercep3inter from '/src/assets/art/int3-inter.png';
 import intercep3text1 from '/src/assets/art/int3-illust1.png';
 import secondMixTitle from '/src/assets/art/second-mix-titlepic2-PALLARGE.png';
+import secondMixInter from '/src/assets/art/2ndmix-INTERPIC-200-PAL-BIG.png';
 
 /* sketches */
 import aerithSketch from '/src/assets/art/16-aerith.png';
@@ -66,6 +67,7 @@ export default function Art() {
     ];
 
     const pixelArt = [
+        createElement(ArtImage, { src: secondMixInter }),
         createElement(ArtImage, { src: secondMixTitle }),
         createElement(ArtImage, { src: intercep3title }),
         createElement(ArtImage, { src: atoneInter }),
