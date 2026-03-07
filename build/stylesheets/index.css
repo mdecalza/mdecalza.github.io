@@ -11904,6 +11904,7 @@ textarea.form-control-lg {
 /* Matthew DeCalzadilla 2024—2025 */
 .NavbarButton {
   width: 128px;
+  font-family: "Metropolis Extra Bold";
 }
 
 .BackgroundTop {
@@ -12156,13 +12157,25 @@ textarea.form-control-lg {
   scale: 0;
 }
 
+@font-face {
+  font-family: "Metropolis Extra Bold";
+  src: url("/src/assets/fonts/Metropolis-ExtraBold.otf");
+}
+@font-face {
+  font-family: "Metropolis Light";
+  src: url("/src/assets/fonts/Metropolis-Light.otf");
+}
+@font-face {
+  font-family: "Metropolis Thin";
+  src: url("/src/assets/fonts/Metropolis-Thin.otf");
+}
 #root {
   height: 100vh;
 }
 
 html, body {
   font-size: 1em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Metropolis Light";
   overflow-x: hidden;
   scroll-behavior: smooth;
   text-rendering: geometricPrecision;
@@ -12186,25 +12199,30 @@ a {
 }
 
 h1, .h1 {
+  font-family: "Metropolis Extra Bold";
   font-size: clamp(1rem, 7vw, 2.75rem);
   text-shadow: 1px 3px black;
 }
 
 h2, .h2 {
+  font-family: "Metropolis Extra Bold";
   font-size: clamp(1rem, 5vw, 2rem);
   text-shadow: 1px 3px black;
 }
 
 h3, .h3 {
+  font-family: "Metropolis Extra Bold";
   text-shadow: 1px 2px black;
 }
 
 h4, .h4 {
+  font-family: "Metropolis Extra Bold";
   font-size: clamp(1rem, 4.75vw, 1.5rem);
   text-shadow: 1px 2px black;
 }
 
 h5, .h5 {
+  font-family: "Metropolis Extra Bold";
   text-shadow: 1px 2px black;
 }
 
