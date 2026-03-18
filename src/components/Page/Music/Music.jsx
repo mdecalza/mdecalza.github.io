@@ -10,6 +10,7 @@ import TileDisplay from '/src/components/TileDisplay/TileDisplay';
 
 /* assets */
 /* album covers */
+import strangestWaysCover from '/src/assets/music/strangest-ways.jpg';
 import priibyuCover from '/src/assets/music/0.png';
 import deibyuCover from '/src/assets/music/1.png';
 import burningMyTimeCover from '/src/assets/music/2.png';
@@ -33,6 +34,7 @@ import youTubeIcon from '/src/assets/socials/yt-icon.png';
 import bandcampIcon from '/src/assets/socials/bandcamp-icon.png';
 import soundCloudIcon from '/src/assets/socials/soundcloud-icon.png';
 import driveIcon from '/src/assets/socials/drive-icon.png';
+import pictureIcon from '/src/assets/icons/picture-icon.svg';
 
 /* graphics */
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
@@ -71,6 +73,7 @@ export default function Music() {
                 }),
                 createElement(IconButton, {
                     href: 'https://www.pexels.com/photo/a-man-sitting-on-the-table-beside-the-oscilloscope-7858254/',
+                    iconSrc: pictureIcon,
                     text: 'Cover based on a photo by cottonbro studio',
                 }),
             ],
@@ -98,7 +101,7 @@ export default function Music() {
                     text: 'Apple Music',
                 }),
                 createElement(IconButton, {
-                    href: 'https://youtu.be/FRbNazs6Wv4',
+                    href: 'https://music.youtube.com/playlist?list=OLAK5uy_maqEULkRZT6NepowCIXMWmSp6AUOqKt8U',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
@@ -124,7 +127,7 @@ export default function Music() {
                     text: 'YouTube',
                 }),
                 createElement(IconButton, {
-                    href: 'https://soundcloud.com/sontomorio/sets/sontoolegio?si=f26f92e9a02d4ddfb2e51a5a4a6efc54&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+                    href: 'https://on.soundcloud.com/BRLA6pzIAymSxQgo1T',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
                 }),
@@ -150,7 +153,7 @@ export default function Music() {
                     text: 'YouTube',
                 }),
                 createElement(IconButton, {
-                    href: 'https://soundcloud.com/sontomorio/sets/the-freeway?si=397c86f8bc314688a9b12d0cbdae877e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+                    href: 'https://on.soundcloud.com/fcRWcV5hx8FGWhUNUy',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
                 }),
@@ -176,7 +179,7 @@ export default function Music() {
                     text: 'YouTube',
                 }),
                 createElement(IconButton, {
-                    href: 'https://soundcloud.com/sontomorio/sets/midnight-movies?si=4b6d99e7782d49c98c2eb3862706cd06&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+                    href: 'https://on.soundcloud.com/Bw0Ba44a56ddZwiDTI',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
                 }),
@@ -197,6 +200,11 @@ export default function Music() {
             coverImageSrc: deibyuCover,
             embedLink: 'https://www.youtube-nocookie.com/embed/1dPLJkpZeMA?si=x0bKOGvLdaCVxSLF',
             links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/1dPLJkpZeMA',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube'
+                }),
                 createElement(IconButton, {
                     href: 'https://drive.google.com/drive/folders/1qXEKJ_-GjAhHWVFYu5R9Q34gP9PW4WT1?usp=drive_link',
                     iconSrc: driveIcon,
@@ -243,7 +251,7 @@ export default function Music() {
                     text: 'YouTube',
                 }),
                 createElement(IconButton, {
-                    href: 'https://soundcloud.com/sontomorio/sets/sonto-iv?si=8bb966d2e41d47879e085652a798354f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+                    href: 'https://on.soundcloud.com/g0locbgnJikUhASmJL',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
                 }),
@@ -269,7 +277,7 @@ export default function Music() {
                     text: 'YouTube',
                 }),
                 createElement(IconButton, {
-                    href: 'https://soundcloud.com/sontomorio/lucid-dreaming?si=ee2cbc158e8c4660954530e2aa36625d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+                    href: 'https://on.soundcloud.com/JPl4aT337ePdZZIspT',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
                 }),
@@ -301,7 +309,49 @@ export default function Music() {
                     text: 'Apple Music',
                 }),
                 createElement(IconButton, {
+                    href: 'https://youtu.be/ziNXngLa_zE',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube'
+                }),
+                createElement(IconButton, {
+                    href: 'https://on.soundcloud.com/cFot2VcFXXtsITGREX',
+                    iconSrc: soundCloudIcon,
+                    text: 'SoundCloud'
+                }),
+                createElement(IconButton, {
                     href: 'https://drive.google.com/drive/folders/1Kcjn8uKhtq2YGzN7JWaAwgS4nn8N6CWJ?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
+            title: 'Strangest Ways',
+            subtitle: '(feat. Jay Ashr)',
+            explicit: true,
+            type: 'Single',
+            releaseDate: 'September 22, 2018',
+            description: 'My first single, based on my first beat produced as Sontomorio.',
+            genre: 'R&B, lofi, alternative',
+            coverImageSrc: strangestWaysCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://music.apple.com/us/album/strangest-ways-feat-jay-ashr-single/1460746146',
+                    iconSrc: appleMusicIcon,
+                    text: 'Apple Music',
+                }),
+                createElement(IconButton, {
+                    href: 'https://music.youtube.com/playlist?list=OLAK5uy_mrhP03IKnfQcirSfLvmBJHy0ZzczKX2lU',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube'
+                }),
+                createElement(IconButton, {
+                    href: 'https://on.soundcloud.com/E6foveubsrCAb5zkHX',
+                    iconSrc: soundCloudIcon,
+                    text: 'SoundCloud'
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/file/d/1QdptWAHx47SHnGWFzSMGxLiJZ-yVL3ml/view?usp=drive_link',
                     iconSrc: driveIcon,
                     text: 'Google Drive',
                 }),
@@ -330,12 +380,12 @@ export default function Music() {
                     text: 'Apple Music',
                 }),
                 createElement(IconButton, {
-                    href: 'https://www.youtube.com/playlist?list=PLdSVpo8uVNGWpYIPuigj2JNwaj9oUtjhD',
+                    href: 'https://music.youtube.com/playlist?list=OLAK5uy_mYkJeB0jAG7X5aj8ZW1hzaAZ33gDKPNVc',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
                 createElement(IconButton, {
-                    href: 'https://soundcloud.com/sontomorio/sets/tropical-new-world?si=793bbcfcbfd84d88a574a5fdca9626f4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+                    href: 'https://on.soundcloud.com/p4gcZbGBaHSd4lDxKV',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
                 }),
@@ -346,6 +396,7 @@ export default function Music() {
                 }),
                 createElement(IconButton, {
                     href: 'https://www.pexels.com/photo/silhouette-of-mountains-during-sunset-10394187/',
+                    iconSrc: pictureIcon,
                     text: 'Cover photo by Shaheem Sjp',
                 }),
             ],
@@ -365,7 +416,7 @@ export default function Music() {
                     text: 'YouTube',
                 }),
                 createElement(IconButton, {
-                    href: 'https://soundcloud.com/sontomorio/sunset-whopper-hyper-drumnbass-mix?si=fa61b5a3529d44c1902c72f81ee5e4c0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+                    href: 'https://on.soundcloud.com/6z83emN86Hvyl20Siu',
                     iconSrc: soundCloudIcon,
                     text: 'SoundCloud',
                 }),
@@ -421,6 +472,11 @@ export default function Music() {
                     iconSrc: appleMusicIcon,
                     text: 'Apple Music',
                 }),
+                createElement(IconButton, {
+                    href: 'https://music.youtube.com/playlist?list=OLAK5uy_nHoFzba7KlS4EIAY4wU9SoJd1X154npe4',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube'
+                }),
             ],
         }),
         createElement(MusicRelease, {
@@ -433,6 +489,11 @@ export default function Music() {
             coverImageSrc: earlyOdditiesCover,
             embedLink: 'https://www.youtube-nocookie.com/embed/dsMD7FMGUAA?si=kymngGkfORyIDH8x',
             links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/dsMD7FMGUAA',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube'
+                }),
                 createElement(IconButton, {
                     href: 'https://drive.google.com/drive/folders/1VtLxTP2zlR2Wea7n3SKHDAoqdBzP46XI?usp=drive_link',
                     iconSrc: driveIcon,
@@ -450,6 +511,11 @@ export default function Music() {
             coverImageSrc: priibyuCover,
             embedLink: 'https://www.youtube-nocookie.com/embed/CKVJ4MuKY-g?si=bhNL4rQi1yhjVlC_',
             links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/CKVJ4MuKY-g',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube'
+                }),
                 createElement(IconButton, {
                     href: 'https://drive.google.com/drive/folders/1_8jNbe95Ew5PIZguw6fWz2B4OvNi2Vkz?usp=drive_link',
                     iconSrc: driveIcon,
