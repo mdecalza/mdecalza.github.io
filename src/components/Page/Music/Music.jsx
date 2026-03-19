@@ -334,6 +334,7 @@ export default function Music() {
             description: 'My first single, based on my first beat produced as Sontomorio.',
             genre: 'R&B, lofi, alternative',
             coverImageSrc: strangestWaysCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/atpCapGbXl0?si=WTfN3IMmOQwV9-gR',
             links: [
                 createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/strangest-ways-feat-jay-ashr-single/1460746146',
@@ -505,7 +506,7 @@ export default function Music() {
             title: 'Priibyu',
             explicit: true,
             type: 'Demo',
-            releaseDate: 'February 3, 2025 (late 2018 demo)',
+            releaseDate: 'February 3, 2025 (August 3, 2018 demo)',
             description: 'Demo of the Deibyu mixtape. A bright, loose string of eclectic outsider music. Part of a double LP package with Deibyu.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: priibyuCover,
