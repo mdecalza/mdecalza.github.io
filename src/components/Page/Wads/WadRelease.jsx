@@ -56,7 +56,7 @@ export default function WadRelease({
         <div
         className='WadRelease fadeInDelayed d-flex flex-column justify-content-start align-items-center my-4'>
             <div
-            className='d-flex flex-column justify-content-center mb-2'
+            className='d-flex flex-column justify-content-center mb-3'
             style={{ maxHeight: '88px' }}>
                 <div
                 className='my-4'>
@@ -64,7 +64,7 @@ export default function WadRelease({
                     src={ logoSrc }
                     alt={ checkTitle(title) ? title : '' }
                     id={ checkTitle(title) ? title : '' }
-                    style={{ maxWidth: '90%' }} />
+                    style={{ maxWidth: '90vw' }} />
                 </div>
             </div>
             <div>
