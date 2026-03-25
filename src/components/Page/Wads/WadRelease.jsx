@@ -56,14 +56,15 @@ export default function WadRelease({
         <div
         className='WadRelease fadeInDelayed d-flex flex-column justify-content-start align-items-center my-4'>
             <div
-            className='d-flex flex-column justify-content-center mb-2'
-            style={{ height: '128px' }}>
+            className='d-flex flex-column justify-content-center mb-3'
+            style={{ maxHeight: '88px' }}>
                 <div
                 className='my-4'>
                     <img
                     src={ logoSrc }
                     alt={ checkTitle(title) ? title : '' }
-                    id={ checkTitle(title) ? title : '' } />
+                    id={ checkTitle(title) ? title : '' }
+                    style={{ maxWidth: '90vw' }} />
                 </div>
             </div>
             <div>
