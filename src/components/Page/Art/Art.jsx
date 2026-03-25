@@ -35,6 +35,7 @@ import herschelScreenshot from '/src/assets/art/herschel-screenshot.png';
 import hovercabScreenshot from '/src/assets/art/hovercab-screen.png';
 import tropicHELLscreenshot from '/src/assets/art/tropichell-screen.png';
 import doomedResidentScreenshots from '/src/assets/art/doomedresident-screens.png';
+import doomedResident2screenshots from '/src/assets/art/resident2-screenshots.png';
 
 /* album art */
 import deibyuCoverAlt from '/src/assets/art/deibyu2.png';
@@ -88,6 +89,7 @@ export default function Art() {
     ];
     
     const levelDesign = [
+        createElement(ArtImage, { src: doomedResident2screenshots }),
         createElement(ArtImage, { src: herschelScreenshot }),
         createElement(ArtImage, { src: tropicHELLscreenshot }),
         createElement(ArtImage, { src: hovercabScreenshot }),
