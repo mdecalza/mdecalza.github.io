@@ -17,7 +17,7 @@ export default function TileDisplay({ elements = [], title = '' }) {
         elements.forEach((element) => {
             newCols.push(
                 <div
-                className='col-lg-6'>
+                className='col-lg-6 px-0'>
                     { element }
                 </div>
             );
