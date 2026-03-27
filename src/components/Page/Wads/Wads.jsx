@@ -13,69 +13,86 @@ import WadRelease from '/src/components/Page/Wads/WadRelease';
 
 /* assets */
 /* doomed resident 2 */
-import resident2logo from '../../../assets/wads/resident2/resident2-title.png';
-import resident2screenshot1 from '../../../assets/wads/resident2/resident2-p1.png';
-import resident2screenshot2 from '../../../assets/wads/resident2/resident2-p2.png';
-import resident2screenshot3 from '../../../assets/wads/resident2/resident2-p3.png';
-import resident2screenshot4 from '../../../assets/wads/resident2/resident2-p4.png';
-import resident2screenshot5 from '../../../assets/wads/resident2/resident2-p5.png';
+import resident2logo from '/src/assets/wads/resident2/resident2-title.png';
+import resident2screenshot1 from '/src/assets/wads/resident2/resident2-p1.png';
+import resident2screenshot2 from '/src/assets/wads/resident2/resident2-p2.png';
+import resident2screenshot3 from '/src/assets/wads/resident2/resident2-p3.png';
+import resident2screenshot4 from '/src/assets/wads/resident2/resident2-p4.png';
+import resident2screenshot5 from '/src/assets/wads/resident2/resident2-p5.png';
 
 /* doomed resident */
-import residentLogo from '../../../assets/wads/resident/resident-title.png';
-import residentScreenshot1 from '../../../assets/wads/resident/resident-p1.png';
-import residentScreenshot2 from '../../../assets/wads/resident/resident-p2.png';
-import residentScreenshot3 from '../../../assets/wads/resident/resident-p3.png';
+import residentLogo from '/src/assets/wads/resident/resident-title.png';
+import residentScreenshot1 from '/src/assets/wads/resident/resident-p1.png';
+import residentScreenshot2 from '/src/assets/wads/resident/resident-p2.png';
+import residentScreenshot3 from '/src/assets/wads/resident/resident-p3.png';
 
 /* interception iii */
-import interception3logo from '../../../assets/wads/intercep3/intercep3-title.png';
-import interception3screenshot1 from '../../../assets/wads/intercep3/intercep3-p1.png';
+import interception3logo from '/src/assets/wads/intercep3/intercep3-title.png';
+import interception3screenshot1 from '/src/assets/wads/intercep3/intercep3-p1.png';
+import interception3screenshot2 from '/src/assets/wads/intercep3/intercep3-p2.png';
 
 /* embryo */
-import embryoLogo from '../../../assets/wads/embryo/embryo-title.png';
-import embryoScreenshot1 from '../../../assets/wads/embryo/embryo-p1.png';
-import embryoScreenshot2 from '../../../assets/wads/embryo/embryo-p2.png';
+import embryoLogo from '/src/assets/wads/embryo/embryo-title.png';
+import embryoScreenshot1 from '/src/assets/wads/embryo/embryo-p1.png';
+import embryoScreenshot2 from '/src/assets/wads/embryo/embryo-p2.png';
 
 /* atonement */
-import atonementLogo from '../../../assets/wads/atone/atone-title.png';
-import atonementScreenshot1 from '../../../assets/wads/atone/atone-p1.png';
-import atonementScreenshot2 from '../../../assets/wads/atone/atone-p2.png';
-import atonementScreenshot3 from '../../../assets/wads/atone/atone-p3.png';
-import atonementScreenshot4 from '../../../assets/wads/atone/atone-p4.png';
-import atonementScreenshot5 from '../../../assets/wads/atone/atone-p5.png';
+import atonementLogo from '/src/assets/wads/atone/atone-title.png';
+import atonementScreenshot1 from '/src/assets/wads/atone/atone-p1.png';
+import atonementScreenshot2 from '/src/assets/wads/atone/atone-p2.png';
+import atonementScreenshot3 from '/src/assets/wads/atone/atone-p3.png';
+import atonementScreenshot4 from '/src/assets/wads/atone/atone-p4.png';
+import atonementScreenshot5 from '/src/assets/wads/atone/atone-p5.png';
+
+/* herschel spaceport */
+import herschelLogo from '/src/assets/wads/herschel/herschel-logo.png';
+import herschelScreenshot1 from '/src/assets/wads/herschel/herschel-p1.png';
+import herschelScreenshot2 from '/src/assets/wads/herschel/herschel-p2.png';
+import herschelScreenshot3 from '/src/assets/wads/herschel/herschel-p3.png';
+
+/* hovercab station */
+import hovercabLogo from '/src/assets/wads/hovercab/hovercab-logo.png';
+import hovercabScreenshot1 from '/src/assets/wads/hovercab/hovercab-p1.png';
+import hovercabScreenshot2 from '/src/assets/wads/hovercab/hovercab-p2.png';
+import hovercabScreenshot3 from '/src/assets/wads/hovercab/hovercab-p3.png';
+import hovercabScreenshot4 from '/src/assets/wads/hovercab/hovercab-p4.png';
+import hovercabScreenshot5 from '/src/assets/wads/hovercab/hovercab-p5.png';
 
 /* crud */
-import CRUDlogo from '../../../assets/wads/crud/crud-title.png';
-import CRUDscreenshot1 from '../../../assets/wads/crud/crud-p1.png';
-import CRUDscreenshot2 from '../../../assets/wads/crud/crud-p2.png';
-import CRUDscreenshot3 from '../../../assets/wads/crud/crud-p3.png';
+import CRUDlogo from '/src/assets/wads/crud/crud-title.png';
+import CRUDscreenshot1 from '/src/assets/wads/crud/crud-p1.png';
+import CRUDscreenshot2 from '/src/assets/wads/crud/crud-p2.png';
+import CRUDscreenshot3 from '/src/assets/wads/crud/crud-p3.png';
 
 /* interception ii */
-import interception2logo from '../../../assets/wads/intercep2/intercep2-title.png';
-import interception2screenshot1 from '../../../assets/wads/intercep2/intercep2-p1.png';
-import interception2screenshot2 from '../../../assets/wads/intercep2/intercep2-p2.png';
-import interception2screenshot3 from '../../../assets/wads/intercep2/intercep2-p3.png';
+import interception2logo from '/src/assets/wads/intercep2/intercep2-title.png';
+import interception2screenshot1 from '/src/assets/wads/intercep2/intercep2-p1.png';
+import interception2screenshot2 from '/src/assets/wads/intercep2/intercep2-p2.png';
+import interception2screenshot3 from '/src/assets/wads/intercep2/intercep2-p3.png';
 
 /* interception */
-import interceptionLogo from '../../../assets/wads/intercep/intercep-title.png';
-import interceptionScreenshot1 from '../../../assets/wads/intercep/intercep-p1.png';
-import interceptionScreenshot2 from '../../../assets/wads/intercep/intercep-p2.png';
-import interceptionScreenshot3 from '../../../assets/wads/intercep/intercep-p3.png';
+import interceptionLogo from '/src/assets/wads/intercep/intercep-title.png';
+import interceptionScreenshot1 from '/src/assets/wads/intercep/intercep-p1.png';
+import interceptionScreenshot2 from '/src/assets/wads/intercep/intercep-p2.png';
+import interceptionScreenshot3 from '/src/assets/wads/intercep/intercep-p3.png';
 
 /* icons */
-import bethesdaIcon from '../../../assets/socials/bethesdanet-icon.png';
-import doomWikiIcon from '../../../assets/socials/doomwiki-icon.png';
-import doomworldIcon from '../../../assets/socials/doomworld-icon.png';
-import driveIcon from '../../../assets/socials/drive-icon.png';
-import gitHubIcon from '../../../assets/socials/github-mark.svg';
+import bethesdaIcon from '/src/assets/socials/bethesdanet-icon.png';
+import doomWikiIcon from '/src/assets/socials/doomwiki-icon.png';
+import doomworldIcon from '/src/assets/socials/doomworld-icon.png';
+import driveIcon from '/src/assets/socials/drive-icon.png';
+import gitHubIcon from '/src/assets/socials/github-mark.svg';
+import itchioIcon from '/src/assets/socials/itchio-textless-black.svg';
 
 export default function Wads() {
     const socialsList = [
         'doomworld',
-        'bethesda',
         'doom-youtube',
-        'doomwiki',
-        'github',
         'patreon-doom',
+        'bethesda',
+        'itchio',
+        'github',
+        'doomwiki',
     ];
 
     const inProgressWads = [
@@ -85,15 +102,24 @@ export default function Wads() {
             logoSrc: interception3logo,
             screenshotImageSources: [
                 interception3screenshot1,
+                interception3screenshot2,
             ],
-            quote: '',
-            quoteCredit: '',
-            quoteSource: '',
-            quoteHREF: '',
             links: [
-                createElement(IconButton, { href: 'https://github.com/mdecalza/intercep3', iconSrc: gitHubIcon, text: 'GitHub' }),
-                createElement(IconButton, { href: 'https://www.doomworld.com/forum/topic/145230', iconSrc: doomworldIcon, text: 'Doomworld Forums' }),
-                createElement(IconButton, { href: 'https://docs.google.com/spreadsheets/d/11I1mndtPRw_U6WoeiAjvnm2oDjQN13jE6v9twtgVzBo/edit?usp=sharing', iconSrc: driveIcon, text: 'Progress Tracker' }),
+                createElement(IconButton, {
+                    href: 'https://www.doomworld.com/forum/topic/145230',
+                    iconSrc: doomworldIcon,
+                    text: 'Doomworld Forums',
+                }),
+                createElement(IconButton, {
+                    href: 'https://github.com/mdecalza/intercep3',
+                    iconSrc: gitHubIcon,
+                    text: 'GitHub',
+                }),
+                createElement(IconButton, {
+                    href: 'https://docs.google.com/spreadsheets/d/11I1mndtPRw_U6WoeiAjvnm2oDjQN13jE6v9twtgVzBo/edit?usp=sharing',
+                    iconSrc: driveIcon,
+                    text: 'Progress Tracker',
+                }),
             ],
         }),
     ];
@@ -101,7 +127,7 @@ export default function Wads() {
     const releasedWads = [
         createElement(WadRelease, {
             title: 'DOOMed Resident 2',
-            role: 'Author, Level Designer (2025)',
+            role: 'Level Design, Programming (2025)',
             logoSrc: resident2logo,
             screenshotImageSources: [
                 resident2screenshot1,
@@ -110,38 +136,125 @@ export default function Wads() {
                 resident2screenshot4,
                 resident2screenshot5,
             ],
-            quote: '',
-            quoteCredit: '',
-            quoteSource: '',
-            quoteHREF: '',
             links: [
-                createElement(IconButton, { href: 'https://github.com/mdecalza/residentdoom2', iconSrc: gitHubIcon, text: 'GitHub' }),
-                createElement(IconButton, { href: 'https://www.doomworld.com/forum/topic/155836', iconSrc: doomworldIcon, text: 'Doomworld Forums' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/5067d3f8-5e4a-4289-896e-97ea0f35506c', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, {
+                    href: 'https://www.doomworld.com/forum/topic/155836',
+                    iconSrc: doomworldIcon,
+                    text: 'Doomworld Forums',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mods.bethesda.net/en/doom_doomii/details/5067d3f8-5e4a-4289-896e-97ea0f35506c',
+                    iconSrc: bethesdaIcon,
+                    text: 'Bethesda.net',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mdecalzadilla.itch.io/doomed-resident-2',
+                    iconSrc: itchioIcon,
+                    text: 'itch.io'
+                }),
+                createElement(IconButton, {
+                    href: 'https://github.com/mdecalza/residentdoom2',
+                    iconSrc: gitHubIcon,
+                    text: 'GitHub',
+                }),
             ],
         }),
         createElement(WadRelease, {
             title: 'DOOMed Resident',
-            role: 'Author, Level Designer (2024)',
+            role: 'Level Design, Programming (2024)',
             logoSrc: residentLogo,
             screenshotImageSources: [
                 residentScreenshot1,
                 residentScreenshot2,
                 residentScreenshot3,
             ],
-            quote: '',
-            quoteCredit: '',
-            quoteSource: '',
-            quoteHREF: '',
             links: [
-                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/residentdoom', iconSrc: doomworldIcon, text: '/idgames Archive' }),
-                createElement(IconButton, { href: 'https://github.com/mdecalza/residentdoom', iconSrc: gitHubIcon, text: 'GitHub' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/ed7915cd-7167-42f4-ac96-4a8b90fa31ff', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, {
+                    href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/residentdoom',
+                    iconSrc: doomworldIcon,
+                    text: '/idgames Archive',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mods.bethesda.net/en/doom_doomii/details/ed7915cd-7167-42f4-ac96-4a8b90fa31ff',
+                    iconSrc: bethesdaIcon,
+                    text: 'Bethesda.net',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mdecalzadilla.itch.io/doomed-resident',
+                    iconSrc: itchioIcon,
+                    text: 'itch.io'
+                }),
+                createElement(IconButton, {
+                    href: 'https://github.com/mdecalza/residentdoom',
+                    iconSrc: gitHubIcon,
+                    text: 'GitHub',
+                }),
+            ],
+        }),
+        createElement(WadRelease, {
+            title: 'Hovercab Station',
+            role: 'Level Design, Programming (2023)',
+            logoSrc: hovercabLogo,
+            screenshotImageSources: [
+                hovercabScreenshot1,
+                hovercabScreenshot2,
+                hovercabScreenshot3,
+                hovercabScreenshot4,
+                hovercabScreenshot5,
+            ],
+            links: [
+                createElement(IconButton, {
+                    href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/g-i/hovercab',
+                    iconSrc: doomworldIcon,
+                    text: '/idgames Archive',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mods.bethesda.net/en/doom_doomii/details/14638f01-5bf0-4ca5-9540-615f66fd0bb5/Hovercab_Station__Official_',
+                    iconSrc: bethesdaIcon,
+                    text: 'Bethesda.net',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mdecalzadilla.itch.io/hovercab-station',
+                    iconSrc: itchioIcon,
+                    text: 'itch.io',
+                }),
+            ]
+        }),
+        createElement(WadRelease, {
+            title: 'Herschel Spaceport',
+            role: 'Level Design, Programming (2022)',
+            logoSrc: herschelLogo,
+            screenshotImageSources: [
+                herschelScreenshot1,
+                herschelScreenshot2,
+                herschelScreenshot3,
+            ],
+            links: [
+                createElement(IconButton, {
+                    href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/g-i/herschel',
+                    iconSrc: doomworldIcon,
+                    text: '/idgames Archive',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mods.bethesda.net/en/doom_doomii/details/349c4a08-6bda-4b7b-abce-07f3a7cbc428/Herschel_Spaceport__Official_',
+                    iconSrc: bethesdaIcon,
+                    text: 'Bethesda.net',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mdecalzadilla.itch.io/herschel-spaceport',
+                    iconSrc: itchioIcon,
+                    text: 'itch.io',
+                }),
+                createElement(IconButton, {
+                    href: 'https://github.com/mdecalza/herschel',
+                    iconSrc: gitHubIcon,
+                    text: 'GitHub',
+                }),
             ],
         }),
         createElement(WadRelease, {
             title: 'Atonement',
-            role: 'Author, Level Designer, Graphic Designer (2022)',
+            role: 'Level Design, Art (2022)',
             logoSrc: atonementLogo,
             screenshotImageSources: [
                 atonementScreenshot1,
@@ -155,14 +268,31 @@ export default function Wads() {
             quoteSource: '2022 Cacowards: "22 More For 2022," doomworld.com',
             quoteHREF: 'https://www.doomworld.com/cacowards/2022/22for22/',
             links: [
-                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/?id=20527', iconSrc: doomworldIcon, text: '/idgames Archive' }),
-                createElement(IconButton, { href: 'https://doomwiki.org/wiki/Atonement', iconSrc: doomWikiIcon, text: 'The Doom Wiki' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/50c4c308-b420-4041-bbbc-560b64cbf80e', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, {
+                    href: 'https://www.doomworld.com/idgames/?id=20527',
+                    iconSrc: doomworldIcon,
+                    text: '/idgames Archive', 
+                }),
+                createElement(IconButton, {
+                    href: 'https://mods.bethesda.net/en/doom_doomii/details/50c4c308-b420-4041-bbbc-560b64cbf80e',
+                    iconSrc: bethesdaIcon,
+                    text: 'Bethesda.net',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mdecalzadilla.itch.io/atonement',
+                    iconSrc: itchioIcon,
+                    text: 'itch.io',
+                }),
+                createElement(IconButton, {
+                    href: 'https://doomwiki.org/wiki/Atonement',
+                    iconSrc: doomWikiIcon,
+                    text: 'The Doom Wiki',
+                }),
             ],
         }),
         createElement(WadRelease, {
             title: 'CRUD',
-            role: 'Author, Level Designer, Graphic Designer (2021)',
+            role: 'Level Design, Programming, Art (2021)',
             logoSrc: CRUDlogo,
             screenshotImageSources: [
                 CRUDscreenshot1,
@@ -174,8 +304,21 @@ export default function Wads() {
             quoteSource: '"Endless Random /idgames WAD Adventures #040", p. 1, doomworld.com',
             quoteHREF: 'https://www.doomworld.com/forum/post/2535989',
             links: [
-                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/?id=19847', iconSrc: doomworldIcon, text: '/idgames Archive' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/8e311fcd-58cd-4952-bd91-bc04c335e5f5', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, {
+                    href: 'https://www.doomworld.com/idgames/?id=19847',
+                    iconSrc: doomworldIcon,
+                    text: '/idgames Archive',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mods.bethesda.net/en/doom_doomii/details/8e311fcd-58cd-4952-bd91-bc04c335e5f5',
+                    iconSrc: bethesdaIcon,
+                    text: 'Bethesda.net',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mdecalzadilla.itch.io/crud',
+                    iconSrc: itchioIcon,
+                    text: 'itch.io',
+                }),
             ],
         }),
     ];
@@ -183,25 +326,33 @@ export default function Wads() {
     const communityProjects = [
         createElement(WadRelease, {
             title: 'Embryo',
-            role: 'Project Leader, Graphic Designer, Level Designer (2025)',
+            role: 'Project Lead, Art, Level Design (2025)',
             logoSrc: embryoLogo,
             screenshotImageSources: [
                 embryoScreenshot1,
                 embryoScreenshot2,
             ],
-            quote: '',
-            quoteCredit: '',
-            quoteSource: '',
-            quoteHREF: '',
             links: [
-                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/embryo', iconSrc: doomworldIcon, text: '/idgames Archive' }),
-                createElement(IconButton, { href: 'https://github.com/mdecalza/embryo', iconSrc: gitHubIcon, text: 'GitHub' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/7d114b64-e6b0-42d9-9af1-34aac598329c', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, {
+                    href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/embryo',
+                    iconSrc: doomworldIcon,
+                    text: '/idgames Archive',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mods.bethesda.net/en/doom_doomii/details/7d114b64-e6b0-42d9-9af1-34aac598329c',
+                    iconSrc: bethesdaIcon,
+                    text: 'Bethesda.net',
+                }),
+                createElement(IconButton, {
+                    href: 'https://github.com/mdecalza/embryo',
+                    iconSrc: gitHubIcon,
+                    text: 'GitHub',
+                }),
             ],
         }),
         createElement(WadRelease, {
             title: 'Interception II',
-            role: 'Project Leader, Level Designer (2020)',
+            role: 'Project Co-Lead (w/ DFF), Level Design (2020)',
             logoSrc: interception2logo,
             screenshotImageSources: [
                 interception2screenshot1,
@@ -213,14 +364,26 @@ export default function Wads() {
             quoteSource: '"The DWmegawad Club plays: Interception II", p. 14, doomworld.com',
             quoteHREF: 'https://www.doomworld.com/forum/post/2421738',
             links: [
-                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/intercep2', iconSrc: doomworldIcon, text: '/idgames Archive' }),
-                createElement(IconButton, { href: 'https://doomwiki.org/wiki/Interception_II', iconSrc: doomWikiIcon, text: 'The Doom Wiki' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/d9e7a597-384a-40d9-b1a4-0e94ffd12437', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, {
+                    href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/intercep2',
+                    iconSrc: doomworldIcon,
+                    text: '/idgames Archive',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mods.bethesda.net/en/doom_doomii/details/d9e7a597-384a-40d9-b1a4-0e94ffd12437',
+                    iconSrc: bethesdaIcon,
+                    text: 'Bethesda.net',
+                }),
+                createElement(IconButton, {
+                    href: 'https://doomwiki.org/wiki/Interception_II',
+                    iconSrc: doomWikiIcon,
+                    text: 'The Doom Wiki',
+                }),
             ],
         }),
         createElement(WadRelease, {
             title: 'Interception',
-            role: 'Project Leader, Level Designer (2013)',
+            role: 'Project Lead, Level Design (2013)',
             logoSrc: interceptionLogo,
             screenshotImageSources: [
                 interceptionScreenshot1,
@@ -232,9 +395,21 @@ export default function Wads() {
             quoteSource: '"Doom Wads/Mods #490:Interception," youtube.com',
             quoteHREF: 'https://www.youtube.com/watch?v=KBlnPDBgQcs',
             links: [
-                createElement(IconButton, { href: 'https://www.doomworld.com/idgames/?id=17082', iconSrc: doomworldIcon, text: '/idgames Archive' }),
-                createElement(IconButton, { href: 'https://doomwiki.org/wiki/Interception', iconSrc: doomWikiIcon, text: 'The Doom Wiki' }),
-                createElement(IconButton, { href: 'https://mods.bethesda.net/en/doom_doomii/details/6a4f32ce-f9a6-4138-91f9-235c1a24b1d6', iconSrc: bethesdaIcon, text: 'Bethesda.net' }),
+                createElement(IconButton, {
+                    href: 'https://www.doomworld.com/idgames/?id=17082',
+                    iconSrc: doomworldIcon,
+                    text: '/idgames Archive',
+                }),
+                createElement(IconButton, {
+                    href: 'https://mods.bethesda.net/en/doom_doomii/details/6a4f32ce-f9a6-4138-91f9-235c1a24b1d6',
+                    iconSrc: bethesdaIcon,
+                    text: 'Bethesda.net',
+                }),
+                createElement(IconButton, {
+                    href: 'https://doomwiki.org/wiki/Interception',
+                    iconSrc: doomWikiIcon,
+                    text: 'The Doom Wiki',
+                }),
             ],
         }),
     ];

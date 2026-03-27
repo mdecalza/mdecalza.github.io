@@ -10,6 +10,7 @@ import doomWiki from '../../assets/socials/doomwiki-icon.png';
 import doomworld from '../../assets/socials/doomworld-icon.png';
 import github from '../../assets/socials/github-mark-white.svg';
 import instagram from '../../assets/socials/inst-icon.png';
+import itchio from '/src/assets/socials/itchio-textless-white.svg';
 import linkedIn from '../../assets/socials/linkedin-icon.png';
 import patreon from '../../assets/socials/PATREON_SYMBOL_1_WHITE_RGB.svg';
 import soundCloud from '../../assets/socials/soundcloud-icon.png';
@@ -65,6 +66,10 @@ export default function SocialsLink({target = ''}) {
             case 'music-instagram':
                 setTargetURL('https://instagram.com/sontomoriomusico');
                 setIconSource(instagram);
+                break;
+            case 'itchio':
+                setTargetURL('https://mdecalzadilla.itch.io/');
+                setIconSource(itchio);
                 break;
             case 'linkedin':
                 setTargetURL('https://www.linkedin.com/in/mdecalzadilla/');
