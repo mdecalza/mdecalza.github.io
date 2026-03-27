@@ -38,7 +38,7 @@ export default function Home() {
                             <Thumbnail
                             to={{ pathname: 'wads' }}
                             imgSrc={ wadsThumbnail }
-                            text='Doom Wads'
+                            text='Doom WADs'
                             width='90%'
                             height='128px' />
                             <Thumbnail

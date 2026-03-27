@@ -26,7 +26,7 @@ export default function NavbarButtonContainer({widescreen = false}) {
         <div
         className={navbarButtonsClass}>
             <NavbarButton
-            buttonText='Doom Wads'
+            buttonText='Doom WADs'
             pageURLname='wads'
             widescreen={widescreen}/>
             <NavbarButton
