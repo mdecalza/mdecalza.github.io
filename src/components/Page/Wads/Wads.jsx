@@ -98,7 +98,7 @@ export default function Wads() {
     const inProgressWads = [
         createElement(WadRelease, {
             title: 'Interception III',
-            role: 'Project Leader, Level Designer, Programmer (in-development)',
+            role: 'Project Lead, Level Design, Programming, Art (2017)',
             logoSrc: interception3logo,
             screenshotImageSources: [
                 interception3screenshot1,
@@ -193,7 +193,7 @@ export default function Wads() {
         }),
         createElement(WadRelease, {
             title: 'Hovercab Station',
-            role: 'Level Design, Programming (2023)',
+            role: 'Level Design, Programming, Art (2023)',
             logoSrc: hovercabLogo,
             screenshotImageSources: [
                 hovercabScreenshot1,
@@ -222,7 +222,7 @@ export default function Wads() {
         }),
         createElement(WadRelease, {
             title: 'Herschel Spaceport',
-            role: 'Level Design, Programming (2022)',
+            role: 'Level Design, Programming, Art (2022)',
             logoSrc: herschelLogo,
             screenshotImageSources: [
                 herschelScreenshot1,
@@ -254,7 +254,7 @@ export default function Wads() {
         }),
         createElement(WadRelease, {
             title: 'Atonement',
-            role: 'Level Design, Art (2022)',
+            role: 'Level Design, Programming, Art (2022)',
             logoSrc: atonementLogo,
             screenshotImageSources: [
                 atonementScreenshot1,
@@ -292,7 +292,7 @@ export default function Wads() {
         }),
         createElement(WadRelease, {
             title: 'CRUD',
-            role: 'Level Design, Programming, Art (2021)',
+            role: 'Level Design, Art (2021)',
             logoSrc: CRUDlogo,
             screenshotImageSources: [
                 CRUDscreenshot1,
@@ -326,7 +326,7 @@ export default function Wads() {
     const communityProjects = [
         createElement(WadRelease, {
             title: 'Embryo',
-            role: 'Project Lead, Art, Level Design (2025)',
+            role: 'Project Lead, Level Design, Art (2025)',
             logoSrc: embryoLogo,
             screenshotImageSources: [
                 embryoScreenshot1,
@@ -352,7 +352,7 @@ export default function Wads() {
         }),
         createElement(WadRelease, {
             title: 'Interception II',
-            role: 'Project Co-Lead (w/ DFF), Level Design (2020)',
+            role: 'Project Co-Lead (w/ DFF), Level Design, Programming, Art (2020)',
             logoSrc: interception2logo,
             screenshotImageSources: [
                 interception2screenshot1,
@@ -383,7 +383,7 @@ export default function Wads() {
         }),
         createElement(WadRelease, {
             title: 'Interception',
-            role: 'Project Lead, Level Design (2013)',
+            role: 'Project Lead, Level Design, Art (2013)',
             logoSrc: interceptionLogo,
             screenshotImageSources: [
                 interceptionScreenshot1,
