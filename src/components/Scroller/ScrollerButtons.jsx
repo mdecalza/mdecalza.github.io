@@ -1,13 +1,10 @@
 /* Matthew DeCalzadilla 2026 */
 
-/* components */
-
-import { useEffect, useState } from 'react';
-
 /* assets */
 
 import leftArrowIcon from '/src/assets/icons/arrow-previous-left-icon.svg';
 import rightArrowIcon from '/src/assets/icons/arrow-next-right-icon.svg';
+import { useEffect, useState } from 'react';
 
 ScrollerButtons.propTypes = {
     scrollerID: 0,
@@ -33,37 +30,39 @@ export default function ScrollerButtons({ scrollerID = 0 }) {
 }
 
 function ScrollerButton({ scrollerID = 0, direction = 'right' }) {
-    const [mouseHover, setMouseHover] = useState(false);
-    const [scrollIntervalID, setScrollIntervalID] = useState(0);
+    const [ scrollSpeed, setScrollSpeed ] = useState(0.0);
 
-    const scrollRate = 4.5;
-    const intervalRate = 12.5;
     const gradientColor = 'rgb(29, 31, 36)';
+    const scrollerElement = document.getElementById(`scroller-${ scrollerID }`);
+
+    function setSpeed() {
+        setScrollSpeed(Math.log(window.innerWidth * 10.0));
+    }
 
     useEffect(() => {
-        if (mouseHover) {
-            setScrollIntervalID(setInterval(() => {
-                document.getElementById(`scroller-${ scrollerID }`).scrollBy(scrollRate * (direction === 'right' ? 1.0 : -1.0), 0.0);
-            }, intervalRate));
-        }
-    }, [ mouseHover, direction, scrollerID ]);
+        setSpeed();
+        window.addEventListener('resize', setSpeed);
+        return () => {
+            window.removeEventListener('resize', setSpeed);
+        };
+    }, []);
 
-    function mouseOn() {
-        setMouseHover(true);
-    }
+    const scroll = () => {
+        let i = 0;
+        const interval = setInterval(() => {
+            scrollerElement.scrollBy({ left: direction === 'right' ? scrollSpeed : -scrollSpeed, behavior: 'smooth' });
 
-    function mouseOff() {
-        setMouseHover(false);
-        clearInterval(scrollIntervalID);
-    }
+            if (++i >= 50) {
+                clearInterval(interval);
+            }
+        }, 7);
+    };
 
     return (
         <button
         type='button'
         className={ `ScrollerButton h-25 d-flex flex-column justify-content-center btn border-0 rounded-0 ${ direction === 'right' ? 'rounded-start-pill' : 'rounded-end-pill' }` }
-        onPointerDown={ mouseOn }
-        onPointerUp={ mouseOff }
-        onPointerOut={ mouseOff }
+        onPointerUp={ scroll }
         style={{ backgroundImage: `linear-gradient(to ${ direction }, rgba(0, 0, 0, 0), ${ gradientColor }` }}>
             <div
             className='mx-auto fs-2'>
