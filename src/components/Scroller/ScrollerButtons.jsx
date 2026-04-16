@@ -36,7 +36,7 @@ function ScrollerButton({ scrollerID = 0, direction = 'right' }) {
     const scrollerElement = document.getElementById(`scroller-${ scrollerID }`);
 
     function setSpeed() {
-        setScrollSpeed(Math.log(window.innerWidth * 10.0));
+        setScrollSpeed(30.0);
     }
 
     useEffect(() => {
