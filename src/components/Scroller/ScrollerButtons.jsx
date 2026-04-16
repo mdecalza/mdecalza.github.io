@@ -4,70 +4,69 @@
 
 import leftArrowIcon from '/src/assets/icons/arrow-previous-left-icon.svg';
 import rightArrowIcon from '/src/assets/icons/arrow-next-right-icon.svg';
-import { useEffect, useState } from 'react';
+
+/* hooks */
+
+import { useState } from 'react';
 
 ScrollerButtons.propTypes = {
     scrollerID: 0,
 };
 
-ScrollerButton.propTypes = {
-    scrollerID: 0,
-    direction: 'right',
-};
-
 export default function ScrollerButtons({ scrollerID = 0 }) {
+    const [ scrollIndex, setScrollIndex ] = useState(0);
+
+    const scrollerButtonClasses = 'ScrollerButton h-25 d-flex flex-column justify-content-center btn border-0 rounded-0';
+    const scrollerButtonIconStyle = { filter: 'invert(1)', width: '33%', pointerEvents: 'none' };
+    const scrollerButtonChildClasses = 'mx-auto fs-2';
+    const gradientColor = 'rgb(29, 31, 36)';
+
+    function scroll(direction) {
+        const scrollSign = direction === 'right' ? 1 : -1;
+        const scrollTarget = document.getElementById(`scroller-${ scrollerID }-column-${ scrollIndex + scrollSign }`);
+
+        if (scrollTarget) {
+            setScrollIndex(scrollIndex + scrollSign);
+
+            scrollTarget.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+                inline: 'center',
+            });
+        }
+    };
+
+    function scrollLeft() {
+        scroll('left');
+    }
+
+    function scrollRight() {
+        scroll('right');
+    }
+
     return (
         <div
         className='ScrollerButtonContainer fadeInDelayed d-flex w-100 h-100 position-absolute align-items-center justify-content-between'>
-            <ScrollerButton
-            scrollerID={ scrollerID }
-            direction={ 'left' } />
-            <ScrollerButton
-            scrollerID={ scrollerID }
-            direction={ 'right' } />
+            <button
+            type='button'
+            className={ `${ scrollerButtonClasses } rounded-end-pill` }
+            style={{ backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0), ${ gradientColor }` }}
+            onPointerUp={ scrollLeft }>
+                <div
+                className={ scrollerButtonChildClasses }>
+                    <img src={ leftArrowIcon } alt={ '◄' } style={ scrollerButtonIconStyle } />
+                </div>
+            </button>
+            <button
+            type='button'
+            className={ `${ scrollerButtonClasses } rounded-start-pill` }
+            style={{ backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0), ${ gradientColor }` }}
+            onPointerUp={ scrollRight }>
+                <div
+                className={ scrollerButtonChildClasses }>
+                    <img src={ rightArrowIcon } alt={ '►' } style={ scrollerButtonIconStyle } />
+                </div>
+            </button>
         </div>
     );
-}
-
-function ScrollerButton({ scrollerID = 0, direction = 'right' }) {
-    const [ scrollSpeed, setScrollSpeed ] = useState(0.0);
-
-    const gradientColor = 'rgb(29, 31, 36)';
-    const scrollerElement = document.getElementById(`scroller-${ scrollerID }`);
-
-    function setSpeed() {
-        setScrollSpeed(30.0);
-    }
-
-    useEffect(() => {
-        setSpeed();
-        window.addEventListener('resize', setSpeed);
-        return () => {
-            window.removeEventListener('resize', setSpeed);
-        };
-    }, []);
-
-    const scroll = () => {
-        let i = 0;
-        const interval = setInterval(() => {
-            scrollerElement.scrollBy({ left: direction === 'right' ? scrollSpeed : -scrollSpeed, behavior: 'smooth' });
-
-            if (++i >= 50) {
-                clearInterval(interval);
-            }
-        }, 7);
-    };
-
-    return (
-        <button
-        type='button'
-        className={ `ScrollerButton h-25 d-flex flex-column justify-content-center btn border-0 rounded-0 ${ direction === 'right' ? 'rounded-start-pill' : 'rounded-end-pill' }` }
-        onPointerUp={ scroll }
-        style={{ backgroundImage: `linear-gradient(to ${ direction }, rgba(0, 0, 0, 0), ${ gradientColor }` }}>
-            <div
-            className='mx-auto fs-2'>
-                { direction === 'right' ? <img src={ rightArrowIcon } alt={ '►' } style={{ filter: 'invert(1)', width: '33%', pointerEvents: 'none' }} /> : <img src={ leftArrowIcon } alt={ '◄' } style={{ filter: 'invert(1)', width: '33%', pointerEvents: 'none' }} /> }
-            </div>
-        </button>
-    )
 }
