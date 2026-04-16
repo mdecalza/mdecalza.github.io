@@ -15,6 +15,10 @@ ScrollerButtons.propTypes = {
 
 export default function ScrollerButtons({ scrollerID = 0 }) {
     const [ scrollIndex, setScrollIndex ] = useState(0);
+
+    const scrollerButtonClasses = 'ScrollerButton h-25 d-flex flex-column justify-content-center btn border-0 rounded-0';
+    const scrollerButtonIconStyle = { filter: 'invert(1)', width: '33%', pointerEvents: 'none' };
+    const scrollerButtonChildClasses = 'mx-auto fs-2';
     const gradientColor = 'rgb(29, 31, 36)';
 
     function scroll(direction) {
@@ -45,22 +49,22 @@ export default function ScrollerButtons({ scrollerID = 0 }) {
         className='ScrollerButtonContainer fadeInDelayed d-flex w-100 h-100 position-absolute align-items-center justify-content-between'>
             <button
             type='button'
-            className={ 'ScrollerButton h-25 d-flex flex-column justify-content-center btn border-0 rounded-0 rounded-end-pill' }
+            className={ `${ scrollerButtonClasses } rounded-end-pill` }
             style={{ backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0), ${ gradientColor }` }}
             onPointerUp={ scrollLeft }>
                 <div
-                className='mx-auto fs-2'>
-                    <img src={ leftArrowIcon } alt={ '◄' } style={{ filter: 'invert(1)', width: '33%', pointerEvents: 'none' }} />
+                className={ scrollerButtonChildClasses }>
+                    <img src={ leftArrowIcon } alt={ '◄' } style={ scrollerButtonIconStyle } />
                 </div>
             </button>
             <button
             type='button'
-            className={ 'ScrollerButton h-25 d-flex flex-column justify-content-center btn border-0 rounded-0 rounded-start-pill' }
+            className={ `${ scrollerButtonClasses } rounded-start-pill` }
             style={{ backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0), ${ gradientColor }` }}
             onPointerUp={ scrollRight }>
                 <div
-                className='mx-auto fs-2'>
-                    <img src={ rightArrowIcon } alt={ '►' } style={{ filter: 'invert(1)', width: '33%', pointerEvents: 'none' }} />
+                className={ scrollerButtonChildClasses }>
+                    <img src={ rightArrowIcon } alt={ '►' } style={ scrollerButtonIconStyle } />
                 </div>
             </button>
         </div>
