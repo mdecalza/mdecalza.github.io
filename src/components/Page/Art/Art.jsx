@@ -64,7 +64,6 @@ import embryoLogo from '/src/assets/art/embryo-logo.png';
 export default function Art() {
     const socialsList = [
         'art-instagram',
-        'patreon-doom',
     ];
 
     const pixelArt = [

@@ -88,7 +88,6 @@ export default function Wads() {
     const socialsList = [
         'doomworld',
         'doom-youtube',
-        'patreon-doom',
         'bethesda',
         'itchio',
         'github',
