@@ -38,16 +38,12 @@ export default function ScrollerButtons({ scrollerID = 0, numCols = 0 }) {
 
             cumulativeWidthOfScrollerChildren += targetColumn.clientWidth;
 
-            console.log("Cumulative Width: ", cumulativeWidthOfScrollerChildren);
-
             if (cumulativeWidthOfScrollerChildren >= scrollerElement.scrollLeft + document.body.clientWidth / 2.0) {
                 break;
             }
         }
 
         setScrollIndex(clamp(col, 0, numCols - 1));
-
-        console.log("Scroll Index: ", clamp(col, 0, numCols - 1));
     }, [ numCols, scrollerID ]);
 
     useEffect(() => {
