@@ -35,9 +35,10 @@ export default function Scroller({ scrollerID = 0, elements = [], title = '' }) 
         className='position-relative'>
             { checkTitle(title) ? <h2 className='mt-4'>{title}</h2> : <></> }
             <ScrollerButtons
-            scrollerID={ scrollerID } />
+            scrollerID={ scrollerID }
+            numCols={ cols.length } />
             <div
-            id={ `scroller-${scrollerID}` }
+            id={ `scroller-${ scrollerID }` }
             className='Scroller d-flex mt-3 mb-5 pb-4 overflow-y-hidden'>
                 { cols }
             </div>
