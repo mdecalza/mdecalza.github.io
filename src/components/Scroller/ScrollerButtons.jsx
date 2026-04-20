@@ -30,14 +30,15 @@ export default function ScrollerButtons({ scrollerID = 0, numCols = 0 }) {
         let col = 0;
         for (let cumulativeWidthOfScrollerChildren = 0.0; col < numCols; ++col) {
             const targetColumn = document.getElementById(`scroller-${ scrollerID }-column-${ col }`);
+            const scrollerElement = document.getElementById(`scroller-${ scrollerID }`);
 
-            if (!targetColumn) {
+            if (!targetColumn || !scrollerElement) {
                 break;
             }
 
             cumulativeWidthOfScrollerChildren += targetColumn.clientWidth;
 
-            if (cumulativeWidthOfScrollerChildren >= document.getElementById(`scroller-${ scrollerID }`).scrollLeft + document.body.clientWidth / 2.0) {
+            if (cumulativeWidthOfScrollerChildren >= scrollerElement.scrollLeft + document.body.clientWidth / 2.0) {
                 break;
             }
         }
@@ -52,8 +53,13 @@ export default function ScrollerButtons({ scrollerID = 0, numCols = 0 }) {
             return;
         }
 
+        window.addEventListener('load', updateScrollIndex);
         scrollerElement.addEventListener('scroll', updateScrollIndex);
-        return () => scrollerElement.removeEventListener('scroll', updateScrollIndex);
+
+        return () => {
+            window.removeEventListener('load', updateScrollIndex);
+            scrollerElement.removeEventListener('scroll', updateScrollIndex);
+        };
     }, [ updateScrollIndex, scrollerID ]);
 
     function scroll(direction) {
