@@ -546,6 +546,12 @@ export default function Wads() {
             releaseYear: 2025,
         }),
         createElement(UnorderedListLink, {
+            href: 'https://www.doomworld.com/idgames/?id=21843',
+            wadTitle: 'Attempt Cereson',
+            mapTitle: 'MAP01: Storm Shelter',
+            releaseYear: 2025,
+        }),
+        createElement(UnorderedListLink, {
             href: 'https://www.doomworld.com/vb/thread/156277',
             wadTitle: 'Skulltiverse II',
             mapTitle: 'MAP04: Radio Outpost',
