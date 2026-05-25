@@ -87,11 +87,11 @@ import itchioIcon from '/src/assets/socials/itchio-textless-black.svg';
 export default function Wads() {
     const socialsList = [
         'doomworld',
-        'doom-youtube',
-        'bethesda',
         'itchio',
-        'github',
+        'doom-youtube',
         'doomwiki',
+        'github',
+        'bethesda',
     ];
 
     const inProgressWads = [
@@ -556,6 +556,12 @@ export default function Wads() {
             wadTitle: 'Skulltiverse II',
             mapTitle: 'MAP04: Radio Outpost',
             releaseYear: 2025,
+        }),
+        createElement(UnorderedListLink, {
+            href: 'https://www.doomworld.com/vb/thread/158465',
+            wadTitle: 'Foward Torward Uranus X',
+            mapTitle: 'MAP06: Up Instead of Running',
+            releaseYear: 2026,
         }),
     ];
 
