@@ -27,6 +27,7 @@ import narlyYmorioCover from '/src/assets/art/narlyYmorio-cover.png';
 import travelogueCover from '/src/assets/music/7.png';
 import sketchinCover from '/src/assets/music/8.png';
 import loveOfSoundCover from '/src/assets/music/9.png';
+import soColdCover from '/src/assets/music/socold.jpg';
 
 /* link icons */
 import appleMusicIcon from '/src/assets/socials/apple-music-icon.svg';
@@ -51,6 +52,30 @@ export default function Music() {
     ];
 
     const latest = [
+        createElement(MusicRelease, {
+            title: 'So Cold',
+            type: 'Single',
+            releaseDate: 'May 21, 2026',
+            description: 'For when you feel like you\'re just one wave short of a shipwreck...',
+            genre: 'hip-hop, electronic, indie',
+            coverImageSrc: soColdCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/pUUPrsnQ2PA?si=_e4iiHSWjzV-pyHX',
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/pUUPrsnQ2PA',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/file/d/1fQRbZazTMpcuvNa6z_GPaNRC7dUf6nT4/view?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
+    ];
+
+    const albumsMixtapes = [
         createElement(MusicRelease, {
             title: 'The Love of Sound',
             type: 'Beat Tape',
@@ -77,9 +102,6 @@ export default function Music() {
                 }),
             ],
         }),
-    ];
-
-    const albumsMixtapes = [
         createElement(MusicRelease, {
             title: 'Travelogue',
             type: 'Album',
