@@ -28,6 +28,7 @@ import travelogueCover from '/src/assets/music/7.png';
 import sketchinCover from '/src/assets/music/8.png';
 import loveOfSoundCover from '/src/assets/music/9.png';
 import soColdCover from '/src/assets/music/socold.jpg';
+import oneWaveShortCover from '/src/assets/music/10.jpg';
 
 /* link icons */
 import appleMusicIcon from '/src/assets/socials/apple-music-icon.svg';
@@ -49,6 +50,15 @@ export default function Music() {
         'soundcloud',
         'music-instagram',
         'twitter',
+    ];
+
+    const comingSoon = [
+        createElement(MusicRelease, {
+            title: 'One Wave Short',
+            type: 'Album',
+            genre: 'electronic, hip-hop, ambient',
+            coverImageSrc: oneWaveShortCover,
+        }),
     ];
 
     const latest = [
@@ -557,6 +567,9 @@ export default function Music() {
             <Socials
             socialsList={ socialsList } />
         </div>
+        <TileDisplay
+        title='Coming Soon'
+        elements={ comingSoon } />
         <TileDisplay
         title='Latest Release'
         elements={ latest } />
