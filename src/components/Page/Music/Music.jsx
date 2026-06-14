@@ -56,7 +56,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'One Wave Short',
             type: 'Album',
-            genre: 'electronic, hip-hop, ambient',
+            genre: 'ambient, psychedelic, electronic',
             coverImageSrc: oneWaveShortCover,
         }),
     ];
