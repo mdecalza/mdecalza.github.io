@@ -40,7 +40,7 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
             <div
             className='card bg-light w-100 mx-auto px-5 py-2 shadow-sm'>
                 <div
-                className='d-flex flex-column my-auto py-3 flex-fill'>
+                className='d-flex flex-column my-auto pt-4 flex-fill'>
                     <p>
                         <div>
                             <b>
@@ -66,7 +66,7 @@ export default function MusicRelease({ title = '', subtitle = '', releaseDate = 
                         </div>
                     </div>
                     <div
-                    className='py-3'>
+                    className='pt-3 pb-3'>
                         { description !== '' ? <BlockQuote text={ description } textAlign='center' /> : <></> }
                     </div>
                 </div>
