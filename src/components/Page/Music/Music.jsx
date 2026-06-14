@@ -56,7 +56,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'One Wave Short',
             type: 'Album',
-            genre: 'electronic, hip-hop, ambient',
+            genre: 'ambient, psychedelic, electronic',
             coverImageSrc: oneWaveShortCover,
         }),
     ];
@@ -67,7 +67,7 @@ export default function Music() {
             type: 'Single',
             releaseDate: 'May 21, 2026',
             description: 'For when you feel like you\'re just one wave short of a shipwreck...',
-            genre: 'hip-hop, electronic, indie',
+            genre: 'psychedelic, electronic, hip-hop',
             coverImageSrc: soColdCover,
             embedLink: 'https://www.youtube-nocookie.com/embed/pUUPrsnQ2PA?si=_e4iiHSWjzV-pyHX',
             links: [
