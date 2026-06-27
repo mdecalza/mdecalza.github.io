@@ -28,7 +28,7 @@ import travelogueCover from '/src/assets/music/7.png';
 import sketchinCover from '/src/assets/music/8.png';
 import loveOfSoundCover from '/src/assets/music/9.png';
 import soColdCover from '/src/assets/music/socold.jpg';
-import oneWaveShortCover from '/src/assets/music/10.png';
+import oneWaveShortCover from '/src/assets/music/10.jpg';
 
 /* link icons */
 import appleMusicIcon from '/src/assets/socials/apple-music-icon.svg';
