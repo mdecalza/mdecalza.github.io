@@ -97,7 +97,7 @@ export default function Wads() {
     const inProgressWads = [
         createElement(WadRelease, {
             title: 'Interception III',
-            role: 'Project Lead, Level Design, Programming, Art (2027)',
+            role: 'Project Lead, Level Design, Programming, Art (2026)',
             logoSrc: interception3logo,
             screenshotImageSources: [
                 interception3screenshot1,
