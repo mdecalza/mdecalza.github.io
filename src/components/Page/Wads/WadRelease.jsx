@@ -8,6 +8,9 @@ import checkTitle from '/src/components/Scroller/__tests__/checkTitle';
 /* components */
 import WadScreenshot from '/src/components/Page/Wads/WadScreenshot';
 
+/* assets */
+import wadDownloadText from '/src/assets/wads/wad-download.png';
+
 WadRelease.propTypes = {
     title: '',
     role: '',
@@ -18,6 +21,7 @@ WadRelease.propTypes = {
     quoteCredit: '',
     quoteSource: '',
     quoteHREF: '',
+    directDownloadLink: '',
     links: [],
 };
 
@@ -31,6 +35,7 @@ export default function WadRelease({
     quoteCredit = '',
     quoteSource = '',
     quoteHREF = '',
+    directDownloadLink = '',
     links = [],
 }) {
     const [ screenshots, setScreenshots ] = useState([]);
@@ -87,15 +92,15 @@ export default function WadRelease({
                         <a href={ quoteHREF }>{ quoteCredit }</a>, &ndash; <cite title='source'>{ quoteSource }</cite>
                     </figcaption>
                 </figure>
-                <div
-                className='pt-2'>
+                { directDownloadLink === '' ? <></> : <div
+                className='pb-3'>
                     <a
-                    href=''
-                    className='d-none btn btn-primary'
+                    href={ directDownloadLink }
+                    className='growOnHover btn btn-warning rounded-3 py-3 px-4 shadow'
                     type='button'>
-                        Download
+                        <img src={ wadDownloadText } />
                     </a>
-                </div>
+                </div> }
                 <div
                 className='d-flex flex-wrap justify-content-center'>
                     { links }

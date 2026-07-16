@@ -135,6 +135,7 @@ export default function Wads() {
                 resident2screenshot4,
                 resident2screenshot5,
             ],
+            directDownloadLink: 'https://github.com/mdecalza/residentdoom2/releases/download/0.9/doomresiden2-0.9.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/forum/topic/155836',
@@ -167,6 +168,7 @@ export default function Wads() {
                 residentScreenshot2,
                 residentScreenshot3,
             ],
+            directDownloadLink: 'https://github.com/mdecalza/residentdoom/releases/download/v1.0.2/doomresident-1.0.2.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/residentdoom',
@@ -201,6 +203,7 @@ export default function Wads() {
                 hovercabScreenshot4,
                 hovercabScreenshot5,
             ],
+            directDownloadLink: '/src/assets/wads/hovercab/hovercab-1.0.3.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/g-i/hovercab',
@@ -228,6 +231,7 @@ export default function Wads() {
                 herschelScreenshot2,
                 herschelScreenshot3,
             ],
+            directDownloadLink: 'https://github.com/mdecalza/herschel/releases/download/1.0.2/herschel-1.0.2.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/g-i/herschel',
@@ -266,6 +270,7 @@ export default function Wads() {
             quoteCredit: 'Omniarch',
             quoteSource: '2022 Cacowards: "22 More For 2022," doomworld.com',
             quoteHREF: 'https://www.doomworld.com/cacowards/2022/22for22/',
+            directDownloadLink: '/src/assets/wads/atone/atone-1.1.5.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/?id=20527',
@@ -302,6 +307,7 @@ export default function Wads() {
             quoteCredit: 'Endless',
             quoteSource: '"Endless Random /idgames WAD Adventures #040", p. 1, doomworld.com',
             quoteHREF: 'https://www.doomworld.com/forum/post/2535989',
+            directDownloadLink: '/src/assets/wads/crud/crud-1.0.3.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/?id=19847',
@@ -331,6 +337,7 @@ export default function Wads() {
                 embryoScreenshot1,
                 embryoScreenshot2,
             ],
+            directDownloadLink: 'https://github.com/mdecalza/embryo/releases/download/1.2/embryo-1.2.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/embryo',
@@ -362,6 +369,7 @@ export default function Wads() {
             quoteCredit: 'Book Lord',
             quoteSource: '"The DWmegawad Club plays: Interception II", p. 14, doomworld.com',
             quoteHREF: 'https://www.doomworld.com/forum/post/2421738',
+            directDownloadLink: '/src/assets/wads/intercep2/intercep2-1.4.4.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/intercep2',
@@ -393,6 +401,7 @@ export default function Wads() {
             quoteCredit: 'Andrew Mullens',
             quoteSource: '"Doom Wads/Mods #490:Interception," youtube.com',
             quoteHREF: 'https://www.youtube.com/watch?v=KBlnPDBgQcs',
+            directDownloadLink: '/src/assets/wads/intercep/intercep-1.7.1.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/?id=17082',
