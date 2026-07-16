@@ -203,7 +203,7 @@ export default function Wads() {
                 hovercabScreenshot4,
                 hovercabScreenshot5,
             ],
-            directDownloadLink: '/src/assets/wads/hovercab/hovercab-1.0.3.zip',
+            directDownloadLink: '/hovercab-1.0.3.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/g-i/hovercab',
@@ -270,7 +270,7 @@ export default function Wads() {
             quoteCredit: 'Omniarch',
             quoteSource: '2022 Cacowards: "22 More For 2022," doomworld.com',
             quoteHREF: 'https://www.doomworld.com/cacowards/2022/22for22/',
-            directDownloadLink: '/src/assets/wads/atone/atone-1.1.5.zip',
+            directDownloadLink: '/atone-1.1.5.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/?id=20527',
@@ -307,7 +307,7 @@ export default function Wads() {
             quoteCredit: 'Endless',
             quoteSource: '"Endless Random /idgames WAD Adventures #040", p. 1, doomworld.com',
             quoteHREF: 'https://www.doomworld.com/forum/post/2535989',
-            directDownloadLink: '/src/assets/wads/crud/crud-1.0.3.zip',
+            directDownloadLink: '/crud-1.0.3.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/?id=19847',
@@ -369,7 +369,7 @@ export default function Wads() {
             quoteCredit: 'Book Lord',
             quoteSource: '"The DWmegawad Club plays: Interception II", p. 14, doomworld.com',
             quoteHREF: 'https://www.doomworld.com/forum/post/2421738',
-            directDownloadLink: '/src/assets/wads/intercep2/intercep2-1.4.4.zip',
+            directDownloadLink: '/intercep2-1.4.4.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/intercep2',
@@ -401,7 +401,7 @@ export default function Wads() {
             quoteCredit: 'Andrew Mullens',
             quoteSource: '"Doom Wads/Mods #490:Interception," youtube.com',
             quoteHREF: 'https://www.youtube.com/watch?v=KBlnPDBgQcs',
-            directDownloadLink: '/src/assets/wads/intercep/intercep-1.7.1.zip',
+            directDownloadLink: '/intercep-1.7.1.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/?id=17082',
