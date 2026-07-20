@@ -135,7 +135,7 @@ export default function Wads() {
                 resident2screenshot4,
                 resident2screenshot5,
             ],
-            directDownloadLink: 'https://github.com/mdecalza/residentdoom2/releases/download/0.9/doomresiden2-0.9.zip',
+            directDownloadLink: '/doomresiden2-0.9.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/forum/topic/155836',
@@ -168,7 +168,7 @@ export default function Wads() {
                 residentScreenshot2,
                 residentScreenshot3,
             ],
-            directDownloadLink: 'https://github.com/mdecalza/residentdoom/releases/download/v1.0.2/doomresident-1.0.2.zip',
+            directDownloadLink: '/doomresident-1.0.2.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/residentdoom',
@@ -231,7 +231,7 @@ export default function Wads() {
                 herschelScreenshot2,
                 herschelScreenshot3,
             ],
-            directDownloadLink: 'https://github.com/mdecalza/herschel/releases/download/1.0.2/herschel-1.0.2.zip',
+            directDownloadLink: '/herschel-1.0.2.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/g-i/herschel',
@@ -337,7 +337,7 @@ export default function Wads() {
                 embryoScreenshot1,
                 embryoScreenshot2,
             ],
-            directDownloadLink: 'https://github.com/mdecalza/embryo/releases/download/1.2/embryo-1.2.zip',
+            directDownloadLink: '/embryo-1.2.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/embryo',
