@@ -538,7 +538,7 @@ export default function Wads() {
         }),
         createElement(UnorderedListLink, {
             href: 'https://www.doomworld.com/vb/thread/154746',
-            wadTitle: 'TropicHell',
+            wadTitle: 'TropicHELL',
             mapTitle: 'MAP19: Into the Heart of Vesuvius',
             releaseYear: 2025,
         }),
@@ -581,7 +581,7 @@ export default function Wads() {
             className='container-xxl'>
                 <Header
                 title='Matthew DeCalzadilla (Moustachio)'
-                blurb='Doom WAD Author' />
+                blurb='DOOM WAD Author' />
                 <Socials
                 socialsList={ socialsList } />
                 <p
@@ -591,14 +591,14 @@ export default function Wads() {
                 <p
                 className='pb-5'>
                     <br />
-                    A <a href='https://doomwiki.org/wiki/WAD'>.WAD</a> file contains all of the data for the game <a href='https://doomwiki.org/wiki/Doom'><i>DOOM</i> (1993)</a> by <a href='https://doomwiki.org/wiki/Id_Software'>id Software</a>. One can enjoy new levels, graphics, music, and more for <i>DOOM</i> by loading an extra WAD file on top of the game. <a href='https://doomwiki.org/wiki/Origwad'>Since 1994</a>, players and creators alike have been enjoying a seemingly bottomless buffet of these WAD files.<br />
+                    A <a href='https://doomwiki.org/wiki/WAD'>.wad</a> file contains all of the data for the game <a href='https://doomwiki.org/wiki/Doom'><i>DOOM</i> (1993)</a> by <a href='https://doomwiki.org/wiki/Id_Software'>id Software</a>. One can enjoy new levels, graphics, music, and more for <i>DOOM</i> by loading an extra WAD file on top of the game. <a href='https://doomwiki.org/wiki/Origwad'>Since 1994</a>, players and creators alike have been enjoying a seemingly bottomless buffet of these WAD files.<br />
                     <br />
                     Since 2011, <a href='https://doomwiki.org/wiki/Matthew_DeCalzadilla_(Moustachio)'>I&apos;ve designed many WADs</a> (either all on my own or with the help of others). Here are my most notable <i>DOOM</i> creations, including collaborative projects that I had a leading role in creating. I&apos;ve also listed wads by others for which I&apos;ve designed levels.
                 </p>
             </div>
             <TileDisplay
             elements={ inProgressWads }
-            title="Works in Progress" />
+            title="Coming Soon" />
             <TileDisplay
             elements={ releasedWads }
             title="Solo Works" />
