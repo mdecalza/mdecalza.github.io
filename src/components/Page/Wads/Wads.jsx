@@ -305,7 +305,7 @@ export default function Wads() {
             ],
             quote: 'CRUD is a very simple, cozy and fast-paced set of 4 lovely vanilla maps designed with classical stock aesthetic but Plutonia-esque gameplay [...] It\'s pretty short and each map plays dynamically well. [...] A solid recommendation to those that enjoy both vanilla and more relaxed levels.',
             quoteCredit: 'Endless',
-            quoteSource: '"Endless Random /idgames wad Adventures #040", p. 1, doomworld.com',
+            quoteSource: '"Endless Random /idgames WAD Adventures #040", p. 1, doomworld.com',
             quoteHREF: 'https://www.doomworld.com/forum/post/2535989',
             directDownloadLink: '/crud-1.0.3.zip',
             links: [
@@ -581,17 +581,17 @@ export default function Wads() {
             className='container-xxl'>
                 <Header
                 title='Matthew DeCalzadilla (Moustachio)'
-                blurb='DOOM Wad Author' />
+                blurb='DOOM WAD Author' />
                 <Socials
                 socialsList={ socialsList } />
                 <p
                 className='pt-3 fs-4'>
-                    <b>What Is a wad Anyway?</b>
+                    <b>What Is a WAD Anyway?</b>
                 </p>
                 <p
                 className='pb-5'>
                     <br />
-                    A <a href='https://doomwiki.org/wiki/wad'>.wad</a> file contains all of the data for the game <a href='https://doomwiki.org/wiki/Doom'><i>DOOM</i> (1993)</a> by <a href='https://doomwiki.org/wiki/Id_Software'>id Software</a>. One can enjoy new levels, graphics, music, and more for <i>DOOM</i> by loading an extra wad file on top of the game. <a href='https://doomwiki.org/wiki/Origwad'>Since 1994</a>, players and creators alike have been enjoying a seemingly bottomless buffet of these wad files.<br />
+                    A <a href='https://doomwiki.org/wiki/WAD'>.wad</a> file contains all of the data for the game <a href='https://doomwiki.org/wiki/Doom'><i>DOOM</i> (1993)</a> by <a href='https://doomwiki.org/wiki/Id_Software'>id Software</a>. One can enjoy new levels, graphics, music, and more for <i>DOOM</i> by loading an extra WAD file on top of the game. <a href='https://doomwiki.org/wiki/Origwad'>Since 1994</a>, players and creators alike have been enjoying a seemingly bottomless buffet of these WAD files.<br />
                     <br />
                     Since 2011, <a href='https://doomwiki.org/wiki/Matthew_DeCalzadilla_(Moustachio)'>I&apos;ve designed many wads</a> (either all on my own or with the help of others). Here are my most notable <i>DOOM</i> creations, including collaborative projects that I had a leading role in creating. I&apos;ve also listed wads by others for which I&apos;ve designed levels.
                 </p>
@@ -606,7 +606,7 @@ export default function Wads() {
             elements={ communityProjects }
             title="Community Projects" />
             <UnorderedList
-            title='More wads I&apos;ve Contributed To:'
+            title='More WADs I&apos;ve Contributed To:'
             items={ moreWadsList } />
             <Socials
             socialsList={ socialsList } />
