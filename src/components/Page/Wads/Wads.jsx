@@ -168,7 +168,7 @@ export default function Wads() {
                 residentScreenshot2,
                 residentScreenshot3,
             ],
-            directDownloadLink: '/doomresident-1.0.2.zip',
+            directDownloadLink: '/doomresident-1.0.4.zip',
             links: [
                 createElement(IconButton, {
                     href: 'https://www.doomworld.com/idgames/levels/doom2/Ports/p-r/residentdoom',
