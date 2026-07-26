@@ -30,6 +30,8 @@ import residentScreenshot3 from '/src/assets/wads/resident/resident-p3.png';
 import interception3logo from '/src/assets/wads/intercep3/intercep3-title.png';
 import interception3screenshot1 from '/src/assets/wads/intercep3/intercep3-p1.png';
 import interception3screenshot2 from '/src/assets/wads/intercep3/intercep3-p2.png';
+import interception3screenshot3 from '/src/assets/wads/intercep3/intercep3-p3.png';
+import interception3screenshot4 from '/src/assets/wads/intercep3/intercep3-p4.png';
 
 /* embryo */
 import embryoLogo from '/src/assets/wads/embryo/embryo-title.png';
@@ -102,6 +104,8 @@ export default function Wads() {
             screenshotImageSources: [
                 interception3screenshot1,
                 interception3screenshot2,
+                interception3screenshot3,
+                interception3screenshot4,
             ],
             links: [
                 createElement(IconButton, {
