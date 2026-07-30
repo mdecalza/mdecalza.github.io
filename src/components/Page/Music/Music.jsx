@@ -54,7 +54,7 @@ export default function Music() {
 
     const comingSoon = [
         createElement(MusicRelease, {
-            title: 'One Wave Short',
+            title: 'One Wave Short of a Shipwreck',
             type: 'Album',
             genre: 'ambient, psychedelic, electronic',
             coverImageSrc: oneWaveShortCover,
