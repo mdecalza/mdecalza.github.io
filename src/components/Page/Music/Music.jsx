@@ -56,7 +56,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'Head in a Cloud',
             type: 'Album',
-            description: 'Trippy, bombastic, and mature, this LP represents a new era of Sontomorio music.',
+            description: 'Trippy, bombastic music with mature production, representing a new era of Sontomorio music.',
             genre: 'ambient, psychedelic, electronic',
             coverImageSrc: oneWaveShortCover,
         }),
