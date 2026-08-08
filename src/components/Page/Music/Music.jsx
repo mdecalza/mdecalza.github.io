@@ -54,8 +54,9 @@ export default function Music() {
 
     const comingSoon = [
         createElement(MusicRelease, {
-            title: 'One Wave Short of a Shipwreck',
+            title: 'Head in a Cloud',
             type: 'Album',
+            description: 'Trippy, bombastic music with mature production, representing a new era of Sontomorio music.',
             genre: 'ambient, psychedelic, electronic',
             coverImageSrc: oneWaveShortCover,
         }),
