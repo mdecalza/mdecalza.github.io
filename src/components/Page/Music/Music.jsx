@@ -29,6 +29,7 @@ import sketchinCover from '/src/assets/music/8.png';
 import loveOfSoundCover from '/src/assets/music/9.png';
 import soColdCover from '/src/assets/music/socold.jpg';
 import oneWaveShortCover from '/src/assets/music/10.jpg';
+import meteorShowerCover from '/src/assets/music/meteorshower.png'
 
 /* link icons */
 import appleMusicIcon from '/src/assets/socials/apple-music-icon.svg';
@@ -64,21 +65,21 @@ export default function Music() {
 
     const latest = [
         createElement(MusicRelease, {
-            title: 'So Cold',
+            title: 'Meteor Shower',
             type: 'Single',
-            releaseDate: 'May 21, 2026',
-            description: 'For when you feel like you\'re just one wave short of a shipwreck...',
-            genre: 'psychedelic, electronic, hip-hop',
-            coverImageSrc: soColdCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/pUUPrsnQ2PA?si=_e4iiHSWjzV-pyHX',
+            releaseDate: 'August 8, 2026',
+            description: 'I know you\'re still out there, lost in the stars...',
+            genre: 'psychedelic, ambient, electronic',
+            coverImageSrc: meteorShowerCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/dSD9diBpB_M?si=Aftxuq5fuvXRliNB',
             links: [
                 createElement(IconButton, {
-                    href: 'https://youtu.be/pUUPrsnQ2PA',
+                    href: 'https://youtu.be/dSD9diBpB_M',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
                 }),
                 createElement(IconButton, {
-                    href: 'https://drive.google.com/file/d/1fQRbZazTMpcuvNa6z_GPaNRC7dUf6nT4/view?usp=drive_link',
+                    href: 'https://drive.google.com/file/d/1LfG1TloLP0ZVko4_1QnCwYmhMoscxr9d/view?usp=drive_link',
                     iconSrc: driveIcon,
                     text: 'Google Drive',
                 }),
@@ -247,6 +248,27 @@ export default function Music() {
     ];
 
     const EPsSingles = [
+        createElement(MusicRelease, {
+            title: 'So Cold',
+            type: 'Single',
+            releaseDate: 'May 21, 2026',
+            description: 'For when you feel like you\'re just one wave short of a shipwreck...',
+            genre: 'psychedelic, electronic, hip-hop',
+            coverImageSrc: soColdCover,
+            embedLink: 'https://www.youtube-nocookie.com/embed/pUUPrsnQ2PA?si=_e4iiHSWjzV-pyHX',
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/pUUPrsnQ2PA',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/file/d/1fQRbZazTMpcuvNa6z_GPaNRC7dUf6nT4/view?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
         createElement(MusicRelease, {
             title: 'Sketchin\'',
             type: 'EP',
