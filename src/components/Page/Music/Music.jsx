@@ -65,7 +65,7 @@ export default function Music() {
 
     const latest = [
         createElement(MusicRelease, {
-            title: 'Shooting Stars (Meteor Shower)',
+            title: 'Meteor Shower',
             type: 'Single',
             releaseDate: 'August 8, 2026',
             description: 'I know you\'re still out there, lost in the stars...',
