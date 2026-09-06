@@ -55,7 +55,6 @@ export default function Music() {
 
     const comingSoon = [
         createElement(MusicRelease, {
-            title: 'Headspace',
             type: 'Album',
             description: 'Trippy, bombastic music with mature production, representing a new era of Sontomorio music.',
             genre: 'ambient, psychedelic, electronic',
@@ -65,13 +64,12 @@ export default function Music() {
 
     const latest = [
         createElement(MusicRelease, {
-            title: 'Star Storm',
+            title: 'Star Storm (Meteor Shower)',
             type: 'Single',
             releaseDate: 'August 8, 2026',
             description: 'I know you\'re still out there, lost in the stars...',
             genre: 'psychedelic, ambient, electronic',
             coverImageSrc: meteorShowerCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/dSD9diBpB_M',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/dSD9diBpB_M',
@@ -95,7 +93,6 @@ export default function Music() {
             description: '40 minutes of chill chops and funky breaks.',
             genre: 'hip-hop, old-school, chillout',
             coverImageSrc: loveOfSoundCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/B2INvU-pBfk',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/B2INvU-pBfk',
@@ -121,7 +118,6 @@ export default function Music() {
             description: 'Busy soundscapes, funky beats, and strange electronic noises. A globetrotting voyage in 44 minutes.',
             genre: 'downtempo, hip-hop, chillout',
             coverImageSrc: travelogueCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/videoseries?amp;list=OLAK5uy_maqEULkRZT6NepowCIXMWmSp6AUOqKt8U',
             links: [
                 createElement(IconButton, {
                     href: 'https://sontomorio.bandcamp.com/album/travelogue',
@@ -152,7 +148,6 @@ export default function Music() {
             description: 'A dark mix of original tunes among diverse beats, samples, and soundscapes.',
             genre: 'downtempo, hip-hop, psychedelic',
             coverImageSrc: sontoOlegioCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/fJ5Bcy_MBqE',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/fJ5Bcy_MBqE',
@@ -178,7 +173,6 @@ export default function Music() {
             description: 'An assorted mix of driving-inspired loops and breakbeats.',
             genre: 'hip-hop, boombap, lofi',
             coverImageSrc: theFreewayCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/2FK6yWV96O8',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/2FK6yWV96O8',
@@ -204,7 +198,6 @@ export default function Music() {
             description: 'A picturesque journey told through patchwork samples and idiosyncratic beats woven together into soundscapes. A descent into dreams inspired by a bygone time.',
             genre: 'hip-hop, downtempo, ambient',
             coverImageSrc: midnightMoviesCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/cs69xVqK1lo',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/cs69xVqK1lo',
@@ -231,19 +224,6 @@ export default function Music() {
             description: 'My first published album, featuring many collaborators. A dense and distorted evolution of the Priibyu mixtape. Part of a double LP package with Priibyu.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: deibyuCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/1dPLJkpZeMA',
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/1dPLJkpZeMA',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube'
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1qXEKJ_-GjAhHWVFYu5R9Q34gP9PW4WT1?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
         }),
     ];
 
@@ -255,7 +235,6 @@ export default function Music() {
             description: 'For when you feel like you\'re just one wave short of a shipwreck...',
             genre: 'psychedelic, electronic, hip-hop',
             coverImageSrc: soColdCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/pUUPrsnQ2PA',
             links: [
                 createElement(IconButton, {
                     href: 'https://music.apple.com/us/song/so-cold/6777270504',
@@ -281,7 +260,6 @@ export default function Music() {
             description: 'A quick mix of six boombap beats for ears to feast.',
             genre: 'hip-hop, boombap, old-school',
             coverImageSrc: sketchinCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/jLf3ZbvQYDk',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/jLf3ZbvQYDk',
@@ -302,7 +280,6 @@ export default function Music() {
             description: 'Bold and brash, this EP drives oddball loops through high levels of distortion underneath esoteric lyrics.',
             genre: 'hip-hop/rap, noise, psychedelic',
             coverImageSrc: sontoIVcover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/Z7dY-NgBeVo',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/Z7dY-NgBeVo',
@@ -328,7 +305,6 @@ export default function Music() {
             description: 'Ne expergisci possit.',
             genre: 'hip-hop, trap, electronic',
             coverImageSrc: lucidCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/zEsdQEW04do',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/zEsdQEW04do',
@@ -355,7 +331,6 @@ export default function Music() {
             description: 'An ethereal mix of reverbed beats, spacey melodies, and bombastic rap verses.',
             genre: 'hip-hop/rap, lofi, chillout',
             coverImageSrc: burningMyTimeCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/Bhj6OgR-pgo',
             links: [
                 createElement(IconButton, {
                     href: 'https://sontomorio.bandcamp.com/album/burning-my-time-building-my-mind',
@@ -393,7 +368,6 @@ export default function Music() {
             description: 'My first single, based on my first beat produced as Sontomorio.',
             genre: 'R&B, lofi, alternative',
             coverImageSrc: strangestWaysCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/atpCapGbXl0',
             links: [
                 createElement(IconButton, {
                     href: 'https://music.apple.com/us/album/strangest-ways-feat-jay-ashr-single/1460746146',
@@ -427,7 +401,6 @@ export default function Music() {
             description: 'Light and loose bits of music composed for OST Jam 7 on itch.io.',
             genre: 'chillout, world, hip-hop',
             coverImageSrc: ostJam7cover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/videoseries?amp;list=OLAK5uy_kYhwSgORiAl4tI4PhYuJwtBSMtCSRDTaA',
             links: [
                 createElement(IconButton, {
                     href: 'https://sontomorio.bandcamp.com/album/tropical-new-world',
@@ -468,7 +441,6 @@ export default function Music() {
             description: 'High-energy DnB mix filled with distorted breaks, looping effects, varied samples, and lots of noisy synthesizers. Originally the soundtrack to Sunset Whopper, a video game for university.',
             genre: 'techno, noise, drum and bass',
             coverImageSrc: whopperCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/LYAIzBTEQVc',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/LYAIzBTEQVc',
@@ -498,7 +470,6 @@ export default function Music() {
             description: 'An ambitious, experimental collaboration with "Shreds". We each did a fair bit of the work. It was about 85% done before dropped.',
             genre: 'psychedelic, hip-hop, rock',
             coverImageSrc: narlyYmorioCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/X_gEyzTSx6c',
             links: [
                 createElement(IconButton, {
                     href: 'https://youtu.be/X_gEyzTSx6c',
@@ -520,7 +491,6 @@ export default function Music() {
             description: 'Combines two tracks from Midnight Movies with three previously unreleased original tracks. A compilation of music from The Freeway and prior that is suitable for streaming.',
             genre: 'downtempo, hip-hop/rap, ambient',
             coverImageSrc: sundayMorningTVCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/videoseries?amp;list=OLAK5uy_ldTsWEcR15b8g2sbZBfyuhxWmpENunLNY',
             links: [
                 createElement(IconButton, {
                     href: 'https://sontomorio.bandcamp.com/album/sunday-morning-tv',
@@ -547,19 +517,6 @@ export default function Music() {
             description: 'A collection of odds and ends from the era between Deibyu and Midnight Movies.',
             genre: 'r&b, bedroom pop, downtempo',
             coverImageSrc: earlyOdditiesCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/dsMD7FMGUAA',
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/dsMD7FMGUAA',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube'
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1VtLxTP2zlR2Wea7n3SKHDAoqdBzP46XI?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive'
-                }),
-            ],
         }),
         createElement(MusicRelease, {
             title: 'Priibyu',
@@ -569,19 +526,6 @@ export default function Music() {
             description: 'Demo of the Deibyu mixtape. A bright, loose string of eclectic outsider music. Part of a double LP package with Deibyu.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: priibyuCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/CKVJ4MuKY-g',
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/CKVJ4MuKY-g',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube'
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1_8jNbe95Ew5PIZguw6fWz2B4OvNi2Vkz?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive'
-                }),
-            ],
         }),
     ];
 
