@@ -55,7 +55,6 @@ export default function Music() {
 
     const comingSoon = [
         createElement(MusicRelease, {
-            title: 'Headspace',
             type: 'Album',
             description: 'Trippy, bombastic music with mature production, representing a new era of Sontomorio music.',
             genre: 'ambient, psychedelic, electronic',
@@ -65,7 +64,7 @@ export default function Music() {
 
     const latest = [
         createElement(MusicRelease, {
-            title: 'Star Storm',
+            title: 'Star Storm (Meteor Shower)',
             type: 'Single',
             releaseDate: 'August 8, 2026',
             description: 'I know you\'re still out there, lost in the stars...',
@@ -231,19 +230,6 @@ export default function Music() {
             description: 'My first published album, featuring many collaborators. A dense and distorted evolution of the Priibyu mixtape. Part of a double LP package with Priibyu.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: deibyuCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/1dPLJkpZeMA',
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/1dPLJkpZeMA',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube'
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1qXEKJ_-GjAhHWVFYu5R9Q34gP9PW4WT1?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
         }),
     ];
 
@@ -547,19 +533,6 @@ export default function Music() {
             description: 'A collection of odds and ends from the era between Deibyu and Midnight Movies.',
             genre: 'r&b, bedroom pop, downtempo',
             coverImageSrc: earlyOdditiesCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/dsMD7FMGUAA',
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/dsMD7FMGUAA',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube'
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1VtLxTP2zlR2Wea7n3SKHDAoqdBzP46XI?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive'
-                }),
-            ],
         }),
         createElement(MusicRelease, {
             title: 'Priibyu',
@@ -569,19 +542,6 @@ export default function Music() {
             description: 'Demo of the Deibyu mixtape. A bright, loose string of eclectic outsider music. Part of a double LP package with Deibyu.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: priibyuCover,
-            embedLink: 'https://www.youtube-nocookie.com/embed/CKVJ4MuKY-g',
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/CKVJ4MuKY-g',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube'
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1_8jNbe95Ew5PIZguw6fWz2B4OvNi2Vkz?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive'
-                }),
-            ],
         }),
     ];
 
