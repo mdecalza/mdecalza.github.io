@@ -55,6 +55,7 @@ import blindPilotCover from '/src/assets/art/blind-pilot-cover.jpg';
 import travelogueSleeve from '/src/assets/art/cd-cover-front-travelogue.jpg';
 
 /* graphic design */
+import sontomorioLogo2 from '/src/assets/art/sonto-logo-6.png';
 import sontomorioBanner from '/src/assets/art/sonto-art-small.png';
 import casaFrescaLogo from '/src/assets/art/casa-fresca-logo.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
@@ -115,12 +116,13 @@ export default function Art() {
     ];
 
     const graphicDesign = [
-        createElement(ArtImage, { src: sontomorioBanner }),
-        createElement(ArtImage, { src: casaFrescaLogo, border: false }),
+        createElement(ArtImage, { src: sontomorioLogo2, border: false }),
         createElement(ArtImage, { src: sontomorioLogo, border: false }),
         createElement(ArtImage, { src: atoneLogo, border: false }),
+        createElement(ArtImage, { src: casaFrescaLogo, border: false }),
         createElement(ArtImage, { src: embryoLogo, border: false }),
         createElement(ArtImage, { src: embryoTitle }),
+        createElement(ArtImage, { src: sontomorioBanner }),
     ];
 
     return (

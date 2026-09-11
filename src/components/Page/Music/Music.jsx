@@ -40,7 +40,7 @@ import driveIcon from '/src/assets/socials/drive-icon.png';
 import pictureIcon from '/src/assets/icons/picture-icon.svg';
 
 /* graphics */
-import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
+import sontomorioLogo from '/src/assets/art/sonto-logo-6.png';
 
 export default function Music() {
     const socialsList = [
@@ -535,7 +535,7 @@ export default function Music() {
         className='fadeIn container-xxl'>
             <img
             src={ sontomorioLogo }
-            className='w-25' />
+            className='w-25 mt-4 mb-4' />
             <Socials
             socialsList={ socialsList } />
         </div>
