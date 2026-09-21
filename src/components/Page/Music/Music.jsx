@@ -28,7 +28,7 @@ import travelogueCover from '/src/assets/music/7.png';
 import sketchinCover from '/src/assets/music/8.png';
 import loveOfSoundCover from '/src/assets/music/9.png';
 import soColdCover from '/src/assets/music/socold.jpg';
-import oneWaveShortCover from '/src/assets/music/10.jpg';
+import headspaceCover from '/src/assets/music/10.jpg';
 import meteorShowerCover from '/src/assets/music/meteorshower.png'
 
 /* link icons */
@@ -55,10 +55,11 @@ export default function Music() {
 
     const comingSoon = [
         createElement(MusicRelease, {
+            title: 'Headspace',
             type: 'Album',
             description: 'Trippy, bombastic music with mature production, representing a new era of Sontomorio music.',
             genre: 'ambient, psychedelic, electronic',
-            coverImageSrc: oneWaveShortCover,
+            coverImageSrc: headspaceCover,
         }),
     ];
 
