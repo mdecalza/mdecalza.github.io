@@ -11,7 +11,6 @@ import Socials from '/src/components/Socials/Socials';
 /* assets */
 /* pixel illustrations */
 import atoneInter from '/src/assets/art/atone-inter.png';
-import embryoTitle from '/src/assets/art/emb-titlepic.png';
 import intercepTitle from '/src/assets/art/int1-title.png';
 import intercep3title from '/src/assets/art/int3-title.png';
 import intercep3inter from '/src/assets/art/int3-inter.png';
@@ -55,8 +54,7 @@ import blindPilotCover from '/src/assets/art/blind-pilot-cover.jpg';
 import travelogueSleeve from '/src/assets/art/cd-cover-front-travelogue.jpg';
 
 /* graphic design */
-import sontomorioLogo2 from '/src/assets/art/sonto-logo-6.png';
-import sontomorioBanner from '/src/assets/art/sonto-art-small.png';
+import sontomorioLogo2 from '/src/assets/art/sonto-logo-text-large-glow.png';
 import casaFrescaLogo from '/src/assets/art/casa-fresca-logo.png';
 import sontomorioLogo from '/src/assets/art/sonto-logo-4.png';
 import atoneLogo from '/src/assets/art/atone-logo.png';
@@ -121,8 +119,6 @@ export default function Art() {
         createElement(ArtImage, { src: atoneLogo, border: false }),
         createElement(ArtImage, { src: casaFrescaLogo, border: false }),
         createElement(ArtImage, { src: embryoLogo, border: false }),
-        createElement(ArtImage, { src: embryoTitle }),
-        createElement(ArtImage, { src: sontomorioBanner }),
     ];
 
     return (
