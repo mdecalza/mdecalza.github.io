@@ -66,9 +66,9 @@ export default function Art() {
     ];
 
     const pixelArt = [
-        createElement(ArtImage, { src: secondMixInter }),
         createElement(ArtImage, { src: secondMixTitle }),
         createElement(ArtImage, { src: intercep3title }),
+        createElement(ArtImage, { src: secondMixInter }),
         createElement(ArtImage, { src: atoneInter }),
         createElement(ArtImage, { src: intercep3inter }),
         createElement(ArtImage, { src: intercep3text1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
@@ -141,7 +141,7 @@ export default function Art() {
             elements={ albumArt }
             scrollerID={ 1 } />
             <Scroller
-            title='Graphic Design'
+            title='Logos & Graphics'
             elements={ graphicDesign }
             scrollerID={ 2 } />
             <Scroller
