@@ -5,10 +5,10 @@ import Socials from '/src/components/Socials/Socials';
 import Thumbnail from '../../Thumbnail/Thumbnail';
 
 /* assets */
-import artThumbnail from '/src/assets/art/int3-title.png';
+import artThumbnail from '/src/assets/art/second-mix-titlepic2-PALLARGE.png';
 import mateoLogo from '/src/assets/home/mateowhite.png';
-import musicThumbnail from '/src/assets/music/7.png';
-import wadsThumbnail from '/src/assets/wads/atone/atone-p1.png';
+import musicThumbnail from '/src/assets/art/olegio.png';
+import wadsThumbnail from '/src/assets/wads/crud/crud-p3.png';
 
 export default function Home() {
     return(
@@ -30,17 +30,7 @@ export default function Home() {
                     <div
                     className='col-lg-5 py-3'>
                         <div
-                        className='py-3 rounded-5 shadow border border-3 border-dark'
-                        style={{
-                            backgroundColor: 'rgba(0, 0, 0, 0.25)',
-                            minHeight: '75%',
-                        }}>
-                            <Thumbnail
-                            to={{ pathname: 'wads' }}
-                            imgSrc={ wadsThumbnail }
-                            text='Doom WADs'
-                            width='90%'
-                            height='128px' />
+                        style={{ minHeight: '75%' }}>
                             <Thumbnail
                             to={{ pathname: 'art' }}
                             imgSrc={ artThumbnail }
@@ -51,6 +41,12 @@ export default function Home() {
                             to={{ pathname: 'music' }}
                             imgSrc={ musicThumbnail }
                             text='Music'
+                            width='90%'
+                            height='128px' />
+                            <Thumbnail
+                            to={{ pathname: 'wads' }}
+                            imgSrc={ wadsThumbnail }
+                            text='Doom WADs'
                             width='90%'
                             height='128px' />
                         </div>
