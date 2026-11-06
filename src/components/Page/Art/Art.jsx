@@ -9,7 +9,8 @@ import Scroller from '/src/components/Scroller/Scroller';
 import Socials from '/src/components/Socials/Socials';
 
 /* assets */
-/* pixel illustrations */
+/* illustrations */
+import theKuzc from '/src/assets/art/the-kuzc.jpg';
 import atoneInter from '/src/assets/art/atone-inter.png';
 import intercepTitle from '/src/assets/art/int1-title.png';
 import intercep3title from '/src/assets/art/int3-title.png';
@@ -65,14 +66,18 @@ export default function Art() {
         'art-instagram',
     ];
 
-    const pixelArt = [
-        createElement(ArtImage, { src: secondMixTitle }),
+    const paintings = [
+        createElement(ArtImage, { src: theKuzc }),
+    ];
+
+    const illustrations = [
         createElement(ArtImage, { src: intercep3title }),
-        createElement(ArtImage, { src: secondMixInter }),
-        createElement(ArtImage, { src: atoneInter }),
+        createElement(ArtImage, { src: secondMixTitle }),
         createElement(ArtImage, { src: intercep3inter }),
         createElement(ArtImage, { src: intercep3text1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: intercepTitle, censor: true, contentWarningList: ['Violence', 'Gore'] }),
+        createElement(ArtImage, { src: secondMixInter }),
+        createElement(ArtImage, { src: atoneInter }),
     ];
     
     const sketches = [
@@ -133,8 +138,12 @@ export default function Art() {
                 socialsList={ socialsList } />
             </div>
             <Scroller
-            title='Pixel Illustrations'
-            elements={ pixelArt }
+            title='Paintings'
+            elements={ paintings }
+            scrollerID={ 0 } />
+            <Scroller
+            title='Illustrations'
+            elements={ illustrations }
             scrollerID={ 0 } />
             <Scroller
             title='Album Art'
