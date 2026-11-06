@@ -23,40 +23,44 @@ export default function Thumbnail({ to = { pathname: '/' }, imgSrc = '', text = 
         ?
         <Link
         to={ to }
-        className={ thumbnailLinkClasses }
         type='button'
         style={{ width: width, height: height }}>
             <div
-            className={ thumbnailButtonClasses }>
-                <h1
-                className={ thumbnailTextClasses }
-                style={{ textShadow: textShadowStyle }}>
-                    { text }
-                </h1>
-                <img
-                src={ imgSrc }
-                className={ thumbnailImageClasses }
-                style={{ height: height }} />
+            className={ thumbnailLinkClasses }>
+                <div
+                className={ thumbnailButtonClasses }>
+                    <h1
+                    className={ thumbnailTextClasses }
+                    style={{ textShadow: textShadowStyle }}>
+                        { text }
+                    </h1>
+                    <img
+                    src={ imgSrc }
+                    className={ thumbnailImageClasses }
+                    style={{ height: height }} />
+                </div>
             </div>
         </Link>
         :
         <a
         href={ to.pathname }
         target='_blank'
-        className={ thumbnailLinkClasses }
         type='button'
         style={{ width: width, height: height }}>
             <div
-            className={ thumbnailButtonClasses }>
-                <h1
-                className={ thumbnailTextClasses }
-                style={{ textShadow: textShadowStyle }}>
-                    { text }
-                </h1>
-                <img
-                src={ imgSrc }
-                className={ thumbnailImageClasses }
-                style={{ height: height }} />
+            className={ thumbnailLinkClasses }>
+                <div
+                className={ thumbnailButtonClasses }>
+                    <h1
+                    className={ thumbnailTextClasses }
+                    style={{ textShadow: textShadowStyle }}>
+                        { text }
+                    </h1>
+                    <img
+                    src={ imgSrc }
+                    className={ thumbnailImageClasses }
+                    style={{ height: height }} />
+                </div>
             </div>
         </a>
     );
