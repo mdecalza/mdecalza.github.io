@@ -52,7 +52,7 @@ import whopperCover from '/src/assets/art/whopper-big.png';
 import smoothSailingCover from '/src/assets/art/sailing-cover2.png';
 import intercontinentalCover from '/src/assets/art/intercontinental-cover-2.jpg';
 import blindPilotCover from '/src/assets/art/blind-pilot-cover.jpg';
-import travelogueSleeve from '/src/assets/art/cd-cover-front-travelogue.jpg';
+import travelogueSleeve from '/src/assets/art/travelogue-sleeve.jpg';
 
 /* graphic design */
 import sontomorioLogo2 from '/src/assets/art/sonto-logo-text-large-glow.png';
@@ -67,17 +67,17 @@ export default function Art() {
     ];
 
     const paintings = [
-        createElement(ArtImage, { src: theKuzc }),
+        createElement(ArtImage, { src: theKuzc, title: 'Kuzco', year: 2026, medium: 'Acrylic on canvas', size: '8 x 10 inches' }),
     ];
 
     const illustrations = [
-        createElement(ArtImage, { src: intercep3title }),
-        createElement(ArtImage, { src: secondMixTitle }),
-        createElement(ArtImage, { src: intercep3inter }),
-        createElement(ArtImage, { src: intercep3text1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
-        createElement(ArtImage, { src: intercepTitle, censor: true, contentWarningList: ['Violence', 'Gore'] }),
-        createElement(ArtImage, { src: secondMixInter }),
-        createElement(ArtImage, { src: atoneInter }),
+        createElement(ArtImage, { src: intercep3title, title: 'Interception III Title Screen', year: 2024, medium: 'Digital', size: '320 x 200 pixels' }),
+        createElement(ArtImage, { src: secondMixTitle, title: 'Second Mix Title Screen', year: 2025, medium: 'Digital', size: '320 x 200 pixels' }),
+        createElement(ArtImage, { src: intercep3inter, title: 'Interception III Intermission Screen', year: 2024, medium: 'Digital', size: '320 x 200 pixels' }),
+        createElement(ArtImage, { src: intercep3text1, title: 'Interception III Text Screen I', year: 2025, medium: 'Digital', size: '854 x 200 pixels', censor: true, contentWarningList: ['Violence', 'Gore'] }),
+        createElement(ArtImage, { src: intercepTitle, title: 'Interception Title Screen (Redux)', year: 2025, medium: 'Digital', size: '854 x 200 pixels (cropped for display)', censor: true, contentWarningList: ['Violence', 'Gore'] }),
+        createElement(ArtImage, { src: secondMixInter, title: 'Second Mix Intermission Screen', year: 2026, medium: 'Digital', size: '320 x 200 pixels' }),
+        createElement(ArtImage, { src: atoneInter, title: 'Atonement Intermission Screen', year: 2018, medium: 'Digital', size: '320 x 200 pixels' }),
     ];
     
     const sketches = [
@@ -101,21 +101,21 @@ export default function Art() {
     ];
     
     const albumArt = [
-        createElement(ArtImage, { src: travelogueSleeve }),
-        createElement(ArtImage, { src: blindPilotCover }),
-        createElement(ArtImage, { src: intercontinentalCover }),
-        createElement(ArtImage, { src: smoothSailingCover }),
-        createElement(ArtImage, { src: midnightMoviesSleeve }),
-        createElement(ArtImage, { src: sontoIVgatefold }),
-        createElement(ArtImage, { src: sontoOlegioCoverAlt }),
-        createElement(ArtImage, { src: narlyYmorioCover }),
-        createElement(ArtImage, { src: lucidCover }),
-        createElement(ArtImage, { src: sontoOlegioCoverAlt2 }),
-        createElement(ArtImage, { src: whopperCover }),
-        createElement(ArtImage, { src: sundayMorningTVCover }),
-        createElement(ArtImage, { src: bpmCover }),
-        createElement(ArtImage, { src: burningMyTimeCover }),
-        createElement(ArtImage, { src: deibyuCoverAlt }),
+        createElement(ArtImage, { src: travelogueSleeve, title: 'Travelogue Album Sleeve', year: 2025, medium: 'Digital, manipulated photographs', size: '5100 x 2550 pixels' }),
+        createElement(ArtImage, { src: blindPilotCover, title: '"Blind Pilot" Single Cover', year: 2025, medium: 'Digital, manipulated photograph', size: '2960 x 2960 pixels' }),
+        createElement(ArtImage, { src: intercontinentalCover, title: '"Intercontinental" Single Cover', year: 2025, medium: 'Digitally manipulated photograph', size: '3024 x 3024 pixels' }),
+        createElement(ArtImage, { src: smoothSailingCover, title: '"Smooth Sailing" Single Cover', year: 2024, medium: 'Digital, manipulated photograph', size: '2832 x 2832 pixels' }),
+        createElement(ArtImage, { src: midnightMoviesSleeve, title: 'Midnight Movies Album Sleeve', year: 2019, medium: 'Digital, manipulated photograph', size: '4320 x 2160 pixels' }),
+        createElement(ArtImage, { src: sontoIVgatefold, title: 'Sonto IV EP Sleeve', year: 2020, medium: 'Digital, manipulated photograph', size: '7200 x 3600 pixels' }),
+        createElement(ArtImage, { src: sontoOlegioCoverAlt, title: 'Sonto\'olegio Album Cover (First Alternate)', year: 2022, medium: 'Digital', size: '3600 x 3600 pixels' }),
+        createElement(ArtImage, { src: narlyYmorioCover, title: 'THE NARLY Y MORIO LP Album Cover', year: 2020, medium: 'Digital', size: '3750 x 3750 pixels (downscaled for storage)' }),
+        createElement(ArtImage, { src: lucidCover, title: '"Lucid Dreaming" Single Cover', year: 2019, medium: 'Digital', size: '5000 x 5000 pixels' }),
+        createElement(ArtImage, { src: sontoOlegioCoverAlt2, title: 'Sonto\'olegio Album Cover (Second Alternate)', year: 2022, medium: 'Digital, manipulated photograph', size: '1000 x 1000 pixels' }),
+        createElement(ArtImage, { src: whopperCover, title: '"Sunset Whopper" Single Cover', year: 2023, medium: 'Digital, manipulated video game screenshot', size: '1400 x 1400 pixels' }),
+        createElement(ArtImage, { src: sundayMorningTVCover, title: 'Sunday Morning TV Compilation EP Cover', year: 2021, medium: 'Digital, photo collage', size: '3000 x 3000 pixels' }),
+        createElement(ArtImage, { src: bpmCover, title: '"88 BPM" Single Cover', year: 2022, medium: 'Digital, manipulated photograph', size: '3227 x 3227 pixels' }),
+        createElement(ArtImage, { src: burningMyTimeCover, title: 'Burning My Time Building My Mind EP Cover', year: 2019, medium: 'Digital', size: '3000 x 3000 pixels' }),
+        createElement(ArtImage, { src: deibyuCoverAlt, title: 'Deibyu Album Cover (Alternate)', year: 2019, medium: 'Digital', size: '4512 x 4512 pixels' }),
     ];
 
     const graphicDesign = [
