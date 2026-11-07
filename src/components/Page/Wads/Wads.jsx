@@ -5,6 +5,7 @@ import { createElement } from 'react';
 /* components */
 import Header from '/src/components/Header/Header';
 import IconButton from '/src/components/IconButton/IconButton';
+import Plaque from '/src/components/Plaque/Plaque';
 import Socials from '/src/components/Socials/Socials';
 import TileDisplay from '/src/components/TileDisplay/TileDisplay';
 import UnorderedList from '/src/components/UnorderedList/UnorderedList';
@@ -588,17 +589,20 @@ export default function Wads() {
                 blurb='DOOM WAD Author' />
                 <Socials
                 socialsList={ socialsList } />
-                <p
-                className='pt-3 fs-4'>
-                    <b>What Is a WAD Anyway?</b>
-                </p>
-                <p
-                className='pb-5'>
-                    <br />
-                    A <a href='https://doomwiki.org/wiki/WAD'>.wad</a> file contains all of the data for the game <a href='https://doomwiki.org/wiki/Doom'><i>DOOM</i> (1993)</a> by <a href='https://doomwiki.org/wiki/Id_Software'>id Software</a>. One can enjoy new levels, graphics, music, and more for <i>DOOM</i> by loading an extra WAD file on top of the game. <a href='https://doomwiki.org/wiki/Origwad'>Since 1994</a>, players and creators alike have been enjoying a seemingly bottomless buffet of these WAD files.<br />
-                    <br />
-                    Since 2011, <a href='https://doomwiki.org/wiki/Matthew_DeCalzadilla_(Moustachio)'>I&apos;ve designed many WADs</a> (either all on my own or with the help of others). Here are my most notable <i>DOOM</i> creations, including collaborative projects that I had a leading role in creating. I&apos;ve also listed wads by others for which I&apos;ve designed levels.
-                </p>
+                <Plaque
+                contents={<>
+                    <p
+                    className='fs-4'>
+                        <b>What Is a WAD Anyway?</b>
+                    </p>
+                    <p
+                    className='pb-4'>
+                        <br />
+                        A <a href='https://doomwiki.org/wiki/WAD'>.wad</a> file contains all of the data for the game <a href='https://doomwiki.org/wiki/Doom'><i>DOOM</i> (1993)</a> by <a href='https://doomwiki.org/wiki/Id_Software'>id Software</a>. One can enjoy new levels, graphics, music, and more for <i>DOOM</i> by loading an extra WAD file on top of the game. <a href='https://doomwiki.org/wiki/Origwad'>Since 1994</a>, players and creators alike have been enjoying a seemingly bottomless buffet of these WAD files.<br />
+                        <br />
+                        Since 2011, <a href='https://doomwiki.org/wiki/Matthew_DeCalzadilla_(Moustachio)'>I&apos;ve designed many WADs</a> (either all on my own or with the help of others). Here are my most notable <i>DOOM</i> creations, including collaborative projects that I had a leading role in creating. I&apos;ve also listed wads by others for which I&apos;ve designed levels.
+                    </p>
+                </>}></Plaque>
             </div>
             <TileDisplay
             elements={ inProgressWads }

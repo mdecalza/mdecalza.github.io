@@ -1,5 +1,4 @@
 .BackgroundTop {
-    background: rgba(15, 21, 37, 0.7);
     content: '';
     inset: 0;
     position: absolute;
@@ -20,6 +19,6 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    image-rendering: pixelated;
-    filter: blur(3px);
+    image-rendering: smooth;
+    filter: blur(2px);
 }
