@@ -4,7 +4,7 @@ import { useLocation } from 'react-router';
 import { useEffect, useState } from 'react';
 
 /* background filepaths */
-import homeBackground from '/src/assets/background/bg.jpg';
+import homeBackground from '/src/assets/background/bg.png';
 
 export default function Background() {
     const location = useLocation();
@@ -28,8 +28,9 @@ export default function Background() {
     );
 
     useEffect(() => {
+        if (!backgroundSource) return;
         const filetype = backgroundSource.substring(backgroundSource.lastIndexOf('.')+1);
-        setVideoBackground(filetype === 'mp4');
+        setVideoBackground(filetype === 'mp4' || filetype === 'mov' || filetype === 'mkv');
     }, [backgroundSource])
 
     useEffect(() => {
@@ -44,10 +45,11 @@ export default function Background() {
         <>
         <div
         className='BackgroundTop'></div>
-        <div
-        className='Background'>
-            { videoBackground ? videoBackgroundElement : imageBackgroundElement }
-        </div>
+        {
+            backgroundSource ? <div className='Background'>
+                { videoBackground ? videoBackgroundElement : imageBackgroundElement }
+            </div> : <></>
+        }
         </>
     );
 }

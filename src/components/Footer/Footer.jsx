@@ -10,7 +10,7 @@ export default function Footer() {
             <footer
             className='Footer mx-auto p-4 text-center text-light text-opacity-50'>
                 <div
-                className='bg-light bg-opacity-10 rounded-4 p-3'>
+                className='bg-dark bg-opacity-10 border border-light border-opacity-50 rounded-4 p-3 shadow-sm'>
                     Contact<br/>
                     <div
                     className='pt-1'>
