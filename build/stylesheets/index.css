@@ -12024,7 +12024,6 @@ textarea.form-control-lg {
 .Page {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(13, 186, 255));
-  overscroll-behavior: none;
 }
 
 .Page::before {
