@@ -15,11 +15,11 @@ MusicRelease.propTypes = {
     description: '',
     coverImageSrc: null,
     explicit: false,
-    embedLink: '',
+    embedLink: null,
     links: [],
 };
 
-export default function MusicRelease({ title = '', subtitle = '', releaseDate = '', type = '', genre = '', description = '', coverImageSrc = null, explicit = false, embedLink = '', links = [] }) {
+export default function MusicRelease({ title = '', subtitle = '', releaseDate = '', type = '', genre = '', description = '', coverImageSrc = null, explicit = false, embedLink = null, links = [] }) {
     return (
         <div
         className='MusicRelease fadeInDelayed d-flex flex-column align-items-center px-5'>
