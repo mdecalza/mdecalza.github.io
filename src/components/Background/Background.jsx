@@ -14,7 +14,7 @@ export default function Background() {
     const imageBackgroundElement = (
         <img
         src={ backgroundSource }
-        className='BackgroundImage' />
+        className='BackgroundImage fadeIn' />
     );
 
     const videoBackgroundElement = (
