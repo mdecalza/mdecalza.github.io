@@ -1,10 +1,10 @@
 /* Matthew DeCalzadilla 2024—2025 */
 
 WadScreenshot.propTypes = {
-    src: '',
+    src: null,
 };
 
-export default function WadScreenshot({src = ''}) {
+export default function WadScreenshot({src = null}) {
     return (
         <img
         src={src}

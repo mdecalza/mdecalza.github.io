@@ -3,7 +3,7 @@
 import CensorBlur from '/src/components/CensorBlur/CensorBlur';
 
 ArtImage.propTypes = {
-    src: '',
+    src: null,
     border: true,
     censor: false,
     contentWarningList: [],
@@ -13,7 +13,7 @@ ArtImage.propTypes = {
     size: '',
 }
 
-export default function ArtImage({ src = '', border = true, censor = false, contentWarningList = [], title = '', year = 0, medium = '', size = '' }) {
+export default function ArtImage({ src = null, border = true, censor = false, contentWarningList = [], title = '', year = 0, medium = '', size = '' }) {
     return (
         <div
         className='d-flex pe-5 fadeInDelayed'>
