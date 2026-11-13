@@ -46,8 +46,11 @@ export default function Page({pageType = 'home'}) {
             className='mt-5'
             style={{ height: '100px', }}></div>
             <Background />
-            { pageElement }
-            <Footer />
+            <div
+            style={{ overscrollBehavior: 'none' }}>
+                { pageElement }
+                <Footer />
+            </div>
         </div>  
     );
 }
