@@ -4,14 +4,14 @@ import { Link } from 'react-router';
 
 Thumbnail.propTypes = {
     to: { pathname: '/', },
-    imgSrc: '',
+    imgSrc: null,
     text: '',
     width: '100%',
     height: '25%',
     isInnerLink: false
 };
 
-export default function Thumbnail({ to = { pathname: '/' }, imgSrc = '', text = '', width = '100%', height = '25%', isInnerLink = !to.pathname.includes('://') }) {
+export default function Thumbnail({ to = { pathname: '/' }, imgSrc = null, text = '', width = '100%', height = '25%', isInnerLink = !to.pathname.includes('://') }) {
     const thumbnailLinkClasses = 'fadeInDelayed growOnHover mx-auto my-3 text-light';
     const thumbnailButtonClasses = 'mx-3 position-relative d-flex justify-content-center align-items-center rounded-4 border border-2 border-light border-opacity-75';
     const thumbnailTextClasses = 'z-1 position-absolute';

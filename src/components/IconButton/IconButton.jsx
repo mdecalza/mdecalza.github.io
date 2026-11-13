@@ -3,11 +3,11 @@
 IconButton.propTypes = {
     href: '',
     onClick: null,
-    iconSrc: '',
+    iconSrc: null,
     text: '',
 };
 
-export default function IconButton({ href = '', onClick = null, iconSrc = '', text = '' }) {
+export default function IconButton({ href = '', onClick = null, iconSrc = null, text = '' }) {
     return (
         <a
         href={ href }

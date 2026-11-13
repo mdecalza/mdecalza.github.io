@@ -14,7 +14,7 @@ import wadDownloadText from '/src/assets/wads/wad-download.png';
 WadRelease.propTypes = {
     title: '',
     role: '',
-    logoSrc: '',
+    logoSrc: null,
     screenshotImageSources: [],
     slideshow: true,
     quote: '',
@@ -28,7 +28,7 @@ WadRelease.propTypes = {
 export default function WadRelease({
     title = '',
     role = '',
-    logoSrc = '',
+    logoSrc = null,
     screenshotImageSources = [],
     slideshow = true,
     quote = '',
