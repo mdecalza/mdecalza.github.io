@@ -81,11 +81,11 @@ export default function Art() {
     ];
     
     const sketches = [
+        createElement(ArtImage, { src: aerithSketch }),
+        createElement(ArtImage, { src: cloudSketch }),
         createElement(ArtImage, { src: intercep3sketch1 }),
         createElement(ArtImage, { src: intercep3sketch2, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: intercep3sketch3, censor: true, contentWarningList: ['Violence', 'Gore'] }),
-        createElement(ArtImage, { src: cloudSketch }),
-        createElement(ArtImage, { src: aerithSketch }),
         createElement(ArtImage, { src: intercepSketch1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: sketchbook2 }),
         createElement(ArtImage, { src: sketchbook1 }),

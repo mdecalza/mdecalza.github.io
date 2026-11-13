@@ -37,7 +37,6 @@ export default function ScrollerButtons({ scrollerID = 0, numCols = 0 }) {
             }
 
             cumulativeWidthOfScrollerChildren += targetColumn.clientWidth;
-
             if (cumulativeWidthOfScrollerChildren >= scrollerElement.scrollLeft + document.body.clientWidth / 2.0) {
                 break;
             }
@@ -65,15 +64,30 @@ export default function ScrollerButtons({ scrollerID = 0, numCols = 0 }) {
     function scroll(direction) {
         const scrollSign = direction === 'left' || direction === 'up' || direction === 'back' ? -1 : 1;
         const scrollerElement = document.getElementById(`scroller-${ scrollerID }`);
-
-        const targetIndex = clamp(scrollIndex + scrollSign, 0, numCols - 1);
-        const targetColumn = document.getElementById(`scroller-${ scrollerID }-column-${ targetIndex }`);
-
-        if (!scrollerElement || !targetColumn) {
+        if (!scrollerElement) {
             return;
         }
 
-        const targetScroll = targetColumn.offsetLeft + targetColumn.clientWidth / 2.0 - document.body.clientWidth / 2.0;
+        const targetIndex = clamp(scrollIndex + scrollSign, 0, numCols - 1);
+        let targetColumn = document.getElementById(`scroller-${ scrollerID }-column-${ targetIndex }`);
+        if (!targetColumn) {
+            return;
+        }
+
+        const pageCenterX = document.body.clientWidth / 2.0;
+        let nextImageCenterX = targetColumn.offsetLeft + targetColumn.clientWidth / 2.0;
+        let targetScroll = 0.0;
+
+        if (nextImageCenterX - pageCenterX * scrollSign < 0.0) {
+            targetColumn = document.getElementById(`scroller-${ scrollerID }-column-${ targetIndex + scrollSign }`);
+            if (!targetColumn) {
+                return;
+            }
+
+            nextImageCenterX = targetColumn.offsetLeft + targetColumn.clientWidth / 2.0;
+        }
+
+        targetScroll = nextImageCenterX - pageCenterX;
         scrollerElement.scrollTo({ left: targetScroll, behavior: 'smooth' });
     };
 
