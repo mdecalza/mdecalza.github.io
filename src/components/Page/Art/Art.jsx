@@ -144,23 +144,23 @@ export default function Art() {
             <Scroller
             title='Illustrations'
             elements={ illustrations }
-            scrollerID={ 0 } />
+            scrollerID={ 1 } />
             <Scroller
             title='Album Art'
             elements={ albumArt }
-            scrollerID={ 1 } />
+            scrollerID={ 2 } />
             <Scroller
             title='Logos & Graphics'
             elements={ graphicDesign }
-            scrollerID={ 2 } />
+            scrollerID={ 3 } />
             <Scroller
             title='3D Level Design'
             elements={ levelDesign }
-            scrollerID={ 3 } />
+            scrollerID={ 4 } />
             <Scroller
             title='Sketches'
             elements={ sketches }
-            scrollerID={ 4 } />
+            scrollerID={ 5 } />
             <Socials
             socialsList={ socialsList } />
         </div>
