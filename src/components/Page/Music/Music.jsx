@@ -5,6 +5,7 @@ import { createElement } from 'react';
 /* components */
 import MusicRelease from '/src/components/Page/Music/MusicRelease';
 import IconButton from '/src/components/IconButton/IconButton';
+import Scroller from '/src/components/Scroller/Scroller';
 import Socials from '/src/components/Socials/Socials';
 import TileDisplay from '/src/components/TileDisplay/TileDisplay';
 
@@ -57,7 +58,7 @@ export default function Music() {
         createElement(MusicRelease, {
             title: 'Headspace',
             type: 'Album',
-            description: 'Trippy, bombastic music with mature production, representing a new era of Sontomorio music.',
+            description: 'Trippy, bombastic music with mature production, representing a new era of Sontomorio. Coming November 28, 2026.',
             genre: 'ambient, psychedelic, electronic',
             coverImageSrc: headspaceCover,
         }),
@@ -86,7 +87,7 @@ export default function Music() {
         }),
     ];
 
-    const albumsMixtapes = [
+    const MajorReleases = [
         createElement(MusicRelease, {
             title: 'The Love of Sound',
             type: 'Beat Tape',
@@ -143,6 +144,27 @@ export default function Music() {
             ],
         }),
         createElement(MusicRelease, {
+            title: 'THE NARLY Y MORIO LP',
+            subtitle: '(with Aspen "Shreds" Abrahamson)',
+            type: 'Demo',
+            releaseDate: 'February 3, 2025 (April 4, 2023 demo)',
+            description: 'An ambitious, experimental collaboration with "Shreds". We each did a fair bit of the work. It was about 85% done before dropped.',
+            genre: 'psychedelic, hip-hop, rock',
+            coverImageSrc: narlyYmorioCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/X_gEyzTSx6c',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1jbhTOGaM88TdXXckxTzOaHZDSwWD0P4I?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
             title: 'Sonto\'olegio',
             type: 'Beat Tape',
             releaseDate: 'December 31, 2022',
@@ -193,6 +215,31 @@ export default function Music() {
             ],
         }),
         createElement(MusicRelease, {
+            title: 'Sonto IV',
+            type: 'EP',
+            releaseDate: 'April 22, 2020',
+            description: 'Bold and brash, this EP drives oddball loops through high levels of distortion underneath esoteric lyrics.',
+            genre: 'hip-hop/rap, noise, psychedelic',
+            coverImageSrc: sontoIVcover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/Z7dY-NgBeVo',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://on.soundcloud.com/g0locbgnJikUhASmJL',
+                    iconSrc: soundCloudIcon,
+                    text: 'SoundCloud',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1x_JNF6_OkpEBF24NxYK3fvfQlT58HWLe?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
             title: 'Midnight Movies',
             type: 'Beat Tape',
             releaseDate: 'December 20, 2019',
@@ -218,6 +265,42 @@ export default function Music() {
             ],
         }),
         createElement(MusicRelease, {
+            title: 'Burning My Time Building My Mind',
+            explicit: true,
+            type: 'EP',
+            releaseDate: 'April 23, 2019',
+            description: 'An ethereal mix of reverbed beats, spacey melodies, and bombastic rap verses.',
+            genre: 'hip-hop/rap, lofi, chillout',
+            coverImageSrc: burningMyTimeCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://sontomorio.bandcamp.com/album/burning-my-time-building-my-mind',
+                    iconSrc: bandcampIcon,
+                    text: 'Bandcamp',
+                }),
+                createElement(IconButton, {
+                    href: 'https://music.apple.com/us/album/burning-my-time-building-my-mind-ep/1774373578',
+                    iconSrc: appleMusicIcon,
+                    text: 'Apple Music',
+                }),
+                createElement(IconButton, {
+                    href: 'https://youtu.be/ziNXngLa_zE',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube'
+                }),
+                createElement(IconButton, {
+                    href: 'https://on.soundcloud.com/cFot2VcFXXtsITGREX',
+                    iconSrc: soundCloudIcon,
+                    text: 'SoundCloud'
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/drive/folders/1Kcjn8uKhtq2YGzN7JWaAwgS4nn8N6CWJ?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
             title: 'Deibyu',
             explicit: true,
             type: 'Mixtape',
@@ -228,7 +311,7 @@ export default function Music() {
         }),
     ];
 
-    const EPsSingles = [
+    const MinorReleases = [
         createElement(MusicRelease, {
             title: 'So Cold',
             type: 'Single',
@@ -274,127 +357,6 @@ export default function Music() {
                 }),
             ],
         }),
-        createElement(MusicRelease, {
-            title: 'Sonto IV',
-            type: 'EP',
-            releaseDate: 'April 22, 2020',
-            description: 'Bold and brash, this EP drives oddball loops through high levels of distortion underneath esoteric lyrics.',
-            genre: 'hip-hop/rap, noise, psychedelic',
-            coverImageSrc: sontoIVcover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/Z7dY-NgBeVo',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://on.soundcloud.com/g0locbgnJikUhASmJL',
-                    iconSrc: soundCloudIcon,
-                    text: 'SoundCloud',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1x_JNF6_OkpEBF24NxYK3fvfQlT58HWLe?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
-        }),
-        createElement(MusicRelease, {
-            title: 'Lucid Dreaming',
-            type: 'Single',
-            releaseDate: 'September 29, 2019',
-            description: 'Ne expergisci possit.',
-            genre: 'hip-hop, trap, electronic',
-            coverImageSrc: lucidCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/zEsdQEW04do',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://on.soundcloud.com/JPl4aT337ePdZZIspT',
-                    iconSrc: soundCloudIcon,
-                    text: 'SoundCloud',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/file/d/1Lc4I9aZlM-u2J6QCqa3pCMvxo273q8JU/view?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
-        }),
-        createElement(MusicRelease, {
-            title: 'Burning My Time Building My Mind',
-            explicit: true,
-            type: 'EP',
-            releaseDate: 'April 23, 2019',
-            description: 'An ethereal mix of reverbed beats, spacey melodies, and bombastic rap verses.',
-            genre: 'hip-hop/rap, lofi, chillout',
-            coverImageSrc: burningMyTimeCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://sontomorio.bandcamp.com/album/burning-my-time-building-my-mind',
-                    iconSrc: bandcampIcon,
-                    text: 'Bandcamp',
-                }),
-                createElement(IconButton, {
-                    href: 'https://music.apple.com/us/album/burning-my-time-building-my-mind-ep/1774373578',
-                    iconSrc: appleMusicIcon,
-                    text: 'Apple Music',
-                }),
-                createElement(IconButton, {
-                    href: 'https://youtu.be/ziNXngLa_zE',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube'
-                }),
-                createElement(IconButton, {
-                    href: 'https://on.soundcloud.com/cFot2VcFXXtsITGREX',
-                    iconSrc: soundCloudIcon,
-                    text: 'SoundCloud'
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1Kcjn8uKhtq2YGzN7JWaAwgS4nn8N6CWJ?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
-        }),
-        createElement(MusicRelease, {
-            title: 'Strangest Ways',
-            subtitle: '(feat. Jay Ashr)',
-            explicit: true,
-            type: 'Single',
-            releaseDate: 'September 22, 2018',
-            description: 'My first single, based on my first beat produced as Sontomorio.',
-            genre: 'R&B, lofi, alternative',
-            coverImageSrc: strangestWaysCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://music.apple.com/us/album/strangest-ways-feat-jay-ashr-single/1460746146',
-                    iconSrc: appleMusicIcon,
-                    text: 'Apple Music',
-                }),
-                createElement(IconButton, {
-                    href: 'https://music.youtube.com/playlist?list=OLAK5uy_mrhP03IKnfQcirSfLvmBJHy0ZzczKX2lU',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube'
-                }),
-                createElement(IconButton, {
-                    href: 'https://on.soundcloud.com/E6foveubsrCAb5zkHX',
-                    iconSrc: soundCloudIcon,
-                    text: 'SoundCloud'
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/file/d/1QdptWAHx47SHnGWFzSMGxLiJZ-yVL3ml/view?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
-        }),
-    ];
-
-    const soundtracks = [
         createElement(MusicRelease, {
             title: 'Tropical New World',
             type: 'Soundtrack',
@@ -460,30 +422,6 @@ export default function Music() {
                 }),
             ],
         }),
-    ];
-
-    const oddities = [
-        createElement(MusicRelease, {
-            title: 'THE NARLY Y MORIO LP',
-            subtitle: '(with Aspen "Shreds" Abrahamson)',
-            type: 'Demo',
-            releaseDate: 'February 3, 2025 (April 4, 2023 demo)',
-            description: 'An ambitious, experimental collaboration with "Shreds". We each did a fair bit of the work. It was about 85% done before dropped.',
-            genre: 'psychedelic, hip-hop, rock',
-            coverImageSrc: narlyYmorioCover,
-            links: [
-                createElement(IconButton, {
-                    href: 'https://youtu.be/X_gEyzTSx6c',
-                    iconSrc: youTubeIcon,
-                    text: 'YouTube',
-                }),
-                createElement(IconButton, {
-                    href: 'https://drive.google.com/drive/folders/1jbhTOGaM88TdXXckxTzOaHZDSwWD0P4I?usp=drive_link',
-                    iconSrc: driveIcon,
-                    text: 'Google Drive',
-                }),
-            ],
-        }),
         createElement(MusicRelease, {
             title: 'Sunday Morning TV',
             explicit: true,
@@ -520,11 +458,68 @@ export default function Music() {
             coverImageSrc: earlyOdditiesCover,
         }),
         createElement(MusicRelease, {
+            title: 'Lucid Dreaming',
+            type: 'Single',
+            releaseDate: 'September 29, 2019',
+            description: 'Ne expergisci possit.',
+            genre: 'hip-hop, trap, electronic',
+            coverImageSrc: lucidCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://youtu.be/zEsdQEW04do',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube',
+                }),
+                createElement(IconButton, {
+                    href: 'https://on.soundcloud.com/JPl4aT337ePdZZIspT',
+                    iconSrc: soundCloudIcon,
+                    text: 'SoundCloud',
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/file/d/1Lc4I9aZlM-u2J6QCqa3pCMvxo273q8JU/view?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
+            title: 'strangest ways',
+            subtitle: '(feat. Jay Ashr)',
+            explicit: true,
+            type: 'Single',
+            releaseDate: 'September 22, 2018',
+            description: 'My first single, based on my first beat produced as Sontomorio.',
+            genre: 'R&B, lofi, alternative',
+            coverImageSrc: strangestWaysCover,
+            links: [
+                createElement(IconButton, {
+                    href: 'https://music.apple.com/us/album/strangest-ways-feat-jay-ashr-single/1460746146',
+                    iconSrc: appleMusicIcon,
+                    text: 'Apple Music',
+                }),
+                createElement(IconButton, {
+                    href: 'https://music.youtube.com/playlist?list=OLAK5uy_mrhP03IKnfQcirSfLvmBJHy0ZzczKX2lU',
+                    iconSrc: youTubeIcon,
+                    text: 'YouTube'
+                }),
+                createElement(IconButton, {
+                    href: 'https://on.soundcloud.com/E6foveubsrCAb5zkHX',
+                    iconSrc: soundCloudIcon,
+                    text: 'SoundCloud'
+                }),
+                createElement(IconButton, {
+                    href: 'https://drive.google.com/file/d/1QdptWAHx47SHnGWFzSMGxLiJZ-yVL3ml/view?usp=drive_link',
+                    iconSrc: driveIcon,
+                    text: 'Google Drive',
+                }),
+            ],
+        }),
+        createElement(MusicRelease, {
             title: 'Priibyu',
             explicit: true,
             type: 'Demo',
             releaseDate: 'February 3, 2025 (August 3, 2018 demo)',
-            description: 'Demo of the Deibyu mixtape. A bright, loose string of eclectic outsider music. Part of a double LP package with Deibyu.',
+            description: 'Demo of the Deibyu mixtape. A bright, loose string of eclectic outsider music.',
             genre: 'hip-hop/rap, downtempo, psychedelic',
             coverImageSrc: priibyuCover,
         }),
@@ -546,18 +541,14 @@ export default function Music() {
         <TileDisplay
         title='Latest Release'
         elements={ latest } />
-        <TileDisplay
-        title='Albums & Mixtapes'
-        elements={ albumsMixtapes } />
-        <TileDisplay
-        title='EPs & Singles'
-        elements={ EPsSingles } />
-        <TileDisplay
-        title='Soundtracks'
-        elements={ soundtracks } />
-        <TileDisplay
-        title='Compilations, Demos, & Other Oddities'
-        elements={ oddities } />
+        <Scroller
+        title='Major Releases'
+        elements={ MajorReleases }
+        scrollerID={ 0 } />
+        <Scroller
+        title='Minor Releases'
+        elements={ MinorReleases }
+        scrollerID={ 1 } />
         <Socials
         socialsList={ socialsList } />
         </>
