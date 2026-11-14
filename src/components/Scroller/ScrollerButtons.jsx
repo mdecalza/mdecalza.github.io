@@ -17,10 +17,10 @@ ScrollerButtons.propTypes = {
 export default function ScrollerButtons({ scrollerID = 0, numCols = 0 }) {
     const [ scrollIndex, setScrollIndex ] = useState(0);
 
-    const scrollerButtonClasses = 'ScrollerButton h-25 d-flex flex-column justify-content-center btn border-0 rounded-0';
+    const scrollerButtonClasses = 'ScrollerButton d-flex flex-column justify-content-center btn border-0 rounded-0 py-5';
     const scrollerButtonIconStyle = { filter: 'invert(1)', width: '33%', pointerEvents: 'none' };
     const scrollerButtonChildClasses = 'mx-auto fs-2';
-    const gradientColor = 'rgb(29, 31, 36)';
+    const gradientColor = 'rgba(29, 31, 36, 0.35)';
 
     function clamp(number, min, max) {
         return Math.min(Math.max(number, min), max);
