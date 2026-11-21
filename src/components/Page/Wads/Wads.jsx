@@ -6,8 +6,8 @@ import { createElement } from 'react';
 import Header from '/src/components/Header/Header';
 import IconButton from '/src/components/IconButton/IconButton';
 import Plaque from '/src/components/Plaque/Plaque';
+import Scroller from '/src/components/Scroller/Scroller';
 import Socials from '/src/components/Socials/Socials';
-import TileDisplay from '/src/components/TileDisplay/TileDisplay';
 import UnorderedList from '/src/components/UnorderedList/UnorderedList';
 import UnorderedListLink from '/src/components/UnorderedList/UnorderedListLink';
 import WadRelease from '/src/components/Page/Wads/WadRelease';
@@ -629,15 +629,18 @@ export default function Wads() {
                     </p>
                 </>}></Plaque>
             </div>
-            <TileDisplay
+            <Scroller
             elements={ inProgressWads }
-            title="Coming Soon" />
-            <TileDisplay
-            elements={ releasedWads }
-            title="Solo Works" />
-            <TileDisplay
+            title="Coming Soon"
+            scrollerID={ 0 } />
+            <Scroller
             elements={ communityProjects }
-            title="Community Projects" />
+            title="Community Projects"
+            scrollerID={ 1 } />
+            <Scroller
+            elements={ releasedWads }
+            title="Solo Works"
+            scrollerID={ 2 } />
             <UnorderedList
             title='More WADs I&apos;ve Contributed To:'
             items={ moreWadsList } />
