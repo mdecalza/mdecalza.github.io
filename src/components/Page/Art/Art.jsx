@@ -29,14 +29,6 @@ import intercep3sketch3 from '/src/assets/art/illustration-sketch4.png';
 import sketchbook1 from '/src/assets/art/2-2024sketches-511.png';
 import sketchbook2 from '/src/assets/art/2-2024sketches-511-2.png';
 
-/* 3D level design */
-import atonementScreenshots from '/src/assets/art/atn_screenshots.png'
-import herschelScreenshot from '/src/assets/art/herschel-screenshot.png';
-import hovercabScreenshot from '/src/assets/art/hovercab-screen.png';
-import tropicHELLscreenshot from '/src/assets/art/tropichell-screen.png';
-import doomedResidentScreenshots from '/src/assets/art/doomedresident-screens.png';
-import doomedResident2screenshots from '/src/assets/art/resident2-screenshots.png';
-
 /* album art */
 import deibyuCoverAlt from '/src/assets/art/deibyu2.png';
 import burningMyTimeCover from '/src/assets/art/burnin.jpg';
@@ -79,7 +71,7 @@ export default function Art() {
         createElement(ArtImage, { src: secondMixInter, title: 'Second Mix Intermission Screen', year: 2026, medium: 'Digital', size: '320 x 200 pixels' }),
         createElement(ArtImage, { src: atoneInter, title: 'Atonement Intermission Screen', year: 2018, medium: 'Digital', size: '320 x 200 pixels' }),
     ];
-    
+
     const sketches = [
         createElement(ArtImage, { src: aerithSketch }),
         createElement(ArtImage, { src: cloudSketch }),
@@ -90,16 +82,7 @@ export default function Art() {
         createElement(ArtImage, { src: sketchbook2 }),
         createElement(ArtImage, { src: sketchbook1 }),
     ];
-    
-    const levelDesign = [
-        createElement(ArtImage, { src: doomedResident2screenshots }),
-        createElement(ArtImage, { src: herschelScreenshot }),
-        createElement(ArtImage, { src: tropicHELLscreenshot }),
-        createElement(ArtImage, { src: hovercabScreenshot }),
-        createElement(ArtImage, { src: doomedResidentScreenshots }),
-        createElement(ArtImage, { src: atonementScreenshots }),
-    ];
-    
+
     const albumArt = [
         createElement(ArtImage, { src: travelogueSleeve, title: 'Travelogue Album Sleeve', year: 2025, medium: 'Digital, manipulated photographs', size: '5100 x 2550 pixels' }),
         createElement(ArtImage, { src: blindPilotCover, title: '"Blind Pilot" Single Cover', year: 2025, medium: 'Digital, manipulated photograph', size: '2960 x 2960 pixels' }),
@@ -154,13 +137,9 @@ export default function Art() {
             elements={ graphicDesign }
             scrollerID={ 3 } />
             <Scroller
-            title='3D Level Design'
-            elements={ levelDesign }
-            scrollerID={ 4 } />
-            <Scroller
             title='Sketches'
             elements={ sketches }
-            scrollerID={ 5 } />
+            scrollerID={ 4 } />
             <Socials
             socialsList={ socialsList } />
         </div>
