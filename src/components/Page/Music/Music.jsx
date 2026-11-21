@@ -7,7 +7,6 @@ import MusicRelease from '/src/components/Page/Music/MusicRelease';
 import IconButton from '/src/components/IconButton/IconButton';
 import Scroller from '/src/components/Scroller/Scroller';
 import Socials from '/src/components/Socials/Socials';
-import TileDisplay from '/src/components/TileDisplay/TileDisplay';
 
 /* assets */
 /* album covers */
@@ -535,20 +534,25 @@ export default function Music() {
             <Socials
             socialsList={ socialsList } />
         </div>
-        <TileDisplay
-        title='Coming Soon'
-        elements={ comingSoon } />
-        <TileDisplay
-        title='Latest Release'
-        elements={ latest } />
+        <div
+        className='d-flex flex-row mt-1'>
+            <Scroller
+            title='Coming Soon'
+            elements={ comingSoon }
+            scrollerID={ 0 } />
+            <Scroller
+            title='Latest Release'
+            elements={ latest }
+            scrollerID={ 1 } />
+        </div>
         <Scroller
         title='Major Releases'
         elements={ MajorReleases }
-        scrollerID={ 0 } />
+        scrollerID={ 2 } />
         <Scroller
         title='Minor Releases'
         elements={ MinorReleases }
-        scrollerID={ 1 } />
+        scrollerID={ 3 } />
         <Socials
         socialsList={ socialsList } />
         </>
