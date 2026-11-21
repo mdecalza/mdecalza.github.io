@@ -59,7 +59,7 @@ export default function WadRelease({
 
     return (
         <div
-        className='WadRelease fadeInDelayed d-flex flex-column justify-content-start align-items-center my-4'>
+        className='WadRelease fadeInDelayed d-flex flex-column justify-content-start align-items-center mx-3 my-4'>
             <div
             className='d-flex flex-column justify-content-center mb-3'
             style={{ maxHeight: '88px' }}>
