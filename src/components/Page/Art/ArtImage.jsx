@@ -16,7 +16,7 @@ ArtImage.propTypes = {
 export default function ArtImage({ src = null, border = true, censor = false, contentWarningList = [], title = '', year = 0, medium = '', size = '' }) {
     return (
         <div
-        className='d-flex px-3 fadeInDelayed justify-content-center'
+        className='d-flex mx-3 fadeInDelayed justify-content-center'
         style={{ minWidth: '90vw', maxWidth: '100%' }}>
             <div
             className={ `my-auto rounded-2 ${ border ? 'border border-2 border-opacity-75 shadow mx-3' : 'mx-5' }` }>
