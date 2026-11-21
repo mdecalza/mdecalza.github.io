@@ -25,7 +25,8 @@ export default function ArtImage({ src = null, border = true, censor = false, co
                     { censor ? <CensorBlur contentWarningList={ contentWarningList } /> : <></> }
                     <img
                     src={ src }
-                    className={ 'w-100 rounded-1' } />
+                    className={ 'w-100 rounded-1' }
+                    style={{ maxHeight: '75vh' }} />
                 </div>
             </div>
             { title === '' || year === 0 || medium === '' || size === '' ? <></> :
