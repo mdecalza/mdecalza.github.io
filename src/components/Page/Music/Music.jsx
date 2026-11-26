@@ -73,6 +73,11 @@ export default function Music() {
             coverImageSrc: meteorShowerCover,
             links: [
                 createElement(IconButton, {
+                    href: 'https://music.apple.com/us/song/star-storm/6799835321',
+                    iconSrc: appleMusicIcon,
+                    text: 'Apple Music',
+                }),
+                createElement(IconButton, {
                     href: 'https://youtu.be/dSD9diBpB_M',
                     iconSrc: youTubeIcon,
                     text: 'YouTube',
