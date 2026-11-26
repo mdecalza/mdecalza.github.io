@@ -9,8 +9,12 @@ import Scroller from '/src/components/Scroller/Scroller';
 import Socials from '/src/components/Socials/Socials';
 
 /* assets */
-/* illustrations */
+/* paintings */
 import theKuzc from '/src/assets/art/the-kuzc.jpg';
+import drip from '/src/assets/art/drip.jpg';
+import ship from '/src/assets/art/ship.jpg';
+
+/* illustrations */
 import atoneInter from '/src/assets/art/atone-inter.png';
 import intercepTitle from '/src/assets/art/int1-title.png';
 import intercep3title from '/src/assets/art/int3-title.png';
@@ -45,6 +49,7 @@ import smoothSailingCover from '/src/assets/art/sailing-cover2.png';
 import intercontinentalCover from '/src/assets/art/intercontinental-cover-2.jpg';
 import blindPilotCover from '/src/assets/art/blind-pilot-cover.jpg';
 import travelogueSleeve from '/src/assets/art/travelogue-sleeve.jpg';
+import laminarFlowCover from '/src/assets/art/laminar-flow.png';
 
 /* graphic design */
 import sontomorioLogo2 from '/src/assets/art/sonto-logo-text-large-glow.png';
@@ -60,6 +65,8 @@ export default function Art() {
 
     const paintings = [
         createElement(ArtImage, { src: theKuzc, title: 'Kuzco', year: 2026, medium: 'Acrylic on canvas', size: '8 x 10 inches' }),
+        createElement(ArtImage, { src: drip, title: 'Acrylic Pour', year: 2021, medium: 'Acrylic on canvas', size: '9 x 12 inches' }),
+        createElement(ArtImage, { src: ship, title: 'Shipwreck', year: 2021, medium: 'Oil on canvas', size: '9 x 12 inches' }),
     ];
 
     const illustrations = [
@@ -84,6 +91,7 @@ export default function Art() {
     ];
 
     const albumArt = [
+        createElement(ArtImage, { src: laminarFlowCover, title: '"Laminar Flow" Single Cover', year: 2026, medium: 'Digital', size: '3600 x 3600 pixels' }),
         createElement(ArtImage, { src: travelogueSleeve, title: 'Travelogue Album Sleeve', year: 2025, medium: 'Digital, manipulated photographs', size: '5100 x 2550 pixels' }),
         createElement(ArtImage, { src: blindPilotCover, title: '"Blind Pilot" Single Cover', year: 2025, medium: 'Digital, manipulated photograph', size: '2960 x 2960 pixels' }),
         createElement(ArtImage, { src: intercontinentalCover, title: '"Intercontinental" Single Cover', year: 2025, medium: 'Digitally manipulated photograph', size: '3024 x 3024 pixels' }),
