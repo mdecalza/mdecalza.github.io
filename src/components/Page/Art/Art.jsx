@@ -80,14 +80,14 @@ export default function Art() {
     ];
 
     const sketches = [
-        createElement(ArtImage, { src: aerithSketch }),
-        createElement(ArtImage, { src: cloudSketch }),
         createElement(ArtImage, { src: intercep3sketch1 }),
-        createElement(ArtImage, { src: intercep3sketch2, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: intercep3sketch3, censor: true, contentWarningList: ['Violence', 'Gore'] }),
-        createElement(ArtImage, { src: intercepSketch1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
-        createElement(ArtImage, { src: sketchbook2 }),
+        createElement(ArtImage, { src: cloudSketch }),
+        createElement(ArtImage, { src: intercep3sketch2, censor: true, contentWarningList: ['Violence', 'Gore'] }),
         createElement(ArtImage, { src: sketchbook1 }),
+        createElement(ArtImage, { src: sketchbook2 }),
+        createElement(ArtImage, { src: intercepSketch1, censor: true, contentWarningList: ['Violence', 'Gore'] }),
+        createElement(ArtImage, { src: aerithSketch }),
     ];
 
     const albumArt = [
@@ -133,7 +133,7 @@ export default function Art() {
             elements={ paintings }
             scrollerID={ 0 } />
             <Scroller
-            title='Illustrations'
+            title='Pixel Art'
             elements={ illustrations }
             scrollerID={ 1 } />
             <Scroller
